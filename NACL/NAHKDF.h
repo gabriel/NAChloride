@@ -5,8 +5,6 @@
 //  Copyright (c) 2014 Gabriel Handford. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-
 @interface NAHKDF : NSObject
 
 + (NSData *)HKDFForKey:(NSData *)key info:(NSData *)info derivedKeyLength:(NSUInteger)derivedKeyLength;

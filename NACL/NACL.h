@@ -6,8 +6,6 @@
 //  Copyright (c) 2014 Gabriel Handford. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-
 #import "NACLDefines.h"
 #import "NASecretBox.h"
 #import "NARandom.h"

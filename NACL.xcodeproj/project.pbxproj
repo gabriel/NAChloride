@@ -16,8 +16,29 @@
 		003BB2F51888A9480019D88F /* NAHMAC.m in Sources */ = {isa = PBXBuildFile; fileRef = 003BB2F41888A9480019D88F /* NAHMAC.m */; };
 		003BB2F81888AAF80019D88F /* NACLDefines.m in Sources */ = {isa = PBXBuildFile; fileRef = 003BB2F71888AAF80019D88F /* NACLDefines.m */; };
 		003BB2FB1888ADCC0019D88F /* NANSData+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 003BB2FA1888ADCC0019D88F /* NANSData+Utils.m */; };
+		004CB38E1888BBC600EFE8F7 /* NASecretBoxTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 004CB38D1888BBC600EFE8F7 /* NASecretBoxTest.m */; };
+		004CB38F1888BC7500EFE8F7 /* NACLDefines.m in Sources */ = {isa = PBXBuildFile; fileRef = 003BB2F71888AAF80019D88F /* NACLDefines.m */; };
+		004CB3901888BC7700EFE8F7 /* NASecretBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 003BB2E61888A1D50019D88F /* NASecretBox.m */; };
+		004CB3911888BC7900EFE8F7 /* NARandom.m in Sources */ = {isa = PBXBuildFile; fileRef = 003BB2EA1888A2160019D88F /* NARandom.m */; };
+		004CB3921888BC7B00EFE8F7 /* NAHKDF.m in Sources */ = {isa = PBXBuildFile; fileRef = 003BB2EE1888A72D0019D88F /* NAHKDF.m */; };
+		004CB3931888BC7D00EFE8F7 /* hkdf.c in Sources */ = {isa = PBXBuildFile; fileRef = 003BB2F01888A76F0019D88F /* hkdf.c */; };
+		004CB3941888BC7F00EFE8F7 /* NAHMAC.m in Sources */ = {isa = PBXBuildFile; fileRef = 003BB2F41888A9480019D88F /* NAHMAC.m */; };
+		004CB3951888BC8100EFE8F7 /* NANSData+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 003BB2FA1888ADCC0019D88F /* NANSData+Utils.m */; };
+		004CB3961888C0B300EFE8F7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 805BE1F5906C46C1BEDDD388 /* main.m */; };
+		5518566434CB401F8C7972B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13CD629B7BBB41C19D39E5BE /* Foundation.framework */; };
+		A3D0E697480A448080A08B9F /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2946C6D94CF54A388BBC5FDB /* libPods-Tests.a */; };
 		F85A692963A7442D9C464718 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A5C6C1D40C411BB7BEAFA8 /* libPods.a */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D24B795A29304F86B71BB576 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 003BB2B41888A16E0019D88F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 003BB2BB1888A16E0019D88F;
+			remoteInfo = NACL;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		003BB2BA1888A16E0019D88F /* CopyFiles */ = {
@@ -52,7 +73,14 @@
 		003BB2F71888AAF80019D88F /* NACLDefines.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NACLDefines.m; sourceTree = "<group>"; };
 		003BB2F91888ADCC0019D88F /* NANSData+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NANSData+Utils.h"; sourceTree = "<group>"; };
 		003BB2FA1888ADCC0019D88F /* NANSData+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NANSData+Utils.m"; sourceTree = "<group>"; };
+		004CB38B1888B99300EFE8F7 /* NACL-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NACL-Prefix.pch"; sourceTree = "<group>"; };
+		004CB38D1888BBC600EFE8F7 /* NASecretBoxTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NASecretBoxTest.m; path = Tests/NASecretBoxTest.m; sourceTree = "<group>"; };
+		13CD629B7BBB41C19D39E5BE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		1E0668CF01A04FE99580103E /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		2946C6D94CF54A388BBC5FDB /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BBCDD0BCCAB43BB904A84AA /* Pods-Tests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.xcconfig"; path = "Pods/Pods-Tests.xcconfig"; sourceTree = "<group>"; };
+		805BE1F5906C46C1BEDDD388 /* main.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Tests/main.m; sourceTree = "<group>"; };
+		A6427EFB103D46EFB5A03F92 /* Tests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6A5C6C1D40C411BB7BEAFA8 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -66,6 +94,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0FA71F7506AB490880E79CE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5518566434CB401F8C7972B9 /* Foundation.framework in Frameworks */,
+				A3D0E697480A448080A08B9F /* libPods-Tests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -76,6 +113,8 @@
 				003BB2BE1888A16E0019D88F /* Frameworks */,
 				003BB2BD1888A16E0019D88F /* Products */,
 				1E0668CF01A04FE99580103E /* Pods.xcconfig */,
+				82229D0F372F44D299E9CFFC /* Tests */,
+				7BBCDD0BCCAB43BB904A84AA /* Pods-Tests.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				003BB2BC1888A16E0019D88F /* libNACL.a */,
+				A6427EFB103D46EFB5A03F92 /* Tests.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,6 +134,8 @@
 				003BB2CD1888A16E0019D88F /* XCTest.framework */,
 				003BB2D01888A16E0019D88F /* UIKit.framework */,
 				D6A5C6C1D40C411BB7BEAFA8 /* libPods.a */,
+				99EDB06A9C9B4F3D9E482E13 /* iOS */,
+				2946C6D94CF54A388BBC5FDB /* libPods-Tests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -116,8 +158,34 @@
 				003BB2F41888A9480019D88F /* NAHMAC.m */,
 				003BB2F91888ADCC0019D88F /* NANSData+Utils.h */,
 				003BB2FA1888ADCC0019D88F /* NANSData+Utils.m */,
+				004CB38A1888B98300EFE8F7 /* Supporting Files */,
 			);
 			path = NACL;
+			sourceTree = "<group>";
+		};
+		004CB38A1888B98300EFE8F7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				004CB38B1888B99300EFE8F7 /* NACL-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		82229D0F372F44D299E9CFFC /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				805BE1F5906C46C1BEDDD388 /* main.m */,
+				004CB38D1888BBC600EFE8F7 /* NASecretBoxTest.m */,
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
+		99EDB06A9C9B4F3D9E482E13 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				13CD629B7BBB41C19D39E5BE /* Foundation.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,6 +210,25 @@
 			productReference = 003BB2BC1888A16E0019D88F /* libNACL.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		6337F4892A394B1DAC9C6B12 /* Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94EB18D231DD47BDA7005DE7 /* Build configuration list for PBXNativeTarget "Tests" */;
+			buildPhases = (
+				CF811191675445E3874A733F /* Check Pods Manifest.lock */,
+				6FCDB83F98BD48FDBCFA6EC2 /* Sources */,
+				0FA71F7506AB490880E79CE9 /* Frameworks */,
+				51D6A1FAF21941A5B7B55901 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FE7A6B305C1C4B08A52D0891 /* PBXTargetDependency */,
+			);
+			name = Tests;
+			productName = Tests;
+			productReference = A6427EFB103D46EFB5A03F92 /* Tests.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -164,11 +251,27 @@
 			projectRoot = "";
 			targets = (
 				003BB2BB1888A16E0019D88F /* NACL */,
+				6337F4892A394B1DAC9C6B12 /* Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		51D6A1FAF21941A5B7B55901 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		931CF64ADF564046A75184FB /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -199,6 +302,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		CF811191675445E3874A733F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -216,7 +334,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6FCDB83F98BD48FDBCFA6EC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				004CB3901888BC7700EFE8F7 /* NASecretBox.m in Sources */,
+				004CB3951888BC8100EFE8F7 /* NANSData+Utils.m in Sources */,
+				004CB3911888BC7900EFE8F7 /* NARandom.m in Sources */,
+				004CB3931888BC7D00EFE8F7 /* hkdf.c in Sources */,
+				004CB3941888BC7F00EFE8F7 /* NAHMAC.m in Sources */,
+				004CB38F1888BC7500EFE8F7 /* NACLDefines.m in Sources */,
+				004CB38E1888BBC600EFE8F7 /* NASecretBoxTest.m in Sources */,
+				004CB3961888C0B300EFE8F7 /* main.m in Sources */,
+				004CB3921888BC7B00EFE8F7 /* NAHKDF.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FE7A6B305C1C4B08A52D0891 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 003BB2BB1888A16E0019D88F /* NACL */;
+			targetProxy = D24B795A29304F86B71BB576 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		003BB2DD1888A16E0019D88F /* Debug */ = {
@@ -295,6 +437,7 @@
 			buildSettings = {
 				DSTROOT = /tmp/NACL.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NACL/NACL-Prefix.pch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -306,8 +449,67 @@
 			buildSettings = {
 				DSTROOT = /tmp/NACL.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NACL/NACL-Prefix.pch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		19E4EE688E274B7BA0C4E42A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BBCDD0BCCAB43BB904A84AA /* Pods-Tests.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NACL/NACL-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		1FECE7F165694890A5B433C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BBCDD0BCCAB43BB904A84AA /* Pods-Tests.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NACL/NACL-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -328,6 +530,15 @@
 			buildConfigurations = (
 				003BB2E01888A16E0019D88F /* Debug */,
 				003BB2E11888A16E0019D88F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94EB18D231DD47BDA7005DE7 /* Build configuration list for PBXNativeTarget "Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FECE7F165694890A5B433C3 /* Release */,
+				19E4EE688E274B7BA0C4E42A /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
