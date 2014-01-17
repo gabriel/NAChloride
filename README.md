@@ -18,6 +18,4 @@ pod "NACL"
 ## Open source projects used by NACL
 
 * [libsodium](https://github.com/jedisct1/libsodium)
-* [ed25519/ref](http://bench.cr.yp.to/supercop.html)
-* [FEC](http://info.iet.unipi.it/~luigi/fec.html)
-* [scrypt](http://www.tarsnap.com/scrypt.html)
+* [hkdf](https://github.com/seb-m/CryptoPill)
