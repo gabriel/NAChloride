@@ -14,6 +14,37 @@ platform :ios, '7.0'
 pod "NACL"
 ```
 
+# Usage
+
+## Derive key from password
+```objc
+NSString *password = @"password";
+NSData *passwordData = [password dataUsingEncoding:NSUTF8StringEncoding];
+NSData *derivedKey = [NAHKDF HKDFForKey:passwordData info:NULL derivedKeyLength:kNACurve25519ScalarSize];
+```
+
+## Encrypt
+```objc
+// The secret to encrypt
+NSString *secret = @"This is a secret";
+NSData *secretData = [secret dataUsingEncoding:NSUTF8StringEncoding];
+  
+// Encrypt
+NSData *encryptedData = [NASecretBox encrypt:secretData key:derivedKey error:nil];
+NSString *encoded = [encryptedData base64EncodedStringWithOptions:0];
+```
+
+## Decrypt
+```objc
+NSString *encoded = @"8z6FcaDfyfFWL07lyOK/Y/Q3Yd+zMkbwgrNFv7SObBCIv/FFGw37QooecHKvlHQX1HlgZRouqgE=";
+NSData *encryptedData = [[NSData alloc] initWithBase64EncodedString:encoded options:0];
+  
+// Decrypt
+NSData *unecryptedData = [NASecretBox decrypt:encryptedData key:derivedKey error:nil];
+NSString *decoded = [[NSString alloc] initWithData:unecryptedData encoding:NSUTF8StringEncoding];
+
+// Decoded should be "This is a secret"
+```
 
 ## Open source projects used by NACL
 
