@@ -25,6 +25,9 @@
 		004CB3941888BC7F00EFE8F7 /* NAHMAC.m in Sources */ = {isa = PBXBuildFile; fileRef = 003BB2F41888A9480019D88F /* NAHMAC.m */; };
 		004CB3951888BC8100EFE8F7 /* NANSData+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 003BB2FA1888ADCC0019D88F /* NANSData+Utils.m */; };
 		004CB3961888C0B300EFE8F7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 805BE1F5906C46C1BEDDD388 /* main.m */; };
+		004CB3BB188F205300EFE8F7 /* NAKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 004CB3BA188F205300EFE8F7 /* NAKeychain.m */; };
+		004CB3BE188F2BF000EFE8F7 /* NAKeychainTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 004CB3BD188F2BF000EFE8F7 /* NAKeychainTest.m */; };
+		004CB3BF188F2DA700EFE8F7 /* NAKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 004CB3BA188F205300EFE8F7 /* NAKeychain.m */; };
 		5518566434CB401F8C7972B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13CD629B7BBB41C19D39E5BE /* Foundation.framework */; };
 		A3D0E697480A448080A08B9F /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2946C6D94CF54A388BBC5FDB /* libPods-Tests.a */; };
 		F85A692963A7442D9C464718 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A5C6C1D40C411BB7BEAFA8 /* libPods.a */; };
@@ -75,6 +78,10 @@
 		003BB2FA1888ADCC0019D88F /* NANSData+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NANSData+Utils.m"; sourceTree = "<group>"; };
 		004CB38B1888B99300EFE8F7 /* NACL-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NACL-Prefix.pch"; sourceTree = "<group>"; };
 		004CB38D1888BBC600EFE8F7 /* NASecretBoxTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NASecretBoxTest.m; path = Tests/NASecretBoxTest.m; sourceTree = "<group>"; };
+		004CB3B9188F205300EFE8F7 /* NAKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NAKeychain.h; sourceTree = "<group>"; };
+		004CB3BA188F205300EFE8F7 /* NAKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAKeychain.m; sourceTree = "<group>"; };
+		004CB3BD188F2BF000EFE8F7 /* NAKeychainTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAKeychainTest.m; sourceTree = "<group>"; };
+		00AFEFAA18A5B2D30072632C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		13CD629B7BBB41C19D39E5BE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		1E0668CF01A04FE99580103E /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		2946C6D94CF54A388BBC5FDB /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,6 +116,7 @@
 		003BB2B31888A16E0019D88F = {
 			isa = PBXGroup;
 			children = (
+				00AFEFAA18A5B2D30072632C /* README.md */,
 				003BB2C11888A16E0019D88F /* NACL */,
 				003BB2BE1888A16E0019D88F /* Frameworks */,
 				003BB2BD1888A16E0019D88F /* Products */,
@@ -156,6 +164,8 @@
 				003BB2F01888A76F0019D88F /* hkdf.c */,
 				003BB2F31888A9480019D88F /* NAHMAC.h */,
 				003BB2F41888A9480019D88F /* NAHMAC.m */,
+				004CB3B9188F205300EFE8F7 /* NAKeychain.h */,
+				004CB3BA188F205300EFE8F7 /* NAKeychain.m */,
 				003BB2F91888ADCC0019D88F /* NANSData+Utils.h */,
 				003BB2FA1888ADCC0019D88F /* NANSData+Utils.m */,
 				004CB38A1888B98300EFE8F7 /* Supporting Files */,
@@ -176,6 +186,7 @@
 			children = (
 				805BE1F5906C46C1BEDDD388 /* main.m */,
 				004CB38D1888BBC600EFE8F7 /* NASecretBoxTest.m */,
+				004CB3BD188F2BF000EFE8F7 /* NAKeychainTest.m */,
 			);
 			name = Tests;
 			sourceTree = "<group>";
@@ -326,6 +337,7 @@
 			files = (
 				003BB2F11888A76F0019D88F /* hkdf.c in Sources */,
 				003BB2EF1888A72D0019D88F /* NAHKDF.m in Sources */,
+				004CB3BB188F205300EFE8F7 /* NAKeychain.m in Sources */,
 				003BB2FB1888ADCC0019D88F /* NANSData+Utils.m in Sources */,
 				003BB2F81888AAF80019D88F /* NACLDefines.m in Sources */,
 				003BB2F51888A9480019D88F /* NAHMAC.m in Sources */,
@@ -342,10 +354,12 @@
 				004CB3951888BC8100EFE8F7 /* NANSData+Utils.m in Sources */,
 				004CB3911888BC7900EFE8F7 /* NARandom.m in Sources */,
 				004CB3931888BC7D00EFE8F7 /* hkdf.c in Sources */,
+				004CB3BE188F2BF000EFE8F7 /* NAKeychainTest.m in Sources */,
 				004CB3941888BC7F00EFE8F7 /* NAHMAC.m in Sources */,
 				004CB38F1888BC7500EFE8F7 /* NACLDefines.m in Sources */,
 				004CB38E1888BBC600EFE8F7 /* NASecretBoxTest.m in Sources */,
 				004CB3961888C0B300EFE8F7 /* main.m in Sources */,
+				004CB3BF188F2DA700EFE8F7 /* NAKeychain.m in Sources */,
 				004CB3921888BC7B00EFE8F7 /* NAHKDF.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
