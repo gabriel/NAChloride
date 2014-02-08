@@ -14,6 +14,12 @@
 
  @param len Number of random bytes to generate
  */
-+ (NSData *)randomData:(size_t)len;
++ (NSData *)randomData:(size_t)numBytes;
+
+/*!
+ Generate random hex string.
+ @param numBytes Number of bytes for hex string.
+ */
++ (NSString *)randomHexString:(size_t)numBytes;
 
 @end

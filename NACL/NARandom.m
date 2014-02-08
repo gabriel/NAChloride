@@ -6,17 +6,23 @@
 //
 
 #import "NARandom.h"
+#import "NANSData+Utils.h"
 
 #include <Security/SecRandom.h>
 
 @implementation NARandom
 
-+ (NSData *)randomData:(size_t)len {
-  NSMutableData *data = [NSMutableData dataWithLength:len];
-  int ret = SecRandomCopyBytes(kSecRandomDefault, len, [data mutableBytes]);
++ (NSData *)randomData:(size_t)numBytes {
+  NSMutableData *data = [NSMutableData dataWithLength:numBytes];
+  int ret = SecRandomCopyBytes(kSecRandomDefault, numBytes, [data mutableBytes]);
   if (ret == -1)
     return nil;
   return data;
+}
+
++ (NSString *)randomHexString:(size_t)numBytes {
+  NSData *data = [self randomData:numBytes];
+  return [data na_hexString];
 }
 
 @end
