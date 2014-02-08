@@ -65,7 +65,12 @@
     return nil;
   }
   
-  if (!data || !key || [key length] != crypto_secretbox_keybytes()) {
+  if (!data) {
+    if (error) *error = [NSError errorWithDomain:@"NACL" code:102 userInfo:@{NSLocalizedDescriptionKey: @"Invalid data"}];
+    return nil;
+  }
+  
+  if (!key || [key length] != crypto_secretbox_keybytes()) {
     if (error) *error = [NSError errorWithDomain:@"NACL" code:101 userInfo:@{NSLocalizedDescriptionKey: @"Invalid key"}];
     return nil;
   }

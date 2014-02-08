@@ -30,7 +30,9 @@ NSString *secret = @"This is a secret";
 NSData *secretData = [secret dataUsingEncoding:NSUTF8StringEncoding];
   
 // Encrypt
-NSData *encryptedData = [NASecretBox encrypt:secretData key:derivedKey error:nil];
+NSError *error = nil;
+NSData *encryptedData = [NASecretBox encrypt:secretData key:derivedKey error:&error];
+// If an error occurred encryptedData will be nil and error set.
 NSString *encoded = [encryptedData base64EncodedStringWithOptions:0];
 ```
 

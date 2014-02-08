@@ -46,4 +46,14 @@
   GHAssertEqualStrings(@"This is a secret", decoded, nil);
 }
 
+- (void)testEncryptError {
+  NSData *badKey = [NSData data];
+  NSError *error = nil;
+  NSData *encryptedData = [NASecretBox encrypt:[@"This is a secret" dataUsingEncoding:NSUTF8StringEncoding] key:badKey error:&error];
+  GHAssertNil(encryptedData, nil);
+  GHAssertNotNil(error, nil);
+  GHAssertEquals(101, error.code, nil);
+  GHTestLog(@"Error: %@", error);
+}
+
 @end
