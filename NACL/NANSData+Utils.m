@@ -12,11 +12,11 @@
 
 - (NSString *)na_hexString {
   if ([self length] == 0) return nil;
-  NSMutableString *hex = [NSMutableString stringWithCapacity:[self length] * 2];
+  NSMutableString *hexString = [NSMutableString stringWithCapacity:[self length] * 2];
   for (NSUInteger i = 0; i < [self length]; ++i) {
-    [hex appendFormat:@"%02X", *((uint8_t *)[self bytes] + i)];
+    [hexString appendFormat:@"%02X", *((uint8_t *)[self bytes] + i)];
   }
-  return hex;
+  return [hexString lowercaseString];
 }
 
 @end
