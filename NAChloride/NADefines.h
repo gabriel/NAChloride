@@ -1,5 +1,5 @@
 //
-//  NACLDefines.h
+//  NADefines.h
 //  NACL
 //
 //  Created by Gabriel Handford on 1/16/14.
@@ -8,4 +8,3 @@
 
 extern const NSUInteger kNACurve25519ScalarSize;
 extern const NSUInteger kNACurve25519PublicKeySize;
-

@@ -8,16 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		003BB2C01888A16E0019D88F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 003BB2BF1888A16E0019D88F /* Foundation.framework */; };
-		003BB2C51888A16E0019D88F /* NACL.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 003BB2C41888A16E0019D88F /* NACL.h */; };
+		003BB2C51888A16E0019D88F /* NAChloride.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 003BB2C41888A16E0019D88F /* NAChloride.h */; };
 		003BB2E71888A1D50019D88F /* NASecretBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 003BB2E61888A1D50019D88F /* NASecretBox.m */; };
 		003BB2EB1888A2160019D88F /* NARandom.m in Sources */ = {isa = PBXBuildFile; fileRef = 003BB2EA1888A2160019D88F /* NARandom.m */; };
 		003BB2EF1888A72D0019D88F /* NAHKDF.m in Sources */ = {isa = PBXBuildFile; fileRef = 003BB2EE1888A72D0019D88F /* NAHKDF.m */; };
 		003BB2F11888A76F0019D88F /* hkdf.c in Sources */ = {isa = PBXBuildFile; fileRef = 003BB2F01888A76F0019D88F /* hkdf.c */; };
 		003BB2F51888A9480019D88F /* NAHMAC.m in Sources */ = {isa = PBXBuildFile; fileRef = 003BB2F41888A9480019D88F /* NAHMAC.m */; };
-		003BB2F81888AAF80019D88F /* NACLDefines.m in Sources */ = {isa = PBXBuildFile; fileRef = 003BB2F71888AAF80019D88F /* NACLDefines.m */; };
+		003BB2F81888AAF80019D88F /* NADefines.m in Sources */ = {isa = PBXBuildFile; fileRef = 003BB2F71888AAF80019D88F /* NADefines.m */; };
 		003BB2FB1888ADCC0019D88F /* NANSData+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 003BB2FA1888ADCC0019D88F /* NANSData+Utils.m */; };
 		004CB38E1888BBC600EFE8F7 /* NASecretBoxTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 004CB38D1888BBC600EFE8F7 /* NASecretBoxTest.m */; };
-		004CB38F1888BC7500EFE8F7 /* NACLDefines.m in Sources */ = {isa = PBXBuildFile; fileRef = 003BB2F71888AAF80019D88F /* NACLDefines.m */; };
+		004CB38F1888BC7500EFE8F7 /* NADefines.m in Sources */ = {isa = PBXBuildFile; fileRef = 003BB2F71888AAF80019D88F /* NADefines.m */; };
 		004CB3901888BC7700EFE8F7 /* NASecretBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 003BB2E61888A1D50019D88F /* NASecretBox.m */; };
 		004CB3911888BC7900EFE8F7 /* NARandom.m in Sources */ = {isa = PBXBuildFile; fileRef = 003BB2EA1888A2160019D88F /* NARandom.m */; };
 		004CB3921888BC7B00EFE8F7 /* NAHKDF.m in Sources */ = {isa = PBXBuildFile; fileRef = 003BB2EE1888A72D0019D88F /* NAHKDF.m */; };
@@ -50,16 +50,16 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				003BB2C51888A16E0019D88F /* NACL.h in CopyFiles */,
+				003BB2C51888A16E0019D88F /* NAChloride.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		003BB2BC1888A16E0019D88F /* libNACL.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libNACL.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		003BB2BC1888A16E0019D88F /* libNAChloride.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libNAChloride.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		003BB2BF1888A16E0019D88F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		003BB2C41888A16E0019D88F /* NACL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NACL.h; sourceTree = "<group>"; };
+		003BB2C41888A16E0019D88F /* NAChloride.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NAChloride.h; sourceTree = "<group>"; };
 		003BB2CD1888A16E0019D88F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		003BB2D01888A16E0019D88F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		003BB2E51888A1D50019D88F /* NASecretBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NASecretBox.h; sourceTree = "<group>"; };
@@ -72,15 +72,15 @@
 		003BB2F21888A8410019D88F /* hkdf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hkdf.h; sourceTree = "<group>"; };
 		003BB2F31888A9480019D88F /* NAHMAC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NAHMAC.h; sourceTree = "<group>"; };
 		003BB2F41888A9480019D88F /* NAHMAC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAHMAC.m; sourceTree = "<group>"; };
-		003BB2F61888AAE50019D88F /* NACLDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NACLDefines.h; sourceTree = "<group>"; };
-		003BB2F71888AAF80019D88F /* NACLDefines.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NACLDefines.m; sourceTree = "<group>"; };
+		003BB2F61888AAE50019D88F /* NADefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NADefines.h; sourceTree = "<group>"; };
+		003BB2F71888AAF80019D88F /* NADefines.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NADefines.m; sourceTree = "<group>"; };
 		003BB2F91888ADCC0019D88F /* NANSData+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NANSData+Utils.h"; sourceTree = "<group>"; };
 		003BB2FA1888ADCC0019D88F /* NANSData+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NANSData+Utils.m"; sourceTree = "<group>"; };
-		004CB38B1888B99300EFE8F7 /* NACL-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NACL-Prefix.pch"; sourceTree = "<group>"; };
+		004CB38B1888B99300EFE8F7 /* NAChloride-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NAChloride-Prefix.pch"; sourceTree = "<group>"; };
 		004CB38D1888BBC600EFE8F7 /* NASecretBoxTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NASecretBoxTest.m; path = Tests/NASecretBoxTest.m; sourceTree = "<group>"; };
 		004CB3B9188F205300EFE8F7 /* NAKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NAKeychain.h; sourceTree = "<group>"; };
 		004CB3BA188F205300EFE8F7 /* NAKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAKeychain.m; sourceTree = "<group>"; };
-		004CB3BD188F2BF000EFE8F7 /* NAKeychainTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAKeychainTest.m; sourceTree = "<group>"; };
+		004CB3BD188F2BF000EFE8F7 /* NAKeychainTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NAKeychainTest.m; path = Tests/NAKeychainTest.m; sourceTree = "<group>"; };
 		00AFEFAA18A5B2D30072632C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		13CD629B7BBB41C19D39E5BE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		1E0668CF01A04FE99580103E /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
@@ -117,7 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				00AFEFAA18A5B2D30072632C /* README.md */,
-				003BB2C11888A16E0019D88F /* NACL */,
+				003BB2C11888A16E0019D88F /* NAChloride */,
 				003BB2BE1888A16E0019D88F /* Frameworks */,
 				003BB2BD1888A16E0019D88F /* Products */,
 				1E0668CF01A04FE99580103E /* Pods.xcconfig */,
@@ -129,7 +129,7 @@
 		003BB2BD1888A16E0019D88F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				003BB2BC1888A16E0019D88F /* libNACL.a */,
+				003BB2BC1888A16E0019D88F /* libNAChloride.a */,
 				A6427EFB103D46EFB5A03F92 /* Tests.app */,
 			);
 			name = Products;
@@ -148,12 +148,12 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		003BB2C11888A16E0019D88F /* NACL */ = {
+		003BB2C11888A16E0019D88F /* NAChloride */ = {
 			isa = PBXGroup;
 			children = (
-				003BB2C41888A16E0019D88F /* NACL.h */,
-				003BB2F61888AAE50019D88F /* NACLDefines.h */,
-				003BB2F71888AAF80019D88F /* NACLDefines.m */,
+				003BB2C41888A16E0019D88F /* NAChloride.h */,
+				003BB2F61888AAE50019D88F /* NADefines.h */,
+				003BB2F71888AAF80019D88F /* NADefines.m */,
 				003BB2E51888A1D50019D88F /* NASecretBox.h */,
 				003BB2E61888A1D50019D88F /* NASecretBox.m */,
 				003BB2E91888A2160019D88F /* NARandom.h */,
@@ -170,13 +170,13 @@
 				003BB2FA1888ADCC0019D88F /* NANSData+Utils.m */,
 				004CB38A1888B98300EFE8F7 /* Supporting Files */,
 			);
-			path = NACL;
+			path = NAChloride;
 			sourceTree = "<group>";
 		};
 		004CB38A1888B98300EFE8F7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				004CB38B1888B99300EFE8F7 /* NACL-Prefix.pch */,
+				004CB38B1888B99300EFE8F7 /* NAChloride-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -202,9 +202,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		003BB2BB1888A16E0019D88F /* NACL */ = {
+		003BB2BB1888A16E0019D88F /* NAChloride */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 003BB2DF1888A16E0019D88F /* Build configuration list for PBXNativeTarget "NACL" */;
+			buildConfigurationList = 003BB2DF1888A16E0019D88F /* Build configuration list for PBXNativeTarget "NAChloride" */;
 			buildPhases = (
 				931CF64ADF564046A75184FB /* Check Pods Manifest.lock */,
 				003BB2B81888A16E0019D88F /* Sources */,
@@ -216,9 +216,9 @@
 			);
 			dependencies = (
 			);
-			name = NACL;
+			name = NAChloride;
 			productName = NACL;
-			productReference = 003BB2BC1888A16E0019D88F /* libNACL.a */;
+			productReference = 003BB2BC1888A16E0019D88F /* libNAChloride.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		6337F4892A394B1DAC9C6B12 /* Tests */ = {
@@ -246,10 +246,11 @@
 		003BB2B41888A16E0019D88F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = NA;
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Gabriel Handford";
 			};
-			buildConfigurationList = 003BB2B71888A16E0019D88F /* Build configuration list for PBXProject "NACL" */;
+			buildConfigurationList = 003BB2B71888A16E0019D88F /* Build configuration list for PBXProject "NAChloride" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -261,7 +262,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				003BB2BB1888A16E0019D88F /* NACL */,
+				003BB2BB1888A16E0019D88F /* NAChloride */,
 				6337F4892A394B1DAC9C6B12 /* Tests */,
 			);
 		};
@@ -339,7 +340,7 @@
 				003BB2EF1888A72D0019D88F /* NAHKDF.m in Sources */,
 				004CB3BB188F205300EFE8F7 /* NAKeychain.m in Sources */,
 				003BB2FB1888ADCC0019D88F /* NANSData+Utils.m in Sources */,
-				003BB2F81888AAF80019D88F /* NACLDefines.m in Sources */,
+				003BB2F81888AAF80019D88F /* NADefines.m in Sources */,
 				003BB2F51888A9480019D88F /* NAHMAC.m in Sources */,
 				003BB2EB1888A2160019D88F /* NARandom.m in Sources */,
 				003BB2E71888A1D50019D88F /* NASecretBox.m in Sources */,
@@ -356,7 +357,7 @@
 				004CB3931888BC7D00EFE8F7 /* hkdf.c in Sources */,
 				004CB3BE188F2BF000EFE8F7 /* NAKeychainTest.m in Sources */,
 				004CB3941888BC7F00EFE8F7 /* NAHMAC.m in Sources */,
-				004CB38F1888BC7500EFE8F7 /* NACLDefines.m in Sources */,
+				004CB38F1888BC7500EFE8F7 /* NADefines.m in Sources */,
 				004CB38E1888BBC600EFE8F7 /* NASecretBoxTest.m in Sources */,
 				004CB3961888C0B300EFE8F7 /* main.m in Sources */,
 				004CB3BF188F2DA700EFE8F7 /* NAKeychain.m in Sources */,
@@ -369,7 +370,7 @@
 /* Begin PBXTargetDependency section */
 		FE7A6B305C1C4B08A52D0891 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 003BB2BB1888A16E0019D88F /* NACL */;
+			target = 003BB2BB1888A16E0019D88F /* NAChloride */;
 			targetProxy = D24B795A29304F86B71BB576 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -451,8 +452,8 @@
 			buildSettings = {
 				DSTROOT = /tmp/NACL.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "NACL/NACL-Prefix.pch";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "NAChloride/NAChloride-Prefix.pch";
+				PRODUCT_NAME = NAChloride;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -463,8 +464,8 @@
 			buildSettings = {
 				DSTROOT = /tmp/NACL.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "NACL/NACL-Prefix.pch";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "NAChloride/NAChloride-Prefix.pch";
+				PRODUCT_NAME = NAChloride;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -480,7 +481,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "NACL/NACL-Prefix.pch";
+				GCC_PREFIX_HEADER = "NAChloride/NAChloride-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -506,7 +507,7 @@
 				DSTROOT = /tmp/xcodeproj.dst;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "NACL/NACL-Prefix.pch";
+				GCC_PREFIX_HEADER = "NAChloride/NAChloride-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "Tests/Tests-Info.plist";
 				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
@@ -530,7 +531,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		003BB2B71888A16E0019D88F /* Build configuration list for PBXProject "NACL" */ = {
+		003BB2B71888A16E0019D88F /* Build configuration list for PBXProject "NAChloride" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				003BB2DD1888A16E0019D88F /* Debug */,
@@ -539,7 +540,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		003BB2DF1888A16E0019D88F /* Build configuration list for PBXNativeTarget "NACL" */ = {
+		003BB2DF1888A16E0019D88F /* Build configuration list for PBXNativeTarget "NAChloride" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				003BB2E01888A16E0019D88F /* Debug */,

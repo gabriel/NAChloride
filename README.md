@@ -1,7 +1,7 @@
 NACL
 ====
 
-Objective-C library for [NaCl](http://nacl.cr.yp.to/). Also includes some helpers for doing crypto on iOS.
+Objective-C library for [libsodium](https://github.com/jedisct1/libsodium). Also includes some helpers for doing crypto on iOS.
 
 # Install
 
@@ -11,7 +11,7 @@ Objective-C library for [NaCl](http://nacl.cr.yp.to/). Also includes some helper
 
 ```ruby
 platform :ios, '7.0'
-pod "NACL"
+pod "NAChloride"
 ```
 
 # Usage
@@ -28,7 +28,7 @@ NSData *derivedKey = [NAHKDF HKDFForKey:passwordData info:NULL derivedKeyLength:
 // The secret to encrypt
 NSString *secret = @"This is a secret";
 NSData *secretData = [secret dataUsingEncoding:NSUTF8StringEncoding];
-  
+
 // Encrypt
 NSError *error = nil;
 NSData *encryptedData = [NASecretBox encrypt:secretData key:derivedKey error:&error];
@@ -40,7 +40,7 @@ NSString *encoded = [encryptedData base64EncodedStringWithOptions:0];
 ```objc
 NSString *encoded = @"8z6FcaDfyfFWL07lyOK/Y/Q3Yd+zMkbwgrNFv7SObBCIv/FFGw37QooecHKvlHQX1HlgZRouqgE=";
 NSData *encryptedData = [[NSData alloc] initWithBase64EncodedString:encoded options:0];
-  
+
 // Decrypt
 NSData *unecryptedData = [NASecretBox decrypt:encryptedData key:derivedKey error:nil];
 NSString *decoded = [[NSString alloc] initWithData:unecryptedData encoding:NSUTF8StringEncoding];
@@ -48,7 +48,6 @@ NSString *decoded = [[NSString alloc] initWithData:unecryptedData encoding:NSUTF
 // Decoded should be "This is a secret"
 ```
 
-## Open source projects used by NACL
+## Other open source projects used by NAChloride
 
-* [libsodium](https://github.com/jedisct1/libsodium)
 * [hkdf](https://github.com/seb-m/CryptoPill)

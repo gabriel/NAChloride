@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 Gabriel Handford. All rights reserved.
 //
 
-#import "NACLDefines.h"
+#import "NADefines.h"
 
 #include "crypto_scalarmult_curve25519.h"
 

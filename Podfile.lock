@@ -1,18 +1,13 @@
 PODS:
-  - GHUnit (0.5.8)
+  - GHUnit (0.5.9)
   - libsodium-ios (0.4.5)
 
 DEPENDENCIES:
-  - GHUnit (from `../gh-unit/Podspecs/GHUnit.podspec`)
+  - GHUnit
   - libsodium-ios
 
-EXTERNAL SOURCES:
-  GHUnit:
-    :path: ../gh-unit/
-    :podspec: ../gh-unit/Podspecs/GHUnit.podspec
-
 SPEC CHECKSUMS:
-  GHUnit: b06c03325f54ef750fde4e6e1f69030e3f324750
+  GHUnit: 2f3ea0192633e92afaef959476a8d28db179797d
   libsodium-ios: 200aff3a4d5496bef36214fca21b85b04d722dea
 
 COCOAPODS: 0.29.0

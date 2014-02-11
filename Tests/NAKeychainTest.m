@@ -8,7 +8,7 @@
 
 #import <GHUnit/GHUnit.h>
 
-#import "NACL.h"
+#import "NAChloride.h"
 
 @interface NAKeychainTest : GHTestCase { }
 @end

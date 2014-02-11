@@ -41,7 +41,10 @@
   int retval = crypto_secretbox_open([outData mutableBytes],
                                      [encryptedPaddedData bytes], [encryptedPaddedData length],
                                      [nonce bytes], [key bytes]);
-  if (retval != 0) return nil;
+  if (retval != 0) {
+    if (error) *error = [NSError errorWithDomain:@"NACL" code:202 userInfo:@{NSLocalizedDescriptionKey: @"Unable to decrypt"}];
+    return nil;
+  }
   
   // Remove ZEROBYTES from out data
   return [NSData dataWithBytes:([outData bytes] + crypto_secretbox_zerobytes())

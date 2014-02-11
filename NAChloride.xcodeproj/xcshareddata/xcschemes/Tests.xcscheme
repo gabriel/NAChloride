@@ -16,10 +16,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3FBE7DF7C4AA4F2EA276BFED"
+            BlueprintIdentifier = "6337F4892A394B1DAC9C6B12"
             BuildableName = "Tests.app"
             BlueprintName = "Tests"
-            ReferencedContainer = "container:NACL.xcodeproj">
+            ReferencedContainer = "container:NAChloride.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -37,10 +37,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3FBE7DF7C4AA4F2EA276BFED"
+            BlueprintIdentifier = "6337F4892A394B1DAC9C6B12"
             BuildableName = "Tests.app"
             BlueprintName = "Tests"
-            ReferencedContainer = "container:NACL.xcodeproj">
+            ReferencedContainer = "container:NAChloride.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -53,10 +53,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3FBE7DF7C4AA4F2EA276BFED"
+            BlueprintIdentifier = "6337F4892A394B1DAC9C6B12"
             BuildableName = "Tests.app"
             BlueprintName = "Tests"
-            ReferencedContainer = "container:NACL.xcodeproj">
+            ReferencedContainer = "container:NAChloride.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
