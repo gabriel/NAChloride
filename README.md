@@ -52,6 +52,19 @@ NSData *passwordData = [password dataUsingEncoding:NSUTF8StringEncoding];
 NSData *derivedKey = [NAHKDF HKDFForKey:passwordData info:NULL derivedKeyLength:kNACurve25519ScalarSize];
 ```
 
+## Save Key in Keychain
+```objc
+NSData *key = [NARandom randomData:kNACurve25519ScalarSize];
+[NAKeychain addSymmetricKey:key applicationLabel:@"NAChloride" tag:nil label:nil];
+NSData *keyOut = [NAKeychain symmetricKeyWithApplicationLabel:@"NAChloride"];
+```
+
+## HMAC
+```obj
+NSData *HMACData = [NAHMAC HMACSHA256ForData:data key:secetKey];
+NSString *hexString = [HMACData na_hexString];
+```
+
 ## Other open source projects used by NAChloride
 
 * [hkdf](https://github.com/seb-m/CryptoPill)
