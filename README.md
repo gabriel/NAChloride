@@ -14,14 +14,7 @@ platform :ios, '7.0'
 pod "NAChloride"
 ```
 
-# Usage
-
-## Derive key from password
-```objc
-NSString *password = @"password";
-NSData *passwordData = [password dataUsingEncoding:NSUTF8StringEncoding];
-NSData *derivedKey = [NAHKDF HKDFForKey:passwordData info:NULL derivedKeyLength:kNACurve25519ScalarSize];
-```
+# SecretBox
 
 ## Encrypt
 ```objc
@@ -46,6 +39,17 @@ NSData *unecryptedData = [NASecretBox decrypt:encryptedData key:derivedKey error
 NSString *decoded = [[NSString alloc] initWithData:unecryptedData encoding:NSUTF8StringEncoding];
 
 // Decoded should be "This is a secret"
+```
+
+# Other Utilities
+
+These are not part of libsodium.
+
+## Derive key from password (HKDF)
+```objc
+NSString *password = @"password";
+NSData *passwordData = [password dataUsingEncoding:NSUTF8StringEncoding];
+NSData *derivedKey = [NAHKDF HKDFForKey:passwordData info:NULL derivedKeyLength:kNACurve25519ScalarSize];
 ```
 
 ## Other open source projects used by NAChloride
