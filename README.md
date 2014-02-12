@@ -18,13 +18,14 @@ pod "NAChloride"
 
 ## Encrypt
 ```objc
+NSData *secretKey = [NARandom randomData:kNACurve25519ScalarSize];
 // The secret to encrypt
 NSString *secret = @"This is a secret";
 NSData *secretData = [secret dataUsingEncoding:NSUTF8StringEncoding];
 
 // Encrypt
 NSError *error = nil;
-NSData *encryptedData = [NASecretBox encrypt:secretData key:derivedKey error:&error];
+NSData *encryptedData = [NASecretBox encrypt:secretData key:secretKey error:&error];
 // If an error occurred encryptedData will be nil and error set.
 NSString *encoded = [encryptedData base64EncodedStringWithOptions:0];
 ```
@@ -35,7 +36,7 @@ NSString *encoded = @"8z6FcaDfyfFWL07lyOK/Y/Q3Yd+zMkbwgrNFv7SObBCIv/FFGw37QooecH
 NSData *encryptedData = [[NSData alloc] initWithBase64EncodedString:encoded options:0];
 
 // Decrypt
-NSData *unecryptedData = [NASecretBox decrypt:encryptedData key:derivedKey error:nil];
+NSData *unecryptedData = [NASecretBox decrypt:encryptedData key:secretKey error:nil];
 NSString *decoded = [[NSString alloc] initWithData:unecryptedData encoding:NSUTF8StringEncoding];
 
 // Decoded should be "This is a secret"
