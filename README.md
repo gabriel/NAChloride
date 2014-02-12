@@ -1,4 +1,4 @@
-NACL
+NAChloride
 ====
 
 Objective-C library for [libsodium](https://github.com/jedisct1/libsodium). Also includes some helpers for doing crypto on iOS.
