@@ -25,4 +25,17 @@
   return [data na_hexString];
 }
 
++ (NSString *)randomBase64String:(size_t)length {
+  size_t numBytes = (size_t)ceil((length * 8.0) / 6.0);
+  NSData *data = [self randomData:numBytes];
+  
+  NSString *base64String = [data base64EncodedStringWithOptions:0];
+  if ([base64String length] > length) base64String = [base64String substringToIndex:length];
+  return base64String;
+}
+
++ (NSUUID *)UUID {
+  return [NSUUID UUID];
+}
+
 @end

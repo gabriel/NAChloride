@@ -8,8 +8,19 @@
 
 #import "NADefines.h"
 #import "NASecretBox.h"
+#import "NAScrypt.h"
+#import "NAXSalsa20.h"
+
 #import "NARandom.h"
 #import "NAHKDF.h"
 #import "NAHMAC.h"
-#import "NANSData+Utils.h"
 #import "NAKeychain.h"
+
+#import "NATwoFish.h"
+#import "NAAES.h"
+
+#import "NASHA3.h"
+
+#import "NANSData+Utils.h"
+#import "NANSString+Utils.h"
+#import "NANSMutableData+Utils.h"

@@ -19,4 +19,16 @@
   return [hexString lowercaseString];
 }
 
++ (NSData *)na_dataWithDatas:(NSArray *)datas {
+  NSInteger length = 0;
+  for (NSData *data in datas) {
+    length += data.length;
+  }
+  NSMutableData *combined = [NSMutableData dataWithCapacity:length];
+  for (NSData *data in datas) {
+    [combined appendData:data];
+  }
+  return combined;
+}
+
 @end

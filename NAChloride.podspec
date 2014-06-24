@@ -8,8 +8,8 @@ Pod::Spec.new do |s|
   s.author       = { "Gabriel Handford" => "gabrielh@gmail.com" }
   s.source       = { :git => "https://github.com/gabriel/NAChloride.git", :tag => "1.0.1" }
   s.platform     = :ios, '7.0'
-  s.dependency 'libsodium-ios'
-  s.source_files = 'NAChloride/**/*.{c,h,m}'
+  s.dependency 'libsodium'
+  s.source_files = 'NAChloride/**/*.{c,h,m,macros}'
   s.requires_arc = true
 
 end

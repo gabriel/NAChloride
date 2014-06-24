@@ -22,4 +22,14 @@
  */
 + (NSString *)randomHexString:(size_t)numBytes;
 
+/*!
+ Generate random base64 string.
+ */
++ (NSString *)randomBase64String:(size_t)length;
+
+/*!
+ A reminder to use UUID if what you want is a UUID.
+ */
++ (NSUUID *)UUID;
+
 @end

@@ -1,7 +1,9 @@
 NAChloride
-====
+===========
 
-Objective-C library for [libsodium](https://github.com/jedisct1/libsodium). Also includes some helpers for doing crypto on iOS.
+Objective-C library for [libsodium](https://github.com/jedisct1/libsodium). 
+
+THIS CODE HAS _NOT_ BEEN AUDITED.
 
 # Install
 
@@ -42,30 +44,73 @@ NSString *decoded = [[NSString alloc] initWithData:unecryptedData encoding:NSUTF
 // Decoded should be "This is a secret"
 ```
 
-# Other Utilities
+# Scrypt
+
+```objc
+NSData *key = [@"toomanysecrets" dataUsingEncoding:NSUTF8StringEncoding];
+NSData *salt = [NARandom randomData:48]; // Random 48 bytes
+NSData *data = [NAScrypt scrypt:key salt:salt N:32768U r:8 p:1 length:64 error:nil];
+```
+
+# XSalsa20
+
+```objc
+// Nonce should be 24 bytes
+// Key should be 32 bytes
+NSData *encrypted = [NAXSalsa20 encrypt:message nonce:nonce key:key error:nil];
+```
+
+# Other (part of iOS/OSX)
 
 These are not part of libsodium.
 
-## Derive key from password (HKDF)
+## HMAC-SHA (224, 256, 384, 512)
+
 ```objc
-NSString *password = @"password";
-NSData *passwordData = [password dataUsingEncoding:NSUTF8StringEncoding];
-NSData *derivedKey = [NAHKDF HKDFForKey:passwordData info:NULL derivedKeyLength:kNACurve25519ScalarSize];
+NSData *HMACSHA512 = [NAHMAC HMACSHAForKey:key data:password digestLength:512];
+```
+
+## AES-256-CTR
+
+```objc
+// Nonce should be 16 bytes
+// Key should be 32 bytes
+NSData *encrypted = [NAAES encrypt:message nonce:nonce key:key error:nil];
 ```
 
 ## Save Key in Keychain
+
 ```objc
 NSData *key = [NARandom randomData:kNACurve25519ScalarSize];
 [NAKeychain addSymmetricKey:key applicationLabel:@"NAChloride" tag:nil label:nil];
 NSData *keyOut = [NAKeychain symmetricKeyWithApplicationLabel:@"NAChloride"];
 ```
 
-## HMAC
-```obj
-NSData *HMACData = [NAHMAC HMACSHA256ForData:data key:secetKey];
-NSString *hexString = [HMACData na_hexString];
+# Other (wraps included C implementations)
+
+## TwoFish-CTR
+
+See NAChloride/TwoFish
+
+```objc
+// Nonce should be 16 bytes
+// Key should be 32 bytes
+NSData *encrypted = [NATwoFish encrypt:message nonce:nonce key:key error:nil];
 ```
 
-## Other open source projects used by NAChloride
+## HMAC-SHA3 (256, 384, 512)
 
-* [hkdf](https://github.com/seb-m/CryptoPill)
+See NAChloride/keccak
+
+```objc
+NSData *HMACSHA3 = [NAHMAC HMACSHA3ForKey:key data:password digestLength:512];
+```
+
+## HKDF (RFC 5849)
+
+See NAChloride/HKDF
+
+```objc
+NSData *key = [@"toomanysecrets" dataUsingEncoding:NSUTF8StringEncoding];
+NSData *derivedKey = [NAHKDF HKDFForKey:key info:NULL derivedKeyLength:kNACurve25519ScalarSize];
+```

@@ -14,14 +14,14 @@
 
 @implementation NASecretBox
 
-+ (NSData *)decrypt:(NSData *)data key:(NSData *)key error:(NSError **)error {
++ (NSData *)decrypt:(NSData *)data key:(NSData *)key error:(NSError * __autoreleasing *)error {
   if (!data || [data length] < crypto_secretbox_noncebytes()) {
-    if (error) *error = [NSError errorWithDomain:@"NACL" code:200 userInfo:@{NSLocalizedDescriptionKey: @"Invalid data"}];
+    if (error) *error = [NSError errorWithDomain:@"NAChloride" code:200 userInfo:@{NSLocalizedDescriptionKey: @"Invalid data"}];
     return nil;
   }
   
   if (!key || [key length] != crypto_secretbox_keybytes()) {
-    if (error) *error = [NSError errorWithDomain:@"NACL" code:201 userInfo:@{NSLocalizedDescriptionKey: @"Invalid key"}];
+    if (error) *error = [NSError errorWithDomain:@"NAChloride" code:201 userInfo:@{NSLocalizedDescriptionKey: @"Invalid key"}];
     return nil;
   }
   
@@ -32,7 +32,7 @@
   return [self decrypt:encryptedData nonce:nonce key:key error:error];
 }
 
-+ (NSData *)decrypt:(NSData *)encryptedData nonce:(NSData *)nonce key:(NSData *)key error:(NSError **)error {
++ (NSData *)decrypt:(NSData *)encryptedData nonce:(NSData *)nonce key:(NSData *)key error:(NSError * __autoreleasing *)error {
   // First BOXZEROBYTES must be 0
   NSMutableData *encryptedPaddedData = [NSMutableData dataWithLength:crypto_secretbox_boxzerobytes()];
   [encryptedPaddedData appendData:encryptedData];
@@ -42,7 +42,7 @@
                                      [encryptedPaddedData bytes], [encryptedPaddedData length],
                                      [nonce bytes], [key bytes]);
   if (retval != 0) {
-    if (error) *error = [NSError errorWithDomain:@"NACL" code:202 userInfo:@{NSLocalizedDescriptionKey: @"Unable to decrypt"}];
+    if (error) *error = [NSError errorWithDomain:@"NAChloride" code:202 userInfo:@{NSLocalizedDescriptionKey: @"Unable to decrypt"}];
     return nil;
   }
   
@@ -51,7 +51,7 @@
                         length:([outData length] - crypto_secretbox_zerobytes())];
 }
 
-+ (NSData *)encrypt:(NSData *)data key:(NSData *)key error:(NSError **)error {
++ (NSData *)encrypt:(NSData *)data key:(NSData *)key error:(NSError * __autoreleasing *)error {
   NSData *nonce = [NARandom randomData:crypto_secretbox_noncebytes()];
 
   NSData *encryptedData = [self encrypt:data nonce:nonce key:key error:error];
@@ -62,19 +62,19 @@
   return combined;
 }
 
-+ (NSData *)encrypt:(NSData *)data nonce:(NSData *)nonce key:(NSData *)key error:(NSError **)error {
++ (NSData *)encrypt:(NSData *)data nonce:(NSData *)nonce key:(NSData *)key error:(NSError * __autoreleasing *)error {
   if (!nonce || [nonce length] != crypto_secretbox_noncebytes()) {
-    if (error) *error = [NSError errorWithDomain:@"NACL" code:100 userInfo:@{NSLocalizedDescriptionKey: @"Invalid nonce"}];
+    if (error) *error = [NSError errorWithDomain:@"NAChloride" code:100 userInfo:@{NSLocalizedDescriptionKey: @"Invalid nonce"}];
     return nil;
   }
   
   if (!data) {
-    if (error) *error = [NSError errorWithDomain:@"NACL" code:102 userInfo:@{NSLocalizedDescriptionKey: @"Invalid data"}];
+    if (error) *error = [NSError errorWithDomain:@"NAChloride" code:102 userInfo:@{NSLocalizedDescriptionKey: @"Invalid data"}];
     return nil;
   }
   
   if (!key || [key length] != crypto_secretbox_keybytes()) {
-    if (error) *error = [NSError errorWithDomain:@"NACL" code:101 userInfo:@{NSLocalizedDescriptionKey: @"Invalid key"}];
+    if (error) *error = [NSError errorWithDomain:@"NAChloride" code:101 userInfo:@{NSLocalizedDescriptionKey: @"Invalid key"}];
     return nil;
   }
   

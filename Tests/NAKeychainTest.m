@@ -19,13 +19,13 @@
 - (void)testSymmetricKey {
   [NAKeychain deleteAll];
   
-  NSData *keyExisting = [NAKeychain symmetricKeyWithApplicationLabel:@"NACL"];
+  NSData *keyExisting = [NAKeychain symmetricKeyWithApplicationLabel:@"NAChloride"];
   GHAssertNil(keyExisting, nil);
   
   NSData *key = [NARandom randomData:kNACurve25519ScalarSize];
-  [NAKeychain addSymmetricKey:key applicationLabel:@"NACL" tag:nil label:nil];
+  [NAKeychain addSymmetricKey:key applicationLabel:@"NAChloride" tag:nil label:nil];
   
-  NSData *keyOut = [NAKeychain symmetricKeyWithApplicationLabel:@"NACL"];
+  NSData *keyOut = [NAKeychain symmetricKeyWithApplicationLabel:@"NAChloride"];
   GHAssertEqualObjects(key, keyOut, nil);
 }
 

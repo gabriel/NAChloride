@@ -10,4 +10,6 @@
 
 - (NSString *)na_hexString;
 
++ (NSData *)na_dataWithDatas:(NSArray *)datas;
+
 @end
