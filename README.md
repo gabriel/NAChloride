@@ -4,8 +4,8 @@ NAChloride
 * SecretBox (via [libsodium](https://github.com/jedisct1/libsodium))
 * Scrypt
 * XSalsa20
-* AES-256-CTR
-* TwoFish-CTR
+* AES (256-CTR)
+* TwoFish (CTR)
 * HMAC (SHA1, SHA256, SHA512, SHA3)
 * SHA3 (Keccak)
 * HKDF (RFC 5849)
@@ -73,15 +73,15 @@ NSData *data = [NAScrypt scrypt:key salt:salt N:32768U r:8 p:1 length:64 error:n
 NSData *encrypted = [NAXSalsa20 encrypt:message nonce:nonce key:key error:nil];
 ```
 
-# AES-256-CTR
+# AES (256-CTR)
 
 ```objc
 // Nonce should be 16 bytes
 // Key should be 32 bytes
-NSData *encrypted = [NAAES encrypt:message nonce:nonce key:key error:nil];
+NSData *encrypted = [NAAES encrypt:message nonce:nonce key:key algorithm:NAAESAlgorithm256CTR error:nil];
 ```
 
-# TwoFish-CTR
+# TwoFish (CTR)
 
 ```objc
 // Nonce should be 16 bytes

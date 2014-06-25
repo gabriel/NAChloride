@@ -6,12 +6,14 @@
 //  Copyright (c) 2014 Gabriel Handford. All rights reserved.
 //
 
+typedef NS_ENUM (NSUInteger, NAAESAlgorithm) {
+  NAAESAlgorithm256CTR = 1,
+};
+
 @interface NAAES : NSObject
 
-// AES-256 in CTR mode
-+ (NSData *)encrypt:(NSData *)data nonce:(NSData *)nonce key:(NSData *)key error:(NSError **)error;
++ (NSData *)encrypt:(NSData *)data nonce:(NSData *)nonce key:(NSData *)key algorithm:(NAAESAlgorithm)algorithm error:(NSError **)error;
 
-// Because the CTR XOR, this just calls encrypt
-+ (NSData *)decrypt:(NSData *)data nonce:(NSData *)nonce key:(NSData *)key error:(NSError **)error;
++ (NSData *)decrypt:(NSData *)data nonce:(NSData *)nonce key:(NSData *)key algorithm:(NAAESAlgorithm)algorithm error:(NSError **)error;
 
 @end

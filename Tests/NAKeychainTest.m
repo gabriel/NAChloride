@@ -22,7 +22,7 @@
   NSData *keyExisting = [NAKeychain symmetricKeyWithApplicationLabel:@"NAChloride"];
   GHAssertNil(keyExisting, nil);
   
-  NSData *key = [NARandom randomData:kNACurve25519ScalarSize];
+  NSData *key = [NARandom randomData:kNACurve25519ScalarSize error:nil];
   [NAKeychain addSymmetricKey:key applicationLabel:@"NAChloride" tag:nil label:nil];
   
   NSData *keyOut = [NAKeychain symmetricKeyWithApplicationLabel:@"NAChloride"];

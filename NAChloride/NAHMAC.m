@@ -34,8 +34,6 @@
 }
 
 + (NSData *)_HMACSHAForKey:(NSData *)key data:(NSData *)data algorithm:(NAHMACAlgorithm)algorithm {
-  NSParameterAssert(key);
-  
   CCHmacAlgorithm ccAlgorithm;
   NSUInteger dataLength;
   switch (algorithm) {
@@ -50,7 +48,7 @@
   }
   
   CCHmacContext ctx;
-  CCHmacInit(&ctx, algorithm, [key bytes], [key length]);
+  CCHmacInit(&ctx, ccAlgorithm, [key bytes], [key length]);
   
   CCHmacUpdate(&ctx, [data bytes], [data length]);
   

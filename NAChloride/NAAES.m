@@ -19,7 +19,9 @@
 
 @implementation NAAES
 
-+ (NSData *)encrypt:(NSData *)data nonce:(NSData *)nonce key:(NSData *)key error:(NSError **)error {
++ (NSData *)encrypt:(NSData *)data nonce:(NSData *)nonce key:(NSData *)key algorithm:(NAAESAlgorithm)algorithm error:(NSError **)error {
+  NSAssert(algorithm == NAAESAlgorithm256CTR, @"Unsupported algorithm");
+  
   if (!nonce || [nonce length] < AES_256_CTR_NONCE_BYTES) {
     if (error) *error = [NSError errorWithDomain:@"NAChloride" code:600 userInfo:@{NSLocalizedDescriptionKey: @"Invalid nonce"}];
     return nil;
@@ -55,8 +57,9 @@
   return outData;
 }
 
-+ (NSData *)decrypt:(NSData *)data nonce:(NSData *)nonce key:(NSData *)key error:(NSError **)error {
-  return [self encrypt:data nonce:nonce key:key error:error];
++ (NSData *)decrypt:(NSData *)data nonce:(NSData *)nonce key:(NSData *)key algorithm:(NAAESAlgorithm)algorithm error:(NSError **)error {
+  NSAssert(algorithm == NAAESAlgorithm256CTR, @"Unsupported algorithm");
+  return [self encrypt:data nonce:nonce key:key algorithm:algorithm error:error];
 }
 
 @end

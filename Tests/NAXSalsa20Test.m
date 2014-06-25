@@ -19,8 +19,10 @@
   NSData *encrypted = [NAXSalsa20 encrypt:message nonce:nonce key:key error:&error];
   GHAssertNil(error, nil);
   GHAssertNotNil(encrypted, nil);
-  
   GHAssertEqualStrings([encrypted na_hexString], @"1e4e6cc57cf62aefea4a3ec9d7ccb707a4f7869a49b64036", nil);
+  
+  NSData *decrypted = [NAXSalsa20 decrypt:encrypted nonce:nonce key:key error:&error];
+  GHAssertEqualObjects(message, decrypted, nil);
 }
 
 - (void)testDecrypt {

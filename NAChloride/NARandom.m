@@ -12,30 +12,24 @@
 
 @implementation NARandom
 
-+ (NSData *)randomData:(size_t)numBytes {
++ (NSData *)randomData:(size_t)numBytes error:(NSError * __autoreleasing *)error {
   NSMutableData *data = [NSMutableData dataWithLength:numBytes];
   int ret = SecRandomCopyBytes(kSecRandomDefault, numBytes, [data mutableBytes]);
-  if (ret == -1)
+  if (ret == -1) {
+    if (error) *error = [NSError errorWithDomain:@"NAChloride" code:50 userInfo:@{NSLocalizedDescriptionKey: @"Unable to generate random data"}];
     return nil;
+  }
   return data;
 }
 
-+ (NSString *)randomHexString:(size_t)numBytes {
-  NSData *data = [self randomData:numBytes];
-  return [data na_hexString];
-}
-
-+ (NSString *)randomBase64String:(size_t)length {
++ (NSString *)randomBase64String:(size_t)length error:(NSError * __autoreleasing *)error {
   size_t numBytes = (size_t)ceil((length * 8.0) / 6.0);
-  NSData *data = [self randomData:numBytes];
+  NSData *data = [self randomData:numBytes error:error];
+  if (!data) return nil;
   
   NSString *base64String = [data base64EncodedStringWithOptions:0];
   if ([base64String length] > length) base64String = [base64String substringToIndex:length];
   return base64String;
-}
-
-+ (NSUUID *)UUID {
-  return [NSUUID UUID];
 }
 
 @end

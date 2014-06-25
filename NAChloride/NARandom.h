@@ -13,23 +13,13 @@
  http://opensource.apple.com/source/Security/Security-55179.11/sec/Security/SecFramework.c
 
  @param len Number of random bytes to generate
+ @result NSData of length bytes, or nil if an error occurred
  */
-+ (NSData *)randomData:(size_t)numBytes;
-
-/*!
- Generate random hex string.
- @param numBytes Number of bytes for hex string.
- */
-+ (NSString *)randomHexString:(size_t)numBytes;
++ (NSData *)randomData:(size_t)numBytes error:(NSError * __autoreleasing *)error;
 
 /*!
  Generate random base64 string.
  */
-+ (NSString *)randomBase64String:(size_t)length;
-
-/*!
- A reminder to use UUID if what you want is a UUID.
- */
-+ (NSUUID *)UUID;
++ (NSString *)randomBase64String:(size_t)length error:(NSError * __autoreleasing *)error;
 
 @end

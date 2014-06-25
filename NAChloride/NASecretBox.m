@@ -52,7 +52,8 @@
 }
 
 + (NSData *)encrypt:(NSData *)data key:(NSData *)key error:(NSError * __autoreleasing *)error {
-  NSData *nonce = [NARandom randomData:crypto_secretbox_noncebytes()];
+  NSData *nonce = [NARandom randomData:crypto_secretbox_noncebytes() error:error];
+  if (!nonce) return nil;
 
   NSData *encryptedData = [self encrypt:data nonce:nonce key:key error:error];
   if (!encryptedData) return nil;
