@@ -17,7 +17,7 @@
 
 - (NSData *)deriveKeyFromPassword:(NSString *)password {
   NSData *passwordData = [password dataUsingEncoding:NSUTF8StringEncoding];
-  NSData *derivedKey = [NAHKDF HKDFForKey:passwordData info:NULL derivedKeyLength:kNACurve25519ScalarSize];
+  NSData *derivedKey = [NAHKDF HKDFForKey:passwordData info:NULL derivedKeyLength:NASecretBoxKeySize];
   return derivedKey;
 }
 

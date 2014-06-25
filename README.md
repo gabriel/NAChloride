@@ -29,16 +29,11 @@ Secret-key authenticated encryption.
 
 ## Encrypt
 ```objc
-NSData *secretKey = [NARandom randomData:kNACurve25519ScalarSize];
-// The secret to encrypt
-NSString *secret = @"This is a secret";
-NSData *secretData = [secret dataUsingEncoding:NSUTF8StringEncoding];
+NSData *key = [NARandom randomData:NASecretBoxKeySize error:&error];
+NSData *message = [@"This is a secret message" dataUsingEncoding:NSUTF8StringEncoding];
 
-// Encrypt
-NSError *error = nil;
-NSData *encryptedData = [NASecretBox encrypt:secretData key:secretKey error:&error];
-// If an error occurred encryptedData will be nil and error set.
-NSString *encoded = [encryptedData base64EncodedStringWithOptions:0];
+NSData *encryptedData = [NASecretBox encrypt:message key:key error:&error];
+// If an error occurred encryptedData will be nil and error set
 ```
 
 ## Decrypt
@@ -59,7 +54,7 @@ NSString *decoded = [[NSString alloc] initWithData:unecryptedData encoding:NSUTF
 
 ```objc
 NSData *key = [@"toomanysecrets" dataUsingEncoding:NSUTF8StringEncoding];
-NSData *salt = [NARandom randomData:48]; // Random 48 bytes
+NSData *salt = [NARandom randomData:48 error:&error]; // Random 48 bytes
 NSData *data = [NAScrypt scrypt:key salt:salt N:32768U r:8 p:1 length:64 error:nil];
 ```
 
@@ -112,7 +107,7 @@ NSData *derivedKey = [NAHKDF HKDFForKey:key info:NULL derivedKeyLength:kNACurve2
 # Keychain Utils
 
 ```objc
-NSData *key = [NARandom randomData:kNACurve25519ScalarSize];
+NSData *key = [NARandom randomData:32 error:&error];
 [NAKeychain addSymmetricKey:key applicationLabel:@"NAChloride" tag:nil label:nil];
 NSData *keyOut = [NAKeychain symmetricKeyWithApplicationLabel:@"NAChloride"];
 ```

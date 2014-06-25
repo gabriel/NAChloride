@@ -6,5 +6,5 @@
 //  Copyright (c) 2014 Gabriel Handford. All rights reserved.
 //
 
-extern const NSUInteger kNACurve25519ScalarSize;
-extern const NSUInteger kNACurve25519PublicKeySize;
+extern const NSUInteger NASecretBoxKeySize;
+//extern const NSUInteger NASecretBoxKeySize;

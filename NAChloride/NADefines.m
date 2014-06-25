@@ -10,5 +10,5 @@
 
 #include "crypto_scalarmult_curve25519.h"
 
-const NSUInteger kNACurve25519ScalarSize = crypto_scalarmult_curve25519_SCALARBYTES;
-const NSUInteger kNACurve25519PublicKeySize = crypto_scalarmult_curve25519_BYTES;
+const NSUInteger NASecretBoxKeySize = crypto_scalarmult_curve25519_SCALARBYTES;
+//const NSUInteger NASecretBoxKeySize = crypto_scalarmult_curve25519_BYTES;
