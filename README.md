@@ -98,7 +98,7 @@ NSData *sha = [NASHA3 SHA3ForData:data digestBitLength:512];
 
 ```objc
 NSData *key = [@"toomanysecrets" dataUsingEncoding:NSUTF8StringEncoding];
-NSData *derivedKey = [NAHKDF HKDFForKey:key info:NULL derivedKeyLength:kNACurve25519ScalarSize];
+NSData *derivedKey = [NAHKDF HKDFForKey:key info:NULL derivedKeyLength:32];
 ```
 
 # Keychain Utils
