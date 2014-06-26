@@ -27,7 +27,6 @@ pod "NAChloride"
 
 Secret-key authenticated encryption.
 
-## Encrypt
 ```objc
 NSData *key = [NARandom randomData:NASecretBoxKeySize error:&error];
 NSData *message = [@"This is a secret message" dataUsingEncoding:NSUTF8StringEncoding];
@@ -35,10 +34,7 @@ NSData *message = [@"This is a secret message" dataUsingEncoding:NSUTF8StringEnc
 NASecretBox *secretBox = [[NASecretBox alloc] init];
 NSData *encrypted = [secretBox encrypt:message key:key error:&error];
 // If an error occurred encrypted will be nil and error set
-```
 
-## Decrypt
-```objc
 NSData *decrypted = [secretBox decrypt:encrypted key:key error:&error];
 ```
 
@@ -98,7 +94,9 @@ NSData *sha = [NASHA3 SHA3ForData:data digestBitLength:512];
 
 ```objc
 NSData *key = [@"toomanysecrets" dataUsingEncoding:NSUTF8StringEncoding];
-NSData *derivedKey = [NAHKDF HKDFForKey:key info:NULL derivedKeyLength:32];
+NSData *salt = [NARandom randomData:32 error:nil];
+
+NSData *derivedKey = [NAHKDF HKDFForKey:key algorithm:NAHKDFAlgorithmSHA256 salt:salt info:nil length:64 error:nil];
 ```
 
 # Keychain Utils

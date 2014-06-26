@@ -25,20 +25,6 @@
   GHAssertEqualObjects(message, decryptedData, nil);
 }
 
-- (void)testDecrypt {
-  NSString *encoded = @"8z6FcaDfyfFWL07lyOK/Y/Q3Yd+zMkbwgrNFv7SObBCIv/FFGw37QooecHKvlHQX1HlgZRouqgE=";
-  NSData *encrypted = [[NSData alloc] initWithBase64EncodedString:encoded options:0];
-  
-  NSData *passwordData = [@"thisisspassword" dataUsingEncoding:NSUTF8StringEncoding];
-  NSData *derivedKey = [NAHKDF HKDFForKey:passwordData info:NULL derivedKeyLength:NASecretBoxKeySize];
-  
-  NASecretBox *secretBox = [[NASecretBox alloc] init];
-  NSData *decrypted = [secretBox decrypt:encrypted key:derivedKey error:nil];
-  
-  NSString *decoded = [[NSString alloc] initWithData:decrypted encoding:NSUTF8StringEncoding];
-  GHAssertEqualStrings(@"This is a secret", decoded, nil);
-}
-
 - (void)testEncryptError {
   NSData *badKey = [NSData data];
   NSError *error = nil;

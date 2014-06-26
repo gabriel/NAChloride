@@ -51,6 +51,7 @@
 		00A9F69C19551CC50053A924 /* hkdf.c in Sources */ = {isa = PBXBuildFile; fileRef = 00A9F69219551CC50053A924 /* hkdf.c */; };
 		00A9F69D19551CC50053A924 /* twofish.c in Sources */ = {isa = PBXBuildFile; fileRef = 00A9F69519551CC50053A924 /* twofish.c */; };
 		00A9F69E19551CC50053A924 /* twofish.c in Sources */ = {isa = PBXBuildFile; fileRef = 00A9F69519551CC50053A924 /* twofish.c */; };
+		00C8A5FE195CD07100B6CF3F /* NAHKDFTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C8A5FD195CD07100B6CF3F /* NAHKDFTest.m */; };
 		00DCF13018ECD57E0019CBD4 /* NARandomTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DCF12F18ECD57E0019CBD4 /* NARandomTest.m */; };
 		00E360621958C700003CF604 /* NAAESTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E360601958C700003CF604 /* NAAESTest.m */; };
 		00F5504E1958E5F0007F2574 /* KeccakNISTInterface.c in Sources */ = {isa = PBXBuildFile; fileRef = 00F550461958E5F0007F2574 /* KeccakNISTInterface.c */; };
@@ -152,6 +153,7 @@
 		00A9F69519551CC50053A924 /* twofish.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = twofish.c; sourceTree = "<group>"; };
 		00A9F69619551CC50053A924 /* twofish.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = twofish.h; sourceTree = "<group>"; };
 		00AFEFAA18A5B2D30072632C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		00C8A5FD195CD07100B6CF3F /* NAHKDFTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NAHKDFTest.m; path = Tests/NAHKDFTest.m; sourceTree = "<group>"; };
 		00DCF12F18ECD57E0019CBD4 /* NARandomTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NARandomTest.m; path = Tests/NARandomTest.m; sourceTree = "<group>"; };
 		00E360601958C700003CF604 /* NAAESTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NAAESTest.m; path = Tests/NAAESTest.m; sourceTree = "<group>"; };
 		00F550351958E5F0007F2574 /* brg_endian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = brg_endian.h; sourceTree = "<group>"; };
@@ -375,6 +377,7 @@
 				1D9B20C4E4D843D8BE95A3F4 /* NAUtilsTest.m */,
 				00E360601958C700003CF604 /* NAAESTest.m */,
 				008C8EC81958F53700C13987 /* NASHA3Test.m */,
+				00C8A5FD195CD07100B6CF3F /* NAHKDFTest.m */,
 			);
 			name = Tests;
 			sourceTree = "<group>";
@@ -570,6 +573,7 @@
 				008C8EC91958F53700C13987 /* NASHA3Test.m in Sources */,
 				002CD7981953685D00767675 /* NAScrypt.m in Sources */,
 				00A9F6841954E3470053A924 /* NAAES.m in Sources */,
+				00C8A5FE195CD07100B6CF3F /* NAHKDFTest.m in Sources */,
 				004CB3911888BC7900EFE8F7 /* NARandom.m in Sources */,
 				00A9F69019550B0A0053A924 /* NANSMutableData+Utils.m in Sources */,
 				00F7785D195CC7BC00BB6F2A /* pwhash_scryptsalsa208sha256.c in Sources */,
