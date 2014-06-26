@@ -6,14 +6,20 @@
 //  Copyright (c) 2014 Gabriel Handford. All rights reserved.
 //
 
+#import "NAInterface.h"
+
 typedef NS_ENUM (NSUInteger, NAAESAlgorithm) {
   NAAESAlgorithm256CTR = 1,
 };
 
-@interface NAAES : NSObject
+@interface NAAES : NSObject <NACryptoStream>
 
-+ (NSData *)encrypt:(NSData *)data nonce:(NSData *)nonce key:(NSData *)key algorithm:(NAAESAlgorithm)algorithm error:(NSError **)error;
+@property (readonly) NAAESAlgorithm algorithm;
 
-+ (NSData *)decrypt:(NSData *)data nonce:(NSData *)nonce key:(NSData *)key algorithm:(NAAESAlgorithm)algorithm error:(NSError **)error;
+- (id)initWithAlgorithm:(NAAESAlgorithm)algorithm;
+
+- (NSData *)encrypt:(NSData *)data nonce:(NSData *)nonce key:(NSData *)key error:(NSError **)error;
+
+- (NSData *)decrypt:(NSData *)data nonce:(NSData *)nonce key:(NSData *)key error:(NSError **)error;
 
 @end

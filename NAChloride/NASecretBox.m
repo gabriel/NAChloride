@@ -14,7 +14,7 @@
 
 @implementation NASecretBox
 
-+ (NSData *)decrypt:(NSData *)data key:(NSData *)key error:(NSError * __autoreleasing *)error {
+- (NSData *)decrypt:(NSData *)data key:(NSData *)key error:(NSError * __autoreleasing *)error {
   if (!data || [data length] < crypto_secretbox_noncebytes()) {
     if (error) *error = [NSError errorWithDomain:@"NAChloride" code:200 userInfo:@{NSLocalizedDescriptionKey: @"Invalid data"}];
     return nil;
@@ -32,7 +32,7 @@
   return [self decrypt:encryptedData nonce:nonce key:key error:error];
 }
 
-+ (NSData *)decrypt:(NSData *)encryptedData nonce:(NSData *)nonce key:(NSData *)key error:(NSError * __autoreleasing *)error {
+- (NSData *)decrypt:(NSData *)encryptedData nonce:(NSData *)nonce key:(NSData *)key error:(NSError * __autoreleasing *)error {
   // First BOXZEROBYTES must be 0
   NSMutableData *encryptedPaddedData = [NSMutableData dataWithLength:crypto_secretbox_boxzerobytes()];
   [encryptedPaddedData appendData:encryptedData];
@@ -51,7 +51,7 @@
                         length:([outData length] - crypto_secretbox_zerobytes())];
 }
 
-+ (NSData *)encrypt:(NSData *)data key:(NSData *)key error:(NSError * __autoreleasing *)error {
+- (NSData *)encrypt:(NSData *)data key:(NSData *)key error:(NSError * __autoreleasing *)error {
   NSData *nonce = [NARandom randomData:crypto_secretbox_noncebytes() error:error];
   if (!nonce) return nil;
 
@@ -63,7 +63,7 @@
   return combined;
 }
 
-+ (NSData *)encrypt:(NSData *)data nonce:(NSData *)nonce key:(NSData *)key error:(NSError * __autoreleasing *)error {
+- (NSData *)encrypt:(NSData *)data nonce:(NSData *)nonce key:(NSData *)key error:(NSError * __autoreleasing *)error {
   if (!nonce || [nonce length] != crypto_secretbox_noncebytes()) {
     if (error) *error = [NSError errorWithDomain:@"NAChloride" code:100 userInfo:@{NSLocalizedDescriptionKey: @"Invalid nonce"}];
     return nil;

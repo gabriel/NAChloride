@@ -18,21 +18,21 @@
 
 static dispatch_once_t twoFishInit;
 
-+ (NSData *)encrypt:(NSData *)data nonce:(NSData *)nonce key:(NSData *)key error:(NSError * __autoreleasing *)error {
+- (NSData *)encrypt:(NSData *)data nonce:(NSData *)nonce key:(NSData *)key error:(NSError * __autoreleasing *)error {
   if (!nonce || [nonce length] < 16) {
-    if (error) *error = [NSError errorWithDomain:@"NAChloride" code:700 userInfo:@{NSLocalizedDescriptionKey: @"Invalid nonce"}];
+    if (error) *error = [NSError errorWithDomain:@"NAChloride" code:700 userInfo:@{NSLocalizedDescriptionKey: @"Invalid TwoFish nonce"}];
     return nil;
   }
   
   if (!key || [key length] != 32) {
-    if (error) *error = [NSError errorWithDomain:@"NAChloride" code:701 userInfo:@{NSLocalizedDescriptionKey: @"Invalid key"}];
+    if (error) *error = [NSError errorWithDomain:@"NAChloride" code:701 userInfo:@{NSLocalizedDescriptionKey: @"Invalid TwoFish key"}];
     return nil;
   }
   
   dispatch_once(&twoFishInit, ^{ Twofish_initialise(); });
   
   Twofish_key xkey;
-  Twofish_prepare_key((uint8_t *)[key bytes], [key length], &xkey);
+  Twofish_prepare_key((uint8_t *)[key bytes], (int)[key length], &xkey);
   
   NACounter *counter = [[NACounter alloc] initWithData:nonce];
   
@@ -51,7 +51,7 @@ static dispatch_once_t twoFishInit;
   return outData;
 }
 
-+ (NSData *)decrypt:(NSData *)data nonce:(NSData *)nonce key:(NSData *)key error:(NSError * __autoreleasing *)error {
+- (NSData *)decrypt:(NSData *)data nonce:(NSData *)nonce key:(NSData *)key error:(NSError * __autoreleasing *)error {
   return [self encrypt:data nonce:nonce key:key error:error];
 }
 

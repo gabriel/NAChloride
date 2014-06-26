@@ -6,10 +6,12 @@
 //  Copyright (c) 2014 Gabriel Handford. All rights reserved.
 //
 
-@interface NAXSalsa20 : NSObject
+#import "NAInterface.h"
 
-+ (NSData *)encrypt:(NSData *)data nonce:(NSData *)nonce key:(NSData *)key error:(NSError * __autoreleasing *)error;
+@interface NAXSalsa20 : NSObject <NACryptoStream>
 
-+ (NSData *)decrypt:(NSData *)data nonce:(NSData *)nonce key:(NSData *)key error:(NSError * __autoreleasing *)error;
+- (NSData *)encrypt:(NSData *)data nonce:(NSData *)nonce key:(NSData *)key error:(NSError * __autoreleasing *)error;
+
+- (NSData *)decrypt:(NSData *)data nonce:(NSData *)nonce key:(NSData *)key error:(NSError * __autoreleasing *)error;
 
 @end

@@ -6,7 +6,8 @@
 //  Copyright (c) 2014 Gabriel Handford. All rights reserved.
 //
 
-#import "NADefines.h"
+#import "NAInterface.h"
+
 #import "NASecretBox.h"
 #import "NAScrypt.h"
 #import "NAXSalsa20.h"

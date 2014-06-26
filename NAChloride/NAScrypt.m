@@ -16,15 +16,14 @@
 
   NSMutableData *outData = [NSMutableData dataWithLength:length];
   
-  int retval = crypto_pwhash_scryptsalsa208sha256_ll((uint8_t *)password.bytes, password.length,
-                                     (uint8_t *)salt.bytes, salt.length,
-                                     N, r, p,
-                                     [outData mutableBytes], outData.length);
+  int retval = crypto_pwhash_scryptsalsa208sha256_ll((uint8_t *)password.bytes, password.length, (uint8_t *)salt.bytes, salt.length, N, r, p, [outData mutableBytes], outData.length);
   
   if (retval != 0) {
     if (error) *error = [NSError errorWithDomain:@"NAChloride" code:400 userInfo:@{NSLocalizedDescriptionKey: @"Failed scrypt"}];
     return nil;
   }
+  
+  NSAssert([outData length] == length, @"Mismatched output length");
   
   return outData;
 }

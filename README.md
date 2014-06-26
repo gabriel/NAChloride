@@ -32,20 +32,14 @@ Secret-key authenticated encryption.
 NSData *key = [NARandom randomData:NASecretBoxKeySize error:&error];
 NSData *message = [@"This is a secret message" dataUsingEncoding:NSUTF8StringEncoding];
 
-NSData *encryptedData = [NASecretBox encrypt:message key:key error:&error];
-// If an error occurred encryptedData will be nil and error set
+NASecretBox *secretBox = [[NASecretBox alloc] init];
+NSData *encrypted = [secretBox encrypt:message key:key error:&error];
+// If an error occurred encrypted will be nil and error set
 ```
 
 ## Decrypt
 ```objc
-NSString *encoded = @"8z6FcaDfyfFWL07lyOK/Y/Q3Yd+zMkbwgrNFv7SObBCIv/FFGw37QooecHKvlHQX1HlgZRouqgE=";
-NSData *encryptedData = [[NSData alloc] initWithBase64EncodedString:encoded options:0];
-
-// Decrypt
-NSData *unecryptedData = [NASecretBox decrypt:encryptedData key:secretKey error:nil];
-NSString *decoded = [[NSString alloc] initWithData:unecryptedData encoding:NSUTF8StringEncoding];
-
-// Decoded should be "This is a secret"
+NSData *decrypted = [secretBox decrypt:encrypted key:key error:&error];
 ```
 
 # Scrypt
@@ -65,7 +59,8 @@ NSData *data = [NAScrypt scrypt:key salt:salt N:32768U r:8 p:1 length:64 error:n
 ```objc
 // Nonce should be 24 bytes
 // Key should be 32 bytes
-NSData *encrypted = [NAXSalsa20 encrypt:message nonce:nonce key:key error:nil];
+NAXSalsa20 *XSalsa20 = [[NAXSalsa20 alloc] init];
+NSData *encrypted = [XSalsa20 encrypt:message nonce:nonce key:key error:&error];
 ```
 
 # AES (256-CTR)
@@ -73,7 +68,8 @@ NSData *encrypted = [NAXSalsa20 encrypt:message nonce:nonce key:key error:nil];
 ```objc
 // Nonce should be 16 bytes
 // Key should be 32 bytes
-NSData *encrypted = [NAAES encrypt:message nonce:nonce key:key algorithm:NAAESAlgorithm256CTR error:nil];
+NAAES *AES = [[NAAES alloc] initWithAlgorithm:NAAESAlgorithm256CTR];
+NSData *encrypted = [AES encrypt:message nonce:nonce key:key error:&error];
 ```
 
 # TwoFish (CTR)
@@ -81,7 +77,8 @@ NSData *encrypted = [NAAES encrypt:message nonce:nonce key:key algorithm:NAAESAl
 ```objc
 // Nonce should be 16 bytes
 // Key should be 32 bytes
-NSData *encrypted = [NATwoFish encrypt:message nonce:nonce key:key error:nil];
+NATwoFish *twoFish = [[NATwoFish alloc] init];
+NSData *encrypted = [twoFish encrypt:message nonce:nonce key:key error:&error];
 ```
 
 # HMAC (SHA1, SHA256, SHA512, SHA3)
@@ -111,3 +108,10 @@ NSData *key = [NARandom randomData:32 error:&error];
 [NAKeychain addSymmetricKey:key applicationLabel:@"NAChloride" tag:nil label:nil];
 NSData *keyOut = [NAKeychain symmetricKeyWithApplicationLabel:@"NAChloride"];
 ```
+
+# NSData Utils
+```objc
+NSData *data = ...;
+[data na_hexString];
+```
+

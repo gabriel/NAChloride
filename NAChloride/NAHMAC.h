@@ -6,7 +6,8 @@
 //  Copyright (c) 2014 Gabriel Handford. All rights reserved.
 //
 
-// Digest lengths in bits
+#import "NAInterface.h"
+
 typedef NS_ENUM (NSUInteger, NAHMACAlgorithm) {
   NAHMACAlgorithmSHA1 = 1,
   NAHMACAlgorithmSHA224,
@@ -20,7 +21,13 @@ typedef NS_ENUM (NSUInteger, NAHMACAlgorithm) {
   NAHMACAlgorithmSHA3_512,
 };
 
-@interface NAHMAC : NSObject
+@interface NAHMAC : NSObject <NAHMAC>
+
+@property NAHMACAlgorithm algorithm;
+
+- (id)initWithAlgorithm:(NAHMACAlgorithm)algorithm;
+
+- (NSData *)HMACForKey:(NSData *)key data:(NSData *)data;
 
 + (NSData *)HMACForKey:(NSData *)key data:(NSData *)data algorithm:(NAHMACAlgorithm)algorithm;
 

@@ -15,6 +15,17 @@
 
 @implementation NAHMAC
 
+- (id)initWithAlgorithm:(NAHMACAlgorithm)algorithm {
+  if ((self = [super init])) {
+    _algorithm = algorithm;
+  }
+  return self;
+}
+
+- (NSData *)HMACForKey:(NSData *)key data:(NSData *)data {
+  return [NAHMAC HMACForKey:key data:data algorithm:_algorithm];
+}
+
 + (NSData *)HMACForKey:(NSData *)key data:(NSData *)data algorithm:(NAHMACAlgorithm)algorithm {
   NSParameterAssert(key);
   

@@ -4,14 +4,10 @@ PODS:
 
 DEPENDENCIES:
   - GHUnit
-  - libsodium (from `../libsodium/libsodium.podspec`)
-
-EXTERNAL SOURCES:
-  libsodium:
-    :path: ../libsodium/libsodium.podspec
+  - libsodium
 
 SPEC CHECKSUMS:
   GHUnit: 4ea5a83295587ab226c458fc30dfdb1616fba633
-  libsodium: 0c70192d18bc9d475aaa9a877ba0598288f6c72a
+  libsodium: 27f906e590ec8a3df02d29d50b599e00ecdfb01e
 
 COCOAPODS: 0.33.1

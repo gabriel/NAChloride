@@ -12,14 +12,14 @@
 
 @implementation NAXSalsa20
 
-+ (NSData *)encrypt:(NSData *)data nonce:(NSData *)nonce key:(NSData *)key error:(NSError * __autoreleasing *)error {
+- (NSData *)encrypt:(NSData *)data nonce:(NSData *)nonce key:(NSData *)key error:(NSError * __autoreleasing *)error {
   if (!nonce || [nonce length] < crypto_stream_xsalsa20_noncebytes()) {
-    if (error) *error = [NSError errorWithDomain:@"NAChloride" code:500 userInfo:@{NSLocalizedDescriptionKey: @"Invalid nonce"}];
+    if (error) *error = [NSError errorWithDomain:@"NAChloride" code:500 userInfo:@{NSLocalizedDescriptionKey: @"Invalid XSalsa20 nonce"}];
     return nil;
   }
   
   if (!key || [key length] != crypto_stream_xsalsa20_keybytes()) {
-    if (error) *error = [NSError errorWithDomain:@"NAChloride" code:501 userInfo:@{NSLocalizedDescriptionKey: @"Invalid key"}];
+    if (error) *error = [NSError errorWithDomain:@"NAChloride" code:501 userInfo:@{NSLocalizedDescriptionKey: @"Invalid XSalsa20 key"}];
     return nil;
   }
   
@@ -35,7 +35,7 @@
   return outData;
 }
 
-+ (NSData *)decrypt:(NSData *)data nonce:(NSData *)nonce key:(NSData *)key error:(NSError * __autoreleasing *)error {
+- (NSData *)decrypt:(NSData *)data nonce:(NSData *)nonce key:(NSData *)key error:(NSError * __autoreleasing *)error {
   return [self encrypt:data nonce:nonce key:key error:error];
 }
 

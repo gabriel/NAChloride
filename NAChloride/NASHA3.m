@@ -20,7 +20,7 @@
   
   hashState state;
   int result;
-  result = Init(&state, digestBitLength); // Bit length
+  result = Init(&state, (int)digestBitLength); // Bit length
   NSAssert(result == 0, @"Failed to init");
   for (NSData *data in datas) {
     result = Update(&state, (const BitSequence *)[data bytes], [data length] * 8); // Bit length

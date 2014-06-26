@@ -12,4 +12,10 @@
 
 + (NSData *)na_dataWithDatas:(NSArray *)datas;
 
+- (BOOL)na_isEqualConstantTime:(NSData *)data;
+
+- (void)na_sliceNoCopyAtIndex:(NSUInteger)index data:(NSData **)data1 data:(NSData **)data2;
+
++ (NSData *)na_dataNoCopy:(NSData *)data offset:(NSUInteger)offset length:(NSUInteger)length;
+
 @end

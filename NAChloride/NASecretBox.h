@@ -6,16 +6,15 @@
 //  Copyright (c) 2014 Gabriel Handford. All rights reserved.
 //
 
-@interface NASecretBox : NSObject
+#import "NAInterface.h"
 
-+ (NSData *)encrypt:(NSData *)data key:(NSData *)key error:(NSError * __autoreleasing *)error;
+/*!
+ Secret-key authenticated encryption.
+ */
+@interface NASecretBox : NSObject <NACryptoBox>
 
-+ (NSData *)decrypt:(NSData *)data key:(NSData *)key error:(NSError * __autoreleasing *)error;
+- (NSData *)encrypt:(NSData *)data key:(NSData *)key error:(NSError * __autoreleasing *)error;
 
-
-+ (NSData *)encrypt:(NSData *)data nonce:(NSData *)data key:(NSData *)key error:(NSError * __autoreleasing *)error;
-
-+ (NSData *)decrypt:(NSData *)data nonce:(NSData *)data key:(NSData *)key error:(NSError * __autoreleasing *)error;
-
+- (NSData *)decrypt:(NSData *)data key:(NSData *)key error:(NSError * __autoreleasing *)error;
 
 @end
