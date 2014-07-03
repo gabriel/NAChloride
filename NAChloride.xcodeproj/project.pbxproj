@@ -70,6 +70,9 @@
 		00F76611196486840022F36A /* scrypt_platform.c in Sources */ = {isa = PBXBuildFile; fileRef = 00F76604196486840022F36A /* scrypt_platform.c */; };
 		00F76612196486840022F36A /* pwhash_scryptsalsa208sha256_sse.c in Sources */ = {isa = PBXBuildFile; fileRef = 00F76606196486840022F36A /* pwhash_scryptsalsa208sha256_sse.c */; };
 		00F76613196486840022F36A /* pwhash_scryptsalsa208sha256_sse.c in Sources */ = {isa = PBXBuildFile; fileRef = 00F76606196486840022F36A /* pwhash_scryptsalsa208sha256_sse.c */; };
+		00FB32B5196611B40060AF33 /* NADigest.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FB32B4196611B40060AF33 /* NADigest.m */; };
+		00FB32B6196611B40060AF33 /* NADigest.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FB32B4196611B40060AF33 /* NADigest.m */; };
+		00FB32B9196615880060AF33 /* NADigestTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FB32B8196615880060AF33 /* NADigestTest.m */; };
 		0FBC48360BAD4C78A3966D5E /* NAUtilsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D9B20C4E4D843D8BE95A3F4 /* NAUtilsTest.m */; };
 		5518566434CB401F8C7972B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13CD629B7BBB41C19D39E5BE /* Foundation.framework */; };
 		A3D0E697480A448080A08B9F /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2946C6D94CF54A388BBC5FDB /* libPods-Tests.a */; };
@@ -172,6 +175,9 @@
 		00F76604196486840022F36A /* scrypt_platform.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = scrypt_platform.c; sourceTree = "<group>"; };
 		00F76606196486840022F36A /* pwhash_scryptsalsa208sha256_sse.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pwhash_scryptsalsa208sha256_sse.c; sourceTree = "<group>"; };
 		00F76607196486840022F36A /* sysendian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sysendian.h; sourceTree = "<group>"; };
+		00FB32B3196611B40060AF33 /* NADigest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NADigest.h; sourceTree = "<group>"; };
+		00FB32B4196611B40060AF33 /* NADigest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NADigest.m; sourceTree = "<group>"; };
+		00FB32B8196615880060AF33 /* NADigestTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NADigestTest.m; path = Tests/NADigestTest.m; sourceTree = "<group>"; };
 		13CD629B7BBB41C19D39E5BE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		1D9B20C4E4D843D8BE95A3F4 /* NAUtilsTest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NAUtilsTest.m; path = Tests/NAUtilsTest.m; sourceTree = "<group>"; };
 		1E0668CF01A04FE99580103E /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
@@ -279,6 +285,8 @@
 				00A9F6821954E3470053A924 /* NAAES.m */,
 				00A9F6891954FD920053A924 /* NACounter.h */,
 				00A9F68A1954FD920053A924 /* NACounter.m */,
+				00FB32B3196611B40060AF33 /* NADigest.h */,
+				00FB32B4196611B40060AF33 /* NADigest.m */,
 				008C8EC31958F42900C13987 /* NASHA3.h */,
 				008C8EC41958F42900C13987 /* NASHA3.m */,
 				004CB38A1888B98300EFE8F7 /* Supporting Files */,
@@ -376,6 +384,7 @@
 				00E360601958C700003CF604 /* NAAESTest.m */,
 				008C8EC81958F53700C13987 /* NASHA3Test.m */,
 				00C8A5FD195CD07100B6CF3F /* NAHKDFTest.m */,
+				00FB32B8196615880060AF33 /* NADigestTest.m */,
 			);
 			name = Tests;
 			sourceTree = "<group>";
@@ -540,6 +549,7 @@
 				003BB2F51888A9480019D88F /* NAHMAC.m in Sources */,
 				003BB2EB1888A2160019D88F /* NARandom.m in Sources */,
 				00F7660A196486840022F36A /* pwhash_scryptsalsa208sha256_nosse.c in Sources */,
+				00FB32B5196611B40060AF33 /* NADigest.m in Sources */,
 				002CD7971953685D00767675 /* NAScrypt.m in Sources */,
 				003BB2E71888A1D50019D88F /* NASecretBox.m in Sources */,
 				00F76608196486840022F36A /* crypto_scrypt-common.c in Sources */,
@@ -576,11 +586,13 @@
 				004CB3BE188F2BF000EFE8F7 /* NAKeychainTest.m in Sources */,
 				00F76611196486840022F36A /* scrypt_platform.c in Sources */,
 				00F7660B196486840022F36A /* pwhash_scryptsalsa208sha256_nosse.c in Sources */,
+				00FB32B6196611B40060AF33 /* NADigest.m in Sources */,
 				00DCF13018ECD57E0019CBD4 /* NARandomTest.m in Sources */,
 				004CB3941888BC7F00EFE8F7 /* NAHMAC.m in Sources */,
 				00F7660D196486840022F36A /* pbkdf2-sha256.c in Sources */,
 				004CB38F1888BC7500EFE8F7 /* NAInterface.m in Sources */,
 				00F5504F1958E5F0007F2574 /* KeccakNISTInterface.c in Sources */,
+				00FB32B9196615880060AF33 /* NADigestTest.m in Sources */,
 				008C8EBF1958EF7100C13987 /* KeccakF-1600-opt32.c in Sources */,
 				00F550511958E5F0007F2574 /* KeccakSponge.c in Sources */,
 				004CB38E1888BBC600EFE8F7 /* NASecretBoxTest.m in Sources */,

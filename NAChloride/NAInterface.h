@@ -23,3 +23,8 @@ extern const NSUInteger NASecretBoxNonceSize;
 - (NSData *)HMACForKey:(NSData *)key data:(NSData *)data;
 @end
 
+
+@protocol NADigest
+- (NSData *)digestForData:(NSData *)data;
+@end
+

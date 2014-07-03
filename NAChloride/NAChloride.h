@@ -20,6 +20,7 @@
 #import "NATwoFish.h"
 #import "NAAES.h"
 
+#import "NADigest.h"
 #import "NASHA3.h"
 
 #import "NANSData+Utils.h"

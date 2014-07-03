@@ -84,6 +84,13 @@ NSData *mac1 = [NAHMAC HMACForKey:key data:data algorithm:NAHMACAlgorithmSHA512]
 NSData *mac2 = [NAHMAC HMACForKey:key data:data algorithm:NAHMACAlgorithmSHA3_512];
 ```
 
+# Digest
+
+```objc
+NSData *SHA256 = [NADigest digestForData:data algorithm:NADigestAlgorithmSHA256];
+NSData *SHA3_512 = [NADigest digestForData:data algorithm:NADigestAlgorithmSHA3_512];
+```
+
 # SHA3 (Keccak)
 
 ```objc
@@ -109,7 +116,7 @@ NSData *keyOut = [NAKeychain symmetricKeyWithApplicationLabel:@"NAChloride"];
 
 # NSData Utils
 ```objc
-NSData *data = ...;
-[data na_hexString];
+NSData *data = [@"deadbeef" na_dataFromHexString];
+[data na_hexString]; // @"deadbeef";
 ```
 
