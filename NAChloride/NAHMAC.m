@@ -15,7 +15,7 @@
 
 @implementation NAHMAC
 
-- (id)initWithAlgorithm:(NAHMACAlgorithm)algorithm {
+- (instancetype)initWithAlgorithm:(NAHMACAlgorithm)algorithm {
   if ((self = [super init])) {
     _algorithm = algorithm;
   }

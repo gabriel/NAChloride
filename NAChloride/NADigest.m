@@ -13,7 +13,7 @@
 
 @implementation NADigest
 
-- (id)initWithAlgorithm:(NADigestAlgorithm)algorithm {
+- (instancetype)initWithAlgorithm:(NADigestAlgorithm)algorithm {
   if ((self = [super init])) {
     _algorithm = algorithm;
   }

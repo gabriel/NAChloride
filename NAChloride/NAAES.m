@@ -19,7 +19,7 @@
 
 @implementation NAAES
 
-- (id)initWithAlgorithm:(NAAESAlgorithm)algorithm {
+- (instancetype)initWithAlgorithm:(NAAESAlgorithm)algorithm {
   if ((self = [super init])) {
     _algorithm = algorithm;
   }

@@ -16,12 +16,12 @@
 
 @implementation NACounter
 
-- (id)init {
+- (instancetype)init {
   NSAssert(NO, @"Use initWithData:");
   return nil;
 }
 
-- (id)initWithData:(NSData *)data {
+- (instancetype)initWithData:(NSData *)data {
   if ((self = [super init])) {
     _counterData = [data mutableCopy];
   }

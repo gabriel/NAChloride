@@ -25,7 +25,7 @@ typedef NS_ENUM (NSUInteger, NADigestAlgorithm) {
 
 @property NADigestAlgorithm algorithm;
 
-- (id)initWithAlgorithm:(NADigestAlgorithm)algorithm;
+- (instancetype)initWithAlgorithm:(NADigestAlgorithm)algorithm;
 
 - (NSData *)digestForData:(NSData *)data;
 

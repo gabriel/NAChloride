@@ -25,7 +25,7 @@ typedef NS_ENUM (NSUInteger, NAHMACAlgorithm) {
 
 @property NAHMACAlgorithm algorithm;
 
-- (id)initWithAlgorithm:(NAHMACAlgorithm)algorithm;
+- (instancetype)initWithAlgorithm:(NAHMACAlgorithm)algorithm;
 
 - (NSData *)HMACForKey:(NSData *)key data:(NSData *)data;
 

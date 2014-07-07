@@ -16,7 +16,7 @@ typedef NS_ENUM (NSUInteger, NAAESAlgorithm) {
 
 @property (readonly) NAAESAlgorithm algorithm;
 
-- (id)initWithAlgorithm:(NAAESAlgorithm)algorithm;
+- (instancetype)initWithAlgorithm:(NAAESAlgorithm)algorithm;
 
 - (NSData *)encrypt:(NSData *)data nonce:(NSData *)nonce key:(NSData *)key error:(NSError **)error;
 

@@ -9,7 +9,7 @@
 // Counter for CTR mode
 @interface NACounter : NSObject
 
-- (id)initWithData:(NSData *)data;
+- (instancetype)initWithData:(NSData *)data;
 
 - (void)increment;
 
