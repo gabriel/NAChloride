@@ -11,7 +11,7 @@ NAChloride
 * HKDF (RFC 5849)
 * Keychain Utils
 
-See [gabriel/TPTripleSec](https://github.com/gabriel/TPTripleSec) for more usage examples of this library.
+See [gabriel/TSTripleSec](https://github.com/gabriel/TSTripleSec) for more usage examples of this library.
 
 # Install
 
