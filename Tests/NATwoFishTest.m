@@ -1,12 +1,12 @@
 //
 //  NATwoFishTest.m
 //
-#import <GHUnit/GHUnit.h>
+#import <GRUnit/GRUnit.h>
 
 #import "NAChloride.h"
 #import "NATwoFish.h"
 
-@interface NATwoFishTest : GHTestCase
+@interface NATwoFishTest : GRTestCase
 @end
 
 @implementation NATwoFishTest
@@ -20,13 +20,13 @@
   
   NATwoFish *twoFish = [[NATwoFish alloc] init];
   NSData *encrypted = [twoFish encrypt:message nonce:nonce key:key error:&error];
-  GHAssertNil(error, nil);
-  GHAssertNotNil(encrypted, nil);
-  GHAssertNotEqualObjects(message, encrypted, nil);
-  GHAssertEqualStrings(@"b8e8743028a8ddd74831f902326b2c5f338b3dd0037134e60f", [encrypted na_hexString], nil);
+  GRAssertNil(error);
+  GRAssertNotNil(encrypted);
+  GRAssertNotEqualObjects(message, encrypted);
+  GRAssertEqualStrings(@"b8e8743028a8ddd74831f902326b2c5f338b3dd0037134e60f", [encrypted na_hexString]);
   
   NSData *decrypted = [twoFish decrypt:encrypted nonce:nonce key:key error:&error];
-  GHAssertEqualObjects(message, decrypted, nil);
+  GRAssertEqualObjects(message, decrypted);
 }
 
 @end

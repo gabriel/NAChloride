@@ -6,11 +6,11 @@
 //  Copyright (c) 2014 Gabriel Handford. All rights reserved.
 //
 
-#import <GHUnit/GHUnit.h>
+#import <GRUnit/GRUnit.h>
 
 #import "NAChloride.h"
 
-@interface NAKeychainTest : GHTestCase { }
+@interface NAKeychainTest : GRTestCase { }
 @end
 
 
@@ -20,13 +20,13 @@
   [NAKeychain deleteAll];
   
   NSData *keyExisting = [NAKeychain symmetricKeyWithApplicationLabel:@"NAChloride"];
-  GHAssertNil(keyExisting, nil);
+  GRAssertNil(keyExisting);
   
   NSData *key = [NARandom randomData:NASecretBoxKeySize error:nil];
   [NAKeychain addSymmetricKey:key applicationLabel:@"NAChloride" tag:nil label:nil];
   
   NSData *keyOut = [NAKeychain symmetricKeyWithApplicationLabel:@"NAChloride"];
-  GHAssertEqualObjects(key, keyOut, nil);
+  GRAssertEqualObjects(key, keyOut);
 }
 
 @end

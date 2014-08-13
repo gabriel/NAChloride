@@ -6,11 +6,11 @@
 //  Copyright (c) 2014 Gabriel Handford. All rights reserved.
 //
 
-#import <GHUnit/GHUnit.h>
+#import <GRUnit/GRUnit.h>
 
 #import "NAChloride.h"
 
-@interface NAHKDFTest : GHTestCase { }
+@interface NAHKDFTest : GRTestCase { }
 @end
 
 @implementation NAHKDFTest
@@ -21,7 +21,7 @@
   
   NSData *derivedKey = [NAHKDF HKDFForKey:key algorithm:NAHKDFAlgorithmSHA256 salt:salt info:nil length:64 error:nil];
 
-  GHAssertEquals([derivedKey length], (NSUInteger)64, nil);
+  GRAssertEquals([derivedKey length], (NSUInteger)64);
 }
 
 @end

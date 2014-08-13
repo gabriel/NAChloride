@@ -1,14 +1,14 @@
 //
 //  NAUtilsTest.m
 //
-#import <GHUnit/GHUnit.h>
+#import <GRUnit/GRUnit.h>
 
 #import "NANSData+Utils.h"
 #import "NANSString+Utils.h"
 #import "NANSMutableData+Utils.h"
 
 
-@interface NAUtilsTest : GHTestCase
+@interface NAUtilsTest : GRTestCase
 @end
 
 @implementation NAUtilsTest
@@ -18,7 +18,7 @@
   NSMutableData *mutableData = [[@"f0" na_dataFromHexString] mutableCopy];
   
   [mutableData na_XORWithData:data index:0];
-  GHAssertEqualStrings([mutableData na_hexString], @"ff", nil);
+  GRAssertEqualStrings([mutableData na_hexString], @"ff");
 }
 
 - (void)testXORBytes {
@@ -26,7 +26,7 @@
   NSMutableData *mutableData = [[@"f0f0f000" na_dataFromHexString] mutableCopy];
   
   [mutableData na_XORWithData:data index:0];
-  GHAssertEqualStrings([mutableData na_hexString], @"ffffff0f", nil);
+  GRAssertEqualStrings([mutableData na_hexString], @"ffffff0f");
 }
 
 - (void)testXORWithIndex {
@@ -34,15 +34,15 @@
   NSMutableData *mutableData = [[@"f0f000" na_dataFromHexString] mutableCopy];
   
   [mutableData na_XORWithData:data index:1];
-  GHAssertEqualStrings([mutableData na_hexString], @"f0ff00", nil);
+  GRAssertEqualStrings([mutableData na_hexString], @"f0ff00");
 }
 
 - (void)testIsEqualConstantTime {
   NSData *data1 = [@"f0f0f000" na_dataFromHexString];
   NSData *data2 = [@"f0f0f000" na_dataFromHexString];
   NSData *data3 = [@"f0f0ffff" na_dataFromHexString];
-  GHAssertTrue([data1 na_isEqualConstantTime:data2], nil);
-  GHAssertFalse([data1 na_isEqualConstantTime:data3], nil);
+  GRAssertTrue([data1 na_isEqualConstantTime:data2]);
+  GRAssertFalse([data1 na_isEqualConstantTime:data3]);
 }
 
 - (void)testSliceNoCopy {
@@ -50,14 +50,14 @@
   NSData *data1 = nil;
   NSData *data2 = nil;
   [data na_sliceNoCopyAtIndex:2 data:&data1 data:&data2];
-  GHAssertEqualStrings([data1 na_hexString], @"f0f0", nil);
-  GHAssertEqualStrings([data2 na_hexString], @"ffff", nil);
+  GRAssertEqualStrings([data1 na_hexString], @"f0f0");
+  GRAssertEqualStrings([data2 na_hexString], @"ffff");
   
   [data na_sliceNoCopyAtIndex:4 data:&data1 data:&data2];
-  GHAssertEqualStrings([data1 na_hexString], @"f0f0ffff", nil);
-  GHAssertNil([data2 na_hexString], nil);
+  GRAssertEqualStrings([data1 na_hexString], @"f0f0ffff");
+  GRAssertNil([data2 na_hexString]);
   
-  //GHAssertThrows([data na_sliceNoCopyAtIndex:5 data:&data1 data:&data2], nil);
+  //GRAssertThrows([data na_sliceNoCopyAtIndex:5 data:&data1 data:&data2]);
 }
 
 @end
