@@ -2,11 +2,11 @@
 //  NAAESTest.m
 //  NAChloride
 //
-#import <GHUnit/GHUnit.h>
+#import <GRUnit/GRUnit.h>
 
 #import "NAChloride.h"
 
-@interface NAAESTest : GHTestCase
+@interface NAAESTest : GRTestCase
 @end
 
 @implementation NAAESTest
@@ -20,13 +20,13 @@
   
   NAAES *AES = [[NAAES alloc] initWithAlgorithm:NAAESAlgorithm256CTR];
   NSData *encrypted = [AES encrypt:message nonce:nonce key:key error:&error];
-  GHAssertNil(error, nil);
-  GHAssertNotNil(encrypted, nil);
-  GHAssertNotEqualObjects(message, encrypted, nil);
-  GHAssertEqualStrings(@"06053d6dc46166a0b77fcd58c7819f1241d64b419323b08a", [encrypted na_hexString], nil);
+  GRAssertNil(error);
+  GRAssertNotNil(encrypted);
+  GRAssertNotEqualObjects(message, encrypted);
+  GRAssertEqualStrings(@"06053d6dc46166a0b77fcd58c7819f1241d64b419323b08a", [encrypted na_hexString]);
   
   NSData *decrypted = [AES decrypt:encrypted nonce:nonce key:key error:&error];
-  GHAssertEqualObjects(message, decrypted, nil);
+  GRAssertEqualObjects(message, decrypted);
 }
 
 @end

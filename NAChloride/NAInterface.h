@@ -28,3 +28,6 @@ extern const NSUInteger NASecretBoxNonceSize;
 - (NSData *)digestForData:(NSData *)data;
 @end
 
+
+#define NAWeakObject(o) __typeof__(o) __weak
+#define NAWeakSelf NAWeakObject(self)

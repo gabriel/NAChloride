@@ -30,7 +30,7 @@
   NSMutableData *outData = [NSMutableData dataWithLength:length];
   
   int retval = hkdf(ccAlgorithm,
-                    [salt bytes], [salt length],
+                    [salt bytes], (int)[salt length],
                     [key bytes], (int)[key length],
                     [info bytes], (int)[info length],
                     [outData mutableBytes], (int)length);
