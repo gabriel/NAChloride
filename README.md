@@ -1,7 +1,7 @@
 NAChloride
 ===========
 
-* Secret-key authenticated encryption (SecretBox via [libsodium](https://github.com/jedisct1/libsodium)
+* Secret-key authenticated encryption ([libsodium](https://github.com/jedisct1/libsodium)
 * Scrypt
 * XSalsa20
 * AES (256-CTR)
