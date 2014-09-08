@@ -1,7 +1,7 @@
 NAChloride
 ===========
 
-* SecretBox (via [libsodium](https://github.com/jedisct1/libsodium))
+* Secret-key authenticated encryption (SecretBox via [libsodium](https://github.com/jedisct1/libsodium)
 * Scrypt
 * XSalsa20
 * AES (256-CTR)
@@ -24,9 +24,9 @@ platform :ios, '7.0'
 pod "NAChloride"
 ```
 
-# SecretBox (libsodium)
+# Secret-key authenticated encryption
 
-Secret-key authenticated encryption.
+(via libsodium)
 
 ```objc
 NSData *key = [NARandom randomData:NASecretBoxKeySize error:&error];
@@ -78,23 +78,20 @@ NATwoFish *twoFish = [[NATwoFish alloc] init];
 NSData *encrypted = [twoFish encrypt:message nonce:nonce key:key error:&error];
 ```
 
-# HMAC (SHA1, SHA256, SHA512, SHA3)
+# HMAC (SHA1, SHA2, SHA3)
 
 ```objc
-NSData *mac1 = [NAHMAC HMACForKey:key data:data algorithm:NAHMACAlgorithmSHA512];
+NSData *mac1 = [NAHMAC HMACForKey:key data:data algorithm:NAHMACAlgorithmSHA2_512];
 NSData *mac2 = [NAHMAC HMACForKey:key data:data algorithm:NAHMACAlgorithmSHA3_512];
 ```
 
-# Digest
+# Digest (SHA2, SHA3/)
 
 ```objc
-NSData *SHA256 = [NADigest digestForData:data algorithm:NADigestAlgorithmSHA256];
-NSData *SHA3_512 = [NADigest digestForData:data algorithm:NADigestAlgorithmSHA3_512];
-```
+NSData *digest1 = [NADigest digestForData:data algorithm:NADigestAlgorithmSHA2_256];
+NSData *digest2 = [NADigest digestForData:data algorithm:NADigestAlgorithmSHA3_512];
 
-# SHA3 (Keccak)
-
-```objc
+// Directly use SHA3
 NSData *sha = [NASHA3 SHA3ForData:data digestBitLength:512];
 ```
 
