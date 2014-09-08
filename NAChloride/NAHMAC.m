@@ -31,10 +31,10 @@
   
   switch (algorithm) {
     case NAHMACAlgorithmSHA1:
-    case NAHMACAlgorithmSHA224:
-    case NAHMACAlgorithmSHA256:
-    case NAHMACAlgorithmSHA384:
-    case NAHMACAlgorithmSHA512:
+    case NAHMACAlgorithmSHA2_224:
+    case NAHMACAlgorithmSHA2_256:
+    case NAHMACAlgorithmSHA2_384:
+    case NAHMACAlgorithmSHA2_512:
       return [self _HMACSHAForKey:key data:data algorithm:algorithm];
       
     case NAHMACAlgorithmSHA3_256:
@@ -49,10 +49,10 @@
   NSUInteger dataLength;
   switch (algorithm) {
     case NAHMACAlgorithmSHA1: ccAlgorithm = kCCHmacAlgSHA1; dataLength = CC_SHA1_DIGEST_LENGTH; break;
-    case NAHMACAlgorithmSHA224: ccAlgorithm = kCCHmacAlgSHA224; dataLength = CC_SHA224_DIGEST_LENGTH; break;
-    case NAHMACAlgorithmSHA256: ccAlgorithm = kCCHmacAlgSHA256; dataLength = CC_SHA256_DIGEST_LENGTH; break;
-    case NAHMACAlgorithmSHA384: ccAlgorithm = kCCHmacAlgSHA384; dataLength = CC_SHA384_DIGEST_LENGTH; break;
-    case NAHMACAlgorithmSHA512: ccAlgorithm = kCCHmacAlgSHA512; dataLength = CC_SHA512_DIGEST_LENGTH; break;
+    case NAHMACAlgorithmSHA2_224: ccAlgorithm = kCCHmacAlgSHA224; dataLength = CC_SHA224_DIGEST_LENGTH; break;
+    case NAHMACAlgorithmSHA2_256: ccAlgorithm = kCCHmacAlgSHA256; dataLength = CC_SHA256_DIGEST_LENGTH; break;
+    case NAHMACAlgorithmSHA2_384: ccAlgorithm = kCCHmacAlgSHA384; dataLength = CC_SHA384_DIGEST_LENGTH; break;
+    case NAHMACAlgorithmSHA2_512: ccAlgorithm = kCCHmacAlgSHA512; dataLength = CC_SHA512_DIGEST_LENGTH; break;
     default:
       NSAssert(NO, @"Unsupported algorithm");
       return nil;

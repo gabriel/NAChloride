@@ -20,10 +20,10 @@
   NSData *data = [@"This is a secret message!" dataUsingEncoding:NSUTF8StringEncoding];
   NSData *key = [@"toomanysecrets" dataUsingEncoding:NSUTF8StringEncoding];
   
-  NSData *mac1 = [NAHMAC HMACForKey:key data:data algorithm:NAHMACAlgorithmSHA256];
+  NSData *mac1 = [NAHMAC HMACForKey:key data:data algorithm:NAHMACAlgorithmSHA2_256];
   GRAssertEqualStrings([mac1 na_hexString], @"086b7d69baf11a3159790fd1cf99db00439c4b8315b1fdf2440ec7cd70d606b6");
   
-  NSData *mac2 = [NAHMAC HMACForKey:key data:data algorithm:NAHMACAlgorithmSHA512];
+  NSData *mac2 = [NAHMAC HMACForKey:key data:data algorithm:NAHMACAlgorithmSHA2_512];
   GRAssertEqualStrings([mac2 na_hexString], @"ebe69ea46cae9297237dcdbcf3b85a7a11ca44c175d3339e175755081fdd538c532109a93a534d7aafea53fe5d5eea05fbdf4c99e4de088b48531a3a9b317b44");
 }
 

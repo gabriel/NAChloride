@@ -9,11 +9,11 @@
 #import "NAInterface.h"
 
 typedef NS_ENUM (NSUInteger, NAHMACAlgorithm) {
-  NAHMACAlgorithmSHA1 = 1,
-  NAHMACAlgorithmSHA224,
-  NAHMACAlgorithmSHA256,
-  NAHMACAlgorithmSHA384,
-  NAHMACAlgorithmSHA512,
+  NAHMACAlgorithmSHA1,
+  NAHMACAlgorithmSHA2_224,
+  NAHMACAlgorithmSHA2_256,
+  NAHMACAlgorithmSHA2_384,
+  NAHMACAlgorithmSHA2_512,
   
   // SHA3
   NAHMACAlgorithmSHA3_256,

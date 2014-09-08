@@ -9,11 +9,11 @@
 #import "NAInterface.h"
 
 typedef NS_ENUM (NSUInteger, NADigestAlgorithm) {
-  NADigestAlgorithmSHA1 = 1,
-  NADigestAlgorithmSHA224,
-  NADigestAlgorithmSHA256,
-  NADigestAlgorithmSHA384,
-  NADigestAlgorithmSHA512,
+  //NADigestAlgorithmSHA1 = 1, // SHA1 might not be secure enough
+  NADigestAlgorithmSHA2_224 = 2,
+  NADigestAlgorithmSHA2_256,
+  NADigestAlgorithmSHA2_384,
+  NADigestAlgorithmSHA2_512,
   
   // SHA3
   NADigestAlgorithmSHA3_256,

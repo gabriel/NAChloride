@@ -6,8 +6,8 @@ NAChloride
 * XSalsa20
 * AES (256-CTR)
 * TwoFish (CTR)
-* HMAC (SHA1, SHA256, SHA512, SHA3)
-* SHA3 (Keccak)
+* Digest (SHA2, SHA3/Keccak)
+* HMAC (SHA1, SHA2, SHA3)
 * HKDF (RFC 5849)
 * Keychain Utils
 

@@ -26,11 +26,10 @@
 
 + (NSData *)digestForData:(NSData *)data algorithm:(NADigestAlgorithm)algorithm {
   switch (algorithm) {
-    case NADigestAlgorithmSHA1:
-    case NADigestAlgorithmSHA224:
-    case NADigestAlgorithmSHA256:
-    case NADigestAlgorithmSHA384:
-    case NADigestAlgorithmSHA512:
+    case NADigestAlgorithmSHA2_224:
+    case NADigestAlgorithmSHA2_256:
+    case NADigestAlgorithmSHA2_384:
+    case NADigestAlgorithmSHA2_512:
       return [self _SHAForData:data algorithm:algorithm];
       
     case NADigestAlgorithmSHA3_256:
@@ -44,31 +43,25 @@
 
 + (NSData *)_SHAForData:(NSData *)data algorithm:(NADigestAlgorithm)algorithm {
   switch (algorithm) {
-    case NADigestAlgorithmSHA1: {
-      uint8_t digest[CC_SHA1_DIGEST_LENGTH];
-      CC_SHA1(data.bytes, (CC_LONG)data.length, digest);
-      return [[NSData alloc] initWithBytes:digest length:sizeof(digest)];
-    }
-      
-    case NADigestAlgorithmSHA224: {
+    case NADigestAlgorithmSHA2_224: {
       uint8_t digest[CC_SHA224_DIGEST_LENGTH];
       CC_SHA224(data.bytes, (CC_LONG)data.length, digest);
       return [[NSData alloc] initWithBytes:digest length:sizeof(digest)];
     }
 
-    case NADigestAlgorithmSHA256: {
+    case NADigestAlgorithmSHA2_256: {
       uint8_t digest[CC_SHA256_DIGEST_LENGTH];
       CC_SHA256(data.bytes, (CC_LONG)data.length, digest);
       return [[NSData alloc] initWithBytes:digest length:sizeof(digest)];
     }
       
-    case NADigestAlgorithmSHA384: {
+    case NADigestAlgorithmSHA2_384: {
       uint8_t digest[CC_SHA384_DIGEST_LENGTH];
       CC_SHA384(data.bytes, (CC_LONG)data.length, digest);
       return [[NSData alloc] initWithBytes:digest length:sizeof(digest)];
     }
       
-    case NADigestAlgorithmSHA512: {
+    case NADigestAlgorithmSHA2_512: {
       uint8_t digest[CC_SHA512_DIGEST_LENGTH];
       CC_SHA512(data.bytes, (CC_LONG)data.length, digest);
       return [[NSData alloc] initWithBytes:digest length:sizeof(digest)];

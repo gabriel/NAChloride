@@ -18,7 +18,7 @@
 - (void)test {
   NSData *data = [@"abc" dataUsingEncoding:NSUTF8StringEncoding];
   
-  NSData *SHA256 = [NADigest digestForData:data algorithm:NADigestAlgorithmSHA256];
+  NSData *SHA256 = [NADigest digestForData:data algorithm:NADigestAlgorithmSHA2_256];
   NSData *expected256 = [@"ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad" na_dataFromHexString];
   GRAssertEqualObjects(SHA256, expected256);
   
