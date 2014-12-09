@@ -1,7 +1,7 @@
 NAChloride
 ===========
 
-* Secret-key authenticated encryption ([libsodium](https://github.com/jedisct1/libsodium)
+* Secret-key authenticated encryption ([libsodium](https://github.com/jedisct1/libsodium))
 * Scrypt
 * XSalsa20
 * AES (256-CTR)
@@ -22,6 +22,14 @@ See [gabriel/TSTripleSec](https://github.com/gabriel/TSTripleSec) for more usage
 ```ruby
 platform :ios, '7.0'
 pod "NAChloride"
+```
+
+# Init
+
+You should call NAChlorideInit() to initialize once on app start. Multiple calls to this are ignored.
+
+```objc
+NAChlorideInit();
 ```
 
 # Secret-key authenticated encryption
@@ -117,4 +125,3 @@ NSData *keyOut = [NAKeychain symmetricKeyWithApplicationLabel:@"NAChloride"];
 NSData *data = [@"deadbeef" na_dataFromHexString];
 [data na_hexString]; // @"deadbeef";
 ```
-

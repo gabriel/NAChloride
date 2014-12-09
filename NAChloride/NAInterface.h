@@ -6,6 +6,8 @@
 //  Copyright (c) 2014 Gabriel Handford. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
+
 extern const NSUInteger NASecretBoxKeySize;
 extern const NSUInteger NASecretBoxNonceSize;
 
@@ -28,6 +30,7 @@ extern const NSUInteger NASecretBoxNonceSize;
 - (NSData *)digestForData:(NSData *)data;
 @end
 
+void NAChlorideInit(void);
 
 #define NAWeakObject(o) __typeof__(o) __weak
 #define NAWeakSelf NAWeakObject(self)

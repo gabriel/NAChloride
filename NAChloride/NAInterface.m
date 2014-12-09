@@ -8,7 +8,12 @@
 
 #import "NAInterface.h"
 
-#include "crypto_secretbox.h"
+#include "sodium.h"
 
 const NSUInteger NASecretBoxKeySize = crypto_secretbox_KEYBYTES;
 const NSUInteger NASecretBoxNonceSize = crypto_secretbox_NONCEBYTES;
+
+void NAChlorideInit() {
+  static dispatch_once_t sodiumInit;
+  dispatch_once(&sodiumInit, ^{ sodium_init(); });
+}

@@ -1,13 +1,13 @@
 PODS:
-  - GRUnit (1.0.8)
-  - libsodium (0.7.0)
+  - GRUnit (1.0.11)
+  - libsodium (1.0.1)
 
 DEPENDENCIES:
   - GRUnit
   - libsodium
 
 SPEC CHECKSUMS:
-  GRUnit: f9994ec0437e7db810ac8814efe489bd489550ac
-  libsodium: 6e51df562e39e747c64cc25162b0f57132114fae
+  GRUnit: 5ca46dd509f039f10ba027598fa8c1f12fe7ec3c
+  libsodium: ac34cc59b942350fb1377380cfb31f05c3d6170e
 
-COCOAPODS: 0.33.1
+COCOAPODS: 0.35.0

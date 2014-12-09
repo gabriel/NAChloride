@@ -1,6 +1,7 @@
-platform :ios, '7.0'
-pod "libsodium"#, :path => "../libsodium/libsodium.podspec"
+platform :ios, "7.0"
+source "https://github.com/CocoaPods/Specs.git"
+pod "libsodium"
 
 target :Tests do
-  pod 'GRUnit'
+  pod "GRUnit"
 end
