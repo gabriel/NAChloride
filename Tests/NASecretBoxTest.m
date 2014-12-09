@@ -6,16 +6,18 @@
 //  Copyright (c) 2014 Gabriel Handford. All rights reserved.
 //
 
-#import <GRUnit/GRUnit.h>
+#import "GRXCTestCase.h"
 
 #import "NAChloride.h"
 
-@interface NASecretBoxTest : GRTestCase { }
+@interface NASecretBoxTest : GRXCTestCase { }
 @end
 
 @implementation NASecretBoxTest
 
 - (void)testEncrypt {
+  NAChlorideInit();
+
   NSData *key = [NARandom randomData:NASecretBoxKeySize error:nil];
   NSData *message = [@"This is a secret message" dataUsingEncoding:NSUTF8StringEncoding];
   
@@ -32,7 +34,7 @@
   NSData *encryptedData = [secretBox encrypt:[@"This is a secret" dataUsingEncoding:NSUTF8StringEncoding] key:badKey error:&error];
   GRAssertNil(encryptedData);
   GRAssertNotNil(error);
-  GRAssertEquals(101, error.code);
+  GRAssertEquals((NSInteger)101, error.code);
   GRTestLog(@"Error: %@", error);
 }
 

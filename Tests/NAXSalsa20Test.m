@@ -1,11 +1,16 @@
 //
 //  NAXSalsa20Test.m
+//  NAChloride
 //
-#import <GRUnit/GRUnit.h>
+//  Created by Gabriel on 6/23/14.
+//  Copyright (c) 2014 Gabriel Handford. All rights reserved.
+//
+
+#import "GRXCTestCase.h"
 
 #import "NAChloride.h"
 
-@interface NAXSalsa20Test : GRTestCase
+@interface NAXSalsa20Test : GRXCTestCase
 @end
 
 @implementation NAXSalsa20Test

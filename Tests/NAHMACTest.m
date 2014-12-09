@@ -6,11 +6,11 @@
 //  Copyright (c) 2014 Gabriel Handford. All rights reserved.
 //
 
-#import <GRUnit/GRUnit.h>
+#import "GRXCTestCase.h"
 
 #import "NAChloride.h"
 
-@interface NAHMACTest : GRTestCase { }
+@interface NAHMACTest : GRXCTestCase { }
 @end
 
 

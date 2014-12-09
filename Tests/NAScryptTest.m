@@ -6,12 +6,12 @@
 //  Copyright (c) 2014 Gabriel Handford. All rights reserved.
 //
 
-#import <GRUnit/GRUnit.h>
+#import "GRXCTestCase.h"
 
 #import "NAChloride.h"
 #import "NANSString+Utils.h"
 
-@interface NAScryptTest : GRTestCase { }
+@interface NAScryptTest : GRXCTestCase { }
 @end
 
 
