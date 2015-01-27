@@ -94,7 +94,7 @@ NSData *mac1 = [NAHMAC HMACForKey:key data:data algorithm:NAHMACAlgorithmSHA2_51
 NSData *mac2 = [NAHMAC HMACForKey:key data:data algorithm:NAHMACAlgorithmSHA3_512];
 ```
 
-# Digest (SHA2, SHA3/)
+# Digest (SHA2, SHA3)
 
 ```objc
 NSData *digest1 = [NADigest digestForData:data algorithm:NADigestAlgorithmSHA2_256];
