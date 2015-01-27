@@ -27,7 +27,7 @@ pod "NAChloride"
 
 # Init
 
-You should call NAChlorideInit() to initialize once on app start. Multiple calls to this are ignored.
+You should call NAChlorideInit() to initialize on app start. Multiple calls to this are ignored. (This calls `sodium_init()` with `dispatch_once`.)
 
 ```objc
 NAChlorideInit();
