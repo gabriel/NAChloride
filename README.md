@@ -11,15 +11,14 @@ NAChloride
 * HKDF (RFC 5849)
 * Keychain Utils
 
+
+This project includes the [libsodium](https://github.com/jedisct1/libsodium) C library but doesn't have Objective-C wrappers for all the methods. Feel free to contribute with pull requests.
+
 See [gabriel/TSTripleSec](https://github.com/gabriel/TSTripleSec) for more usage examples of this library.
 
 NAChloride uses [gabriel/GRUnit](https://github.com/gabriel/GRUnit) for unit testing.
 
-# Install
-
-[CocoaPods](http://cocoapods.org) is a dependency manager for Objective-C, which automates and simplifies the process of using 3rd-party libraries in your projects.
-
-## Podfile
+# Podfile
 
 ```ruby
 platform :ios, '7.0'
