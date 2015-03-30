@@ -37,20 +37,7 @@ NAChlorideInit();
 
 (via libsodium)
 
-The simple `encrypt` method will implicitly generate nonce and concatenate nonce + the ciphertext to one NSData object and does not add MAC authenticaton. The simple `decrypt` will handle it accordingly.
-
-```objc
-NSData *key = [NARandom randomData:NASecretBoxKeySize error:&error];
-NSData *message = [@"This is a secret message" dataUsingEncoding:NSUTF8StringEncoding];
-
-NASecretBox *secretBox = [[NASecretBox alloc] init];
-NSData *encrypted = [secretBox encrypt:message key:key error:&error];
-// If an error occurred encrypted will be nil and error set
-
-NSData *decrypted = [secretBox decrypt:encrypted key:key error:&error];
-```
-Utilizing all parameters crypto\_secretbox and crypto\_secretbox\_easy can be used.
-Passing `YES` to the `authenticated` parameter will result in using crypto\_secretbox\_easy with MAC authenticaton (recommended).
+Encrypt uses `crypto_secretbox_easy` and decrypt uses `crypto_secretbox_open_easy`. See libsodium for details.
 
 ```objc
 NSData *key = [NARandom randomData:NASecretBoxKeySize error:&error];
@@ -58,12 +45,10 @@ NSData *nonce = [NARandom randomData:NASecretBoxNonceSize error:nil];
 NSData *message = [@"This is a secret message" dataUsingEncoding:NSUTF8StringEncoding];
 
 NASecretBox *secretBox = [[NASecretBox alloc] init];
-NSData *encrypted = [secretBox encrypt:message nonce:nonce key:key authenticated:YES error:&error];
+NSData *encrypted = [secretBox encrypt:message nonce:nonce key:key error:&error];
 // If an error occurred encrypted will be nil and error set
 
-NSData *decrypted = [secretBox decrypt:encrypted nonce:nonce key:key authenticated:YES error:&error];
-// If the encrypted message has been tampered with before decrypting it an error is set
-
+NSData *decrypted = [secretBox decrypt:encrypted nonce:nonce key:key error:&error];
 ```
 
 # Scrypt
