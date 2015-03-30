@@ -1,3117 +1,1014 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>00095B8A1953B57700F550CB</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>NANSString+Utils.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>00095B8B1953B57700F550CB</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>NANSString+Utils.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>00095B8C1953B57700F550CB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>00095B8B1953B57700F550CB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>00095B8D1953B57700F550CB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>00095B8B1953B57700F550CB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>00095BB61954CE3400F550CB</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>NAXSalsa20.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>00095BB71954CE3400F550CB</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>NAXSalsa20.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>00095BB81954CE3400F550CB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>00095BB71954CE3400F550CB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>00095BB91954CE3400F550CB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>00095BB71954CE3400F550CB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>002CD7951953685D00767675</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>NAScrypt.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>002CD7961953685D00767675</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>NAScrypt.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>002CD7971953685D00767675</key>
-		<dict>
-			<key>fileRef</key>
-			<string>002CD7961953685D00767675</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>002CD7981953685D00767675</key>
-		<dict>
-			<key>fileRef</key>
-			<string>002CD7961953685D00767675</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>002CD79A1953790100767675</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>NAScryptTest.m</string>
-			<key>path</key>
-			<string>Tests/NAScryptTest.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>002CD79B1953790100767675</key>
-		<dict>
-			<key>fileRef</key>
-			<string>002CD79A1953790100767675</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>002CD79E1953921500767675</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>Podfile</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-			<key>xcLanguageSpecificationIdentifier</key>
-			<string>xcode.lang.ruby</string>
-		</dict>
-		<key>002CD79F1953921500767675</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>NAChloride.podspec</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>002CD7A1195396DE00767675</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>NAHMACTest.m</string>
-			<key>path</key>
-			<string>Tests/NAHMACTest.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>002CD7A2195396DE00767675</key>
-		<dict>
-			<key>fileRef</key>
-			<string>002CD7A1195396DE00767675</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>003BB2B31888A16E0019D88F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>002CD79E1953921500767675</string>
-				<string>002CD79F1953921500767675</string>
-				<string>00AFEFAA18A5B2D30072632C</string>
-				<string>003BB2C11888A16E0019D88F</string>
-				<string>003BB2BE1888A16E0019D88F</string>
-				<string>003BB2BD1888A16E0019D88F</string>
-				<string>82229D0F372F44D299E9CFFC</string>
-				<string>45B1FB23BC1967B6D8B6A6BB</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>003BB2B41888A16E0019D88F</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>CLASSPREFIX</key>
-				<string>NA</string>
-				<key>LastUpgradeCheck</key>
-				<string>0600</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>Gabriel Handford</string>
-				<key>TargetAttributes</key>
-				<dict>
-					<key>004CA02E19CCDC4400499844</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>6.0.1</string>
-					</dict>
-				</dict>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>003BB2B71888A16E0019D88F</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-			</array>
-			<key>mainGroup</key>
-			<string>003BB2B31888A16E0019D88F</string>
-			<key>productRefGroup</key>
-			<string>003BB2BD1888A16E0019D88F</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>003BB2BB1888A16E0019D88F</string>
-				<string>6337F4892A394B1DAC9C6B12</string>
-				<string>004CA02E19CCDC4400499844</string>
-			</array>
-		</dict>
-		<key>003BB2B71888A16E0019D88F</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>003BB2DD1888A16E0019D88F</string>
-				<string>003BB2DE1888A16E0019D88F</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>003BB2B81888A16E0019D88F</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>003BB2EF1888A72D0019D88F</string>
-				<string>00A9F68F19550B0A0053A924</string>
-				<string>00A9F67F1954DB0B0053A924</string>
-				<string>00A9F68B1954FD920053A924</string>
-				<string>004CB3BB188F205300EFE8F7</string>
-				<string>00A9F69B19551CC50053A924</string>
-				<string>003BB2FB1888ADCC0019D88F</string>
-				<string>00095B8C1953B57700F550CB</string>
-				<string>00F76612196486840022F36A</string>
-				<string>00F5504E1958E5F0007F2574</string>
-				<string>008C8EBE1958EF7100C13987</string>
-				<string>003BB2F81888AAF80019D88F</string>
-				<string>003BB2F51888A9480019D88F</string>
-				<string>003BB2EB1888A2160019D88F</string>
-				<string>00F7660A196486840022F36A</string>
-				<string>00FB32B5196611B40060AF33</string>
-				<string>002CD7971953685D00767675</string>
-				<string>003BB2E71888A1D50019D88F</string>
-				<string>008C8EC51958F42900C13987</string>
-				<string>00A9F6831954E3470053A924</string>
-				<string>0055133C19D3430F0021ABB0</string>
-				<string>00A9F69D19551CC50053A924</string>
-				<string>00F7660E196486840022F36A</string>
-				<string>00095BB81954CE3400F550CB</string>
-				<string>00F550501958E5F0007F2574</string>
-				<string>00F7660C196486840022F36A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>003BB2B91888A16E0019D88F</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>003BB2C01888A16E0019D88F</string>
-				<string>F85A692963A7442D9C464718</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>003BB2BA1888A16E0019D88F</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>dstPath</key>
-			<string>include/$(PRODUCT_NAME)</string>
-			<key>dstSubfolderSpec</key>
-			<string>16</string>
-			<key>files</key>
-			<array>
-				<string>003BB2C51888A16E0019D88F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXCopyFilesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>003BB2BB1888A16E0019D88F</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>003BB2DF1888A16E0019D88F</string>
-			<key>buildPhases</key>
-			<array>
-				<string>931CF64ADF564046A75184FB</string>
-				<string>003BB2B81888A16E0019D88F</string>
-				<string>003BB2B91888A16E0019D88F</string>
-				<string>003BB2BA1888A16E0019D88F</string>
-				<string>9A53AEE05FBE4ACBAC2A8F81</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>NAChloride</string>
-			<key>productName</key>
-			<string>NACL</string>
-			<key>productReference</key>
-			<string>003BB2BC1888A16E0019D88F</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
-		</dict>
-		<key>003BB2BC1888A16E0019D88F</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libNAChloride.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>003BB2BD1888A16E0019D88F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>003BB2BC1888A16E0019D88F</string>
-				<string>A6427EFB103D46EFB5A03F92</string>
-				<string>004CA02F19CCDC4400499844</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>003BB2BE1888A16E0019D88F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>004CA05119CCE07B00499844</string>
-				<string>004CA04419CCDC8D00499844</string>
-				<string>003BB2BF1888A16E0019D88F</string>
-				<string>003BB2CD1888A16E0019D88F</string>
-				<string>003BB2D01888A16E0019D88F</string>
-				<string>D6A5C6C1D40C411BB7BEAFA8</string>
-				<string>99EDB06A9C9B4F3D9E482E13</string>
-				<string>2946C6D94CF54A388BBC5FDB</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>003BB2BF1888A16E0019D88F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>003BB2C01888A16E0019D88F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>003BB2BF1888A16E0019D88F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>003BB2C11888A16E0019D88F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>00F765FC196486840022F36A</string>
-				<string>00E361281958E234003CF604</string>
-				<string>00A9F69119551CC50053A924</string>
-				<string>00A9F69419551CC50053A924</string>
-				<string>003BB2C41888A16E0019D88F</string>
-				<string>007A1B93195B77DB00110C88</string>
-				<string>003BB2F71888AAF80019D88F</string>
-				<string>003BB2E51888A1D50019D88F</string>
-				<string>003BB2E61888A1D50019D88F</string>
-				<string>0055133A19D3430F0021ABB0</string>
-				<string>0055133B19D3430F0021ABB0</string>
-				<string>003BB2E91888A2160019D88F</string>
-				<string>003BB2EA1888A2160019D88F</string>
-				<string>003BB2ED1888A72D0019D88F</string>
-				<string>003BB2EE1888A72D0019D88F</string>
-				<string>003BB2F31888A9480019D88F</string>
-				<string>003BB2F41888A9480019D88F</string>
-				<string>004CB3B9188F205300EFE8F7</string>
-				<string>004CB3BA188F205300EFE8F7</string>
-				<string>003BB2F91888ADCC0019D88F</string>
-				<string>003BB2FA1888ADCC0019D88F</string>
-				<string>00A9F68D19550B0A0053A924</string>
-				<string>00A9F68E19550B0A0053A924</string>
-				<string>00095B8A1953B57700F550CB</string>
-				<string>00095B8B1953B57700F550CB</string>
-				<string>002CD7951953685D00767675</string>
-				<string>002CD7961953685D00767675</string>
-				<string>00095BB61954CE3400F550CB</string>
-				<string>00095BB71954CE3400F550CB</string>
-				<string>00A9F67D1954DB0B0053A924</string>
-				<string>00A9F67E1954DB0B0053A924</string>
-				<string>00A9F6811954E3470053A924</string>
-				<string>00A9F6821954E3470053A924</string>
-				<string>00A9F6891954FD920053A924</string>
-				<string>00A9F68A1954FD920053A924</string>
-				<string>00FB32B3196611B40060AF33</string>
-				<string>00FB32B4196611B40060AF33</string>
-				<string>008C8EC31958F42900C13987</string>
-				<string>008C8EC41958F42900C13987</string>
-				<string>004CB38A1888B98300EFE8F7</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>NAChloride</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>003BB2C41888A16E0019D88F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>NAChloride.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>003BB2C51888A16E0019D88F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>003BB2C41888A16E0019D88F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>003BB2CD1888A16E0019D88F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>XCTest.framework</string>
-			<key>path</key>
-			<string>Library/Frameworks/XCTest.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>003BB2D01888A16E0019D88F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>UIKit.framework</string>
-			<key>path</key>
-			<string>Library/Frameworks/UIKit.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>003BB2DD1888A16E0019D88F</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.0</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>003BB2DE1888A16E0019D88F</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.0</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>003BB2DF1888A16E0019D88F</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>003BB2E01888A16E0019D88F</string>
-				<string>003BB2E11888A16E0019D88F</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>003BB2E01888A16E0019D88F</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>EBEEE840CBE4DA5C46F28592</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>DSTROOT</key>
-				<string>/tmp/NACL.dst</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>NAChloride/NAChloride-Prefix.pch</string>
-				<key>PRODUCT_NAME</key>
-				<string>NAChloride</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>003BB2E11888A16E0019D88F</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>8A047D45035F6F99C05F2670</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>DSTROOT</key>
-				<string>/tmp/NACL.dst</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>NAChloride/NAChloride-Prefix.pch</string>
-				<key>PRODUCT_NAME</key>
-				<string>NAChloride</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>003BB2E51888A1D50019D88F</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>NASecretBox.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>003BB2E61888A1D50019D88F</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>NASecretBox.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>003BB2E71888A1D50019D88F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>003BB2E61888A1D50019D88F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>003BB2E91888A2160019D88F</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>NARandom.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>003BB2EA1888A2160019D88F</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>NARandom.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>003BB2EB1888A2160019D88F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>003BB2EA1888A2160019D88F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>003BB2ED1888A72D0019D88F</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>NAHKDF.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>003BB2EE1888A72D0019D88F</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>NAHKDF.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>003BB2EF1888A72D0019D88F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>003BB2EE1888A72D0019D88F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>003BB2F31888A9480019D88F</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>NAHMAC.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>003BB2F41888A9480019D88F</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>NAHMAC.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>003BB2F51888A9480019D88F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>003BB2F41888A9480019D88F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>003BB2F71888AAF80019D88F</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>NAInterface.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>003BB2F81888AAF80019D88F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>003BB2F71888AAF80019D88F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>003BB2F91888ADCC0019D88F</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>NANSData+Utils.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>003BB2FA1888ADCC0019D88F</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>NANSData+Utils.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>003BB2FB1888ADCC0019D88F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>003BB2FA1888ADCC0019D88F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>004CA02B19CCDC4400499844</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>008293F619CCE466001EDCC9</string>
-				<string>008293E319CCE430001EDCC9</string>
-				<string>008293F319CCE45C001EDCC9</string>
-				<string>004CA05719CCE1DD00499844</string>
-				<string>008293E719CCE43B001EDCC9</string>
-				<string>008293F219CCE458001EDCC9</string>
-				<string>008293E219CCE372001EDCC9</string>
-				<string>004CA05319CCE08E00499844</string>
-				<string>008293F519CCE463001EDCC9</string>
-				<string>008293F719CCE468001EDCC9</string>
-				<string>008293EC19CCE447001EDCC9</string>
-				<string>008293ED19CCE44A001EDCC9</string>
-				<string>008293E419CCE434001EDCC9</string>
-				<string>004CA05619CCE0CF00499844</string>
-				<string>008293F919CCE46C001EDCC9</string>
-				<string>008293E919CCE43F001EDCC9</string>
-				<string>008293EA19CCE441001EDCC9</string>
-				<string>008293F119CCE456001EDCC9</string>
-				<string>008293E519CCE437001EDCC9</string>
-				<string>0082940119CCE48C001EDCC9</string>
-				<string>008293F819CCE46A001EDCC9</string>
-				<string>008293FC19CCE47B001EDCC9</string>
-				<string>008293FB19CCE477001EDCC9</string>
-				<string>008293FA19CCE46F001EDCC9</string>
-				<string>008293EF19CCE452001EDCC9</string>
-				<string>004CA05419CCE09700499844</string>
-				<string>004CA04E19CCDFE200499844</string>
-				<string>008293E819CCE43D001EDCC9</string>
-				<string>008293E619CCE439001EDCC9</string>
-				<string>008293EE19CCE450001EDCC9</string>
-				<string>004CA05019CCE05E00499844</string>
-				<string>0082940219CCE48F001EDCC9</string>
-				<string>008293F419CCE461001EDCC9</string>
-				<string>008293F019CCE454001EDCC9</string>
-				<string>008293EB19CCE443001EDCC9</string>
-				<string>008293FF19CCE486001EDCC9</string>
-				<string>004CA05519CCE09B00499844</string>
-				<string>008293FE19CCE482001EDCC9</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>004CA02C19CCDC4400499844</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>004CA02D19CCDC4400499844</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>004CA02E19CCDC4400499844</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>004CA03719CCDC4400499844</string>
-			<key>buildPhases</key>
-			<array>
-				<string>004CA02B19CCDC4400499844</string>
-				<string>004CA02C19CCDC4400499844</string>
-				<string>004CA02D19CCDC4400499844</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>NAChloride Tests</string>
-			<key>productName</key>
-			<string>NAChloride Tests</string>
-			<key>productReference</key>
-			<string>004CA02F19CCDC4400499844</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.unit-test</string>
-		</dict>
-		<key>004CA02F19CCDC4400499844</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>NAChloride Tests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>004CA03519CCDC4400499844</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Tests/TestsXC-Info.plist</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>004CA03619CCDC4400499844</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Tests/TestsXC-Info.plist</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>004CA03719CCDC4400499844</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>004CA03519CCDC4400499844</string>
-				<string>004CA03619CCDC4400499844</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>004CA04419CCDC8D00499844</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>archive.ar</string>
-			<key>name</key>
-			<string>libPods-Tests.a</string>
-			<key>path</key>
-			<string>Pods/build/Debug-iphoneos/libPods-Tests.a</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>004CA04E19CCDFE200499844</key>
-		<dict>
-			<key>fileRef</key>
-			<string>008C8EC81958F53700C13987</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>004CA04F19CCDFE400499844</key>
-		<dict>
-			<key>fileRef</key>
-			<string>008C8EC81958F53700C13987</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>004CA05019CCE05E00499844</key>
-		<dict>
-			<key>fileRef</key>
-			<string>008C8EC41958F42900C13987</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>004CA05119CCE07B00499844</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Security.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/Security.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>004CA05319CCE08E00499844</key>
-		<dict>
-			<key>fileRef</key>
-			<string>008C8EBC1958EF7100C13987</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>004CA05419CCE09700499844</key>
-		<dict>
-			<key>fileRef</key>
-			<string>00F550461958E5F0007F2574</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>004CA05519CCE09B00499844</key>
-		<dict>
-			<key>fileRef</key>
-			<string>00F550481958E5F0007F2574</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>004CA05619CCE0CF00499844</key>
-		<dict>
-			<key>fileRef</key>
-			<string>003BB2FA1888ADCC0019D88F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>004CA05719CCE1DD00499844</key>
-		<dict>
-			<key>fileRef</key>
-			<string>00095B8B1953B57700F550CB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>004CB38A1888B98300EFE8F7</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>004CB38B1888B99300EFE8F7</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>004CB38B1888B99300EFE8F7</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>NAChloride-Prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>004CB38D1888BBC600EFE8F7</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>NASecretBoxTest.m</string>
-			<key>path</key>
-			<string>Tests/NASecretBoxTest.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>004CB38E1888BBC600EFE8F7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>004CB38D1888BBC600EFE8F7</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>004CB38F1888BC7500EFE8F7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>003BB2F71888AAF80019D88F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>004CB3901888BC7700EFE8F7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>003BB2E61888A1D50019D88F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>004CB3911888BC7900EFE8F7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>003BB2EA1888A2160019D88F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>004CB3921888BC7B00EFE8F7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>003BB2EE1888A72D0019D88F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>004CB3941888BC7F00EFE8F7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>003BB2F41888A9480019D88F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>004CB3951888BC8100EFE8F7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>003BB2FA1888ADCC0019D88F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>004CB3961888C0B300EFE8F7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>805BE1F5906C46C1BEDDD388</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>004CB3B9188F205300EFE8F7</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>NAKeychain.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>004CB3BA188F205300EFE8F7</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>NAKeychain.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>004CB3BB188F205300EFE8F7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>004CB3BA188F205300EFE8F7</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>004CB3BD188F2BF000EFE8F7</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>NAKeychainTest.m</string>
-			<key>path</key>
-			<string>Tests/NAKeychainTest.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>004CB3BE188F2BF000EFE8F7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>004CB3BD188F2BF000EFE8F7</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>004CB3BF188F2DA700EFE8F7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>004CB3BA188F205300EFE8F7</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0055133A19D3430F0021ABB0</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>NAOneTimeAuth.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0055133B19D3430F0021ABB0</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>NAOneTimeAuth.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0055133C19D3430F0021ABB0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0055133B19D3430F0021ABB0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0055133D19D3430F0021ABB0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0055133B19D3430F0021ABB0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>007A1B93195B77DB00110C88</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>NAInterface.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>008293E019CCE372001EDCC9</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>GRXCTestCase.h</string>
-			<key>path</key>
-			<string>Tests/GRXCTestCase.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>008293E119CCE372001EDCC9</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>GRXCTestCase.m</string>
-			<key>path</key>
-			<string>Tests/GRXCTestCase.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>008293E219CCE372001EDCC9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>008293E119CCE372001EDCC9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>008293E319CCE430001EDCC9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>004CB38D1888BBC600EFE8F7</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>008293E419CCE434001EDCC9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>004CB3BD188F2BF000EFE8F7</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>008293E519CCE437001EDCC9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>00DCF12F18ECD57E0019CBD4</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>008293E619CCE439001EDCC9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>002CD79A1953790100767675</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>008293E719CCE43B001EDCC9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>002CD7A1195396DE00767675</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>008293E819CCE43D001EDCC9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>8489A10DEBAE42E1AE0E12C6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>008293E919CCE43F001EDCC9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3DEC2040EC5840F38FEEEB48</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>008293EA19CCE441001EDCC9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>1D9B20C4E4D843D8BE95A3F4</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>008293EB19CCE443001EDCC9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>00E360601958C700003CF604</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>008293EC19CCE447001EDCC9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>00C8A5FD195CD07100B6CF3F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>008293ED19CCE44A001EDCC9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>00FB32B8196615880060AF33</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>008293EE19CCE450001EDCC9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>003BB2F71888AAF80019D88F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>008293EF19CCE452001EDCC9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>003BB2E61888A1D50019D88F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>008293F019CCE454001EDCC9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>003BB2EA1888A2160019D88F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>008293F119CCE456001EDCC9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>003BB2EE1888A72D0019D88F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>008293F219CCE458001EDCC9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>003BB2F41888A9480019D88F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>008293F319CCE45C001EDCC9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>004CB3BA188F205300EFE8F7</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>008293F419CCE461001EDCC9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>00A9F68E19550B0A0053A924</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>008293F519CCE463001EDCC9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>002CD7961953685D00767675</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>008293F619CCE466001EDCC9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>00095BB71954CE3400F550CB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>008293F719CCE468001EDCC9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>00A9F67E1954DB0B0053A924</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>008293F819CCE46A001EDCC9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>00A9F6821954E3470053A924</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>008293F919CCE46C001EDCC9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>00A9F68A1954FD920053A924</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>008293FA19CCE46F001EDCC9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>00FB32B4196611B40060AF33</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>008293FB19CCE477001EDCC9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>00A9F69519551CC50053A924</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>008293FC19CCE47B001EDCC9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>00A9F69219551CC50053A924</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>008293FE19CCE482001EDCC9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>00F76601196486840022F36A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>008293FF19CCE486001EDCC9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>00F76603196486840022F36A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0082940119CCE48C001EDCC9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>00F76606196486840022F36A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0082940219CCE48F001EDCC9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>00F76600196486840022F36A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0082940319CCE5B7001EDCC9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>008293E119CCE372001EDCC9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>008C8EBB1958EE2800C13987</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>KeccakF-1600-unrolling.macros</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>008C8EBC1958EF7100C13987</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.c</string>
-			<key>path</key>
-			<string>KeccakF-1600-opt32.c</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>008C8EBD1958EF7100C13987</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>KeccakF-1600-opt32-settings.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>008C8EBE1958EF7100C13987</key>
-		<dict>
-			<key>fileRef</key>
-			<string>008C8EBC1958EF7100C13987</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>008C8EBF1958EF7100C13987</key>
-		<dict>
-			<key>fileRef</key>
-			<string>008C8EBC1958EF7100C13987</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>008C8EC31958F42900C13987</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>NASHA3.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>008C8EC41958F42900C13987</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>NASHA3.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>008C8EC51958F42900C13987</key>
-		<dict>
-			<key>fileRef</key>
-			<string>008C8EC41958F42900C13987</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>008C8EC61958F42900C13987</key>
-		<dict>
-			<key>fileRef</key>
-			<string>008C8EC41958F42900C13987</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>008C8EC81958F53700C13987</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>NASHA3Test.m</string>
-			<key>path</key>
-			<string>Tests/NASHA3Test.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>00A9F67D1954DB0B0053A924</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>NATwoFish.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>00A9F67E1954DB0B0053A924</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>NATwoFish.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>00A9F67F1954DB0B0053A924</key>
-		<dict>
-			<key>fileRef</key>
-			<string>00A9F67E1954DB0B0053A924</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>00A9F6801954DB0B0053A924</key>
-		<dict>
-			<key>fileRef</key>
-			<string>00A9F67E1954DB0B0053A924</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>00A9F6811954E3470053A924</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>NAAES.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>00A9F6821954E3470053A924</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>NAAES.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>00A9F6831954E3470053A924</key>
-		<dict>
-			<key>fileRef</key>
-			<string>00A9F6821954E3470053A924</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>00A9F6841954E3470053A924</key>
-		<dict>
-			<key>fileRef</key>
-			<string>00A9F6821954E3470053A924</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>00A9F6891954FD920053A924</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>NACounter.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>00A9F68A1954FD920053A924</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>NACounter.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>00A9F68B1954FD920053A924</key>
-		<dict>
-			<key>fileRef</key>
-			<string>00A9F68A1954FD920053A924</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>00A9F68C1954FD920053A924</key>
-		<dict>
-			<key>fileRef</key>
-			<string>00A9F68A1954FD920053A924</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>00A9F68D19550B0A0053A924</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>NANSMutableData+Utils.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>00A9F68E19550B0A0053A924</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>NANSMutableData+Utils.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>00A9F68F19550B0A0053A924</key>
-		<dict>
-			<key>fileRef</key>
-			<string>00A9F68E19550B0A0053A924</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>00A9F69019550B0A0053A924</key>
-		<dict>
-			<key>fileRef</key>
-			<string>00A9F68E19550B0A0053A924</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>00A9F69119551CC50053A924</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>00A9F69319551CC50053A924</string>
-				<string>00A9F69219551CC50053A924</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>HKDF</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>00A9F69219551CC50053A924</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.c</string>
-			<key>path</key>
-			<string>hkdf.c</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>00A9F69319551CC50053A924</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>hkdf.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>00A9F69419551CC50053A924</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>00A9F69619551CC50053A924</string>
-				<string>00A9F69519551CC50053A924</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>TwoFish</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>00A9F69519551CC50053A924</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.c</string>
-			<key>path</key>
-			<string>twofish.c</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>00A9F69619551CC50053A924</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>twofish.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>00A9F69B19551CC50053A924</key>
-		<dict>
-			<key>fileRef</key>
-			<string>00A9F69219551CC50053A924</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>00A9F69C19551CC50053A924</key>
-		<dict>
-			<key>fileRef</key>
-			<string>00A9F69219551CC50053A924</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>00A9F69D19551CC50053A924</key>
-		<dict>
-			<key>fileRef</key>
-			<string>00A9F69519551CC50053A924</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>00A9F69E19551CC50053A924</key>
-		<dict>
-			<key>fileRef</key>
-			<string>00A9F69519551CC50053A924</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>00AFEFAA18A5B2D30072632C</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>README.md</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>00C8A5FD195CD07100B6CF3F</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>NAHKDFTest.m</string>
-			<key>path</key>
-			<string>Tests/NAHKDFTest.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>00C8A5FE195CD07100B6CF3F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>00C8A5FD195CD07100B6CF3F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>00DCF12F18ECD57E0019CBD4</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>NARandomTest.m</string>
-			<key>path</key>
-			<string>Tests/NARandomTest.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>00DCF13018ECD57E0019CBD4</key>
-		<dict>
-			<key>fileRef</key>
-			<string>00DCF12F18ECD57E0019CBD4</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>00E360601958C700003CF604</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>NAAESTest.m</string>
-			<key>path</key>
-			<string>Tests/NAAESTest.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>00E360621958C700003CF604</key>
-		<dict>
-			<key>fileRef</key>
-			<string>00E360601958C700003CF604</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>00E361281958E234003CF604</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>008C8EBC1958EF7100C13987</string>
-				<string>008C8EBD1958EF7100C13987</string>
-				<string>00F550351958E5F0007F2574</string>
-				<string>00F5503C1958E5F0007F2574</string>
-				<string>00F5503D1958E5F0007F2574</string>
-				<string>008C8EBB1958EE2800C13987</string>
-				<string>00F550471958E5F0007F2574</string>
-				<string>00F550461958E5F0007F2574</string>
-				<string>00F550491958E5F0007F2574</string>
-				<string>00F550481958E5F0007F2574</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>keccak</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>00F550351958E5F0007F2574</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>brg_endian.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>00F5503C1958E5F0007F2574</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>KeccakF-1600-int-set.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>00F5503D1958E5F0007F2574</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>KeccakF-1600-interface.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>00F550461958E5F0007F2574</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.c</string>
-			<key>path</key>
-			<string>KeccakNISTInterface.c</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>00F550471958E5F0007F2574</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>KeccakNISTInterface.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>00F550481958E5F0007F2574</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.c</string>
-			<key>path</key>
-			<string>KeccakSponge.c</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>00F550491958E5F0007F2574</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>KeccakSponge.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>00F5504E1958E5F0007F2574</key>
-		<dict>
-			<key>fileRef</key>
-			<string>00F550461958E5F0007F2574</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>00F5504F1958E5F0007F2574</key>
-		<dict>
-			<key>fileRef</key>
-			<string>00F550461958E5F0007F2574</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>00F550501958E5F0007F2574</key>
-		<dict>
-			<key>fileRef</key>
-			<string>00F550481958E5F0007F2574</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>00F550511958E5F0007F2574</key>
-		<dict>
-			<key>fileRef</key>
-			<string>00F550481958E5F0007F2574</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>00F765FC196486840022F36A</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>00F765FE196486840022F36A</string>
-				<string>00F765FF196486840022F36A</string>
-				<string>00F76601196486840022F36A</string>
-				<string>00F76602196486840022F36A</string>
-				<string>00F76603196486840022F36A</string>
-				<string>00F76605196486840022F36A</string>
-				<string>00F76607196486840022F36A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>scryptsalsa208sha256</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>00F765FE196486840022F36A</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>crypto_scrypt.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>00F765FF196486840022F36A</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>00F76600196486840022F36A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>nosse</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>00F76600196486840022F36A</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.c</string>
-			<key>path</key>
-			<string>pwhash_scryptsalsa208sha256_nosse.c</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>00F76601196486840022F36A</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.c</string>
-			<key>path</key>
-			<string>pbkdf2-sha256.c</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>00F76602196486840022F36A</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>pbkdf2-sha256.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>00F76603196486840022F36A</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.c</string>
-			<key>path</key>
-			<string>pwhash_scryptsalsa208sha256.c</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>00F76605196486840022F36A</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>00F76606196486840022F36A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>sse</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>00F76606196486840022F36A</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.c</string>
-			<key>path</key>
-			<string>pwhash_scryptsalsa208sha256_sse.c</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>00F76607196486840022F36A</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>sysendian.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>00F7660A196486840022F36A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>00F76600196486840022F36A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>00F7660B196486840022F36A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>00F76600196486840022F36A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>00F7660C196486840022F36A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>00F76601196486840022F36A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>00F7660D196486840022F36A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>00F76601196486840022F36A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>00F7660E196486840022F36A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>00F76603196486840022F36A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>00F7660F196486840022F36A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>00F76603196486840022F36A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>00F76612196486840022F36A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>00F76606196486840022F36A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>00F76613196486840022F36A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>00F76606196486840022F36A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>00FB32B3196611B40060AF33</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>NADigest.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>00FB32B4196611B40060AF33</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>NADigest.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>00FB32B5196611B40060AF33</key>
-		<dict>
-			<key>fileRef</key>
-			<string>00FB32B4196611B40060AF33</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>00FB32B6196611B40060AF33</key>
-		<dict>
-			<key>fileRef</key>
-			<string>00FB32B4196611B40060AF33</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>00FB32B8196615880060AF33</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>NADigestTest.m</string>
-			<key>path</key>
-			<string>Tests/NADigestTest.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>00FB32B9196615880060AF33</key>
-		<dict>
-			<key>fileRef</key>
-			<string>00FB32B8196615880060AF33</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0FA71F7506AB490880E79CE9</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>5518566434CB401F8C7972B9</string>
-				<string>A3D0E697480A448080A08B9F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>0FBC48360BAD4C78A3966D5E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>1D9B20C4E4D843D8BE95A3F4</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>13CD629B7BBB41C19D39E5BE</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>19E4EE688E274B7BA0C4E42A</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>51F1A2E4EA4CCFF2019E17F9</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>NAChloride/NAChloride-Prefix.pch</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_VERSION</key>
-				<string>com.apple.compilers.llvm.clang.1_0</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Tests/Tests-Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(BUILT_PRODUCTS_DIR)</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.0</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>1D9B20C4E4D843D8BE95A3F4</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>NAUtilsTest.m</string>
-			<key>path</key>
-			<string>Tests/NAUtilsTest.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1FECE7F165694890A5B433C3</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>38A5BD3CD71EAAA5FDDB9E5B</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>NAChloride/NAChloride-Prefix.pch</string>
-				<key>GCC_VERSION</key>
-				<string>com.apple.compilers.llvm.clang.1_0</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Tests/Tests-Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(BUILT_PRODUCTS_DIR)</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.0</string>
-				<key>OTHER_CFLAGS</key>
-				<array>
-					<string>-DNS_BLOCK_ASSERTIONS=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>OTHER_CPLUSPLUSFLAGS</key>
-				<array>
-					<string>-DNS_BLOCK_ASSERTIONS=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>2946C6D94CF54A388BBC5FDB</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods-Tests.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>38A5BD3CD71EAAA5FDDB9E5B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-Tests.release.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-Tests/Pods-Tests.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3DEC2040EC5840F38FEEEB48</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>NATwoFishTest.m</string>
-			<key>path</key>
-			<string>Tests/NATwoFishTest.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>45B1FB23BC1967B6D8B6A6BB</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>EBEEE840CBE4DA5C46F28592</string>
-				<string>8A047D45035F6F99C05F2670</string>
-				<string>38A5BD3CD71EAAA5FDDB9E5B</string>
-				<string>51F1A2E4EA4CCFF2019E17F9</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>51D6A1FAF21941A5B7B55901</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-Tests/Pods-Tests-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>51F1A2E4EA4CCFF2019E17F9</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-Tests.debug.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-Tests/Pods-Tests.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5518566434CB401F8C7972B9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>13CD629B7BBB41C19D39E5BE</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6337F4892A394B1DAC9C6B12</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>94EB18D231DD47BDA7005DE7</string>
-			<key>buildPhases</key>
-			<array>
-				<string>CF811191675445E3874A733F</string>
-				<string>6FCDB83F98BD48FDBCFA6EC2</string>
-				<string>0FA71F7506AB490880E79CE9</string>
-				<string>51D6A1FAF21941A5B7B55901</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>FE7A6B305C1C4B08A52D0891</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Tests</string>
-			<key>productName</key>
-			<string>Tests</string>
-			<key>productReference</key>
-			<string>A6427EFB103D46EFB5A03F92</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>6FCDB83F98BD48FDBCFA6EC2</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>00A9F69E19551CC50053A924</string>
-				<string>0082940319CCE5B7001EDCC9</string>
-				<string>00095B8D1953B57700F550CB</string>
-				<string>004CB3901888BC7700EFE8F7</string>
-				<string>002CD79B1953790100767675</string>
-				<string>004CB3951888BC8100EFE8F7</string>
-				<string>00A9F6801954DB0B0053A924</string>
-				<string>002CD7A2195396DE00767675</string>
-				<string>00F76613196486840022F36A</string>
-				<string>002CD7981953685D00767675</string>
-				<string>00A9F6841954E3470053A924</string>
-				<string>00C8A5FE195CD07100B6CF3F</string>
-				<string>004CB3911888BC7900EFE8F7</string>
-				<string>00A9F69019550B0A0053A924</string>
-				<string>004CB3BE188F2BF000EFE8F7</string>
-				<string>00F7660B196486840022F36A</string>
-				<string>00FB32B6196611B40060AF33</string>
-				<string>00DCF13018ECD57E0019CBD4</string>
-				<string>004CB3941888BC7F00EFE8F7</string>
-				<string>00F7660D196486840022F36A</string>
-				<string>0055133D19D3430F0021ABB0</string>
-				<string>004CB38F1888BC7500EFE8F7</string>
-				<string>00F5504F1958E5F0007F2574</string>
-				<string>00FB32B9196615880060AF33</string>
-				<string>008C8EBF1958EF7100C13987</string>
-				<string>00F550511958E5F0007F2574</string>
-				<string>004CB38E1888BBC600EFE8F7</string>
-				<string>008C8EC61958F42900C13987</string>
-				<string>004CB3961888C0B300EFE8F7</string>
-				<string>00E360621958C700003CF604</string>
-				<string>004CB3BF188F2DA700EFE8F7</string>
-				<string>00A9F68C1954FD920053A924</string>
-				<string>004CB3921888BC7B00EFE8F7</string>
-				<string>00095BB91954CE3400F550CB</string>
-				<string>00A9F69C19551CC50053A924</string>
-				<string>00F7660F196486840022F36A</string>
-				<string>E1B9636CA3F343619E9EA62D</string>
-				<string>004CA04F19CCDFE400499844</string>
-				<string>F8D979F982F040BAB4872BBA</string>
-				<string>0FBC48360BAD4C78A3966D5E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>805BE1F5906C46C1BEDDD388</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>main.m</string>
-			<key>path</key>
-			<string>Tests/main.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>82229D0F372F44D299E9CFFC</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>008293E019CCE372001EDCC9</string>
-				<string>008293E119CCE372001EDCC9</string>
-				<string>805BE1F5906C46C1BEDDD388</string>
-				<string>004CB38D1888BBC600EFE8F7</string>
-				<string>004CB3BD188F2BF000EFE8F7</string>
-				<string>00DCF12F18ECD57E0019CBD4</string>
-				<string>002CD79A1953790100767675</string>
-				<string>002CD7A1195396DE00767675</string>
-				<string>8489A10DEBAE42E1AE0E12C6</string>
-				<string>3DEC2040EC5840F38FEEEB48</string>
-				<string>1D9B20C4E4D843D8BE95A3F4</string>
-				<string>00E360601958C700003CF604</string>
-				<string>008C8EC81958F53700C13987</string>
-				<string>00C8A5FD195CD07100B6CF3F</string>
-				<string>00FB32B8196615880060AF33</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Tests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8489A10DEBAE42E1AE0E12C6</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>NAXSalsa20Test.m</string>
-			<key>path</key>
-			<string>Tests/NAXSalsa20Test.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8A047D45035F6F99C05F2670</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods.release.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods/Pods.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>931CF64ADF564046A75184FB</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>94EB18D231DD47BDA7005DE7</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>1FECE7F165694890A5B433C3</string>
-				<string>19E4EE688E274B7BA0C4E42A</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>99EDB06A9C9B4F3D9E482E13</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>13CD629B7BBB41C19D39E5BE</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>iOS</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9A53AEE05FBE4ACBAC2A8F81</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>A3D0E697480A448080A08B9F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>2946C6D94CF54A388BBC5FDB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A6427EFB103D46EFB5A03F92</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Tests.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>CF811191675445E3874A733F</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>D24B795A29304F86B71BB576</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>003BB2B41888A16E0019D88F</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>003BB2BB1888A16E0019D88F</string>
-			<key>remoteInfo</key>
-			<string>NACL</string>
-		</dict>
-		<key>D6A5C6C1D40C411BB7BEAFA8</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>E1B9636CA3F343619E9EA62D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>8489A10DEBAE42E1AE0E12C6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EBEEE840CBE4DA5C46F28592</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods.debug.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods/Pods.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F85A692963A7442D9C464718</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D6A5C6C1D40C411BB7BEAFA8</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>F8D979F982F040BAB4872BBA</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3DEC2040EC5840F38FEEEB48</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>FE7A6B305C1C4B08A52D0891</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>003BB2BB1888A16E0019D88F</string>
-			<key>targetProxy</key>
-			<string>D24B795A29304F86B71BB576</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>003BB2B41888A16E0019D88F</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00095B8C1953B57700F550CB /* NANSString+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 00095B8B1953B57700F550CB /* NANSString+Utils.m */; };
+		00095B8D1953B57700F550CB /* NANSString+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 00095B8B1953B57700F550CB /* NANSString+Utils.m */; };
+		00095BB81954CE3400F550CB /* NAXSalsa20.m in Sources */ = {isa = PBXBuildFile; fileRef = 00095BB71954CE3400F550CB /* NAXSalsa20.m */; };
+		00095BB91954CE3400F550CB /* NAXSalsa20.m in Sources */ = {isa = PBXBuildFile; fileRef = 00095BB71954CE3400F550CB /* NAXSalsa20.m */; };
+		002CD7971953685D00767675 /* NAScrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 002CD7961953685D00767675 /* NAScrypt.m */; };
+		002CD7981953685D00767675 /* NAScrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 002CD7961953685D00767675 /* NAScrypt.m */; };
+		002CD79B1953790100767675 /* NAScryptTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 002CD79A1953790100767675 /* NAScryptTest.m */; };
+		002CD7A2195396DE00767675 /* NAHMACTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 002CD7A1195396DE00767675 /* NAHMACTest.m */; };
+		003BB2C01888A16E0019D88F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 003BB2BF1888A16E0019D88F /* Foundation.framework */; };
+		003BB2C51888A16E0019D88F /* NAChloride.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 003BB2C41888A16E0019D88F /* NAChloride.h */; };
+		003BB2E71888A1D50019D88F /* NASecretBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 003BB2E61888A1D50019D88F /* NASecretBox.m */; };
+		003BB2EB1888A2160019D88F /* NARandom.m in Sources */ = {isa = PBXBuildFile; fileRef = 003BB2EA1888A2160019D88F /* NARandom.m */; };
+		003BB2EF1888A72D0019D88F /* NAHKDF.m in Sources */ = {isa = PBXBuildFile; fileRef = 003BB2EE1888A72D0019D88F /* NAHKDF.m */; };
+		003BB2F51888A9480019D88F /* NAHMAC.m in Sources */ = {isa = PBXBuildFile; fileRef = 003BB2F41888A9480019D88F /* NAHMAC.m */; };
+		003BB2F81888AAF80019D88F /* NAInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 003BB2F71888AAF80019D88F /* NAInterface.m */; };
+		003BB2FB1888ADCC0019D88F /* NANSData+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 003BB2FA1888ADCC0019D88F /* NANSData+Utils.m */; };
+		004CA04E19CCDFE200499844 /* NASHA3Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 008C8EC81958F53700C13987 /* NASHA3Test.m */; };
+		004CA04F19CCDFE400499844 /* NASHA3Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 008C8EC81958F53700C13987 /* NASHA3Test.m */; };
+		004CA05019CCE05E00499844 /* NASHA3.m in Sources */ = {isa = PBXBuildFile; fileRef = 008C8EC41958F42900C13987 /* NASHA3.m */; };
+		004CA05319CCE08E00499844 /* KeccakF-1600-opt32.c in Sources */ = {isa = PBXBuildFile; fileRef = 008C8EBC1958EF7100C13987 /* KeccakF-1600-opt32.c */; };
+		004CA05419CCE09700499844 /* KeccakNISTInterface.c in Sources */ = {isa = PBXBuildFile; fileRef = 00F550461958E5F0007F2574 /* KeccakNISTInterface.c */; };
+		004CA05519CCE09B00499844 /* KeccakSponge.c in Sources */ = {isa = PBXBuildFile; fileRef = 00F550481958E5F0007F2574 /* KeccakSponge.c */; };
+		004CA05619CCE0CF00499844 /* NANSData+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 003BB2FA1888ADCC0019D88F /* NANSData+Utils.m */; };
+		004CA05719CCE1DD00499844 /* NANSString+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 00095B8B1953B57700F550CB /* NANSString+Utils.m */; };
+		004CB38E1888BBC600EFE8F7 /* NASecretBoxTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 004CB38D1888BBC600EFE8F7 /* NASecretBoxTest.m */; };
+		004CB38F1888BC7500EFE8F7 /* NAInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 003BB2F71888AAF80019D88F /* NAInterface.m */; };
+		004CB3901888BC7700EFE8F7 /* NASecretBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 003BB2E61888A1D50019D88F /* NASecretBox.m */; };
+		004CB3911888BC7900EFE8F7 /* NARandom.m in Sources */ = {isa = PBXBuildFile; fileRef = 003BB2EA1888A2160019D88F /* NARandom.m */; };
+		004CB3921888BC7B00EFE8F7 /* NAHKDF.m in Sources */ = {isa = PBXBuildFile; fileRef = 003BB2EE1888A72D0019D88F /* NAHKDF.m */; };
+		004CB3941888BC7F00EFE8F7 /* NAHMAC.m in Sources */ = {isa = PBXBuildFile; fileRef = 003BB2F41888A9480019D88F /* NAHMAC.m */; };
+		004CB3951888BC8100EFE8F7 /* NANSData+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 003BB2FA1888ADCC0019D88F /* NANSData+Utils.m */; };
+		004CB3961888C0B300EFE8F7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 805BE1F5906C46C1BEDDD388 /* main.m */; };
+		004CB3BB188F205300EFE8F7 /* NAKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 004CB3BA188F205300EFE8F7 /* NAKeychain.m */; };
+		004CB3BE188F2BF000EFE8F7 /* NAKeychainTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 004CB3BD188F2BF000EFE8F7 /* NAKeychainTest.m */; };
+		004CB3BF188F2DA700EFE8F7 /* NAKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 004CB3BA188F205300EFE8F7 /* NAKeychain.m */; };
+		0055133C19D3430F0021ABB0 /* NAOneTimeAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = 0055133B19D3430F0021ABB0 /* NAOneTimeAuth.m */; };
+		0055133D19D3430F0021ABB0 /* NAOneTimeAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = 0055133B19D3430F0021ABB0 /* NAOneTimeAuth.m */; };
+		008293E219CCE372001EDCC9 /* GRXCTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 008293E119CCE372001EDCC9 /* GRXCTestCase.m */; };
+		008293E319CCE430001EDCC9 /* NASecretBoxTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 004CB38D1888BBC600EFE8F7 /* NASecretBoxTest.m */; };
+		008293E419CCE434001EDCC9 /* NAKeychainTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 004CB3BD188F2BF000EFE8F7 /* NAKeychainTest.m */; };
+		008293E519CCE437001EDCC9 /* NARandomTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DCF12F18ECD57E0019CBD4 /* NARandomTest.m */; };
+		008293E619CCE439001EDCC9 /* NAScryptTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 002CD79A1953790100767675 /* NAScryptTest.m */; };
+		008293E719CCE43B001EDCC9 /* NAHMACTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 002CD7A1195396DE00767675 /* NAHMACTest.m */; };
+		008293E819CCE43D001EDCC9 /* NAXSalsa20Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 8489A10DEBAE42E1AE0E12C6 /* NAXSalsa20Test.m */; };
+		008293E919CCE43F001EDCC9 /* NATwoFishTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DEC2040EC5840F38FEEEB48 /* NATwoFishTest.m */; };
+		008293EA19CCE441001EDCC9 /* NAUtilsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D9B20C4E4D843D8BE95A3F4 /* NAUtilsTest.m */; };
+		008293EB19CCE443001EDCC9 /* NAAESTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E360601958C700003CF604 /* NAAESTest.m */; };
+		008293EC19CCE447001EDCC9 /* NAHKDFTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C8A5FD195CD07100B6CF3F /* NAHKDFTest.m */; };
+		008293ED19CCE44A001EDCC9 /* NADigestTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FB32B8196615880060AF33 /* NADigestTest.m */; };
+		008293EE19CCE450001EDCC9 /* NAInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 003BB2F71888AAF80019D88F /* NAInterface.m */; };
+		008293EF19CCE452001EDCC9 /* NASecretBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 003BB2E61888A1D50019D88F /* NASecretBox.m */; };
+		008293F019CCE454001EDCC9 /* NARandom.m in Sources */ = {isa = PBXBuildFile; fileRef = 003BB2EA1888A2160019D88F /* NARandom.m */; };
+		008293F119CCE456001EDCC9 /* NAHKDF.m in Sources */ = {isa = PBXBuildFile; fileRef = 003BB2EE1888A72D0019D88F /* NAHKDF.m */; };
+		008293F219CCE458001EDCC9 /* NAHMAC.m in Sources */ = {isa = PBXBuildFile; fileRef = 003BB2F41888A9480019D88F /* NAHMAC.m */; };
+		008293F319CCE45C001EDCC9 /* NAKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 004CB3BA188F205300EFE8F7 /* NAKeychain.m */; };
+		008293F419CCE461001EDCC9 /* NANSMutableData+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A9F68E19550B0A0053A924 /* NANSMutableData+Utils.m */; };
+		008293F519CCE463001EDCC9 /* NAScrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 002CD7961953685D00767675 /* NAScrypt.m */; };
+		008293F619CCE466001EDCC9 /* NAXSalsa20.m in Sources */ = {isa = PBXBuildFile; fileRef = 00095BB71954CE3400F550CB /* NAXSalsa20.m */; };
+		008293F719CCE468001EDCC9 /* NATwoFish.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A9F67E1954DB0B0053A924 /* NATwoFish.m */; };
+		008293F819CCE46A001EDCC9 /* NAAES.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A9F6821954E3470053A924 /* NAAES.m */; };
+		008293F919CCE46C001EDCC9 /* NACounter.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A9F68A1954FD920053A924 /* NACounter.m */; };
+		008293FA19CCE46F001EDCC9 /* NADigest.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FB32B4196611B40060AF33 /* NADigest.m */; };
+		008293FB19CCE477001EDCC9 /* twofish.c in Sources */ = {isa = PBXBuildFile; fileRef = 00A9F69519551CC50053A924 /* twofish.c */; };
+		008293FC19CCE47B001EDCC9 /* hkdf.c in Sources */ = {isa = PBXBuildFile; fileRef = 00A9F69219551CC50053A924 /* hkdf.c */; };
+		008293FE19CCE482001EDCC9 /* pbkdf2-sha256.c in Sources */ = {isa = PBXBuildFile; fileRef = 00F76601196486840022F36A /* pbkdf2-sha256.c */; };
+		008293FF19CCE486001EDCC9 /* pwhash_scryptsalsa208sha256.c in Sources */ = {isa = PBXBuildFile; fileRef = 00F76603196486840022F36A /* pwhash_scryptsalsa208sha256.c */; };
+		0082940119CCE48C001EDCC9 /* pwhash_scryptsalsa208sha256_sse.c in Sources */ = {isa = PBXBuildFile; fileRef = 00F76606196486840022F36A /* pwhash_scryptsalsa208sha256_sse.c */; };
+		0082940219CCE48F001EDCC9 /* pwhash_scryptsalsa208sha256_nosse.c in Sources */ = {isa = PBXBuildFile; fileRef = 00F76600196486840022F36A /* pwhash_scryptsalsa208sha256_nosse.c */; };
+		0082940319CCE5B7001EDCC9 /* GRXCTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 008293E119CCE372001EDCC9 /* GRXCTestCase.m */; };
+		008C8EBE1958EF7100C13987 /* KeccakF-1600-opt32.c in Sources */ = {isa = PBXBuildFile; fileRef = 008C8EBC1958EF7100C13987 /* KeccakF-1600-opt32.c */; };
+		008C8EBF1958EF7100C13987 /* KeccakF-1600-opt32.c in Sources */ = {isa = PBXBuildFile; fileRef = 008C8EBC1958EF7100C13987 /* KeccakF-1600-opt32.c */; };
+		008C8EC51958F42900C13987 /* NASHA3.m in Sources */ = {isa = PBXBuildFile; fileRef = 008C8EC41958F42900C13987 /* NASHA3.m */; };
+		008C8EC61958F42900C13987 /* NASHA3.m in Sources */ = {isa = PBXBuildFile; fileRef = 008C8EC41958F42900C13987 /* NASHA3.m */; };
+		00A9F67F1954DB0B0053A924 /* NATwoFish.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A9F67E1954DB0B0053A924 /* NATwoFish.m */; };
+		00A9F6801954DB0B0053A924 /* NATwoFish.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A9F67E1954DB0B0053A924 /* NATwoFish.m */; };
+		00A9F6831954E3470053A924 /* NAAES.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A9F6821954E3470053A924 /* NAAES.m */; };
+		00A9F6841954E3470053A924 /* NAAES.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A9F6821954E3470053A924 /* NAAES.m */; };
+		00A9F68B1954FD920053A924 /* NACounter.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A9F68A1954FD920053A924 /* NACounter.m */; };
+		00A9F68C1954FD920053A924 /* NACounter.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A9F68A1954FD920053A924 /* NACounter.m */; };
+		00A9F68F19550B0A0053A924 /* NANSMutableData+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A9F68E19550B0A0053A924 /* NANSMutableData+Utils.m */; };
+		00A9F69019550B0A0053A924 /* NANSMutableData+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A9F68E19550B0A0053A924 /* NANSMutableData+Utils.m */; };
+		00A9F69B19551CC50053A924 /* hkdf.c in Sources */ = {isa = PBXBuildFile; fileRef = 00A9F69219551CC50053A924 /* hkdf.c */; };
+		00A9F69C19551CC50053A924 /* hkdf.c in Sources */ = {isa = PBXBuildFile; fileRef = 00A9F69219551CC50053A924 /* hkdf.c */; };
+		00A9F69D19551CC50053A924 /* twofish.c in Sources */ = {isa = PBXBuildFile; fileRef = 00A9F69519551CC50053A924 /* twofish.c */; };
+		00A9F69E19551CC50053A924 /* twofish.c in Sources */ = {isa = PBXBuildFile; fileRef = 00A9F69519551CC50053A924 /* twofish.c */; };
+		00C8A5FE195CD07100B6CF3F /* NAHKDFTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C8A5FD195CD07100B6CF3F /* NAHKDFTest.m */; };
+		00DCF13018ECD57E0019CBD4 /* NARandomTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DCF12F18ECD57E0019CBD4 /* NARandomTest.m */; };
+		00E2BC7A1ACA03DB0061F0B2 /* KeccakF-1600-32-s2.h in Resources */ = {isa = PBXBuildFile; fileRef = 00E2BC771ACA03DB0061F0B2 /* KeccakF-1600-32-s2.h */; };
+		00E2BC7B1ACA03DB0061F0B2 /* KeccakF-1600-32-s1.h in Resources */ = {isa = PBXBuildFile; fileRef = 00E2BC781ACA03DB0061F0B2 /* KeccakF-1600-32-s1.h */; };
+		00E2BC7C1ACA03DB0061F0B2 /* KeccakF-1600-32-rvk.h in Resources */ = {isa = PBXBuildFile; fileRef = 00E2BC791ACA03DB0061F0B2 /* KeccakF-1600-32-rvk.h */; };
+		00E360621958C700003CF604 /* NAAESTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E360601958C700003CF604 /* NAAESTest.m */; };
+		00F5504E1958E5F0007F2574 /* KeccakNISTInterface.c in Sources */ = {isa = PBXBuildFile; fileRef = 00F550461958E5F0007F2574 /* KeccakNISTInterface.c */; };
+		00F5504F1958E5F0007F2574 /* KeccakNISTInterface.c in Sources */ = {isa = PBXBuildFile; fileRef = 00F550461958E5F0007F2574 /* KeccakNISTInterface.c */; };
+		00F550501958E5F0007F2574 /* KeccakSponge.c in Sources */ = {isa = PBXBuildFile; fileRef = 00F550481958E5F0007F2574 /* KeccakSponge.c */; };
+		00F550511958E5F0007F2574 /* KeccakSponge.c in Sources */ = {isa = PBXBuildFile; fileRef = 00F550481958E5F0007F2574 /* KeccakSponge.c */; };
+		00F7660A196486840022F36A /* pwhash_scryptsalsa208sha256_nosse.c in Sources */ = {isa = PBXBuildFile; fileRef = 00F76600196486840022F36A /* pwhash_scryptsalsa208sha256_nosse.c */; };
+		00F7660B196486840022F36A /* pwhash_scryptsalsa208sha256_nosse.c in Sources */ = {isa = PBXBuildFile; fileRef = 00F76600196486840022F36A /* pwhash_scryptsalsa208sha256_nosse.c */; };
+		00F7660C196486840022F36A /* pbkdf2-sha256.c in Sources */ = {isa = PBXBuildFile; fileRef = 00F76601196486840022F36A /* pbkdf2-sha256.c */; };
+		00F7660D196486840022F36A /* pbkdf2-sha256.c in Sources */ = {isa = PBXBuildFile; fileRef = 00F76601196486840022F36A /* pbkdf2-sha256.c */; };
+		00F7660E196486840022F36A /* pwhash_scryptsalsa208sha256.c in Sources */ = {isa = PBXBuildFile; fileRef = 00F76603196486840022F36A /* pwhash_scryptsalsa208sha256.c */; };
+		00F7660F196486840022F36A /* pwhash_scryptsalsa208sha256.c in Sources */ = {isa = PBXBuildFile; fileRef = 00F76603196486840022F36A /* pwhash_scryptsalsa208sha256.c */; };
+		00F76612196486840022F36A /* pwhash_scryptsalsa208sha256_sse.c in Sources */ = {isa = PBXBuildFile; fileRef = 00F76606196486840022F36A /* pwhash_scryptsalsa208sha256_sse.c */; };
+		00F76613196486840022F36A /* pwhash_scryptsalsa208sha256_sse.c in Sources */ = {isa = PBXBuildFile; fileRef = 00F76606196486840022F36A /* pwhash_scryptsalsa208sha256_sse.c */; };
+		00FB32B5196611B40060AF33 /* NADigest.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FB32B4196611B40060AF33 /* NADigest.m */; };
+		00FB32B6196611B40060AF33 /* NADigest.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FB32B4196611B40060AF33 /* NADigest.m */; };
+		00FB32B9196615880060AF33 /* NADigestTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FB32B8196615880060AF33 /* NADigestTest.m */; };
+		0FBC48360BAD4C78A3966D5E /* NAUtilsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D9B20C4E4D843D8BE95A3F4 /* NAUtilsTest.m */; };
+		5518566434CB401F8C7972B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13CD629B7BBB41C19D39E5BE /* Foundation.framework */; };
+		A3D0E697480A448080A08B9F /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2946C6D94CF54A388BBC5FDB /* libPods-Tests.a */; };
+		E1B9636CA3F343619E9EA62D /* NAXSalsa20Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 8489A10DEBAE42E1AE0E12C6 /* NAXSalsa20Test.m */; };
+		F85A692963A7442D9C464718 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A5C6C1D40C411BB7BEAFA8 /* libPods.a */; };
+		F8D979F982F040BAB4872BBA /* NATwoFishTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DEC2040EC5840F38FEEEB48 /* NATwoFishTest.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D24B795A29304F86B71BB576 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 003BB2B41888A16E0019D88F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 003BB2BB1888A16E0019D88F;
+			remoteInfo = NACL;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		003BB2BA1888A16E0019D88F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				003BB2C51888A16E0019D88F /* NAChloride.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		00095B8A1953B57700F550CB /* NANSString+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NANSString+Utils.h"; sourceTree = "<group>"; };
+		00095B8B1953B57700F550CB /* NANSString+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NANSString+Utils.m"; sourceTree = "<group>"; };
+		00095BB61954CE3400F550CB /* NAXSalsa20.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NAXSalsa20.h; sourceTree = "<group>"; };
+		00095BB71954CE3400F550CB /* NAXSalsa20.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAXSalsa20.m; sourceTree = "<group>"; };
+		002CD7951953685D00767675 /* NAScrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NAScrypt.h; sourceTree = "<group>"; };
+		002CD7961953685D00767675 /* NAScrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAScrypt.m; sourceTree = "<group>"; };
+		002CD79A1953790100767675 /* NAScryptTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NAScryptTest.m; path = Tests/NAScryptTest.m; sourceTree = "<group>"; };
+		002CD79E1953921500767675 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		002CD79F1953921500767675 /* NAChloride.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = NAChloride.podspec; sourceTree = "<group>"; };
+		002CD7A1195396DE00767675 /* NAHMACTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NAHMACTest.m; path = Tests/NAHMACTest.m; sourceTree = "<group>"; };
+		003BB2BC1888A16E0019D88F /* libNAChloride.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libNAChloride.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		003BB2BF1888A16E0019D88F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		003BB2C41888A16E0019D88F /* NAChloride.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NAChloride.h; sourceTree = "<group>"; };
+		003BB2CD1888A16E0019D88F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		003BB2D01888A16E0019D88F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		003BB2E51888A1D50019D88F /* NASecretBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NASecretBox.h; sourceTree = "<group>"; };
+		003BB2E61888A1D50019D88F /* NASecretBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NASecretBox.m; sourceTree = "<group>"; };
+		003BB2E91888A2160019D88F /* NARandom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NARandom.h; sourceTree = "<group>"; };
+		003BB2EA1888A2160019D88F /* NARandom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NARandom.m; sourceTree = "<group>"; };
+		003BB2ED1888A72D0019D88F /* NAHKDF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NAHKDF.h; sourceTree = "<group>"; };
+		003BB2EE1888A72D0019D88F /* NAHKDF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAHKDF.m; sourceTree = "<group>"; };
+		003BB2F31888A9480019D88F /* NAHMAC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NAHMAC.h; sourceTree = "<group>"; };
+		003BB2F41888A9480019D88F /* NAHMAC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAHMAC.m; sourceTree = "<group>"; };
+		003BB2F71888AAF80019D88F /* NAInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAInterface.m; sourceTree = "<group>"; };
+		003BB2F91888ADCC0019D88F /* NANSData+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NANSData+Utils.h"; sourceTree = "<group>"; };
+		003BB2FA1888ADCC0019D88F /* NANSData+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NANSData+Utils.m"; sourceTree = "<group>"; };
+		004CA02F19CCDC4400499844 /* NAChloride Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NAChloride Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		004CA04419CCDC8D00499844 /* libPods-Tests.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-Tests.a"; path = "Pods/build/Debug-iphoneos/libPods-Tests.a"; sourceTree = "<group>"; };
+		004CA05119CCE07B00499844 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		004CB38B1888B99300EFE8F7 /* NAChloride-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NAChloride-Prefix.pch"; sourceTree = "<group>"; };
+		004CB38D1888BBC600EFE8F7 /* NASecretBoxTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NASecretBoxTest.m; path = Tests/NASecretBoxTest.m; sourceTree = "<group>"; };
+		004CB3B9188F205300EFE8F7 /* NAKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NAKeychain.h; sourceTree = "<group>"; };
+		004CB3BA188F205300EFE8F7 /* NAKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAKeychain.m; sourceTree = "<group>"; };
+		004CB3BD188F2BF000EFE8F7 /* NAKeychainTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NAKeychainTest.m; path = Tests/NAKeychainTest.m; sourceTree = "<group>"; };
+		0055133A19D3430F0021ABB0 /* NAOneTimeAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NAOneTimeAuth.h; sourceTree = "<group>"; };
+		0055133B19D3430F0021ABB0 /* NAOneTimeAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAOneTimeAuth.m; sourceTree = "<group>"; };
+		007A1B93195B77DB00110C88 /* NAInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NAInterface.h; sourceTree = "<group>"; };
+		008293E019CCE372001EDCC9 /* GRXCTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GRXCTestCase.h; path = Tests/GRXCTestCase.h; sourceTree = "<group>"; };
+		008293E119CCE372001EDCC9 /* GRXCTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GRXCTestCase.m; path = Tests/GRXCTestCase.m; sourceTree = "<group>"; };
+		008C8EBB1958EE2800C13987 /* KeccakF-1600-unrolling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KeccakF-1600-unrolling.h"; sourceTree = "<group>"; };
+		008C8EBC1958EF7100C13987 /* KeccakF-1600-opt32.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "KeccakF-1600-opt32.c"; sourceTree = "<group>"; };
+		008C8EBD1958EF7100C13987 /* KeccakF-1600-opt32-settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KeccakF-1600-opt32-settings.h"; sourceTree = "<group>"; };
+		008C8EC31958F42900C13987 /* NASHA3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NASHA3.h; sourceTree = "<group>"; };
+		008C8EC41958F42900C13987 /* NASHA3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NASHA3.m; sourceTree = "<group>"; };
+		008C8EC81958F53700C13987 /* NASHA3Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NASHA3Test.m; path = Tests/NASHA3Test.m; sourceTree = "<group>"; };
+		00A9F67D1954DB0B0053A924 /* NATwoFish.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NATwoFish.h; sourceTree = "<group>"; };
+		00A9F67E1954DB0B0053A924 /* NATwoFish.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NATwoFish.m; sourceTree = "<group>"; };
+		00A9F6811954E3470053A924 /* NAAES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NAAES.h; sourceTree = "<group>"; };
+		00A9F6821954E3470053A924 /* NAAES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAAES.m; sourceTree = "<group>"; };
+		00A9F6891954FD920053A924 /* NACounter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NACounter.h; sourceTree = "<group>"; };
+		00A9F68A1954FD920053A924 /* NACounter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NACounter.m; sourceTree = "<group>"; };
+		00A9F68D19550B0A0053A924 /* NANSMutableData+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NANSMutableData+Utils.h"; sourceTree = "<group>"; };
+		00A9F68E19550B0A0053A924 /* NANSMutableData+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NANSMutableData+Utils.m"; sourceTree = "<group>"; };
+		00A9F69219551CC50053A924 /* hkdf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hkdf.c; sourceTree = "<group>"; };
+		00A9F69319551CC50053A924 /* hkdf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hkdf.h; sourceTree = "<group>"; };
+		00A9F69519551CC50053A924 /* twofish.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = twofish.c; sourceTree = "<group>"; };
+		00A9F69619551CC50053A924 /* twofish.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = twofish.h; sourceTree = "<group>"; };
+		00AFEFAA18A5B2D30072632C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		00C8A5FD195CD07100B6CF3F /* NAHKDFTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NAHKDFTest.m; path = Tests/NAHKDFTest.m; sourceTree = "<group>"; };
+		00DCF12F18ECD57E0019CBD4 /* NARandomTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NARandomTest.m; path = Tests/NARandomTest.m; sourceTree = "<group>"; };
+		00E2BC761ACA03460061F0B2 /* KeccakF-1600-32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KeccakF-1600-32.h"; sourceTree = "<group>"; };
+		00E2BC771ACA03DB0061F0B2 /* KeccakF-1600-32-s2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KeccakF-1600-32-s2.h"; sourceTree = "<group>"; };
+		00E2BC781ACA03DB0061F0B2 /* KeccakF-1600-32-s1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KeccakF-1600-32-s1.h"; sourceTree = "<group>"; };
+		00E2BC791ACA03DB0061F0B2 /* KeccakF-1600-32-rvk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KeccakF-1600-32-rvk.h"; sourceTree = "<group>"; };
+		00E360601958C700003CF604 /* NAAESTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NAAESTest.m; path = Tests/NAAESTest.m; sourceTree = "<group>"; };
+		00F550351958E5F0007F2574 /* brg_endian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = brg_endian.h; sourceTree = "<group>"; };
+		00F5503C1958E5F0007F2574 /* KeccakF-1600-int-set.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KeccakF-1600-int-set.h"; sourceTree = "<group>"; };
+		00F5503D1958E5F0007F2574 /* KeccakF-1600-interface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KeccakF-1600-interface.h"; sourceTree = "<group>"; };
+		00F550461958E5F0007F2574 /* KeccakNISTInterface.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = KeccakNISTInterface.c; sourceTree = "<group>"; };
+		00F550471958E5F0007F2574 /* KeccakNISTInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeccakNISTInterface.h; sourceTree = "<group>"; };
+		00F550481958E5F0007F2574 /* KeccakSponge.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = KeccakSponge.c; sourceTree = "<group>"; };
+		00F550491958E5F0007F2574 /* KeccakSponge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeccakSponge.h; sourceTree = "<group>"; };
+		00F765FE196486840022F36A /* crypto_scrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypto_scrypt.h; sourceTree = "<group>"; };
+		00F76600196486840022F36A /* pwhash_scryptsalsa208sha256_nosse.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pwhash_scryptsalsa208sha256_nosse.c; sourceTree = "<group>"; };
+		00F76601196486840022F36A /* pbkdf2-sha256.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "pbkdf2-sha256.c"; sourceTree = "<group>"; };
+		00F76602196486840022F36A /* pbkdf2-sha256.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "pbkdf2-sha256.h"; sourceTree = "<group>"; };
+		00F76603196486840022F36A /* pwhash_scryptsalsa208sha256.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pwhash_scryptsalsa208sha256.c; sourceTree = "<group>"; };
+		00F76606196486840022F36A /* pwhash_scryptsalsa208sha256_sse.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pwhash_scryptsalsa208sha256_sse.c; sourceTree = "<group>"; };
+		00F76607196486840022F36A /* sysendian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sysendian.h; sourceTree = "<group>"; };
+		00FB32B3196611B40060AF33 /* NADigest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NADigest.h; sourceTree = "<group>"; };
+		00FB32B4196611B40060AF33 /* NADigest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NADigest.m; sourceTree = "<group>"; };
+		00FB32B8196615880060AF33 /* NADigestTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NADigestTest.m; path = Tests/NADigestTest.m; sourceTree = "<group>"; };
+		13CD629B7BBB41C19D39E5BE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		1D9B20C4E4D843D8BE95A3F4 /* NAUtilsTest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NAUtilsTest.m; path = Tests/NAUtilsTest.m; sourceTree = "<group>"; };
+		2946C6D94CF54A388BBC5FDB /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		38A5BD3CD71EAAA5FDDB9E5B /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
+		3DEC2040EC5840F38FEEEB48 /* NATwoFishTest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NATwoFishTest.m; path = Tests/NATwoFishTest.m; sourceTree = "<group>"; };
+		51F1A2E4EA4CCFF2019E17F9 /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		805BE1F5906C46C1BEDDD388 /* main.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Tests/main.m; sourceTree = "<group>"; };
+		8489A10DEBAE42E1AE0E12C6 /* NAXSalsa20Test.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NAXSalsa20Test.m; path = Tests/NAXSalsa20Test.m; sourceTree = "<group>"; };
+		8A047D45035F6F99C05F2670 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		A6427EFB103D46EFB5A03F92 /* Tests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tests.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6A5C6C1D40C411BB7BEAFA8 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBEEE840CBE4DA5C46F28592 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		003BB2B91888A16E0019D88F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				003BB2C01888A16E0019D88F /* Foundation.framework in Frameworks */,
+				F85A692963A7442D9C464718 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		004CA02C19CCDC4400499844 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FA71F7506AB490880E79CE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5518566434CB401F8C7972B9 /* Foundation.framework in Frameworks */,
+				A3D0E697480A448080A08B9F /* libPods-Tests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		003BB2B31888A16E0019D88F = {
+			isa = PBXGroup;
+			children = (
+				002CD79E1953921500767675 /* Podfile */,
+				002CD79F1953921500767675 /* NAChloride.podspec */,
+				00AFEFAA18A5B2D30072632C /* README.md */,
+				003BB2C11888A16E0019D88F /* NAChloride */,
+				003BB2BE1888A16E0019D88F /* Frameworks */,
+				003BB2BD1888A16E0019D88F /* Products */,
+				82229D0F372F44D299E9CFFC /* Tests */,
+				45B1FB23BC1967B6D8B6A6BB /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		003BB2BD1888A16E0019D88F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				003BB2BC1888A16E0019D88F /* libNAChloride.a */,
+				A6427EFB103D46EFB5A03F92 /* Tests.app */,
+				004CA02F19CCDC4400499844 /* NAChloride Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		003BB2BE1888A16E0019D88F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				004CA05119CCE07B00499844 /* Security.framework */,
+				004CA04419CCDC8D00499844 /* libPods-Tests.a */,
+				003BB2BF1888A16E0019D88F /* Foundation.framework */,
+				003BB2CD1888A16E0019D88F /* XCTest.framework */,
+				003BB2D01888A16E0019D88F /* UIKit.framework */,
+				D6A5C6C1D40C411BB7BEAFA8 /* libPods.a */,
+				99EDB06A9C9B4F3D9E482E13 /* iOS */,
+				2946C6D94CF54A388BBC5FDB /* libPods-Tests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		003BB2C11888A16E0019D88F /* NAChloride */ = {
+			isa = PBXGroup;
+			children = (
+				00F765FC196486840022F36A /* scryptsalsa208sha256 */,
+				00E361281958E234003CF604 /* keccak */,
+				00A9F69119551CC50053A924 /* HKDF */,
+				00A9F69419551CC50053A924 /* TwoFish */,
+				003BB2C41888A16E0019D88F /* NAChloride.h */,
+				007A1B93195B77DB00110C88 /* NAInterface.h */,
+				003BB2F71888AAF80019D88F /* NAInterface.m */,
+				003BB2E51888A1D50019D88F /* NASecretBox.h */,
+				003BB2E61888A1D50019D88F /* NASecretBox.m */,
+				0055133A19D3430F0021ABB0 /* NAOneTimeAuth.h */,
+				0055133B19D3430F0021ABB0 /* NAOneTimeAuth.m */,
+				003BB2E91888A2160019D88F /* NARandom.h */,
+				003BB2EA1888A2160019D88F /* NARandom.m */,
+				003BB2ED1888A72D0019D88F /* NAHKDF.h */,
+				003BB2EE1888A72D0019D88F /* NAHKDF.m */,
+				003BB2F31888A9480019D88F /* NAHMAC.h */,
+				003BB2F41888A9480019D88F /* NAHMAC.m */,
+				004CB3B9188F205300EFE8F7 /* NAKeychain.h */,
+				004CB3BA188F205300EFE8F7 /* NAKeychain.m */,
+				003BB2F91888ADCC0019D88F /* NANSData+Utils.h */,
+				003BB2FA1888ADCC0019D88F /* NANSData+Utils.m */,
+				00A9F68D19550B0A0053A924 /* NANSMutableData+Utils.h */,
+				00A9F68E19550B0A0053A924 /* NANSMutableData+Utils.m */,
+				00095B8A1953B57700F550CB /* NANSString+Utils.h */,
+				00095B8B1953B57700F550CB /* NANSString+Utils.m */,
+				002CD7951953685D00767675 /* NAScrypt.h */,
+				002CD7961953685D00767675 /* NAScrypt.m */,
+				00095BB61954CE3400F550CB /* NAXSalsa20.h */,
+				00095BB71954CE3400F550CB /* NAXSalsa20.m */,
+				00A9F67D1954DB0B0053A924 /* NATwoFish.h */,
+				00A9F67E1954DB0B0053A924 /* NATwoFish.m */,
+				00A9F6811954E3470053A924 /* NAAES.h */,
+				00A9F6821954E3470053A924 /* NAAES.m */,
+				00A9F6891954FD920053A924 /* NACounter.h */,
+				00A9F68A1954FD920053A924 /* NACounter.m */,
+				00FB32B3196611B40060AF33 /* NADigest.h */,
+				00FB32B4196611B40060AF33 /* NADigest.m */,
+				008C8EC31958F42900C13987 /* NASHA3.h */,
+				008C8EC41958F42900C13987 /* NASHA3.m */,
+				004CB38A1888B98300EFE8F7 /* Supporting Files */,
+			);
+			path = NAChloride;
+			sourceTree = "<group>";
+		};
+		004CB38A1888B98300EFE8F7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				004CB38B1888B99300EFE8F7 /* NAChloride-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		00A9F69119551CC50053A924 /* HKDF */ = {
+			isa = PBXGroup;
+			children = (
+				00A9F69319551CC50053A924 /* hkdf.h */,
+				00A9F69219551CC50053A924 /* hkdf.c */,
+			);
+			path = HKDF;
+			sourceTree = "<group>";
+		};
+		00A9F69419551CC50053A924 /* TwoFish */ = {
+			isa = PBXGroup;
+			children = (
+				00A9F69619551CC50053A924 /* twofish.h */,
+				00A9F69519551CC50053A924 /* twofish.c */,
+			);
+			path = TwoFish;
+			sourceTree = "<group>";
+		};
+		00E361281958E234003CF604 /* keccak */ = {
+			isa = PBXGroup;
+			children = (
+				00E2BC771ACA03DB0061F0B2 /* KeccakF-1600-32-s2.h */,
+				00E2BC781ACA03DB0061F0B2 /* KeccakF-1600-32-s1.h */,
+				00E2BC791ACA03DB0061F0B2 /* KeccakF-1600-32-rvk.h */,
+				00E2BC761ACA03460061F0B2 /* KeccakF-1600-32.h */,
+				008C8EBC1958EF7100C13987 /* KeccakF-1600-opt32.c */,
+				008C8EBD1958EF7100C13987 /* KeccakF-1600-opt32-settings.h */,
+				00F550351958E5F0007F2574 /* brg_endian.h */,
+				00F5503C1958E5F0007F2574 /* KeccakF-1600-int-set.h */,
+				00F5503D1958E5F0007F2574 /* KeccakF-1600-interface.h */,
+				008C8EBB1958EE2800C13987 /* KeccakF-1600-unrolling.h */,
+				00F550471958E5F0007F2574 /* KeccakNISTInterface.h */,
+				00F550461958E5F0007F2574 /* KeccakNISTInterface.c */,
+				00F550491958E5F0007F2574 /* KeccakSponge.h */,
+				00F550481958E5F0007F2574 /* KeccakSponge.c */,
+			);
+			path = keccak;
+			sourceTree = "<group>";
+		};
+		00F765FC196486840022F36A /* scryptsalsa208sha256 */ = {
+			isa = PBXGroup;
+			children = (
+				00F765FE196486840022F36A /* crypto_scrypt.h */,
+				00F765FF196486840022F36A /* nosse */,
+				00F76601196486840022F36A /* pbkdf2-sha256.c */,
+				00F76602196486840022F36A /* pbkdf2-sha256.h */,
+				00F76603196486840022F36A /* pwhash_scryptsalsa208sha256.c */,
+				00F76605196486840022F36A /* sse */,
+				00F76607196486840022F36A /* sysendian.h */,
+			);
+			path = scryptsalsa208sha256;
+			sourceTree = "<group>";
+		};
+		00F765FF196486840022F36A /* nosse */ = {
+			isa = PBXGroup;
+			children = (
+				00F76600196486840022F36A /* pwhash_scryptsalsa208sha256_nosse.c */,
+			);
+			path = nosse;
+			sourceTree = "<group>";
+		};
+		00F76605196486840022F36A /* sse */ = {
+			isa = PBXGroup;
+			children = (
+				00F76606196486840022F36A /* pwhash_scryptsalsa208sha256_sse.c */,
+			);
+			path = sse;
+			sourceTree = "<group>";
+		};
+		45B1FB23BC1967B6D8B6A6BB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EBEEE840CBE4DA5C46F28592 /* Pods.debug.xcconfig */,
+				8A047D45035F6F99C05F2670 /* Pods.release.xcconfig */,
+				38A5BD3CD71EAAA5FDDB9E5B /* Pods-Tests.release.xcconfig */,
+				51F1A2E4EA4CCFF2019E17F9 /* Pods-Tests.debug.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		82229D0F372F44D299E9CFFC /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				008293E019CCE372001EDCC9 /* GRXCTestCase.h */,
+				008293E119CCE372001EDCC9 /* GRXCTestCase.m */,
+				805BE1F5906C46C1BEDDD388 /* main.m */,
+				004CB38D1888BBC600EFE8F7 /* NASecretBoxTest.m */,
+				004CB3BD188F2BF000EFE8F7 /* NAKeychainTest.m */,
+				00DCF12F18ECD57E0019CBD4 /* NARandomTest.m */,
+				002CD79A1953790100767675 /* NAScryptTest.m */,
+				002CD7A1195396DE00767675 /* NAHMACTest.m */,
+				8489A10DEBAE42E1AE0E12C6 /* NAXSalsa20Test.m */,
+				3DEC2040EC5840F38FEEEB48 /* NATwoFishTest.m */,
+				1D9B20C4E4D843D8BE95A3F4 /* NAUtilsTest.m */,
+				00E360601958C700003CF604 /* NAAESTest.m */,
+				008C8EC81958F53700C13987 /* NASHA3Test.m */,
+				00C8A5FD195CD07100B6CF3F /* NAHKDFTest.m */,
+				00FB32B8196615880060AF33 /* NADigestTest.m */,
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
+		99EDB06A9C9B4F3D9E482E13 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				13CD629B7BBB41C19D39E5BE /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		003BB2BB1888A16E0019D88F /* NAChloride */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 003BB2DF1888A16E0019D88F /* Build configuration list for PBXNativeTarget "NAChloride" */;
+			buildPhases = (
+				931CF64ADF564046A75184FB /* Check Pods Manifest.lock */,
+				003BB2B81888A16E0019D88F /* Sources */,
+				003BB2B91888A16E0019D88F /* Frameworks */,
+				003BB2BA1888A16E0019D88F /* CopyFiles */,
+				9A53AEE05FBE4ACBAC2A8F81 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NAChloride;
+			productName = NACL;
+			productReference = 003BB2BC1888A16E0019D88F /* libNAChloride.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		004CA02E19CCDC4400499844 /* NAChloride Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 004CA03719CCDC4400499844 /* Build configuration list for PBXNativeTarget "NAChloride Tests" */;
+			buildPhases = (
+				004CA02B19CCDC4400499844 /* Sources */,
+				004CA02C19CCDC4400499844 /* Frameworks */,
+				004CA02D19CCDC4400499844 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NAChloride Tests";
+			productName = "NAChloride Tests";
+			productReference = 004CA02F19CCDC4400499844 /* NAChloride Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6337F4892A394B1DAC9C6B12 /* Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94EB18D231DD47BDA7005DE7 /* Build configuration list for PBXNativeTarget "Tests" */;
+			buildPhases = (
+				CF811191675445E3874A733F /* Check Pods Manifest.lock */,
+				6FCDB83F98BD48FDBCFA6EC2 /* Sources */,
+				0FA71F7506AB490880E79CE9 /* Frameworks */,
+				51D6A1FAF21941A5B7B55901 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FE7A6B305C1C4B08A52D0891 /* PBXTargetDependency */,
+			);
+			name = Tests;
+			productName = Tests;
+			productReference = A6427EFB103D46EFB5A03F92 /* Tests.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		003BB2B41888A16E0019D88F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = NA;
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Gabriel Handford";
+				TargetAttributes = {
+					004CA02E19CCDC4400499844 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 003BB2B71888A16E0019D88F /* Build configuration list for PBXProject "NAChloride" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 003BB2B31888A16E0019D88F;
+			productRefGroup = 003BB2BD1888A16E0019D88F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				003BB2BB1888A16E0019D88F /* NAChloride */,
+				6337F4892A394B1DAC9C6B12 /* Tests */,
+				004CA02E19CCDC4400499844 /* NAChloride Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		004CA02D19CCDC4400499844 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00E2BC7C1ACA03DB0061F0B2 /* KeccakF-1600-32-rvk.h in Resources */,
+				00E2BC7A1ACA03DB0061F0B2 /* KeccakF-1600-32-s2.h in Resources */,
+				00E2BC7B1ACA03DB0061F0B2 /* KeccakF-1600-32-s1.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		51D6A1FAF21941A5B7B55901 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tests/Pods-Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		931CF64ADF564046A75184FB /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9A53AEE05FBE4ACBAC2A8F81 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF811191675445E3874A733F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		003BB2B81888A16E0019D88F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				003BB2EF1888A72D0019D88F /* NAHKDF.m in Sources */,
+				00A9F68F19550B0A0053A924 /* NANSMutableData+Utils.m in Sources */,
+				00A9F67F1954DB0B0053A924 /* NATwoFish.m in Sources */,
+				00A9F68B1954FD920053A924 /* NACounter.m in Sources */,
+				004CB3BB188F205300EFE8F7 /* NAKeychain.m in Sources */,
+				00A9F69B19551CC50053A924 /* hkdf.c in Sources */,
+				003BB2FB1888ADCC0019D88F /* NANSData+Utils.m in Sources */,
+				00095B8C1953B57700F550CB /* NANSString+Utils.m in Sources */,
+				00F76612196486840022F36A /* pwhash_scryptsalsa208sha256_sse.c in Sources */,
+				00F5504E1958E5F0007F2574 /* KeccakNISTInterface.c in Sources */,
+				008C8EBE1958EF7100C13987 /* KeccakF-1600-opt32.c in Sources */,
+				003BB2F81888AAF80019D88F /* NAInterface.m in Sources */,
+				003BB2F51888A9480019D88F /* NAHMAC.m in Sources */,
+				003BB2EB1888A2160019D88F /* NARandom.m in Sources */,
+				00F7660A196486840022F36A /* pwhash_scryptsalsa208sha256_nosse.c in Sources */,
+				00FB32B5196611B40060AF33 /* NADigest.m in Sources */,
+				002CD7971953685D00767675 /* NAScrypt.m in Sources */,
+				003BB2E71888A1D50019D88F /* NASecretBox.m in Sources */,
+				008C8EC51958F42900C13987 /* NASHA3.m in Sources */,
+				00A9F6831954E3470053A924 /* NAAES.m in Sources */,
+				0055133C19D3430F0021ABB0 /* NAOneTimeAuth.m in Sources */,
+				00A9F69D19551CC50053A924 /* twofish.c in Sources */,
+				00F7660E196486840022F36A /* pwhash_scryptsalsa208sha256.c in Sources */,
+				00095BB81954CE3400F550CB /* NAXSalsa20.m in Sources */,
+				00F550501958E5F0007F2574 /* KeccakSponge.c in Sources */,
+				00F7660C196486840022F36A /* pbkdf2-sha256.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		004CA02B19CCDC4400499844 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				008293F619CCE466001EDCC9 /* NAXSalsa20.m in Sources */,
+				008293E319CCE430001EDCC9 /* NASecretBoxTest.m in Sources */,
+				008293F319CCE45C001EDCC9 /* NAKeychain.m in Sources */,
+				004CA05719CCE1DD00499844 /* NANSString+Utils.m in Sources */,
+				008293E719CCE43B001EDCC9 /* NAHMACTest.m in Sources */,
+				008293F219CCE458001EDCC9 /* NAHMAC.m in Sources */,
+				008293E219CCE372001EDCC9 /* GRXCTestCase.m in Sources */,
+				004CA05319CCE08E00499844 /* KeccakF-1600-opt32.c in Sources */,
+				008293F519CCE463001EDCC9 /* NAScrypt.m in Sources */,
+				008293F719CCE468001EDCC9 /* NATwoFish.m in Sources */,
+				008293EC19CCE447001EDCC9 /* NAHKDFTest.m in Sources */,
+				008293ED19CCE44A001EDCC9 /* NADigestTest.m in Sources */,
+				008293E419CCE434001EDCC9 /* NAKeychainTest.m in Sources */,
+				004CA05619CCE0CF00499844 /* NANSData+Utils.m in Sources */,
+				008293F919CCE46C001EDCC9 /* NACounter.m in Sources */,
+				008293E919CCE43F001EDCC9 /* NATwoFishTest.m in Sources */,
+				008293EA19CCE441001EDCC9 /* NAUtilsTest.m in Sources */,
+				008293F119CCE456001EDCC9 /* NAHKDF.m in Sources */,
+				008293E519CCE437001EDCC9 /* NARandomTest.m in Sources */,
+				0082940119CCE48C001EDCC9 /* pwhash_scryptsalsa208sha256_sse.c in Sources */,
+				008293F819CCE46A001EDCC9 /* NAAES.m in Sources */,
+				008293FC19CCE47B001EDCC9 /* hkdf.c in Sources */,
+				008293FB19CCE477001EDCC9 /* twofish.c in Sources */,
+				008293FA19CCE46F001EDCC9 /* NADigest.m in Sources */,
+				008293EF19CCE452001EDCC9 /* NASecretBox.m in Sources */,
+				004CA05419CCE09700499844 /* KeccakNISTInterface.c in Sources */,
+				004CA04E19CCDFE200499844 /* NASHA3Test.m in Sources */,
+				008293E819CCE43D001EDCC9 /* NAXSalsa20Test.m in Sources */,
+				008293E619CCE439001EDCC9 /* NAScryptTest.m in Sources */,
+				008293EE19CCE450001EDCC9 /* NAInterface.m in Sources */,
+				004CA05019CCE05E00499844 /* NASHA3.m in Sources */,
+				0082940219CCE48F001EDCC9 /* pwhash_scryptsalsa208sha256_nosse.c in Sources */,
+				008293F419CCE461001EDCC9 /* NANSMutableData+Utils.m in Sources */,
+				008293F019CCE454001EDCC9 /* NARandom.m in Sources */,
+				008293EB19CCE443001EDCC9 /* NAAESTest.m in Sources */,
+				008293FF19CCE486001EDCC9 /* pwhash_scryptsalsa208sha256.c in Sources */,
+				004CA05519CCE09B00499844 /* KeccakSponge.c in Sources */,
+				008293FE19CCE482001EDCC9 /* pbkdf2-sha256.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FCDB83F98BD48FDBCFA6EC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00A9F69E19551CC50053A924 /* twofish.c in Sources */,
+				0082940319CCE5B7001EDCC9 /* GRXCTestCase.m in Sources */,
+				00095B8D1953B57700F550CB /* NANSString+Utils.m in Sources */,
+				004CB3901888BC7700EFE8F7 /* NASecretBox.m in Sources */,
+				002CD79B1953790100767675 /* NAScryptTest.m in Sources */,
+				004CB3951888BC8100EFE8F7 /* NANSData+Utils.m in Sources */,
+				00A9F6801954DB0B0053A924 /* NATwoFish.m in Sources */,
+				002CD7A2195396DE00767675 /* NAHMACTest.m in Sources */,
+				00F76613196486840022F36A /* pwhash_scryptsalsa208sha256_sse.c in Sources */,
+				002CD7981953685D00767675 /* NAScrypt.m in Sources */,
+				00A9F6841954E3470053A924 /* NAAES.m in Sources */,
+				00C8A5FE195CD07100B6CF3F /* NAHKDFTest.m in Sources */,
+				004CB3911888BC7900EFE8F7 /* NARandom.m in Sources */,
+				00A9F69019550B0A0053A924 /* NANSMutableData+Utils.m in Sources */,
+				004CB3BE188F2BF000EFE8F7 /* NAKeychainTest.m in Sources */,
+				00F7660B196486840022F36A /* pwhash_scryptsalsa208sha256_nosse.c in Sources */,
+				00FB32B6196611B40060AF33 /* NADigest.m in Sources */,
+				00DCF13018ECD57E0019CBD4 /* NARandomTest.m in Sources */,
+				004CB3941888BC7F00EFE8F7 /* NAHMAC.m in Sources */,
+				00F7660D196486840022F36A /* pbkdf2-sha256.c in Sources */,
+				0055133D19D3430F0021ABB0 /* NAOneTimeAuth.m in Sources */,
+				004CB38F1888BC7500EFE8F7 /* NAInterface.m in Sources */,
+				00F5504F1958E5F0007F2574 /* KeccakNISTInterface.c in Sources */,
+				00FB32B9196615880060AF33 /* NADigestTest.m in Sources */,
+				008C8EBF1958EF7100C13987 /* KeccakF-1600-opt32.c in Sources */,
+				00F550511958E5F0007F2574 /* KeccakSponge.c in Sources */,
+				004CB38E1888BBC600EFE8F7 /* NASecretBoxTest.m in Sources */,
+				008C8EC61958F42900C13987 /* NASHA3.m in Sources */,
+				004CB3961888C0B300EFE8F7 /* main.m in Sources */,
+				00E360621958C700003CF604 /* NAAESTest.m in Sources */,
+				004CB3BF188F2DA700EFE8F7 /* NAKeychain.m in Sources */,
+				00A9F68C1954FD920053A924 /* NACounter.m in Sources */,
+				004CB3921888BC7B00EFE8F7 /* NAHKDF.m in Sources */,
+				00095BB91954CE3400F550CB /* NAXSalsa20.m in Sources */,
+				00A9F69C19551CC50053A924 /* hkdf.c in Sources */,
+				00F7660F196486840022F36A /* pwhash_scryptsalsa208sha256.c in Sources */,
+				E1B9636CA3F343619E9EA62D /* NAXSalsa20Test.m in Sources */,
+				004CA04F19CCDFE400499844 /* NASHA3Test.m in Sources */,
+				F8D979F982F040BAB4872BBA /* NATwoFishTest.m in Sources */,
+				0FBC48360BAD4C78A3966D5E /* NAUtilsTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FE7A6B305C1C4B08A52D0891 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 003BB2BB1888A16E0019D88F /* NAChloride */;
+			targetProxy = D24B795A29304F86B71BB576 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		003BB2DD1888A16E0019D88F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		003BB2DE1888A16E0019D88F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		003BB2E01888A16E0019D88F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBEEE840CBE4DA5C46F28592 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				DSTROOT = /tmp/NACL.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NAChloride/NAChloride-Prefix.pch";
+				PRODUCT_NAME = NAChloride;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		003BB2E11888A16E0019D88F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A047D45035F6F99C05F2670 /* Pods.release.xcconfig */;
+			buildSettings = {
+				DSTROOT = /tmp/NACL.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NAChloride/NAChloride-Prefix.pch";
+				PRODUCT_NAME = NAChloride;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		004CA03519CCDC4400499844 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "Tests/TestsXC-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		004CA03619CCDC4400499844 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "Tests/TestsXC-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		19E4EE688E274B7BA0C4E42A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51F1A2E4EA4CCFF2019E17F9 /* Pods-Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NAChloride/NAChloride-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		1FECE7F165694890A5B433C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38A5BD3CD71EAAA5FDDB9E5B /* Pods-Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NAChloride/NAChloride-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		003BB2B71888A16E0019D88F /* Build configuration list for PBXProject "NAChloride" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				003BB2DD1888A16E0019D88F /* Debug */,
+				003BB2DE1888A16E0019D88F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		003BB2DF1888A16E0019D88F /* Build configuration list for PBXNativeTarget "NAChloride" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				003BB2E01888A16E0019D88F /* Debug */,
+				003BB2E11888A16E0019D88F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		004CA03719CCDC4400499844 /* Build configuration list for PBXNativeTarget "NAChloride Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				004CA03519CCDC4400499844 /* Debug */,
+				004CA03619CCDC4400499844 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94EB18D231DD47BDA7005DE7 /* Build configuration list for PBXNativeTarget "Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FECE7F165694890A5B433C3 /* Release */,
+				19E4EE688E274B7BA0C4E42A /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 003BB2B41888A16E0019D88F /* Project object */;
+}

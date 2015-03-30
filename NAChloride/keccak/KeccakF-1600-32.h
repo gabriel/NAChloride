@@ -13,14 +13,14 @@ http://creativecommons.org/publicdomain/zero/1.0/
 
 #ifdef UseSchedule
     #if (UseSchedule == 1)
-        #include "KeccakF-1600-32-s1.macros"
+        #include "KeccakF-1600-32-s1.h"
     #elif (UseSchedule == 2)
-        #include "KeccakF-1600-32-s2.macros"
+        #include "KeccakF-1600-32-s2.h"
     #elif (UseSchedule == 3)
-        #include "KeccakF-1600-32-rvk.macros"
+        #include "KeccakF-1600-32-rvk.h"
     #else
         #error "This schedule is not supported."
     #endif
 #else
-    #include "KeccakF-1600-32-s1.macros"
+    #include "KeccakF-1600-32-s1.h"
 #endif
