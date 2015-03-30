@@ -24,11 +24,9 @@
       return nil;
   }
     
-    // Remove MACBYTES from outdata
-  return [NSData dataWithBytes:[outData bytes]
-                        length:([outData length] - crypto_secretbox_macbytes())];
+  // Remove MACBYTES from outdata
+  return [NSData dataWithBytes:[outData bytes] length:([outData length] - crypto_secretbox_macbytes())];
 }
-
 
 - (NSData *)encrypt:(NSData *)data nonce:(NSData *)nonce key:(NSData *)key error:(NSError * __autoreleasing *)error {
   if (!nonce || [nonce length] != crypto_secretbox_noncebytes()) {
@@ -58,6 +56,5 @@
     
   return outData;
 }
-
 
 @end
