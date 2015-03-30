@@ -6,6 +6,8 @@
 //  Copyright (c) 2014 Gabriel Handford. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
+
 @interface NSMutableData (NAUtils)
 
 - (void)na_XORWithData:(NSData *)data index:(NSInteger)index;
