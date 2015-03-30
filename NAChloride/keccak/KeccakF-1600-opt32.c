@@ -227,8 +227,8 @@ static void setInterleavedWordsInto8bytes(UINT8* dest, UINT32* evenAndOdd)
 #define ROL32(a, offset) ((((UINT32)a) << (offset)) ^ (((UINT32)a) >> (32-(offset))))
 #endif
 
-#include "KeccakF-1600-unrolling.macros"
-#include "KeccakF-1600-32.macros"
+#include "KeccakF-1600-unrolling.h"
+#include "KeccakF-1600-32.h"
 
 #if (UseSchedule == 3)
 
