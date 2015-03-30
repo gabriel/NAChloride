@@ -19,12 +19,14 @@ http://creativecommons.org/publicdomain/zero/1.0/
 #define KeccakMaximumRate 1536
 #define KeccakMaximumRateInBytes (KeccakMaximumRate/8)
 
+#ifndef ALIGN
 #if defined(__GNUC__)
 #define ALIGN __attribute__ ((aligned(32)))
 #elif defined(_MSC_VER)
 #define ALIGN __declspec(align(32))
 #else
 #define ALIGN
+#endif
 #endif
 
 ALIGN typedef struct spongeStateStruct {
