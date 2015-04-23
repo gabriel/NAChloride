@@ -11,8 +11,12 @@
 @implementation NSString (NAUtils)
 
 - (NSData *)na_dataFromHexString {
-  const char* chars = [self UTF8String];
-  NSMutableData* data = [NSMutableData dataWithCapacity:self.length / 2];
+  if (self.length % 2 != 0) {
+    return nil;
+  }
+
+  const char *chars = [self UTF8String];
+  NSMutableData *data = [NSMutableData dataWithCapacity:self.length / 2];
   char byteChars[3] = {0, 0, 0};
   unsigned long wholeByte;
   

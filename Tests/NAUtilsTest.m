@@ -65,4 +65,9 @@
   //GRAssertThrows([data na_sliceNoCopyAtIndex:5 data:&data1 data:&data2]);
 }
 
+- (void)testBadHex {
+  NSData *data = [@"deadbee" na_dataFromHexString];
+  GRAssertNil(data);
+}
+
 @end
