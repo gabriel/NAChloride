@@ -68,6 +68,9 @@
 - (void)testBadHex {
   NSData *data = [@"deadbee" na_dataFromHexString];
   GRAssertNil(data);
+
+  NSData *data2 = [@"deadbeef" na_dataFromHexString];
+  GRAssertNotNil(data2);
 }
 
 @end

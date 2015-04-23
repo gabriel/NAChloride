@@ -11,7 +11,7 @@
 @implementation NSString (NAUtils)
 
 - (NSData *)na_dataFromHexString {
-  if (self.length % 2 != 0) {
+  if ((self.length % 2) != 0) {
     return nil;
   }
 
