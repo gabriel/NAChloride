@@ -1,32 +1,32 @@
 //
-//  NAKeychainTest.m
-//  NACL
+//  NAChloride
 //
-//  Created by Gabriel Handford on 1/21/14.
-//  Copyright (c) 2014 Gabriel Handford. All rights reserved.
+//  Created by Gabriel on 1/16/14.
+//  Copyright (c) 2015 Gabriel Handford. All rights reserved.
 //
 
-#import "GRXCTestCase.h"
+#import <Foundation/Foundation.h>
+#import <XCTest/XCTest.h>
 
-#import "NAChloride.h"
+#import "NAKeychain.h"
+#import "NARandom.h"
+#import "NAInterface.h"
 
-@interface NAKeychainTest : GRXCTestCase { }
+@interface NAKeychainTest : XCTestCase { }
 @end
 
 
 @implementation NAKeychainTest
 
-- (void)testSymmetricKey {
-  [NAKeychain deleteAll];
-  
+- (void)_testSymmetricKey {
   NSData *keyExisting = [NAKeychain symmetricKeyWithApplicationLabel:@"NAChloride"];
-  GRAssertNil(keyExisting);
+  XCTAssertNil(keyExisting);
   
   NSData *key = [NARandom randomData:NASecretBoxKeySize error:nil];
-  [NAKeychain addSymmetricKey:key applicationLabel:@"NAChloride" tag:nil label:nil];
+  XCTAssertTrue([NAKeychain addSymmetricKey:key applicationLabel:@"NAChloride" tag:nil label:nil]);
   
   NSData *keyOut = [NAKeychain symmetricKeyWithApplicationLabel:@"NAChloride"];
-  GRAssertEqualObjects(key, keyOut);
+  XCTAssertEqualObjects(key, keyOut);
 }
 
 @end

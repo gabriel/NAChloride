@@ -1,16 +1,16 @@
 //
-//  NAAESTest.m
 //  NAChloride
 //
-//  Created by Gabriel on 6/23/14.
-//  Copyright (c) 2014 Gabriel Handford. All rights reserved.
+//  Created by Gabriel on 1/16/14.
+//  Copyright (c) 2015 Gabriel Handford. All rights reserved.
 //
 
-#import "GRXCTestCase.h"
+#import <Foundation/Foundation.h>
+#import <XCTest/XCTest.h>
 
 #import "NAChloride.h"
 
-@interface NAAESTest : GRXCTestCase
+@interface NAAESTest : XCTestCase
 @end
 
 @implementation NAAESTest
@@ -24,13 +24,13 @@
   
   NAAES *AES = [[NAAES alloc] initWithAlgorithm:NAAESAlgorithm256CTR];
   NSData *encrypted = [AES encrypt:message nonce:nonce key:key error:&error];
-  GRAssertNil(error);
-  GRAssertNotNil(encrypted);
-  GRAssertNotEqualObjects(message, encrypted);
-  GRAssertEqualStrings(@"06053d6dc46166a0b77fcd58c7819f1241d64b419323b08a", [encrypted na_hexString]);
+  XCTAssertNil(error);
+  XCTAssertNotNil(encrypted);
+  XCTAssertNotEqualObjects(message, encrypted);
+  XCTAssertEqualObjects(@"06053d6dc46166a0b77fcd58c7819f1241d64b419323b08a", [encrypted na_hexString]);
   
   NSData *decrypted = [AES decrypt:encrypted nonce:nonce key:key error:&error];
-  GRAssertEqualObjects(message, decrypted);
+  XCTAssertEqualObjects(message, decrypted);
 }
 
 @end

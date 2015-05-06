@@ -1,16 +1,16 @@
 //
-//  NAHKDFTest.m
 //  NAChloride
 //
-//  Created by Gabriel on 6/26/14.
-//  Copyright (c) 2014 Gabriel Handford. All rights reserved.
+//  Created by Gabriel on 1/16/14.
+//  Copyright (c) 2015 Gabriel Handford. All rights reserved.
 //
 
-#import "GRXCTestCase.h"
+#import <Foundation/Foundation.h>
+#import <XCTest/XCTest.h>
 
 #import "NAChloride.h"
 
-@interface NAHKDFTest : GRXCTestCase { }
+@interface NAHKDFTest : XCTestCase { }
 @end
 
 @implementation NAHKDFTest
@@ -21,7 +21,7 @@
   
   NSData *derivedKey = [NAHKDF HKDFForKey:key algorithm:NAHKDFAlgorithmSHA256 salt:salt info:nil length:64 error:nil];
 
-  GRAssertEquals([derivedKey length], (NSUInteger)64);
+  XCTAssertEqual([derivedKey length], (NSUInteger)64);
 }
 
 @end

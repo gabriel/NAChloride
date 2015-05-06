@@ -101,15 +101,4 @@
   return [self keyAttributesWithApplicationLabel:applicationLabel queryAttributes:queryAttributes];
 }
 
-+ (void)deleteAll {
-  for (id secclass in @[(__bridge id)kSecClassGenericPassword,
-                        (__bridge id)kSecClassInternetPassword,
-                        (__bridge id)kSecClassCertificate,
-                        (__bridge id)kSecClassKey,
-                        (__bridge id)kSecClassIdentity]) {
-    NSMutableDictionary *query = [NSMutableDictionary dictionaryWithObjectsAndKeys:secclass, (__bridge id)kSecClass, nil];
-    SecItemDelete((__bridge CFDictionaryRef)query);
-  }
-}
-
 @end

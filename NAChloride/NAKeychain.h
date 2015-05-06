@@ -14,6 +14,4 @@
 
 + (NSData *)symmetricKeyWithApplicationLabel:(NSString *)applicationLabel;
 
-+ (void)deleteAll;
-
 @end

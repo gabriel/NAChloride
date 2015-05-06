@@ -1,16 +1,18 @@
 //
-//  NAXSalsa20Test.m
 //  NAChloride
 //
-//  Created by Gabriel on 6/23/14.
-//  Copyright (c) 2014 Gabriel Handford. All rights reserved.
+//  Created by Gabriel on 1/16/14.
+//  Copyright (c) 2015 Gabriel Handford. All rights reserved.
 //
 
-#import "GRXCTestCase.h"
+#import <Foundation/Foundation.h>
+#import <XCTest/XCTest.h>
 
-#import "NAChloride.h"
+#import "NANSString+Utils.h"
+#import "NAXSalsa20.h"
+#import "NANSData+Utils.h"
 
-@interface NAXSalsa20Test : GRXCTestCase
+@interface NAXSalsa20Test : XCTestCase
 @end
 
 @implementation NAXSalsa20Test
@@ -23,12 +25,12 @@
   NSError *error = nil;
   NAXSalsa20 *XSalsa20 = [[NAXSalsa20 alloc] init];
   NSData *encrypted = [XSalsa20 encrypt:message nonce:nonce key:key error:&error];
-  GRAssertNil(error);
-  GRAssertNotNil(encrypted);
-  GRAssertEqualStrings([encrypted na_hexString], @"1e4e6cc57cf62aefea4a3ec9d7ccb707a4f7869a49b64036");
+  XCTAssertNil(error);
+  XCTAssertNotNil(encrypted);
+  XCTAssertEqualObjects([encrypted na_hexString], @"1e4e6cc57cf62aefea4a3ec9d7ccb707a4f7869a49b64036");
   
   NSData *decrypted = [XSalsa20 decrypt:encrypted nonce:nonce key:key error:&error];
-  GRAssertEqualObjects(message, decrypted);
+  XCTAssertEqualObjects(message, decrypted);
 }
 
 - (void)testDecrypt {
@@ -39,14 +41,14 @@
   NSData *nonce1 = [@"24-byte nonce for xsalsa" dataUsingEncoding:NSUTF8StringEncoding];
   NSData *decrypted1 = [XSalsa20 decrypt:encrypted1 nonce:nonce1 key:key1 error:nil];
   NSData *expected1 = [@"Hello world!" dataUsingEncoding:NSUTF8StringEncoding];
-  GRAssertEqualObjects(decrypted1, expected1);
+  XCTAssertEqualObjects(decrypted1, expected1);
   
   NSData *encrypted2 = [@"4848297feb1fb52fb66d81609bd547fabcbe7026edc8b5e5e449d088bfa69c088f5d8da1d791267c2c195a7f8cae9c4b4050d08ce6d3a151ec265f3a58e47648" na_dataFromHexString];
   NSData *key2 = [@"this is 32-byte key for xsalsa20" dataUsingEncoding:NSUTF8StringEncoding];
   NSData *nonce2 = [@"24-byte nonce for xsalsa" dataUsingEncoding:NSUTF8StringEncoding];
   NSData *decrypted2 = [XSalsa20 decrypt:encrypted2 nonce:nonce2 key:key2 error:nil];
   NSData *expected2 = [NSMutableData dataWithLength:64];
-  GRAssertEqualObjects(decrypted2, expected2);
+  XCTAssertEqualObjects(decrypted2, expected2);
 }
 
 @end

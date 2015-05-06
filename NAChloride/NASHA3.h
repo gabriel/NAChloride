@@ -8,8 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-#import "KeccakNISTInterface.h"
-
 @interface NASHA3 : NSObject
 
 + (NSData *)SHA3ForData:(NSData *)data digestBitLength:(NSUInteger)digestBitLength;

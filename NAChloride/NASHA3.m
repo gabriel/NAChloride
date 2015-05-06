@@ -8,6 +8,8 @@
 
 #import "NASHA3.h"
 
+#import "KeccakNISTInterface.h"
+
 @implementation NASHA3
 
 + (NSData *)SHA3ForData:(NSData *)data digestBitLength:(NSUInteger)digestBitLength {
