@@ -20,6 +20,7 @@ http://creativecommons.org/publicdomain/zero/1.0/
 #define KeccakMaximumRateInBytes (KeccakMaximumRate/8)
 
 #if defined(__GNUC__)
+#undef ALIGN
 #define ALIGN __attribute__ ((aligned(32)))
 #elif defined(_MSC_VER)
 #define ALIGN __declspec(align(32))

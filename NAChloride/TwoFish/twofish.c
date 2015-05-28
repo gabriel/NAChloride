@@ -1346,7 +1346,8 @@ void Twofish_prepare_key( Byte key[], int key_len, Twofish_key * xkey )
          * To stop such security disasters, we use blunt force.
          * If your program hangs here: fix the fatal routine!
          */
-        for(;;);        /* Infinite loop, which beats being insecure. */
+        //for(;;);        /* Infinite loop, which beats being insecure. */
+        return;
         }
 
     /* Check for valid key length. */
