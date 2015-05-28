@@ -70,23 +70,23 @@
 		00A420971AE71BCC0040CCDC /* NADigest.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FB32B4196611B40060AF33 /* NADigest.m */; };
 		00A420981AE71BCF0040CCDC /* NASHA3.h in Headers */ = {isa = PBXBuildFile; fileRef = 008C8EC31958F42900C13987 /* NASHA3.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		00A420991AE71BD20040CCDC /* NASHA3.m in Sources */ = {isa = PBXBuildFile; fileRef = 008C8EC41958F42900C13987 /* NASHA3.m */; };
-		00A4209C1AE71C230040CCDC /* hkdf.h in Headers */ = {isa = PBXBuildFile; fileRef = 00A9F69319551CC50053A924 /* hkdf.h */; };
+		00A4209C1AE71C230040CCDC /* hkdf.h in Headers */ = {isa = PBXBuildFile; fileRef = 00A9F69319551CC50053A924 /* hkdf.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		00A4209D1AE71C270040CCDC /* hkdf.c in Sources */ = {isa = PBXBuildFile; fileRef = 00A9F69219551CC50053A924 /* hkdf.c */; };
-		00A4209E1AE71C2C0040CCDC /* KeccakF-1600-32-s2.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E2BC771ACA03DB0061F0B2 /* KeccakF-1600-32-s2.h */; };
-		00A4209F1AE71C2E0040CCDC /* KeccakF-1600-32-s1.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E2BC781ACA03DB0061F0B2 /* KeccakF-1600-32-s1.h */; };
-		00A420A01AE71C300040CCDC /* KeccakF-1600-32-rvk.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E2BC791ACA03DB0061F0B2 /* KeccakF-1600-32-rvk.h */; };
-		00A420A11AE71C340040CCDC /* KeccakF-1600-32.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E2BC761ACA03460061F0B2 /* KeccakF-1600-32.h */; };
+		00A4209E1AE71C2C0040CCDC /* KeccakF-1600-32-s2.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E2BC771ACA03DB0061F0B2 /* KeccakF-1600-32-s2.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		00A4209F1AE71C2E0040CCDC /* KeccakF-1600-32-s1.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E2BC781ACA03DB0061F0B2 /* KeccakF-1600-32-s1.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		00A420A01AE71C300040CCDC /* KeccakF-1600-32-rvk.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E2BC791ACA03DB0061F0B2 /* KeccakF-1600-32-rvk.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		00A420A11AE71C340040CCDC /* KeccakF-1600-32.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E2BC761ACA03460061F0B2 /* KeccakF-1600-32.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		00A420A21AE71C340040CCDC /* KeccakF-1600-opt32.c in Sources */ = {isa = PBXBuildFile; fileRef = 008C8EBC1958EF7100C13987 /* KeccakF-1600-opt32.c */; };
-		00A420A31AE71C340040CCDC /* KeccakF-1600-opt32-settings.h in Headers */ = {isa = PBXBuildFile; fileRef = 008C8EBD1958EF7100C13987 /* KeccakF-1600-opt32-settings.h */; };
-		00A420A41AE71C370040CCDC /* brg_endian.h in Headers */ = {isa = PBXBuildFile; fileRef = 00F550351958E5F0007F2574 /* brg_endian.h */; };
-		00A420A51AE71C370040CCDC /* KeccakF-1600-int-set.h in Headers */ = {isa = PBXBuildFile; fileRef = 00F5503C1958E5F0007F2574 /* KeccakF-1600-int-set.h */; };
-		00A420A61AE71C370040CCDC /* KeccakF-1600-interface.h in Headers */ = {isa = PBXBuildFile; fileRef = 00F5503D1958E5F0007F2574 /* KeccakF-1600-interface.h */; };
-		00A420A71AE71C370040CCDC /* KeccakF-1600-unrolling.h in Headers */ = {isa = PBXBuildFile; fileRef = 008C8EBB1958EE2800C13987 /* KeccakF-1600-unrolling.h */; };
-		00A420A81AE71C370040CCDC /* KeccakNISTInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = 00F550471958E5F0007F2574 /* KeccakNISTInterface.h */; };
+		00A420A31AE71C340040CCDC /* KeccakF-1600-opt32-settings.h in Headers */ = {isa = PBXBuildFile; fileRef = 008C8EBD1958EF7100C13987 /* KeccakF-1600-opt32-settings.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		00A420A41AE71C370040CCDC /* brg_endian.h in Headers */ = {isa = PBXBuildFile; fileRef = 00F550351958E5F0007F2574 /* brg_endian.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		00A420A51AE71C370040CCDC /* KeccakF-1600-int-set.h in Headers */ = {isa = PBXBuildFile; fileRef = 00F5503C1958E5F0007F2574 /* KeccakF-1600-int-set.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		00A420A61AE71C370040CCDC /* KeccakF-1600-interface.h in Headers */ = {isa = PBXBuildFile; fileRef = 00F5503D1958E5F0007F2574 /* KeccakF-1600-interface.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		00A420A71AE71C370040CCDC /* KeccakF-1600-unrolling.h in Headers */ = {isa = PBXBuildFile; fileRef = 008C8EBB1958EE2800C13987 /* KeccakF-1600-unrolling.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		00A420A81AE71C370040CCDC /* KeccakNISTInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = 00F550471958E5F0007F2574 /* KeccakNISTInterface.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		00A420A91AE71C370040CCDC /* KeccakNISTInterface.c in Sources */ = {isa = PBXBuildFile; fileRef = 00F550461958E5F0007F2574 /* KeccakNISTInterface.c */; };
-		00A420AA1AE71C370040CCDC /* KeccakSponge.h in Headers */ = {isa = PBXBuildFile; fileRef = 00F550491958E5F0007F2574 /* KeccakSponge.h */; };
+		00A420AA1AE71C370040CCDC /* KeccakSponge.h in Headers */ = {isa = PBXBuildFile; fileRef = 00F550491958E5F0007F2574 /* KeccakSponge.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		00A420AB1AE71C370040CCDC /* KeccakSponge.c in Sources */ = {isa = PBXBuildFile; fileRef = 00F550481958E5F0007F2574 /* KeccakSponge.c */; };
-		00A420AC1AE71C3C0040CCDC /* twofish.h in Headers */ = {isa = PBXBuildFile; fileRef = 00A9F69619551CC50053A924 /* twofish.h */; };
+		00A420AC1AE71C3C0040CCDC /* twofish.h in Headers */ = {isa = PBXBuildFile; fileRef = 00A9F69619551CC50053A924 /* twofish.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		00A420AD1AE71C3C0040CCDC /* twofish.c in Sources */ = {isa = PBXBuildFile; fileRef = 00A9F69519551CC50053A924 /* twofish.c */; };
 		00A9F67F1954DB0B0053A924 /* NATwoFish.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A9F67E1954DB0B0053A924 /* NATwoFish.m */; };
 		00A9F6831954E3470053A924 /* NAAES.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A9F6821954E3470053A924 /* NAAES.m */; };
@@ -97,8 +97,8 @@
 		00F5504E1958E5F0007F2574 /* KeccakNISTInterface.c in Sources */ = {isa = PBXBuildFile; fileRef = 00F550461958E5F0007F2574 /* KeccakNISTInterface.c */; };
 		00F550501958E5F0007F2574 /* KeccakSponge.c in Sources */ = {isa = PBXBuildFile; fileRef = 00F550481958E5F0007F2574 /* KeccakSponge.c */; };
 		00FB32B5196611B40060AF33 /* NADigest.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FB32B4196611B40060AF33 /* NADigest.m */; };
-		64E4087A55CAD03E46481F85 /* libPods-NAChlorideOSX.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EBCE1A3DCE99B8453A300BE0 /* libPods-NAChlorideOSX.a */; };
 		6B148BD49BAAE31A9069BBA4 /* libPods-NAChloride.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 32AB1AC2D49DFDDBE801988A /* libPods-NAChloride.a */; };
+		B21075F9716018167767DABC /* libPods-NAChlorideOSX.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EBCE1A3DCE99B8453A300BE0 /* libPods-NAChlorideOSX.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -243,7 +243,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64E4087A55CAD03E46481F85 /* libPods-NAChlorideOSX.a in Frameworks */,
+				B21075F9716018167767DABC /* libPods-NAChlorideOSX.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -955,6 +955,7 @@
 				002A2C2E1AFA83AE006DFB51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		003BB2B71888A16E0019D88F /* Build configuration list for PBXProject "NAChloride" */ = {
 			isa = XCConfigurationList;
