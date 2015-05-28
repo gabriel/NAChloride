@@ -8,7 +8,7 @@
 
 #import "NAScrypt.h"
 
-#include "crypto_pwhash_scryptsalsa208sha256.h"
+#import <libsodium/sodium.h>
 
 @implementation NAScrypt
 

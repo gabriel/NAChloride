@@ -9,7 +9,7 @@
 #import "NASecretBox.h"
 #import "NARandom.h"
 
-#include "crypto_secretbox.h"
+#import <libsodium/sodium.h>
 
 @implementation NASecretBox
 

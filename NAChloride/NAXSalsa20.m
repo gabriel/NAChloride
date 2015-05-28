@@ -8,7 +8,7 @@
 
 #import "NAXSalsa20.h"
 
-#include "crypto_stream_xsalsa20.h"
+#import <libsodium/sodium.h>
 
 @implementation NAXSalsa20
 

@@ -10,7 +10,8 @@
 
 #import "NARandom.h"
 #import "NAInterface.h"
-#import "crypto_onetimeauth.h"
+
+#import <libsodium/sodium.h>
 
 @implementation NAOneTimeAuth
 
