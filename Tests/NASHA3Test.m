@@ -8,10 +8,9 @@
 #import <Foundation/Foundation.h>
 #import <XCTest/XCTest.h>
 
-#import "NASHA3.h"
-#import "NANSString+Utils.h"
+@import NAChloride;
 
-@interface NASHA3Test : XCTestCase { }
+@interface NASHA3Test : XCTestCase
 @end
 
 @implementation NASHA3Test

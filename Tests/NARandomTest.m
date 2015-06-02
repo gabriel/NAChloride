@@ -8,11 +8,10 @@
 #import <Foundation/Foundation.h>
 #import <XCTest/XCTest.h>
 
-#import "NARandom.h"
+@import NAChloride;
 
-@interface NARandomTest : XCTestCase { }
+@interface NARandomTest : XCTestCase
 @end
-
 
 @implementation NARandomTest
 

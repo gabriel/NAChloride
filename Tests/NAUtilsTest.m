@@ -8,9 +8,7 @@
 #import <Foundation/Foundation.h>
 #import <XCTest/XCTest.h>
 
-#import "NANSData+Utils.h"
-#import "NANSString+Utils.h"
-#import "NANSMutableData+Utils.h"
+@import NAChloride;
 
 @interface NAUtilsTest : XCTestCase
 @end

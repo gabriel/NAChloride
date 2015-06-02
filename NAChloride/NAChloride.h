@@ -6,23 +6,32 @@
 //  Copyright (c) 2014 Gabriel Handford. All rights reserved.
 //
 
-#import "NAInterface.h"
+#import <Foundation/Foundation.h>
 
-#import "NASecretBox.h"
-#import "NAScrypt.h"
-#import "NAXSalsa20.h"
+//! Project version number for NAChloride.
+FOUNDATION_EXPORT double NAChlorideVersionNumber;
 
-#import "NARandom.h"
-#import "NAHKDF.h"
-#import "NAHMAC.h"
-#import "NAKeychain.h"
+//! Project version string for NAChloride.
+FOUNDATION_EXPORT const unsigned char NAChlorideVersionString[];
 
-#import "NATwoFish.h"
-#import "NAAES.h"
+// In this header, you should import all the public headers of your framework using statements like #import <NAChloride/PublicHeader.h>
 
-#import "NADigest.h"
-#import "NASHA3.h"
+#import <NAChloride/NAInterface.h>
 
-#import "NANSData+Utils.h"
-#import "NANSString+Utils.h"
-#import "NANSMutableData+Utils.h"
+#import <NAChloride/NASecretBox.h>
+#import <NAChloride/NAScrypt.h>
+#import <NAChloride/NAXSalsa20.h>
+
+#import <NAChloride/NARandom.h>
+#import <NAChloride/NAHMAC.h>
+#import <NAChloride/NAKeychain.h>
+
+#import <NAChloride/NATwoFish.h>
+#import <NAChloride/NAAES.h>
+
+#import <NAChloride/NADigest.h>
+#import <NAChloride/NASHA3.h>
+
+#import <NAChloride/NANSData+Utils.h>
+#import <NAChloride/NANSString+Utils.h>
+#import <NAChloride/NANSMutableData+Utils.h>

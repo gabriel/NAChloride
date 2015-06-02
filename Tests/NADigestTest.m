@@ -8,10 +8,9 @@
 #import <Foundation/Foundation.h>
 #import <XCTest/XCTest.h>
 
-#import "NADigest.h"
-#import "NANSString+Utils.h"
+@import NAChloride;
 
-@interface NADigestTest : XCTestCase { }
+@interface NADigestTest : XCTestCase
 @end
 
 @implementation NADigestTest

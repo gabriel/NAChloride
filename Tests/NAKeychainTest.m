@@ -8,13 +8,10 @@
 #import <Foundation/Foundation.h>
 #import <XCTest/XCTest.h>
 
-#import "NAKeychain.h"
-#import "NARandom.h"
-#import "NAInterface.h"
+@import NAChloride;
 
-@interface NAKeychainTest : XCTestCase { }
+@interface NAKeychainTest : XCTestCase
 @end
-
 
 @implementation NAKeychainTest
 

@@ -8,12 +8,10 @@
 #import <Foundation/Foundation.h>
 #import <XCTest/XCTest.h>
 
-#import "NAHMAC.h"
-#import "NANSData+Utils.h"
+@import NAChloride;
 
-@interface NAHMACTest : XCTestCase { }
+@interface NAHMACTest : XCTestCase
 @end
-
 
 @implementation NAHMACTest
 
