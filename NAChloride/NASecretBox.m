@@ -20,7 +20,7 @@
                                           [encryptedData bytes], [encryptedData length],
                                           [nonce bytes], [key bytes]);
   if (retval == -1) {
-      if (error) *error = [NSError errorWithDomain:@"NAChloride" code:205 userInfo:@{NSLocalizedDescriptionKey: @"Verification failed"}];
+      if (error) *error = [NSError errorWithDomain:@"NAChloride" code:NAErrorCodeVerificationFailed userInfo:@{NSLocalizedDescriptionKey: @"Verification failed"}];
       return nil;
   }
     
@@ -30,17 +30,17 @@
 
 - (NSData *)encrypt:(NSData *)data nonce:(NSData *)nonce key:(NSData *)key error:(NSError * __autoreleasing *)error {
   if (!nonce || [nonce length] != crypto_secretbox_noncebytes()) {
-      if (error) *error = [NSError errorWithDomain:@"NAChloride" code:100 userInfo:@{NSLocalizedDescriptionKey: @"Invalid nonce"}];
+      if (error) *error = [NSError errorWithDomain:@"NAChloride" code:NAErrorCodeInvalidNonce userInfo:@{NSLocalizedDescriptionKey: @"Invalid nonce"}];
       return nil;
   }
     
   if (!data) {
-      if (error) *error = [NSError errorWithDomain:@"NAChloride" code:102 userInfo:@{NSLocalizedDescriptionKey: @"Invalid data"}];
+      if (error) *error = [NSError errorWithDomain:@"NAChloride" code:NAErrorCodeInvalidData userInfo:@{NSLocalizedDescriptionKey: @"Invalid data"}];
       return nil;
   }
     
   if (!key || [key length] != crypto_secretbox_keybytes()) {
-      if (error) *error = [NSError errorWithDomain:@"NAChloride" code:101 userInfo:@{NSLocalizedDescriptionKey: @"Invalid key"}];
+      if (error) *error = [NSError errorWithDomain:@"NAChloride" code:NAErrorCodeInvalidKey userInfo:@{NSLocalizedDescriptionKey: @"Invalid key"}];
       return nil;
   }
     

@@ -8,8 +8,21 @@
 
 #import <Foundation/Foundation.h>
 
+typedef NS_ENUM (NSInteger, NAErrorCode) {
+  NAErrorCodeInvalidNonce = 100, // Invalid nonce (encrypt)
+  NAErrorCodeInvalidKey = 101, // Invalid key (encrypt)
+  NAErrorCodeInvalidData = 102, // Invalid data (encrypt)
+
+  NAErrorCodeVerificationFailed = 205, // Verification failed (decrypt)
+
+  NAErrorCodeScryptFailed = 400,
+  NAErrorCodeInvalidSalt = 401,
+
+};
+
 extern const NSUInteger NASecretBoxKeySize;
 extern const NSUInteger NASecretBoxNonceSize;
+extern const NSUInteger NAScryptSaltSize;
 
 @protocol NACryptoBox
 - (NSData *)encrypt:(NSData *)data nonce:(NSData *)nonce key:(NSData *)key error:(NSError * __autoreleasing *)error;

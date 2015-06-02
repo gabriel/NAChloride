@@ -1,22 +1,19 @@
 NAChloride
 ===========
 
-* Secret-key authenticated encryption ([libsodium](https://github.com/jedisct1/libsodium))
+* Secret-key Authenticated Encryption ([libsodium](https://github.com/jedisct1/libsodium))
 * Scrypt
 * XSalsa20
 * AES (256-CTR)
 * TwoFish (CTR)
 * Digest (SHA2, SHA3/Keccak)
 * HMAC (SHA1, SHA2, SHA3)
-* HKDF (RFC 5849)
 * Keychain Utils
 
 
-This project includes the [libsodium](https://github.com/jedisct1/libsodium) C library but doesn't have Objective-C wrappers for all the methods. Feel free to contribute with pull requests.
+This project uses the [libsodium](https://github.com/jedisct1/libsodium) C library whenever possible.
 
 See [gabriel/TSTripleSec](https://github.com/gabriel/TSTripleSec) for more usage examples of this library.
-
-NAChloride uses [gabriel/GRUnit](https://github.com/gabriel/GRUnit) for unit testing.
 
 # Podfile
 
@@ -33,7 +30,7 @@ You should call NAChlorideInit() to initialize on app start. Multiple calls to t
 NAChlorideInit();
 ```
 
-# Secret-key authenticated encryption
+# Secret-key Authenticated Encryption
 
 (via libsodium)
 
@@ -57,8 +54,8 @@ NSData *decrypted = [secretBox decrypt:encrypted nonce:nonce key:key error:&erro
 
 ```objc
 NSData *key = [@"toomanysecrets" dataUsingEncoding:NSUTF8StringEncoding];
-NSData *salt = [NARandom randomData:48 error:&error]; // Random 48 bytes
-NSData *data = [NAScrypt scrypt:key salt:salt N:32768U r:8 p:1 length:64 error:nil];
+NSData *salt = [NARandom randomData:NAScryptSaltSize error:nil];
+NSData *data = [NAScrypt scrypt:key salt:salt error:nil];
 ```
 
 # XSalsa20
@@ -105,15 +102,6 @@ NSData *digest2 = [NADigest digestForData:data algorithm:NADigestAlgorithmSHA3_5
 
 // Directly use SHA3
 NSData *sha = [NASHA3 SHA3ForData:data digestBitLength:512];
-```
-
-# HKDF (RFC 5849)
-
-```objc
-NSData *key = [@"toomanysecrets" dataUsingEncoding:NSUTF8StringEncoding];
-NSData *salt = [NARandom randomData:32 error:nil];
-
-NSData *derivedKey = [NAHKDF HKDFForKey:key algorithm:NAHKDFAlgorithmSHA256 salt:salt info:nil length:64 error:nil];
 ```
 
 # Keychain Utils
