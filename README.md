@@ -4,21 +4,22 @@ NAChloride
 This project uses [libsodium](https://github.com/jedisct1/libsodium) for:
 
 * Secret-Key 
-** Authenticated Encryption
-** Authentication
+  * Authenticated Encryption
+  * Authentication
 * One-Time Authentication
-* Password Hashing (Scrypt)
-* Stream Ciphers (XSalsa20)
+* Password Hashing: *Scrypt*
+* Stream Ciphers: *XSalsa20*
 
 The following use Apple's CommonCrypto framework:
 
-* Digest (SHA2)
-* HMAC (SHA1, SHA2, SHA3)
+* HMAC: SHA1, SHA2
+* Digest: SHA2
 * AES (256-CTR)
 
 The following are implemented from included reference C libraries:
 
-* Digest (SHA3/Keccak)
+* HMAC: *SHA3/Keccak*
+* Digest: *SHA3/Keccak*
 * TwoFish (CTR)
 
 See [gabriel/TSTripleSec](https://github.com/gabriel/TSTripleSec) for more usage examples of this library.
