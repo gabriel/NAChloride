@@ -27,7 +27,6 @@ See [gabriel/TSTripleSec](https://github.com/gabriel/TSTripleSec) for more usage
 # Podfile
 
 ```ruby
-platform :ios, '7.0'
 pod "NAChloride"
 ```
 
