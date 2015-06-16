@@ -44,8 +44,6 @@ NAChlorideInit();
 
 Encrypts and authenticates a message using a shared key and nonce.
 
-Encrypt uses `crypto_secretbox_easy` and decrypt uses `crypto_secretbox_open_easy`. See libsodium for details.
-
 ```objc
 NSError *error = nil;
 NSData *key = [NARandom randomData:NASecretBoxKeySize error:&error];
