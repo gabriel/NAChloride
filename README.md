@@ -12,8 +12,8 @@ This project uses [libsodium](https://github.com/jedisct1/libsodium) for:
 
 The following use Apple's CommonCrypto framework:
 
-* HMAC: SHA1, SHA2
-* Digest: SHA2
+* HMAC: *SHA1*, *SHA2*
+* Digest: *SHA2*
 * AES (256-CTR)
 
 The following are implemented from included reference C libraries:
