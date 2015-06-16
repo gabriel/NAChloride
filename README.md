@@ -76,7 +76,9 @@ NSData *salt = [NARandom randomData:NAScryptSaltSize error:nil];
 NSData *data = [NAScrypt scrypt:key salt:salt error:nil];
 ```
 
-# One-Time Authentication
+# Advanced
+
+## One-Time Authentication
 
 Generates a MAC for a given message and shared key using Poly1305 algorithm.
 Key may NOT be reused across messages.
@@ -90,9 +92,9 @@ NSData *auth = [oneTimeAuth auth:message key:key &error];
 BOOL verified = [oneTimeAuth verify:auth data:message key:key error:&error];
 ```
 
-# Stream Ciphers
+## Stream Ciphers
 
-## XSalsa20
+### XSalsa20
 
 ```objc
 // Nonce should be 24 bytes
@@ -101,16 +103,16 @@ NAXSalsa20 *XSalsa20 = [[NAXSalsa20 alloc] init];
 NSData *encrypted = [XSalsa20 encrypt:message nonce:nonce key:key error:&error];
 ```
 
-# Advanced
+## Other
 
-## HMAC (SHA1, SHA2, SHA3)
+### HMAC (SHA1, SHA2, SHA3)
 
 ```objc
 NSData *mac1 = [NAHMAC HMACForKey:key data:data algorithm:NAHMACAlgorithmSHA2_512];
 NSData *mac2 = [NAHMAC HMACForKey:key data:data algorithm:NAHMACAlgorithmSHA3_512];
 ```
 
-## AES (256-CTR)
+### AES (256-CTR)
 
 ```objc
 // Nonce should be 16 bytes
@@ -119,7 +121,7 @@ NAAES *AES = [[NAAES alloc] initWithAlgorithm:NAAESAlgorithm256CTR];
 NSData *encrypted = [AES encrypt:message nonce:nonce key:key error:&error];
 ```
 
-## TwoFish (CTR)
+### TwoFish (CTR)
 
 ```objc
 // Nonce should be 16 bytes
@@ -128,7 +130,7 @@ NATwoFish *twoFish = [[NATwoFish alloc] init];
 NSData *encrypted = [twoFish encrypt:message nonce:nonce key:key error:&error];
 ```
 
-## Digest (SHA2, SHA3)
+### Digest (SHA2, SHA3)
 
 ```objc
 NSData *digest1 = [NADigest digestForData:data algorithm:NADigestAlgorithmSHA2_256];
