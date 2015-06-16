@@ -1,17 +1,25 @@
 NAChloride
 ===========
 
-* Secret-key Authenticated Encryption ([libsodium](https://github.com/jedisct1/libsodium))
-* Scrypt
-* XSalsa20
-* AES (256-CTR)
-* TwoFish (CTR)
-* Digest (SHA2, SHA3/Keccak)
+This project uses [libsodium](https://github.com/jedisct1/libsodium) for:
+
+* Secret-Key 
+** Authenticated Encryption
+** Authentication
+* One-Time Authentication
+* Password Hashing (Scrypt)
+* Stream Ciphers (XSalsa20)
+
+The following use Apple's CommonCrypto framework:
+
+* Digest (SHA2)
 * HMAC (SHA1, SHA2, SHA3)
-* Keychain Utils
+* AES (256-CTR)
 
+The following are implemented from included reference C libraries:
 
-This project uses the [libsodium](https://github.com/jedisct1/libsodium) C library whenever possible.
+* Digest (SHA3/Keccak)
+* TwoFish (CTR)
 
 See [gabriel/TSTripleSec](https://github.com/gabriel/TSTripleSec) for more usage examples of this library.
 
@@ -30,13 +38,16 @@ You should call NAChlorideInit() to initialize on app start. Multiple calls to t
 NAChlorideInit();
 ```
 
-# Secret-key Authenticated Encryption
+# Secret-Key Cryptography
 
-(via libsodium)
+## Authenticated Encryption
+
+Encrypts and authenticates a message using a shared key and nonce.
 
 Encrypt uses `crypto_secretbox_easy` and decrypt uses `crypto_secretbox_open_easy`. See libsodium for details.
 
 ```objc
+NSError *error = nil;
 NSData *key = [NARandom randomData:NASecretBoxKeySize error:&error];
 NSData *nonce = [NARandom randomData:NASecretBoxNonceSize error:nil];
 NSData *message = [@"This is a secret message" dataUsingEncoding:NSUTF8StringEncoding];
@@ -48,9 +59,18 @@ NSData *encrypted = [secretBox encrypt:message nonce:nonce key:key error:&error]
 NSData *decrypted = [secretBox decrypt:encrypted nonce:nonce key:key error:&error];
 ```
 
-# Scrypt
+## Authentication
 
-(via libsodium)
+```objc
+NSError *error = nil;
+NSData *key = [NARandom randomData:NASecretBoxKeySize error:&error];
+NSData *message = [@"This is a message" dataUsingEncoding:NSUTF8StringEncoding];
+
+NSData *auth = [oneTimeAuth auth:message key:key &error];
+BOOL verified = [oneTimeAuth verify:auth data:message key:key error:&error];
+```
+
+# Password Hashing
 
 ```objc
 NSData *key = [@"toomanysecrets" dataUsingEncoding:NSUTF8StringEncoding];
@@ -58,9 +78,23 @@ NSData *salt = [NARandom randomData:NAScryptSaltSize error:nil];
 NSData *data = [NAScrypt scrypt:key salt:salt error:nil];
 ```
 
-# XSalsa20
+# One-Time Authentication
 
-(via libsodium)
+Generates a MAC for a given message and shared key using Poly1305 algorithm.
+Key may NOT be reused across messages.
+
+```objc
+NSError *error = nil;
+NSData *key = [NARandom randomData:NASecretBoxKeySize error:&error];
+NSData *message = [@"This is a message" dataUsingEncoding:NSUTF8StringEncoding];
+
+NSData *auth = [oneTimeAuth auth:message key:key &error];
+BOOL verified = [oneTimeAuth verify:auth data:message key:key error:&error];
+```
+
+# Stream Ciphers
+
+## XSalsa20
 
 ```objc
 // Nonce should be 24 bytes
@@ -69,7 +103,16 @@ NAXSalsa20 *XSalsa20 = [[NAXSalsa20 alloc] init];
 NSData *encrypted = [XSalsa20 encrypt:message nonce:nonce key:key error:&error];
 ```
 
-# AES (256-CTR)
+# Advanced
+
+## HMAC (SHA1, SHA2, SHA3)
+
+```objc
+NSData *mac1 = [NAHMAC HMACForKey:key data:data algorithm:NAHMACAlgorithmSHA2_512];
+NSData *mac2 = [NAHMAC HMACForKey:key data:data algorithm:NAHMACAlgorithmSHA3_512];
+```
+
+## AES (256-CTR)
 
 ```objc
 // Nonce should be 16 bytes
@@ -78,7 +121,7 @@ NAAES *AES = [[NAAES alloc] initWithAlgorithm:NAAESAlgorithm256CTR];
 NSData *encrypted = [AES encrypt:message nonce:nonce key:key error:&error];
 ```
 
-# TwoFish (CTR)
+## TwoFish (CTR)
 
 ```objc
 // Nonce should be 16 bytes
@@ -87,14 +130,7 @@ NATwoFish *twoFish = [[NATwoFish alloc] init];
 NSData *encrypted = [twoFish encrypt:message nonce:nonce key:key error:&error];
 ```
 
-# HMAC (SHA1, SHA2, SHA3)
-
-```objc
-NSData *mac1 = [NAHMAC HMACForKey:key data:data algorithm:NAHMACAlgorithmSHA2_512];
-NSData *mac2 = [NAHMAC HMACForKey:key data:data algorithm:NAHMACAlgorithmSHA3_512];
-```
-
-# Digest (SHA2, SHA3)
+## Digest (SHA2, SHA3)
 
 ```objc
 NSData *digest1 = [NADigest digestForData:data algorithm:NADigestAlgorithmSHA2_256];

@@ -9,7 +9,7 @@
 #import "NAInterface.h"
 
 /*!
- Secret-key authenticated encryption.
+ Encrypts and authenticates a message using a shared key and nonce.
  */
 @interface NASecretBox : NSObject <NACryptoBox>
 

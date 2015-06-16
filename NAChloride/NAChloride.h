@@ -19,6 +19,9 @@ FOUNDATION_EXPORT const unsigned char NAChlorideVersionString[];
 #import <NAChloride/NAInterface.h>
 
 #import <NAChloride/NASecretBox.h>
+#import <NAChloride/NAAuth.h>
+#import <NAChloride/NAOneTimeAuth.h>
+
 #import <NAChloride/NAScrypt.h>
 #import <NAChloride/NAXSalsa20.h>
 

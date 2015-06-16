@@ -19,6 +19,10 @@
 		00390FBE1B1E4897001ED3EA /* NATwoFishTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 00390FB21B1E4897001ED3EA /* NATwoFishTest.m */; };
 		00390FBF1B1E4897001ED3EA /* NAUtilsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 00390FB31B1E4897001ED3EA /* NAUtilsTest.m */; };
 		00390FC01B1E4897001ED3EA /* NAXSalsa20Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 00390FB41B1E4897001ED3EA /* NAXSalsa20Test.m */; };
+		0047C1021B30DFDC0055D184 /* NAOneTimeAuthTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0047C1011B30DFDC0055D184 /* NAOneTimeAuthTest.m */; };
+		0047C1051B30E4C40055D184 /* NAAuth.h in Headers */ = {isa = PBXBuildFile; fileRef = 0047C1031B30E4C40055D184 /* NAAuth.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0047C1061B30E4C40055D184 /* NAAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = 0047C1041B30E4C40055D184 /* NAAuth.m */; };
+		0047C1081B30E55C0055D184 /* NAAuthTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0047C1071B30E55C0055D184 /* NAAuthTest.m */; };
 		00CCC70D1B1E446C007090AD /* NAChloride.h in Headers */ = {isa = PBXBuildFile; fileRef = 003BB2C41888A16E0019D88F /* NAChloride.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		00CCC70E1B1E446C007090AD /* NAInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = 007A1B93195B77DB00110C88 /* NAInterface.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		00CCC70F1B1E446C007090AD /* NAInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 003BB2F71888AAF80019D88F /* NAInterface.m */; };
@@ -116,6 +120,10 @@
 		003BB2F71888AAF80019D88F /* NAInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAInterface.m; sourceTree = "<group>"; };
 		003BB2F91888ADCC0019D88F /* NANSData+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NANSData+Utils.h"; sourceTree = "<group>"; };
 		003BB2FA1888ADCC0019D88F /* NANSData+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NANSData+Utils.m"; sourceTree = "<group>"; };
+		0047C1011B30DFDC0055D184 /* NAOneTimeAuthTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAOneTimeAuthTest.m; sourceTree = "<group>"; };
+		0047C1031B30E4C40055D184 /* NAAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NAAuth.h; sourceTree = "<group>"; };
+		0047C1041B30E4C40055D184 /* NAAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAAuth.m; sourceTree = "<group>"; };
+		0047C1071B30E55C0055D184 /* NAAuthTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAAuthTest.m; sourceTree = "<group>"; };
 		004CA04419CCDC8D00499844 /* libPods-Tests.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-Tests.a"; path = "Pods/build/Debug-iphoneos/libPods-Tests.a"; sourceTree = "<group>"; };
 		004CA05119CCE07B00499844 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		004CB3B9188F205300EFE8F7 /* NAKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NAKeychain.h; sourceTree = "<group>"; };
@@ -202,6 +210,8 @@
 				00390FAE1B1E4897001ED3EA /* NARandomTest.m */,
 				00390FAF1B1E4897001ED3EA /* NAScryptTest.m */,
 				00390FB01B1E4897001ED3EA /* NASecretBoxTest.m */,
+				0047C1071B30E55C0055D184 /* NAAuthTest.m */,
+				0047C1011B30DFDC0055D184 /* NAOneTimeAuthTest.m */,
 				00390FB11B1E4897001ED3EA /* NASHA3Test.m */,
 				00390FB21B1E4897001ED3EA /* NATwoFishTest.m */,
 				00390FB31B1E4897001ED3EA /* NAUtilsTest.m */,
@@ -271,6 +281,8 @@
 				003BB2F71888AAF80019D88F /* NAInterface.m */,
 				003BB2E51888A1D50019D88F /* NASecretBox.h */,
 				003BB2E61888A1D50019D88F /* NASecretBox.m */,
+				0047C1031B30E4C40055D184 /* NAAuth.h */,
+				0047C1041B30E4C40055D184 /* NAAuth.m */,
 				0055133A19D3430F0021ABB0 /* NAOneTimeAuth.h */,
 				0055133B19D3430F0021ABB0 /* NAOneTimeAuth.m */,
 				003BB2E91888A2160019D88F /* NARandom.h */,
@@ -384,6 +396,7 @@
 				00CCC7181B1E446C007090AD /* NAKeychain.h in Headers */,
 				00CCC7121B1E446C007090AD /* NAOneTimeAuth.h in Headers */,
 				00CCC73C1B1E4475007090AD /* twofish.h in Headers */,
+				0047C1051B30E4C40055D184 /* NAAuth.h in Headers */,
 				00CCC7261B1E446C007090AD /* NAAES.h in Headers */,
 				00CCC7341B1E4472007090AD /* brg_endian.h in Headers */,
 				00CCC7141B1E446C007090AD /* NARandom.h in Headers */,
@@ -533,7 +546,9 @@
 				00390FBE1B1E4897001ED3EA /* NATwoFishTest.m in Sources */,
 				00390FB71B1E4897001ED3EA /* NADigestTest.m in Sources */,
 				00390FB51B1E4897001ED3EA /* NAAESTest.m in Sources */,
+				0047C1021B30DFDC0055D184 /* NAOneTimeAuthTest.m in Sources */,
 				00390FBA1B1E4897001ED3EA /* NARandomTest.m in Sources */,
+				0047C1081B30E55C0055D184 /* NAAuthTest.m in Sources */,
 				00390FB81B1E4897001ED3EA /* NAHMACTest.m in Sources */,
 				00390FC01B1E4897001ED3EA /* NAXSalsa20Test.m in Sources */,
 				00390FBB1B1E4897001ED3EA /* NAScryptTest.m in Sources */,
@@ -558,6 +573,7 @@
 				00CCC7391B1E4472007090AD /* KeccakNISTInterface.c in Sources */,
 				00CCC72B1B1E446C007090AD /* NADigest.m in Sources */,
 				00CCC73D1B1E4475007090AD /* twofish.c in Sources */,
+				0047C1061B30E4C40055D184 /* NAAuth.m in Sources */,
 				00CCC71B1B1E446C007090AD /* NANSData+Utils.m in Sources */,
 				00CCC7251B1E446C007090AD /* NATwoFish.m in Sources */,
 				00CCC7191B1E446C007090AD /* NAKeychain.m in Sources */,
@@ -771,6 +787,7 @@
 				00390FA81B1E4827001ED3EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		003BB2B71888A16E0019D88F /* Build configuration list for PBXProject "NAChloride" */ = {
 			isa = XCConfigurationList;
