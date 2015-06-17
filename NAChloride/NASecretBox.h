@@ -11,7 +11,7 @@
 /*!
  Encrypts and authenticates a message using a shared key and nonce.
  */
-@interface NASecretBox : NSObject <NACryptoBox>
+@interface NASecretBox : NSObject
 
 - (NSData *)encrypt:(NSData *)data nonce:(NSData *)nonce key:(NSData *)key error:(NSError * __autoreleasing *)error;
 

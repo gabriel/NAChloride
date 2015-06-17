@@ -11,8 +11,9 @@
 
 @import NAChloride;
 
-@interface NAAuthTest : XCTestCase
+#import "NATestUtils.h"
 
+@interface NAAuthTest : XCTestCase
 @end
 
 @implementation NAAuthTest
@@ -20,7 +21,7 @@
 - (void)test {
   NAAuth *auth = [[NAAuth alloc] init];
 
-  NSData *key = [NARandom randomData:NAAuthKeySize error:nil];
+  NSData *key = [NARandom randomData:NAAuthKeySize];
   NSData *message = [@"This is a message" dataUsingEncoding:NSUTF8StringEncoding];
 
   NSData *authData = [auth auth:message key:key error:nil];
@@ -29,7 +30,7 @@
   XCTAssertTrue(verified);
 
   NSMutableData *altered = [authData mutableCopy];
-  [altered replaceBytesInRange:NSMakeRange(0, 1) withBytes:[[@"AB" na_dataFromHexString] bytes]];
+  [altered replaceBytesInRange:NSMakeRange(0, 1) withBytes:[[@"AB" dataFromHexString] bytes]];
 
   NSError *error = nil;
   BOOL verified2 = [auth verify:altered data:message key:key error:&error];

@@ -8,7 +8,7 @@
 
 #import "NAInterface.h"
 
-@interface NAXSalsa20 : NSObject <NACryptoStream>
+@interface NAXSalsa20 : NSObject
 
 - (NSData *)encrypt:(NSData *)data nonce:(NSData *)nonce key:(NSData *)key error:(NSError * __autoreleasing *)error;
 

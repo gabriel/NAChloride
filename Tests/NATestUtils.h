@@ -1,5 +1,5 @@
 //
-//  NARandom.h
+//  NATestUtils.h
 //  NAChloride
 //
 //  Created by Gabriel on 6/16/15.
@@ -8,8 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NARandom : NSObject
+@interface NSString (NAUtils)
 
-+ (NSData *)randomData:(size_t)numBytes;
+- (NSData *)dataFromHexString;
+
+@end
+
+@interface NSData (NAUtils)
+
+- (NSString *)hexString;
 
 @end

@@ -11,6 +11,8 @@
 
 @import NAChloride;
 
+#import "NATestUtils.h"
+
 @interface NAOneTimeAuthTest : XCTestCase
 @end
 
@@ -19,7 +21,7 @@
 - (void)test {
   NAOneTimeAuth *oneTimeAuth = [[NAOneTimeAuth alloc] init];
 
-  NSData *key = [NARandom randomData:NAOneTimeAuthKeySize error:nil];
+  NSData *key = [NARandom randomData:NAOneTimeAuthKeySize];
   NSData *message = [@"This is a message" dataUsingEncoding:NSUTF8StringEncoding];
 
   NSData *auth = [oneTimeAuth auth:message key:key error:nil];
@@ -28,7 +30,7 @@
   XCTAssertTrue(verified);
 
   NSMutableData *altered = [auth mutableCopy];
-  [altered replaceBytesInRange:NSMakeRange(0, 1) withBytes:[[@"AB" na_dataFromHexString] bytes]];
+  [altered replaceBytesInRange:NSMakeRange(0, 1) withBytes:[[@"AB" dataFromHexString] bytes]];
 
   NSError *error = nil;
   BOOL verified2 = [oneTimeAuth verify:altered data:message key:key error:&error];

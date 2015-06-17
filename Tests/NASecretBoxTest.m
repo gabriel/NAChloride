@@ -10,6 +10,8 @@
 
 @import NAChloride;
 
+#import "NATestUtils.h"
+
 @interface NASecretBoxTest : XCTestCase
 @end
 
@@ -18,8 +20,8 @@
 - (void)testEncrypt {
   NAChlorideInit();
 
-  NSData *key = [NARandom randomData:NASecretBoxKeySize error:nil];
-  NSData *nonce = [NARandom randomData:NASecretBoxNonceSize error:nil];
+  NSData *key = [NARandom randomData:NASecretBoxKeySize];
+  NSData *nonce = [NARandom randomData:NASecretBoxNonceSize];
   NSData *message = [@"This is a secret message" dataUsingEncoding:NSUTF8StringEncoding];
   
   NASecretBox *secretBox = [[NASecretBox alloc] init];
@@ -30,7 +32,7 @@
 
 - (void)testEncryptBadKey {
   NSData *badKey = [NSData data];
-  NSData *nonce = [NARandom randomData:NASecretBoxNonceSize error:nil];
+  NSData *nonce = [NARandom randomData:NASecretBoxNonceSize];
 
   NSError *error = nil;
   NASecretBox *secretBox = [[NASecretBox alloc] init];
@@ -41,8 +43,8 @@
 }
 
 - (void)testEncryptBadNonce {
-  NSData *key = [NARandom randomData:NASecretBoxKeySize error:nil];
-  NSData *nonce = [NARandom randomData:4 error:nil];
+  NSData *key = [NARandom randomData:NASecretBoxKeySize];
+  NSData *nonce = [NARandom randomData:4];
 
   NSError *error = nil;
   NASecretBox *secretBox = [[NASecretBox alloc] init];
@@ -53,8 +55,8 @@
 }
 
 - (void)testEncryptBadData {
-  NSData *key = [NARandom randomData:NASecretBoxKeySize error:nil];
-  NSData *nonce = [NARandom randomData:NASecretBoxNonceSize error:nil];
+  NSData *key = [NARandom randomData:NASecretBoxKeySize];
+  NSData *nonce = [NARandom randomData:NASecretBoxNonceSize];
 
   NSError *error = nil;
   NASecretBox *secretBox = [[NASecretBox alloc] init];
@@ -65,10 +67,10 @@
 }
 
 - (void)testDecryptBadKey {
-  NSData *key1 = [NARandom randomData:NASecretBoxKeySize error:nil];
-  NSData *key2 = [NARandom randomData:NASecretBoxKeySize error:nil];
+  NSData *key1 = [NARandom randomData:NASecretBoxKeySize];
+  NSData *key2 = [NARandom randomData:NASecretBoxKeySize];
   XCTAssertNotEqual(key1, key2);
-  NSData *nonce = [NARandom randomData:NASecretBoxNonceSize error:nil];
+  NSData *nonce = [NARandom randomData:NASecretBoxNonceSize];
 
   NSError *error = nil;
   NASecretBox *secretBox = [[NASecretBox alloc] init];
@@ -83,9 +85,9 @@
 }
 
 - (void)testDecryptBadNonce {
-  NSData *key = [NARandom randomData:NASecretBoxKeySize error:nil];
-  NSData *nonce1 = [NARandom randomData:NASecretBoxNonceSize error:nil];
-  NSData *nonce2 = [NARandom randomData:NASecretBoxNonceSize error:nil];
+  NSData *key = [NARandom randomData:NASecretBoxKeySize];
+  NSData *nonce1 = [NARandom randomData:NASecretBoxNonceSize];
+  NSData *nonce2 = [NARandom randomData:NASecretBoxNonceSize];
   XCTAssertNotEqual(nonce1, nonce2);
 
   NSError *error = nil;
