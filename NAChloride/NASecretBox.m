@@ -13,6 +13,8 @@
 @implementation NASecretBox
 
 - (NSData *)encrypt:(NSData *)data nonce:(NSData *)nonce key:(NSData *)key error:(NSError **)error {
+  NAChlorideInit();
+
   if (!nonce || [nonce length] != NASecretBoxNonceSize) {
     if (error) *error = NAError(NAErrorCodeInvalidNonce, @"Invalid nonce");
     return nil;
@@ -42,6 +44,8 @@
 }
 
 - (NSData *)decrypt:(NSData *)data nonce:(NSData *)nonce key:(NSData *)key error:(NSError **)error {
+  NAChlorideInit();
+  
   if (!nonce || [nonce length] != NASecretBoxNonceSize) {
     if (error) *error = NAError(NAErrorCodeInvalidNonce, @"Invalid nonce");
     return nil;

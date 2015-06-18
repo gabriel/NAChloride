@@ -51,6 +51,7 @@
   });
 
   [self waitForExpectationsWithTimeout:5.0 handler:^(NSError *error) {
+    if (error) XCTFail();
   }];
 }
 

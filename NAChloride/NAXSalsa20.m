@@ -13,6 +13,8 @@
 @implementation NAXSalsa20
 
 - (NSData *)xor:(NSData *)data nonce:(NSData *)nonce key:(NSData *)key error:(NSError **)error {
+  NAChlorideInit();
+  
   if (!nonce || [nonce length] < NAXSalsaNonceSize) {
     if (error) *error = NAError(NAErrorCodeInvalidNonce, @"Invalid XSalsa20 nonce");
     return nil;

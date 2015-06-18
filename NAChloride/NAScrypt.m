@@ -14,6 +14,7 @@
 @implementation NAScrypt
 
 + (NSData *)scrypt:(NSData *)password salt:(NSData *)salt error:(NSError **)error {
+  NAChlorideInit();
 
   if (!salt || [salt length] != NAScryptSaltSize) {
     if (error) *error = NAError(NAErrorCodeInvalidSalt, @"Invalid salt")
@@ -33,6 +34,7 @@
 }
 
 + (NSData *)scrypt:(NSData *)password salt:(NSData *)salt N:(uint64_t)N r:(uint32_t)r p:(uint32_t)p length:(size_t)length error:(NSError **)error {
+  NAChlorideInit();
 
   NSMutableData *outData = [NSMutableData dataWithLength:length];
   
