@@ -8,8 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-#import "NAInterface.h"
-
 @interface NAStream : NSObject
 
 - (NSData *)xor:(NSData *)data nonce:(NSData *)nonce key:(NSData *)key error:(NSError **)error;

@@ -10,27 +10,32 @@
 
 #import <libsodium/sodium.h>
 
-const NSUInteger NASecretBoxKeySize = crypto_secretbox_KEYBYTES;
-const NSUInteger NASecretBoxNonceSize = crypto_secretbox_NONCEBYTES;
-const NSUInteger NASecretBoxMACSize = crypto_secretbox_MACBYTES;
+const size_t NASecretBoxKeySize = crypto_secretbox_KEYBYTES;
+const size_t NASecretBoxNonceSize = crypto_secretbox_NONCEBYTES;
+const size_t NASecretBoxMACSize = crypto_secretbox_MACBYTES;
 
-const NSUInteger NAAuthKeySize = crypto_auth_KEYBYTES;
-const NSUInteger NAAuthSize = crypto_auth_BYTES;
+const size_t NABoxPublicKeySize = crypto_box_PUBLICKEYBYTES;
+const size_t NABoxSecretKeySize = crypto_box_SECRETKEYBYTES;
+const size_t NABoxNonceSize = crypto_box_NONCEBYTES;
+const size_t NABoxMACSize = crypto_box_MACBYTES;
 
-const NSUInteger NAOneTimeAuthKeySize = crypto_onetimeauth_KEYBYTES;
-const NSUInteger NAOneTimeAuthSize = crypto_onetimeauth_BYTES;
+const size_t NAAuthKeySize = crypto_auth_KEYBYTES;
+const size_t NAAuthSize = crypto_auth_BYTES;
 
-const NSUInteger NAScryptSaltSize = crypto_pwhash_scryptsalsa208sha256_SALTBYTES;
+const size_t NAOneTimeAuthKeySize = crypto_onetimeauth_KEYBYTES;
+const size_t NAOneTimeAuthSize = crypto_onetimeauth_BYTES;
 
-const NSUInteger NAStreamKeySize = crypto_stream_KEYBYTES;
-const NSUInteger NAStreamNonceSize = crypto_stream_NONCEBYTES;
+const size_t NAScryptSaltSize = crypto_pwhash_scryptsalsa208sha256_SALTBYTES;
 
-const NSUInteger NAXSalsaKeySize = crypto_stream_xsalsa20_KEYBYTES;
-const NSUInteger NAXSalsaNonceSize = crypto_stream_xsalsa20_NONCEBYTES;
+const size_t NAStreamKeySize = crypto_stream_KEYBYTES;
+const size_t NAStreamNonceSize = crypto_stream_NONCEBYTES;
 
-const NSUInteger NAAEADKeySize = crypto_aead_chacha20poly1305_KEYBYTES;
-const NSUInteger NAAEADNonceSize = crypto_aead_chacha20poly1305_NPUBBYTES;
-const NSUInteger NAAEADASize = crypto_aead_chacha20poly1305_ABYTES;
+const size_t NAXSalsaKeySize = crypto_stream_xsalsa20_KEYBYTES;
+const size_t NAXSalsaNonceSize = crypto_stream_xsalsa20_NONCEBYTES;
+
+const size_t NAAEADKeySize = crypto_aead_chacha20poly1305_KEYBYTES;
+const size_t NAAEADNonceSize = crypto_aead_chacha20poly1305_NPUBBYTES;
+const size_t NAAEADASize = crypto_aead_chacha20poly1305_ABYTES;
 
 
 void NAChlorideInit(void) {

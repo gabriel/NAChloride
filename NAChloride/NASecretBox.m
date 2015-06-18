@@ -40,7 +40,10 @@
                                      [nonce bytes],
                                      [key bytes]);
     
-  if (retval != 0) return nil;
+  if (retval != 0) {
+    if (error) *error = NAError(NAErrorCodeFailure, @"Encrypt (secret box) failed");
+    return nil;
+  }
     
   return outData;
 }

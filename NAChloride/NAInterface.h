@@ -20,27 +20,32 @@ typedef NS_ENUM (NSInteger, NAErrorCode) {
   NAErrorCodeVerificationFailed = 205, // Verification failed
 };
 
-extern const NSUInteger NASecretBoxKeySize;
-extern const NSUInteger NASecretBoxNonceSize;
-extern const NSUInteger NASecretBoxMACSize;
+extern const size_t NASecretBoxKeySize;
+extern const size_t NASecretBoxNonceSize;
+extern const size_t NASecretBoxMACSize;
 
-extern const NSUInteger NAAuthKeySize;
-extern const NSUInteger NAAuthSize;
+extern const size_t NABoxPublicKeySize;
+extern const size_t NABoxSecretKeySize;
+extern const size_t NABoxNonceSize;
+extern const size_t NABoxMACSize;
 
-extern const NSUInteger NAOneTimeAuthKeySize;
-extern const NSUInteger NAOneTimeAuthSize;
+extern const size_t NAAuthKeySize;
+extern const size_t NAAuthSize;
 
-extern const NSUInteger NAScryptSaltSize;
+extern const size_t NAOneTimeAuthKeySize;
+extern const size_t NAOneTimeAuthSize;
 
-extern const NSUInteger NAStreamKeySize;
-extern const NSUInteger NAStreamNonceSize;
+extern const size_t NAScryptSaltSize;
 
-extern const NSUInteger NAXSalsaKeySize;
-extern const NSUInteger NAXSalsaNonceSize;
+extern const size_t NAStreamKeySize;
+extern const size_t NAStreamNonceSize;
 
-extern const NSUInteger NAAEADKeySize;
-extern const NSUInteger NAAEADNonceSize;
-extern const NSUInteger NAAEADASize;
+extern const size_t NAXSalsaKeySize;
+extern const size_t NAXSalsaNonceSize;
+
+extern const size_t NAAEADKeySize;
+extern const size_t NAAEADNonceSize;
+extern const size_t NAAEADASize;
 
 
 // Thread safe libsodium init

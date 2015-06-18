@@ -89,6 +89,24 @@ NSData *encryptedData = [AEAD encryptChaCha20Poly1305:message nonce:nonce key:ke
 NSData *decryptedData = [AEAD decryptChaCha20Poly1305:encryptedData nonce:nonce key:key additionalData:additionalData error:&error];
 ```
 
+# Public-Key Cryptography
+
+## Authenticated Encryption
+
+See [Authenticated Encryption](https://download.libsodium.org/doc/public-key_cryptography/authenticated_encryption.html).
+
+```objc
+NSError *error = nil;
+NABoxKeypair *keypair = [NABoxKeypair generate:&error];
+
+NSData *nonce = [NARandom randomData:NABoxNonceSize];
+NSData *message = [@"This is a secret message" dataUsingEncoding:NSUTF8StringEncoding];
+
+NABox *box = [[NABox alloc] init];
+NSData *encryptedData = [box encrypt:message nonce:nonce keypair:keypair error:&error];
+NSData *decryptedData = [box decrypt:encryptedData nonce:nonce keypair:keypair error:&error];
+```
+
 # Password Hashing
 
 See [Password Hashing](https://download.libsodium.org/doc/password_hashing/index.html).
@@ -129,7 +147,7 @@ NSData *nonce = [NARandom randomData:NAStreamNonceSize];
 NAStream *stream = [[NAStream alloc] init];
 NSError *error = nil;
 NSData *encrypted = [stream xor:message nonce:nonce key:key error:&error];
-NSData *decrypted = [stream encrypted nonce:nonce key:key error:&error];
+NSData *decrypted = [stream xor:encrypted nonce:nonce key:key error:&error];
 ```
 
 ## Dispatch

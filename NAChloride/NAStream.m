@@ -8,6 +8,8 @@
 
 #import "NAStream.h"
 
+#import "NAInterface.h"
+
 #import <libsodium/sodium.h>
 
 @implementation NAStream

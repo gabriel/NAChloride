@@ -41,6 +41,15 @@
 		004EF2D41B336FD8007822CE /* NAStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 004EF2D11B336FD8007822CE /* NAStream.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		004EF2D51B336FD8007822CE /* NAStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 004EF2D21B336FD8007822CE /* NAStream.m */; };
 		004EF2D61B336FD8007822CE /* NAStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 004EF2D21B336FD8007822CE /* NAStream.m */; };
+		004EF2D91B337314007822CE /* NABox.h in Headers */ = {isa = PBXBuildFile; fileRef = 004EF2D71B337314007822CE /* NABox.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		004EF2DA1B337314007822CE /* NABox.h in Headers */ = {isa = PBXBuildFile; fileRef = 004EF2D71B337314007822CE /* NABox.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		004EF2DB1B337314007822CE /* NABox.m in Sources */ = {isa = PBXBuildFile; fileRef = 004EF2D81B337314007822CE /* NABox.m */; };
+		004EF2DC1B337314007822CE /* NABox.m in Sources */ = {isa = PBXBuildFile; fileRef = 004EF2D81B337314007822CE /* NABox.m */; };
+		004EF2DE1B3374AE007822CE /* NABoxTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 004EF2DD1B3374AE007822CE /* NABoxTest.m */; };
+		004EF2E11B337558007822CE /* NABoxKeypair.h in Headers */ = {isa = PBXBuildFile; fileRef = 004EF2DF1B337558007822CE /* NABoxKeypair.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		004EF2E21B337558007822CE /* NABoxKeypair.h in Headers */ = {isa = PBXBuildFile; fileRef = 004EF2DF1B337558007822CE /* NABoxKeypair.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		004EF2E31B337558007822CE /* NABoxKeypair.m in Sources */ = {isa = PBXBuildFile; fileRef = 004EF2E01B337558007822CE /* NABoxKeypair.m */; };
+		004EF2E41B337558007822CE /* NABoxKeypair.m in Sources */ = {isa = PBXBuildFile; fileRef = 004EF2E01B337558007822CE /* NABoxKeypair.m */; };
 		00CCC70D1B1E446C007090AD /* NAChloride.h in Headers */ = {isa = PBXBuildFile; fileRef = 003BB2C41888A16E0019D88F /* NAChloride.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		00CCC70E1B1E446C007090AD /* NAInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = 007A1B93195B77DB00110C88 /* NAInterface.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		00CCC70F1B1E446C007090AD /* NAInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 003BB2F71888AAF80019D88F /* NAInterface.m */; };
@@ -97,6 +106,11 @@
 		004EF2C51B333511007822CE /* NAAEADTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAAEADTest.m; sourceTree = "<group>"; };
 		004EF2D11B336FD8007822CE /* NAStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NAStream.h; sourceTree = "<group>"; };
 		004EF2D21B336FD8007822CE /* NAStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAStream.m; sourceTree = "<group>"; };
+		004EF2D71B337314007822CE /* NABox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NABox.h; sourceTree = "<group>"; };
+		004EF2D81B337314007822CE /* NABox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NABox.m; sourceTree = "<group>"; };
+		004EF2DD1B3374AE007822CE /* NABoxTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NABoxTest.m; sourceTree = "<group>"; };
+		004EF2DF1B337558007822CE /* NABoxKeypair.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NABoxKeypair.h; sourceTree = "<group>"; };
+		004EF2E01B337558007822CE /* NABoxKeypair.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NABoxKeypair.m; sourceTree = "<group>"; };
 		0055133A19D3430F0021ABB0 /* NAOneTimeAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NAOneTimeAuth.h; sourceTree = "<group>"; };
 		0055133B19D3430F0021ABB0 /* NAOneTimeAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAOneTimeAuth.m; sourceTree = "<group>"; };
 		007A1B93195B77DB00110C88 /* NAInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NAInterface.h; sourceTree = "<group>"; };
@@ -158,6 +172,7 @@
 				00390FB41B1E4897001ED3EA /* NAStreamTest.m */,
 				004EF2BD1B328FDD007822CE /* NARandomTest.m */,
 				004EF2C51B333511007822CE /* NAAEADTest.m */,
+				004EF2DD1B3374AE007822CE /* NABoxTest.m */,
 				00390F9F1B1E4827001ED3EA /* Supporting Files */,
 				0047C1DC1B30F39F0055D184 /* NATestUtils.h */,
 				0047C1DD1B30F39F0055D184 /* NATestUtils.m */,
@@ -236,6 +251,10 @@
 				004EF2C01B333457007822CE /* NAAEAD.m */,
 				004EF2D11B336FD8007822CE /* NAStream.h */,
 				004EF2D21B336FD8007822CE /* NAStream.m */,
+				004EF2D71B337314007822CE /* NABox.h */,
+				004EF2D81B337314007822CE /* NABox.m */,
+				004EF2DF1B337558007822CE /* NABoxKeypair.h */,
+				004EF2E01B337558007822CE /* NABoxKeypair.m */,
 			);
 			path = NAChloride;
 			sourceTree = "<group>";
@@ -275,10 +294,12 @@
 				0047C1E21B30F4F70055D184 /* NARandom.h in Headers */,
 				004EF2C21B333457007822CE /* NAAEAD.h in Headers */,
 				0047C1F61B30F6420055D184 /* NAOneTimeAuth.h in Headers */,
+				004EF2DA1B337314007822CE /* NABox.h in Headers */,
 				0047C1F41B30F6420055D184 /* NASecretBox.h in Headers */,
 				0047C1F71B30F6420055D184 /* NAScrypt.h in Headers */,
 				0047C1F31B30F6420055D184 /* NAInterface.h in Headers */,
 				0047C1F21B30F6420055D184 /* NAChloride.h in Headers */,
+				004EF2E21B337558007822CE /* NABoxKeypair.h in Headers */,
 				0047C1F51B30F6420055D184 /* NAAuth.h in Headers */,
 				004EF2D41B336FD8007822CE /* NAStream.h in Headers */,
 			);
@@ -291,10 +312,12 @@
 				0047C1E11B30F4F70055D184 /* NARandom.h in Headers */,
 				004EF2C11B333457007822CE /* NAAEAD.h in Headers */,
 				00CCC7101B1E446C007090AD /* NASecretBox.h in Headers */,
+				004EF2D91B337314007822CE /* NABox.h in Headers */,
 				00CCC70D1B1E446C007090AD /* NAChloride.h in Headers */,
 				00CCC70E1B1E446C007090AD /* NAInterface.h in Headers */,
 				00CCC7201B1E446C007090AD /* NAScrypt.h in Headers */,
 				00CCC7121B1E446C007090AD /* NAOneTimeAuth.h in Headers */,
+				004EF2E11B337558007822CE /* NABoxKeypair.h in Headers */,
 				0047C1051B30E4C40055D184 /* NAAuth.h in Headers */,
 				004EF2D31B336FD8007822CE /* NAStream.h in Headers */,
 			);
@@ -464,6 +487,7 @@
 				0047C1DE1B30F39F0055D184 /* NATestUtils.m in Sources */,
 				004EF2C61B333511007822CE /* NAAEADTest.m in Sources */,
 				00390FBC1B1E4897001ED3EA /* NASecretBoxTest.m in Sources */,
+				004EF2DE1B3374AE007822CE /* NABoxTest.m in Sources */,
 				0047C1021B30DFDC0055D184 /* NAOneTimeAuthTest.m in Sources */,
 				004EF2BE1B328FDD007822CE /* NARandomTest.m in Sources */,
 				0047C1081B30E55C0055D184 /* NAAuthTest.m in Sources */,
@@ -478,7 +502,9 @@
 			files = (
 				0047C1EE1B30F63A0055D184 /* NAOneTimeAuth.m in Sources */,
 				0047C1EC1B30F63A0055D184 /* NASecretBox.m in Sources */,
+				004EF2E41B337558007822CE /* NABoxKeypair.m in Sources */,
 				0047C1EB1B30F63A0055D184 /* NAInterface.m in Sources */,
+				004EF2DC1B337314007822CE /* NABox.m in Sources */,
 				0047C1ED1B30F63A0055D184 /* NAAuth.m in Sources */,
 				004EF2D61B336FD8007822CE /* NAStream.m in Sources */,
 				004EF2C41B333457007822CE /* NAAEAD.m in Sources */,
@@ -493,7 +519,9 @@
 			files = (
 				00CCC7111B1E446C007090AD /* NASecretBox.m in Sources */,
 				0047C1061B30E4C40055D184 /* NAAuth.m in Sources */,
+				004EF2E31B337558007822CE /* NABoxKeypair.m in Sources */,
 				00CCC7131B1E446C007090AD /* NAOneTimeAuth.m in Sources */,
+				004EF2DB1B337314007822CE /* NABox.m in Sources */,
 				004EF2D51B336FD8007822CE /* NAStream.m in Sources */,
 				00CCC70F1B1E446C007090AD /* NAInterface.m in Sources */,
 				004EF2C31B333457007822CE /* NAAEAD.m in Sources */,
