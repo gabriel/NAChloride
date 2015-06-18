@@ -8,6 +8,8 @@ This project wraps [libsodium](https://github.com/jedisct1/libsodium) for:
   * Authenticated Encryption
   * Authentication
   * AEAD
+* Public-Key
+  * Authenticated Encryption
 * One-Time Authentication
 * Password Hashing: *Scrypt*
 * Stream Ciphers: *XSalsa20*
