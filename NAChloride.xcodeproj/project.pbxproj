@@ -34,6 +34,11 @@
 		0047C1F71B30F6420055D184 /* NAScrypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 002CD7951953685D00767675 /* NAScrypt.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0047C1F81B30F6420055D184 /* NAXSalsa20.h in Headers */ = {isa = PBXBuildFile; fileRef = 00095BB61954CE3400F550CB /* NAXSalsa20.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		004EF2BE1B328FDD007822CE /* NARandomTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 004EF2BD1B328FDD007822CE /* NARandomTest.m */; };
+		004EF2C11B333457007822CE /* NAAEAD.h in Headers */ = {isa = PBXBuildFile; fileRef = 004EF2BF1B333457007822CE /* NAAEAD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		004EF2C21B333457007822CE /* NAAEAD.h in Headers */ = {isa = PBXBuildFile; fileRef = 004EF2BF1B333457007822CE /* NAAEAD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		004EF2C31B333457007822CE /* NAAEAD.m in Sources */ = {isa = PBXBuildFile; fileRef = 004EF2C01B333457007822CE /* NAAEAD.m */; };
+		004EF2C41B333457007822CE /* NAAEAD.m in Sources */ = {isa = PBXBuildFile; fileRef = 004EF2C01B333457007822CE /* NAAEAD.m */; };
+		004EF2C61B333511007822CE /* NAAEADTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 004EF2C51B333511007822CE /* NAAEADTest.m */; };
 		00CCC70D1B1E446C007090AD /* NAChloride.h in Headers */ = {isa = PBXBuildFile; fileRef = 003BB2C41888A16E0019D88F /* NAChloride.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		00CCC70E1B1E446C007090AD /* NAInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = 007A1B93195B77DB00110C88 /* NAInterface.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		00CCC70F1B1E446C007090AD /* NAInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 003BB2F71888AAF80019D88F /* NAInterface.m */; };
@@ -89,6 +94,9 @@
 		004CA04419CCDC8D00499844 /* libPods-Tests.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-Tests.a"; path = "Pods/build/Debug-iphoneos/libPods-Tests.a"; sourceTree = "<group>"; };
 		004CA05119CCE07B00499844 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		004EF2BD1B328FDD007822CE /* NARandomTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NARandomTest.m; sourceTree = "<group>"; };
+		004EF2BF1B333457007822CE /* NAAEAD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NAAEAD.h; sourceTree = "<group>"; };
+		004EF2C01B333457007822CE /* NAAEAD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAAEAD.m; sourceTree = "<group>"; };
+		004EF2C51B333511007822CE /* NAAEADTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAAEADTest.m; sourceTree = "<group>"; };
 		0055133A19D3430F0021ABB0 /* NAOneTimeAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NAOneTimeAuth.h; sourceTree = "<group>"; };
 		0055133B19D3430F0021ABB0 /* NAOneTimeAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAOneTimeAuth.m; sourceTree = "<group>"; };
 		007A1B93195B77DB00110C88 /* NAInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NAInterface.h; sourceTree = "<group>"; };
@@ -149,6 +157,7 @@
 				0047C1011B30DFDC0055D184 /* NAOneTimeAuthTest.m */,
 				00390FB41B1E4897001ED3EA /* NAXSalsa20Test.m */,
 				004EF2BD1B328FDD007822CE /* NARandomTest.m */,
+				004EF2C51B333511007822CE /* NAAEADTest.m */,
 				00390F9F1B1E4827001ED3EA /* Supporting Files */,
 				0047C1DC1B30F39F0055D184 /* NATestUtils.h */,
 				0047C1DD1B30F39F0055D184 /* NATestUtils.m */,
@@ -225,6 +234,8 @@
 				00095BB71954CE3400F550CB /* NAXSalsa20.m */,
 				0047C1DF1B30F4F70055D184 /* NARandom.h */,
 				0047C1E01B30F4F70055D184 /* NARandom.m */,
+				004EF2BF1B333457007822CE /* NAAEAD.h */,
+				004EF2C01B333457007822CE /* NAAEAD.m */,
 			);
 			path = NAChloride;
 			sourceTree = "<group>";
@@ -262,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0047C1E21B30F4F70055D184 /* NARandom.h in Headers */,
+				004EF2C21B333457007822CE /* NAAEAD.h in Headers */,
 				0047C1F61B30F6420055D184 /* NAOneTimeAuth.h in Headers */,
 				0047C1F41B30F6420055D184 /* NASecretBox.h in Headers */,
 				0047C1F71B30F6420055D184 /* NAScrypt.h in Headers */,
@@ -277,6 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0047C1E11B30F4F70055D184 /* NARandom.h in Headers */,
+				004EF2C11B333457007822CE /* NAAEAD.h in Headers */,
 				00CCC7101B1E446C007090AD /* NASecretBox.h in Headers */,
 				00CCC70D1B1E446C007090AD /* NAChloride.h in Headers */,
 				00CCC7221B1E446C007090AD /* NAXSalsa20.h in Headers */,
@@ -449,6 +462,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0047C1DE1B30F39F0055D184 /* NATestUtils.m in Sources */,
+				004EF2C61B333511007822CE /* NAAEADTest.m in Sources */,
 				00390FBC1B1E4897001ED3EA /* NASecretBoxTest.m in Sources */,
 				0047C1021B30DFDC0055D184 /* NAOneTimeAuthTest.m in Sources */,
 				004EF2BE1B328FDD007822CE /* NARandomTest.m in Sources */,
@@ -467,6 +481,7 @@
 				0047C1EB1B30F63A0055D184 /* NAInterface.m in Sources */,
 				0047C1ED1B30F63A0055D184 /* NAAuth.m in Sources */,
 				0047C1F01B30F63A0055D184 /* NAXSalsa20.m in Sources */,
+				004EF2C41B333457007822CE /* NAAEAD.m in Sources */,
 				0047C1EF1B30F63A0055D184 /* NAScrypt.m in Sources */,
 				0047C1F11B30F63A0055D184 /* NARandom.m in Sources */,
 			);
@@ -481,6 +496,7 @@
 				00CCC7231B1E446C007090AD /* NAXSalsa20.m in Sources */,
 				00CCC7131B1E446C007090AD /* NAOneTimeAuth.m in Sources */,
 				00CCC70F1B1E446C007090AD /* NAInterface.m in Sources */,
+				004EF2C31B333457007822CE /* NAAEAD.m in Sources */,
 				00CCC7211B1E446C007090AD /* NAScrypt.m in Sources */,
 				0047C1E31B30F4F70055D184 /* NARandom.m in Sources */,
 			);

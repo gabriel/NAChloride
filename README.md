@@ -71,6 +71,22 @@ NSData *authData = [auth auth:message key:key &error];
 BOOL verified = [auth verify:authData data:message key:key error:&error];
 ```
 
+## AEAD
+
+See [Authenticated Encryption with Additional Data](https://download.libsodium.org/doc/secret-key_cryptography/aead.html).
+
+```objc
+NSData *key = [NARandom randomData:NAAEADKeySize];
+NSData *nonce = [NARandom randomData:NAAEADNonceSize];
+NSData *message = [@"This is a secret message" dataUsingEncoding:NSUTF8StringEncoding];
+NSData *additionalData = [@"Additional data" dataUsingEncoding:NSUTF8StringEncoding];
+
+NAAEAD *AEAD = [[NAAEAD alloc] init];
+NSError *error = nil;
+NSData *encryptedData = [AEAD encrypt:message nonce:nonce key:key additionalData:additionalData error:&error];
+NSData *decryptedData = [AEAD decrypt:encryptedData nonce:nonce key:key additionalData:additionalData error:&error];
+```
+
 # Password Hashing
 
 See [Password Hashing](https://download.libsodium.org/doc/password_hashing/index.html).

@@ -15,6 +15,7 @@ typedef NS_ENUM (NSInteger, NAErrorCode) {
   NAErrorCodeInvalidKey = 101,
   NAErrorCodeInvalidData = 102,
   NAErrorCodeInvalidSalt = 103,
+  NAErrorCodeInvalidAdditionalData = 104, // For AEAD
 
   NAErrorCodeVerificationFailed = 205, // Verification failed
 };
@@ -33,6 +34,11 @@ extern const NSUInteger NAScryptSaltSize;
 
 extern const NSUInteger NAXSalsaKeySize;
 extern const NSUInteger NAXSalsaNonceSize;
+
+extern const NSUInteger NAAEADKeySize;
+extern const NSUInteger NAAEADNonceSize;
+extern const NSUInteger NAAEADASize;
+
 
 // Thread safe libsodium init
 void NAChlorideInit(void);

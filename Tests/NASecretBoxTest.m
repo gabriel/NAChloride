@@ -18,8 +18,6 @@
 @implementation NASecretBoxTest
 
 - (void)testEncrypt {
-  NAChlorideInit();
-
   NSData *key = [NARandom randomData:NASecretBoxKeySize];
   NSData *nonce = [NARandom randomData:NASecretBoxNonceSize];
   NSData *message = [@"This is a secret message" dataUsingEncoding:NSUTF8StringEncoding];
