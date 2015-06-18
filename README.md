@@ -60,8 +60,9 @@ NSData *key = [NARandom randomData:NAAuthKeySize];
 NSData *message = [@"This is a message" dataUsingEncoding:NSUTF8StringEncoding];
 
 NSError *error = nil;
-NSData *auth = [oneTimeAuth auth:message key:key &error];
-BOOL verified = [oneTimeAuth verify:auth data:message key:key error:&error];
+NAAuth *auth = [[NAAuth alloc] init];
+NSData *authData = [auth auth:message key:key &error];
+BOOL verified = [auth verify:authData data:message key:key error:&error];
 ```
 
 # Password Hashing
@@ -85,6 +86,7 @@ NSData *key = [NARandom randomData:NAOneTimeAuthKeySize];
 NSData *message = [@"This is a message" dataUsingEncoding:NSUTF8StringEncoding];
 
 NSError *error = nil;
+NAOneTimeAuth *oneTimeAuth = [[NAOneTimeAuth alloc] init];
 NSData *auth = [oneTimeAuth auth:message key:key error:&error];
 BOOL verified = [oneTimeAuth verify:auth data:message key:key error:&error];
 ```
