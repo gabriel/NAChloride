@@ -30,6 +30,8 @@ NAChlorideInit();
 
 # Generating Random Data
 
+See [Generating Random Data](https://download.libsodium.org/doc/generating_random_data/index.html).
+
 ```objc
 NSData *data = [NARandom randomData:32]; // 32 bytes of random data
 ```
@@ -39,6 +41,8 @@ NSData *data = [NARandom randomData:32]; // 32 bytes of random data
 ## Authenticated Encryption
 
 Encrypts and authenticates a message using a shared key and nonce.
+
+See [Authenticated Encryption](https://download.libsodium.org/doc/secret-key_cryptography/authenticated_encryption.html).
 
 ```objc
 NSData *key = [NARandom randomData:NASecretBoxKeySize];
@@ -55,6 +59,8 @@ NSData *decrypted = [secretBox decrypt:encrypted nonce:nonce key:key error:&erro
 
 ## Authentication
 
+See [Authentication](https://download.libsodium.org/doc/secret-key_cryptography/secret-key_authentication.html).
+
 ```objc
 NSData *key = [NARandom randomData:NAAuthKeySize];
 NSData *message = [@"This is a message" dataUsingEncoding:NSUTF8StringEncoding];
@@ -66,6 +72,8 @@ BOOL verified = [auth verify:authData data:message key:key error:&error];
 ```
 
 # Password Hashing
+
+See [Password Hashing](https://download.libsodium.org/doc/password_hashing/index.html).
 
 ```objc
 NSData *key = [@"toomanysecrets" dataUsingEncoding:NSUTF8StringEncoding];
@@ -81,6 +89,8 @@ NSData *data = [NAScrypt scrypt:key salt:salt error:&error];
 Generates a MAC for a given message and shared key using Poly1305 algorithm.
 Key may NOT be reused across messages.
 
+See [One-Time Authentication](https://download.libsodium.org/doc/advanced/poly1305.html).
+
 ```objc
 NSData *key = [NARandom randomData:NAOneTimeAuthKeySize];
 NSData *message = [@"This is a message" dataUsingEncoding:NSUTF8StringEncoding];
@@ -94,6 +104,8 @@ BOOL verified = [oneTimeAuth verify:auth data:message key:key error:&error];
 ## Stream Ciphers
 
 ### XSalsa20
+
+See [XSalsa20](https://download.libsodium.org/doc/advanced/xsalsa20.html).
 
 ```objc
 // Nonce should be 24 bytes
