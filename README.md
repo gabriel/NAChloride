@@ -3,9 +3,11 @@ NAChloride
 
 This project wraps [libsodium](https://github.com/jedisct1/libsodium) for:
 
+* Random Data
 * Secret-Key 
   * Authenticated Encryption
   * Authentication
+  * AEAD
 * One-Time Authentication
 * Password Hashing: *Scrypt*
 * Stream Ciphers: *XSalsa20*
