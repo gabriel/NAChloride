@@ -85,8 +85,8 @@ NSData *additionalData = [@"Additional data" dataUsingEncoding:NSUTF8StringEncod
 
 NAAEAD *AEAD = [[NAAEAD alloc] init];
 NSError *error = nil;
-NSData *encryptedData = [AEAD encrypt:message nonce:nonce key:key additionalData:additionalData error:&error];
-NSData *decryptedData = [AEAD decrypt:encryptedData nonce:nonce key:key additionalData:additionalData error:&error];
+NSData *encryptedData = [AEAD encryptChaCha20Poly1305:message nonce:nonce key:key additionalData:additionalData error:&error];
+NSData *decryptedData = [AEAD decryptChaCha20Poly1305:encryptedData nonce:nonce key:key additionalData:additionalData error:&error];
 ```
 
 # Password Hashing
@@ -121,16 +121,15 @@ BOOL verified = [oneTimeAuth verify:auth data:message key:key error:&error];
 
 ## Stream Ciphers
 
-### XSalsa20
-
 See [XSalsa20](https://download.libsodium.org/doc/advanced/xsalsa20.html).
 
 ```objc
-// Nonce should be 24 bytes
-// Key should be 32 bytes
-NAXSalsa20 *XSalsa20 = [[NAXSalsa20 alloc] init];
+NSData *key = [NARandom randomData:NAStreamKeySize];
+NSData *nonce = [NARandom randomData:NAStreamNonceSize];
+NAStream *stream = [[NAStream alloc] init];
 NSError *error = nil;
-NSData *encrypted = [XSalsa20 xor:message nonce:nonce key:key error:&error];
+NSData *encrypted = [stream xor:message nonce:nonce key:key error:&error];
+NSData *decrypted = [stream encrypted nonce:nonce key:key error:&error];
 ```
 
 ## Dispatch

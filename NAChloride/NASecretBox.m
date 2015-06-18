@@ -8,6 +8,8 @@
 
 #import "NASecretBox.h"
 
+#import "NAInterface.h"
+
 #import <libsodium/sodium.h>
 
 @implementation NASecretBox

@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 Gabriel Handford. All rights reserved.
 //
 
-#import "NAInterface.h"
+#import <Foundation/Foundation.h>
 
 /*!
  Encrypts and authenticates a message using a shared key and nonce.

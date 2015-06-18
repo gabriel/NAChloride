@@ -22,6 +22,9 @@ const NSUInteger NAOneTimeAuthSize = crypto_onetimeauth_BYTES;
 
 const NSUInteger NAScryptSaltSize = crypto_pwhash_scryptsalsa208sha256_SALTBYTES;
 
+const NSUInteger NAStreamKeySize = crypto_stream_KEYBYTES;
+const NSUInteger NAStreamNonceSize = crypto_stream_NONCEBYTES;
+
 const NSUInteger NAXSalsaKeySize = crypto_stream_xsalsa20_KEYBYTES;
 const NSUInteger NAXSalsaNonceSize = crypto_stream_xsalsa20_NONCEBYTES;
 

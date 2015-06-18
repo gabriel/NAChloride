@@ -26,9 +26,9 @@
 
   NAAEAD *AEAD = [[NAAEAD alloc] init];
   NSError *error = nil;
-  NSData *encryptedData = [AEAD encrypt:message nonce:nonce key:key additionalData:additionalData error:&error];
+  NSData *encryptedData = [AEAD encryptChaCha20Poly1305:message nonce:nonce key:key additionalData:additionalData error:&error];
   XCTAssertNil(error);
-  NSData *decryptedData = [AEAD decrypt:encryptedData nonce:nonce key:key additionalData:additionalData error:&error];
+  NSData *decryptedData = [AEAD decryptChaCha20Poly1305:encryptedData nonce:nonce key:key additionalData:additionalData error:&error];
   XCTAssertNil(error);
   XCTAssertEqualObjects(message, decryptedData);
 }

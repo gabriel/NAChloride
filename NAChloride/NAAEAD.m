@@ -16,7 +16,7 @@
 
 + (void)initialize { NAChlorideInit(); }
 
-- (NSData *)encrypt:(NSData *)data nonce:(NSData *)nonce key:(NSData *)key additionalData:(NSData *)additionalData error:(NSError **)error {
+- (NSData *)encryptChaCha20Poly1305:(NSData *)data nonce:(NSData *)nonce key:(NSData *)key additionalData:(NSData *)additionalData error:(NSError **)error {
   if (!nonce || [nonce length] != NAAEADNonceSize) {
     if (error) *error = NAError(NAErrorCodeInvalidNonce, @"Invalid nonce");
     return nil;
@@ -55,7 +55,7 @@
   return outData;
 }
 
-- (NSData *)decrypt:(NSData *)data nonce:(NSData *)nonce key:(NSData *)key additionalData:(NSData *)additionalData error:(NSError **)error {
+- (NSData *)decryptChaCha20Poly1305:(NSData *)data nonce:(NSData *)nonce key:(NSData *)key additionalData:(NSData *)additionalData error:(NSError **)error {
   if (!nonce || [nonce length] != NAAEADNonceSize) {
     if (error) *error = NAError(NAErrorCodeInvalidNonce, @"Invalid nonce");
     return nil;

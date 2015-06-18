@@ -32,6 +32,9 @@ extern const NSUInteger NAOneTimeAuthSize;
 
 extern const NSUInteger NAScryptSaltSize;
 
+extern const NSUInteger NAStreamKeySize;
+extern const NSUInteger NAStreamNonceSize;
+
 extern const NSUInteger NAXSalsaKeySize;
 extern const NSUInteger NAXSalsaNonceSize;
 

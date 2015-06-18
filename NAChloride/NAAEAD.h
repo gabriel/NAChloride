@@ -10,8 +10,8 @@
 
 @interface NAAEAD : NSObject
 
-- (NSData *)encrypt:(NSData *)data nonce:(NSData *)nonce key:(NSData *)key additionalData:(NSData *)additionalData error:(NSError **)error;
+- (NSData *)encryptChaCha20Poly1305:(NSData *)data nonce:(NSData *)nonce key:(NSData *)key additionalData:(NSData *)additionalData error:(NSError **)error;
 
-- (NSData *)decrypt:(NSData *)data nonce:(NSData *)nonce key:(NSData *)key additionalData:(NSData *)additionalData error:(NSError **)error;
+- (NSData *)decryptChaCha20Poly1305:(NSData *)data nonce:(NSData *)nonce key:(NSData *)key additionalData:(NSData *)additionalData error:(NSError **)error;
 
 @end
