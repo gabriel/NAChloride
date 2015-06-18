@@ -25,9 +25,13 @@ const NSUInteger NAScryptSaltSize = crypto_pwhash_scryptsalsa208sha256_SALTBYTES
 const NSUInteger NAXSalsaKeySize = crypto_stream_xsalsa20_KEYBYTES;
 const NSUInteger NAXSalsaNonceSize = crypto_stream_xsalsa20_NONCEBYTES;
 
-void NAChlorideInit() {
+void NAChlorideInit(void) {
   static dispatch_once_t sodiumInit;
-  dispatch_once(&sodiumInit, ^{ sodium_init(); });
+  dispatch_once(&sodiumInit, ^{ NASodiumInit(); });
+}
+
+int NASodiumInit(void) {
+  return sodium_init();
 }
 
 void NADispatch(dispatch_queue_t queue, NAWork work, NACompletion completion) {

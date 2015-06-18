@@ -14,9 +14,9 @@
 
 @implementation NAOneTimeAuth
 
++ (void)initialize { NAChlorideInit(); }
+
 - (NSData *)auth:(NSData *)data key:(NSData *)key error:(NSError **)error {
-  NAChlorideInit();
-  
   if (!key || [key length] != NAOneTimeAuthKeySize) {
     if (error) *error = NAError(NAErrorCodeInvalidKey, @"Invalid key");
     return nil;
@@ -29,8 +29,6 @@
 }
 
 - (BOOL)verify:(NSData *)auth data:(NSData *)data key:(NSData *)key error:(NSError **)error {
-  NAChlorideInit();
-
   if (!key || [key length] != NAOneTimeAuthKeySize) {
     if (error) *error = NAError(NAErrorCodeInvalidKey, @"Invalid key");
     return NO;

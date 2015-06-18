@@ -34,8 +34,11 @@ extern const NSUInteger NAScryptSaltSize;
 extern const NSUInteger NAXSalsaKeySize;
 extern const NSUInteger NAXSalsaNonceSize;
 
-
+// Thread safe libsodium init
 void NAChlorideInit(void);
+
+// Don't call this directly (use NAChlorideInit). This is made accessible for testing.
+int NASodiumInit(void);
 
 
 typedef id (^NAWork)(NSError **error);

@@ -14,8 +14,9 @@
 
 @implementation NARandom
 
++ (void)initialize { NAChlorideInit(); }
+
 + (NSData *)randomData:(size_t)numBytes {
-  NAChlorideInit();
   NSMutableData *outData = [NSMutableData dataWithLength:numBytes];
   randombytes_buf([outData mutableBytes], numBytes);
   return outData;
