@@ -22,7 +22,22 @@ const NSUInteger NAOneTimeAuthSize = crypto_onetimeauth_BYTES;
 
 const NSUInteger NAScryptSaltSize = crypto_pwhash_scryptsalsa208sha256_SALTBYTES;
 
+const NSUInteger NAXSalsaKeySize = crypto_stream_xsalsa20_KEYBYTES;
+const NSUInteger NAXSalsaNonceSize = crypto_stream_xsalsa20_NONCEBYTES;
+
 void NAChlorideInit() {
   static dispatch_once_t sodiumInit;
   dispatch_once(&sodiumInit, ^{ sodium_init(); });
+}
+
+void NADispatch(dispatch_queue_t queue, NAWork work, NACompletion completion) {
+  dispatch_async(queue, ^{
+
+    NSError *error = nil;
+    id output = work(&error);
+
+    dispatch_async(dispatch_get_main_queue(), ^{
+      completion(error, output);
+    });
+  });
 }

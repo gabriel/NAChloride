@@ -12,34 +12,19 @@
 
 @implementation NASecretBox
 
-- (NSData *)decrypt:(NSData *)encryptedData nonce:(NSData *)nonce key:(NSData *)key error:(NSError * __autoreleasing *)error {
-  NSMutableData *outData = [NSMutableData dataWithLength:[encryptedData length]];
-
-  int retval = crypto_secretbox_open_easy([outData mutableBytes],
-                                          [encryptedData bytes], [encryptedData length],
-                                          [nonce bytes], [key bytes]);
-  if (retval == -1) {
-    if (error) *error = [NSError errorWithDomain:@"NAChloride" code:NAErrorCodeVerificationFailed userInfo:@{NSLocalizedDescriptionKey: @"Verification failed"}];
-    return nil;
-  }
-    
-  // Remove MACBYTES from outdata
-  return [NSData dataWithBytes:[outData bytes] length:([outData length] - NASecretBoxMACSize)];
-}
-
-- (NSData *)encrypt:(NSData *)data nonce:(NSData *)nonce key:(NSData *)key error:(NSError * __autoreleasing *)error {
+- (NSData *)encrypt:(NSData *)data nonce:(NSData *)nonce key:(NSData *)key error:(NSError **)error {
   if (!nonce || [nonce length] != NASecretBoxNonceSize) {
-    if (error) *error = [NSError errorWithDomain:@"NAChloride" code:NAErrorCodeInvalidNonce userInfo:@{NSLocalizedDescriptionKey: @"Invalid nonce"}];
+    if (error) *error = NAError(NAErrorCodeInvalidNonce, @"Invalid nonce");
     return nil;
   }
     
   if (!data) {
-    if (error) *error = [NSError errorWithDomain:@"NAChloride" code:NAErrorCodeInvalidData userInfo:@{NSLocalizedDescriptionKey: @"Invalid data"}];
+    if (error) *error = NAError(NAErrorCodeInvalidData, @"Invalid data");
     return nil;
   }
     
   if (!key || [key length] != NASecretBoxKeySize) {
-    if (error) *error = [NSError errorWithDomain:@"NAChloride" code:NAErrorCodeInvalidKey userInfo:@{NSLocalizedDescriptionKey: @"Invalid key"}];
+    if (error) *error = NAError(NAErrorCodeInvalidKey, @"Invalid key");
     return nil;
   }
     
@@ -55,5 +40,36 @@
     
   return outData;
 }
+
+- (NSData *)decrypt:(NSData *)data nonce:(NSData *)nonce key:(NSData *)key error:(NSError **)error {
+  if (!nonce || [nonce length] != NASecretBoxNonceSize) {
+    if (error) *error = NAError(NAErrorCodeInvalidNonce, @"Invalid nonce");
+    return nil;
+  }
+
+  if (!data) {
+    if (error) *error = NAError(NAErrorCodeInvalidData, @"Invalid data");
+    return nil;
+  }
+
+  if (!key || [key length] != NASecretBoxKeySize) {
+    if (error) *error = NAError(NAErrorCodeInvalidKey, @"Invalid key");
+    return nil;
+  }
+
+  NSMutableData *outData = [NSMutableData dataWithLength:[data length]];
+
+  int retval = crypto_secretbox_open_easy([outData mutableBytes],
+                                          [data bytes], [data length],
+                                          [nonce bytes], [key bytes]);
+  if (retval == -1) {
+    if (error) *error = NAError(NAErrorCodeVerificationFailed, @"Verification failed");
+    return nil;
+  }
+
+  // Remove MACBYTES from outdata
+  return [NSData dataWithBytes:[outData bytes] length:([outData length] - NASecretBoxMACSize)];
+}
+
 
 @end

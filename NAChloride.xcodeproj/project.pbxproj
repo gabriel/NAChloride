@@ -760,6 +760,7 @@
 				0047C1231B30EE640055D184 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		00CCC6FC1B1E4435007090AD /* Build configuration list for PBXNativeTarget "NAChloride" */ = {
 			isa = XCConfigurationList;

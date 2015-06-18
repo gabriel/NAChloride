@@ -18,7 +18,7 @@
   NAChlorideInit();
 
   if (!key || [key length] != NAAuthKeySize) {
-    if (error) *error = [NSError errorWithDomain:@"NAChloride" code:NAErrorCodeInvalidKey userInfo:@{NSLocalizedDescriptionKey: @"Invalid key"}];
+    if (error) *error = NAError(NAErrorCodeInvalidKey, @"Invalid key");
     return nil;
   }
 
@@ -32,17 +32,17 @@
   NAChlorideInit();
 
   if (!key || [key length] != NAAuthKeySize) {
-    if (error) *error = [NSError errorWithDomain:@"NAChloride" code:NAErrorCodeInvalidKey userInfo:@{NSLocalizedDescriptionKey: @"Invalid key"}];
+    if (error) *error = NAError(NAErrorCodeInvalidKey, @"Invalid key");
     return NO;
   }
 
   if (!auth || [auth length] != NAAuthSize) {
-    if (error) *error = [NSError errorWithDomain:@"NAChloride" code:NAErrorCodeInvalidData userInfo:@{NSLocalizedDescriptionKey: @"Invalid data"}];
+    if (error) *error = NAError(NAErrorCodeInvalidData, @"Invalid data");
     return NO;
   }
 
   if (crypto_auth_verify([auth bytes], [data bytes], [data length], [key bytes]) != 0) {
-    if (error) *error = [NSError errorWithDomain:@"NAChloride" code:NAErrorCodeVerificationFailed userInfo:@{NSLocalizedDescriptionKey: @"Verification failed"}];
+    if (error) *error = NAError(NAErrorCodeVerificationFailed, @"Verification failed");
     return NO; // Message forged!
   }
   return YES;

@@ -9,15 +9,14 @@
 #import <Foundation/Foundation.h>
 
 typedef NS_ENUM (NSInteger, NAErrorCode) {
-  NAErrorCodeInvalidNonce = 100, // Invalid nonce
-  NAErrorCodeInvalidKey = 101, // Invalid key
-  NAErrorCodeInvalidData = 102, // Invalid data
+  NAErrorCodeFailure = 1, // Generic failure
+
+  NAErrorCodeInvalidNonce = 100,
+  NAErrorCodeInvalidKey = 101,
+  NAErrorCodeInvalidData = 102,
+  NAErrorCodeInvalidSalt = 103,
 
   NAErrorCodeVerificationFailed = 205, // Verification failed
-
-  NAErrorCodeScryptFailed = 400,
-  NAErrorCodeInvalidSalt = 401,
-
 };
 
 extern const NSUInteger NASecretBoxKeySize;
@@ -32,4 +31,16 @@ extern const NSUInteger NAOneTimeAuthSize;
 
 extern const NSUInteger NAScryptSaltSize;
 
+extern const NSUInteger NAXSalsaKeySize;
+extern const NSUInteger NAXSalsaNonceSize;
+
+
 void NAChlorideInit(void);
+
+
+typedef id (^NAWork)(NSError **error);
+typedef void (^NACompletion)(NSError *error, id output);
+void NADispatch(dispatch_queue_t queue, NAWork work, NACompletion completion);
+
+#define NAError(CODE, DESC) [NSError errorWithDomain:@"NAChloride" code:CODE userInfo:@{NSLocalizedDescriptionKey: DESC}];
+

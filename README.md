@@ -56,7 +56,7 @@ NSData *decrypted = [secretBox decrypt:encrypted nonce:nonce key:key error:&erro
 ## Authentication
 
 ```objc
-NSData *key = [NARandom randomData:NASecretBoxKeySize];
+NSData *key = [NARandom randomData:NAAuthKeySize];
 NSData *message = [@"This is a message" dataUsingEncoding:NSUTF8StringEncoding];
 
 NSError *error = nil;
@@ -81,7 +81,7 @@ Generates a MAC for a given message and shared key using Poly1305 algorithm.
 Key may NOT be reused across messages.
 
 ```objc
-NSData *key = [NARandom randomData:NASecretBoxKeySize];
+NSData *key = [NARandom randomData:NAOneTimeAuthKeySize];
 NSData *message = [@"This is a message" dataUsingEncoding:NSUTF8StringEncoding];
 
 NSError *error = nil;
@@ -98,6 +98,19 @@ BOOL verified = [oneTimeAuth verify:auth data:message key:key error:&error];
 // Key should be 32 bytes
 NAXSalsa20 *XSalsa20 = [[NAXSalsa20 alloc] init];
 NSError *error = nil;
-NSData *encrypted = [XSalsa20 encrypt:message nonce:nonce key:key error:&error];
+NSData *encrypted = [XSalsa20 xor:message nonce:nonce key:key error:&error];
 ```
 
+## Dispatch
+
+There is a helper to dispatch these operations on a queue:
+
+```objc
+dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+NADispatch(queue, ^id(NSError **error) {
+  return [NAScrypt scrypt:password salt:salt error:error];
+}, ^(NSError *error, NSData *key) {
+  // This is on the main queue
+  // Error if failed, output if not
+});
+```
