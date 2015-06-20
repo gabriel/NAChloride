@@ -60,7 +60,7 @@ See [Generating Random Data](https://download.libsodium.org/doc/generating_rando
 
 ```objc
 NSData *data = [NARandom randomData:32]; // 32 bytes of random data
-NSData *data = [NARandom randomSecureData:32]; // 32 bytes of random & secure data
+NSData *data = [NARandom randomSecureReadOnlyData:32]; // 32 bytes of random, secure, read-only data
 ```
 
 # Secret-Key Cryptography
