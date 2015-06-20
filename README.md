@@ -41,18 +41,17 @@ See [Securing Memory Allocations](https://download.libsodium.org/doc/helpers/mem
 
 ```objc
 NASecureData *secureData = [NASecureData secureReadOnlyDataWithLength:length completion:^(void *bytes, NSUInteger length) {
-  // Modify the bytes here. After this it will be read-only.
-  // For example: randombytes_buf(bytes, length);
+  // Set the bytes here. After this it will be read-only.
 }];
 
-// secureData is read-only by default. You can set it to no access.
-// And if you do this and try to access secureData.bytes after, it will SIGABRT.
-secureData.protection = NASecureDataProtectionNoAccess;
+// After the block executes, secureData is read-only. You can set it to no access (or read/write).
+// If you set it to no access this and call secureData.bytes, it will SIGABRT.
+// secureData.protection = NASecureDataProtectionNoAccess; // or NASecureDataProtectionReadWrite
 
 return secureData;
 ```
 
-Some classes like NASecretBox, NABox and NAAEAD have an option to enable secureMemory.
+Some classes like NASecretBox, NABox and NAAEAD have an option to enable secureMemory (on decrypt).
 
 NASecureData subclasses NSMutableData for compatibility and usage with other APIs.
 
@@ -185,8 +184,8 @@ There is a helper to dispatch these operations on a queue:
 dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
 NADispatch(queue, ^id(NSError **error) {
   return [NAScrypt scrypt:password salt:salt error:error];
-}, ^(NSError *error, NSData *key) {
-  // This is on the main queue
-  // Error if failed, output if not
+}, ^(NSError *error, NSData *data) {
+  // This is on the main queue.
+  // Error is set if it failed.
 });
 ```
