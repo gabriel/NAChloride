@@ -45,10 +45,8 @@ NASecureData *secureData = [NASecureData secureReadOnlyDataWithLength:length com
 }];
 
 // After the block executes, secureData is read-only. You can set it to no access (or read/write).
-// If you set it to no access this and call secureData.bytes, it will SIGABRT.
-// secureData.protection = NASecureDataProtectionNoAccess; // or NASecureDataProtectionReadWrite
-
-return secureData;
+// If you set it to no access and secureData.bytes is accessed, it will SIGABRT. For example,
+// secureData.protection = NASecureDataProtectionNoAccess;
 ```
 
 Some classes like NASecretBox, NABox and NAAEAD have an option to enable secureMemory (on decrypt).
