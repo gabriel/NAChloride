@@ -38,18 +38,22 @@ NAChlorideInit();
 See [Securing Memory Allocations](https://download.libsodium.org/doc/helpers/memory_management.html).
 
 ```objc
-NASecureData *secureData = [NASecureData secureReadOnlyDataWithLength:length completion:^(void *bytes) {
-  // Set the bytes data here. After this it will be readonly.
+NASecureData *secureData = [NASecureData secureReadOnlyDataWithLength:length completion:^(void *bytes, NSUInteger length) {
+  // Modify the bytes here. After this it will be read-only.
   // For example: randombytes_buf(bytes, length);
 }];
 
-// secureData is readonly by default. You can set to no access.
+// secureData is read-only by default. You can set it to no access.
 secureData.protection = NASecureDataProtectionNoAccess;
 
-// Trying to access secureData.bytes will SIGABRT
+// And if you do this and try to access secureData.bytes, it will SIGABRT
 
 return secureData;
 ```
+
+Some classes like NASecretBox, NABox and NAAEAD have an option to enable secureMemory.
+
+NASecureData subclasses NSMutableData for compatibility and usage with other APIs.
 
 # Generating Random Data
 
