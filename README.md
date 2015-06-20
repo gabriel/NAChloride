@@ -17,6 +17,8 @@ This project wraps [libsodium](https://github.com/jedisct1/libsodium) for:
 
 More wrappers are coming soon.
 
+Do you want to work on crypto at Keybase? [We're hiring](https://keybase.io/jobs).
+
 If you are looking for other non-libsodium related crypto (that used to be here), see [NACrypto](https://github.com/gabriel/NACrypto).
 
 # Podfile
