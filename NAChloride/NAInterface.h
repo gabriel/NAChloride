@@ -61,3 +61,4 @@ void NADispatch(dispatch_queue_t queue, NAWork work, NACompletion completion);
 
 #define NAError(CODE, DESC) [NSError errorWithDomain:@"NAChloride" code:CODE userInfo:@{NSLocalizedDescriptionKey: DESC}];
 
+typedef void (^NADataCompletion)(void *bytes, NSUInteger length);

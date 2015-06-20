@@ -8,8 +8,18 @@
 
 #import <Foundation/Foundation.h>
 
+#import "NASecureData.h"
+
 @interface NARandom : NSObject
 
-+ (NSData *)randomData:(size_t)numBytes;
+/*!
+ Random data of length bytes.
+ */
++ (NSData *)randomData:(NSUInteger)length;
+
+/*!
+ Random & secure data of length bytes.
+ */
++ (NASecureData *)randomSecureReadOnlyData:(NSUInteger)length;
 
 @end

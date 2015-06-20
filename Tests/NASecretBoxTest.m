@@ -18,13 +18,16 @@
 @implementation NASecretBoxTest
 
 - (void)testEncrypt {
-  NSData *key = [NARandom randomData:NASecretBoxKeySize];
+  NSData *key = [NARandom randomSecureReadOnlyData:NASecretBoxKeySize];
   NSData *nonce = [NARandom randomData:NASecretBoxNonceSize];
   NSData *message = [@"This is a secret message" dataUsingEncoding:NSUTF8StringEncoding];
   
   NASecretBox *secretBox = [[NASecretBox alloc] init];
+  secretBox.secureDataEnabled = YES;
   NSData *encryptedData = [secretBox encrypt:message nonce:nonce key:key error:nil];
   NSData *decryptedData = [secretBox decrypt:encryptedData nonce:nonce key:key error:nil];
+  XCTAssertNotNil(decryptedData);
+  XCTAssertTrue([message isEqualToData:decryptedData]);
   XCTAssertEqualObjects(message, decryptedData);
 }
 
@@ -41,7 +44,7 @@
 }
 
 - (void)testEncryptBadNonce {
-  NSData *key = [NARandom randomData:NASecretBoxKeySize];
+  NSData *key = [NARandom randomSecureReadOnlyData:NASecretBoxKeySize];
   NSData *nonce = [NARandom randomData:4];
 
   NSError *error = nil;
@@ -53,7 +56,7 @@
 }
 
 - (void)testEncryptBadData {
-  NSData *key = [NARandom randomData:NASecretBoxKeySize];
+  NSData *key = [NARandom randomSecureReadOnlyData:NASecretBoxKeySize];
   NSData *nonce = [NARandom randomData:NASecretBoxNonceSize];
 
   NSError *error = nil;
@@ -65,8 +68,8 @@
 }
 
 - (void)testDecryptBadKey {
-  NSData *key1 = [NARandom randomData:NASecretBoxKeySize];
-  NSData *key2 = [NARandom randomData:NASecretBoxKeySize];
+  NSData *key1 = [NARandom randomSecureReadOnlyData:NASecretBoxKeySize];
+  NSData *key2 = [NARandom randomSecureReadOnlyData:NASecretBoxKeySize];
   XCTAssertNotEqual(key1, key2);
   NSData *nonce = [NARandom randomData:NASecretBoxNonceSize];
 
@@ -83,7 +86,7 @@
 }
 
 - (void)testDecryptBadNonce {
-  NSData *key = [NARandom randomData:NASecretBoxKeySize];
+  NSData *key = [NARandom randomSecureReadOnlyData:NASecretBoxKeySize];
   NSData *nonce1 = [NARandom randomData:NASecretBoxNonceSize];
   NSData *nonce2 = [NARandom randomData:NASecretBoxNonceSize];
   XCTAssertNotEqual(nonce1, nonce2);

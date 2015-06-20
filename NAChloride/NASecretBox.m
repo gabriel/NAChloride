@@ -9,6 +9,7 @@
 #import "NASecretBox.h"
 
 #import "NAInterface.h"
+#import "NASecureData.h"
 
 #import <libsodium/sodium.h>
 
@@ -64,18 +65,19 @@
     return nil;
   }
 
-  NSMutableData *outData = [NSMutableData dataWithLength:[data length]];
-
-  int retval = crypto_secretbox_open_easy([outData mutableBytes],
-                                          [data bytes], [data length],
-                                          [nonce bytes], [key bytes]);
-  if (retval == -1) {
+  __block int retval = -1;
+  NSMutableData *outData = NAData(self.secureDataEnabled, data.length, ^(void *bytes, NSUInteger length) {
+    retval = crypto_secretbox_open_easy(bytes,
+                                        [data bytes], [data length],
+                                        [nonce bytes], [key bytes]);
+  });
+  if (retval != 0) {
     if (error) *error = NAError(NAErrorCodeVerificationFailed, @"Verification failed");
     return nil;
   }
 
-  // Remove MACBYTES from outdata
-  return [NSData dataWithBytes:[outData bytes] length:([outData length] - NASecretBoxMACSize)];
+  // Remove MAC bytes from data
+  return [outData na_truncate:NASecretBoxMACSize];
 }
 
 

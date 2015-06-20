@@ -3,6 +3,7 @@ NAChloride
 
 This project wraps [libsodium](https://github.com/jedisct1/libsodium) for:
 
+* Secure Memory
 * Random Data
 * Secret-Key 
   * Authenticated Encryption
@@ -32,12 +33,31 @@ You should call `NAChlorideInit()` to initialize on app start. It is thread safe
 NAChlorideInit();
 ```
 
+# Secure Memory
+
+See [Securing Memory Allocations](https://download.libsodium.org/doc/helpers/memory_management.html).
+
+```objc
+NASecureData *secureData = [NASecureData secureReadOnlyDataWithLength:length completion:^(void *bytes) {
+  // Set the bytes data here. After this it will be readonly.
+  // For example: randombytes_buf(bytes, length);
+}];
+
+// secureData is readonly by default. You can set to no access.
+secureData.protection = NASecureDataProtectionNoAccess;
+
+// Trying to access secureData.bytes will SIGABRT
+
+return secureData;
+```
+
 # Generating Random Data
 
 See [Generating Random Data](https://download.libsodium.org/doc/generating_random_data/index.html).
 
 ```objc
 NSData *data = [NARandom randomData:32]; // 32 bytes of random data
+NSData *data = [NARandom randomSecureData:32]; // 32 bytes of random & secure data
 ```
 
 # Secret-Key Cryptography

@@ -9,6 +9,7 @@
 #import "NAAEAD.h"
 
 #import "NAInterface.h"
+#import "NASecureData.h"
 
 #import <libsodium/sodium.h>
 
@@ -76,21 +77,22 @@
     return nil;
   }
 
-  NSMutableData *outData = [NSMutableData dataWithLength:[data length]];
-
-  unsigned long long outLength;
-  int retval = crypto_aead_chacha20poly1305_decrypt([outData mutableBytes], &outLength,
-                                                    NULL,
-                                                    [data bytes], [data length],
-                                                    [additionalData bytes], [additionalData length],
-                                                    [nonce bytes],
-                                                    [key bytes]);
-  if (retval == -1) {
+  __block unsigned long long outLength;
+  __block int retval = -1;
+  NSMutableData *outData = NAData(self.secureDataEnabled, data.length, ^(void *bytes, NSUInteger length) {
+    retval = crypto_aead_chacha20poly1305_decrypt(bytes, &outLength,
+                                                  NULL,
+                                                  [data bytes], [data length],
+                                                  [additionalData bytes], [additionalData length],
+                                                  [nonce bytes],
+                                                  [key bytes]);
+  });
+  if (retval != 0) {
     if (error) *error = NAError(NAErrorCodeVerificationFailed, @"Verification failed");
     return nil;
   }
 
-  return [NSData dataWithBytes:[outData bytes] length:outLength];
+  return [outData na_truncate:outData.length - outLength];
 }
 
 @end

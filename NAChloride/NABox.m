@@ -59,20 +59,20 @@
     return nil;
   }
 
-  NSMutableData *outData = [NSMutableData dataWithLength:[data length]];
-
-  int retval = crypto_box_open_easy([outData mutableBytes],
-                                    [data bytes], [data length],
-                                    [nonce bytes],
-                                    [keypair.publicKey bytes],
-                                    [keypair.secretKey bytes]);
-
+  __block int retval = -1;
+  NSMutableData *outData = NAData(self.secureDataEnabled, data.length, ^(void *bytes, NSUInteger length) {
+    retval = crypto_box_open_easy(bytes,
+                                  [data bytes], [data length],
+                                  [nonce bytes],
+                                  [keypair.publicKey bytes],
+                                  [keypair.secretKey bytes]);
+  });
   if (retval != 0) {
     if (error) *error = NAError(NAErrorCodeVerificationFailed, @"Verification failed");
     return nil;
   }
 
-  return [NSData dataWithBytes:[outData bytes] length:([outData length] - NABoxMACSize)];
+  return [outData na_truncate:NABoxMACSize];
 }
 
 @end

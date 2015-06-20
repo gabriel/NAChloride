@@ -27,3 +27,4 @@ FOUNDATION_EXPORT const unsigned char NAChlorideVersionString[];
 #import <NAChloride/NAScrypt.h>
 #import <NAChloride/NAStream.h>
 #import <NAChloride/NARandom.h>
+#import <NAChloride/NASecureData.h>

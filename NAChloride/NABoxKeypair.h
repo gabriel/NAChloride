@@ -8,12 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
+#import "NASecureData.h"
+
 @interface NABoxKeypair : NSObject
 
 @property (readonly) NSData *publicKey;
-@property (readonly) NSData *secretKey;
+@property (readonly) NASecureData *secretKey;
 
-- (instancetype)initWithPublicKey:(NSData *)publicKey secretKey:(NSData *)secretKey error:(NSError **)error;
+- (instancetype)initWithPublicKey:(NSData *)publicKey secretKey:(NASecureData *)secretKey error:(NSError **)error;
 
 + (instancetype)generate:(NSError **)error;
 

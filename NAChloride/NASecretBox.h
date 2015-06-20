@@ -13,6 +13,8 @@
  */
 @interface NASecretBox : NSObject
 
+@property (getter=isSecureDataEnabled) BOOL secureDataEnabled;
+
 - (NSData *)encrypt:(NSData *)data nonce:(NSData *)nonce key:(NSData *)key error:(NSError **)error;
 
 - (NSData *)decrypt:(NSData *)data nonce:(NSData *)nonce key:(NSData *)key error:(NSError **)error;

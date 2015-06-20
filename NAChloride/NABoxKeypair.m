@@ -9,17 +9,20 @@
 #import "NABoxKeypair.h"
 
 #import "NAInterface.h"
+#import "NASecureData.h"
 
 #import <libsodium/sodium.h>
 
 @interface NABoxKeypair ()
 @property NSData *publicKey;
-@property NSData *secretKey;
+@property NASecureData *secretKey;
 @end
 
 @implementation NABoxKeypair
 
-- (instancetype)initWithPublicKey:(NSData *)publicKey secretKey:(NSData *)secretKey error:(NSError **)error {
++ (void)initialize { NAChlorideInit(); }
+
+- (instancetype)initWithPublicKey:(NSData *)publicKey secretKey:(NASecureData *)secretKey error:(NSError **)error {
   if ((self = [super init])) {
 
     if (!publicKey || [publicKey length] != NABoxPublicKeySize) {
@@ -40,13 +43,14 @@
 
 + (instancetype)generate:(NSError **)error {
   NSMutableData *publicKey = [NSMutableData dataWithLength:NABoxPublicKeySize];
-  NSMutableData *secretKey = [NSMutableData dataWithLength:NABoxPublicKeySize];
-  int retval = crypto_box_keypair([publicKey mutableBytes], [secretKey mutableBytes]);
+  __block int retval = -1;
+  NASecureData *secretKey = [NASecureData secureReadOnlyDataWithLength:NABoxSecretKeySize completion:^(void *bytes, NSUInteger length) {
+    retval = crypto_box_keypair([publicKey mutableBytes], bytes);
+  }];
   if (retval != 0) {
     if (error) *error = NAError(NAErrorCodeFailure, @"Keypair generate failed");
     return nil;
   }
-
   return [[NABoxKeypair alloc] initWithPublicKey:publicKey secretKey:secretKey error:error];
 }
 

@@ -12,6 +12,8 @@
 
 @interface NABox : NSObject
 
+@property (getter=isSecureDataEnabled) BOOL secureDataEnabled;
+
 - (NSData *)encrypt:(NSData *)data nonce:(NSData *)nonce keypair:(NABoxKeypair *)keypair error:(NSError **)error;
 
 - (NSData *)decrypt:(NSData *)data nonce:(NSData *)nonce keypair:(NABoxKeypair *)keypair error:(NSError **)error;
