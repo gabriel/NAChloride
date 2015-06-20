@@ -44,9 +44,8 @@ NASecureData *secureData = [NASecureData secureReadOnlyDataWithLength:length com
 }];
 
 // secureData is read-only by default. You can set it to no access.
+// And if you do this and try to access secureData.bytes after, it will SIGABRT.
 secureData.protection = NASecureDataProtectionNoAccess;
-
-// And if you do this and try to access secureData.bytes, it will SIGABRT
 
 return secureData;
 ```
