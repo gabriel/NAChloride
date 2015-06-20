@@ -47,6 +47,6 @@ NSMutableData *NAData(BOOL secure, NSUInteger length, NADataCompletion completio
 
 @interface NSMutableData (NASecureData)
 
-- (NSData *)na_truncate:(NSInteger)length;
+- (NSData *)na_truncate:(unsigned long long)length;
 
 @end

@@ -77,7 +77,7 @@
   }];
 }
 
-- (NSData *)na_truncate:(NSInteger)length { return [self truncate:length]; }
+- (NSData *)na_truncate:(unsigned long long)length { return [self truncate:length]; }
 
 @end
 
@@ -93,9 +93,8 @@ NSMutableData *NAData(BOOL secure, NSUInteger length, NADataCompletion completio
 
 @implementation NSMutableData (NASecureData)
 
-- (NSData *)na_truncate:(NSInteger)length {
+- (NSData *)na_truncate:(unsigned long long)length {
   if (length == 0) return self;
-  if (length < 0) return nil;
   return [NSData dataWithBytes:self.bytes length:self.length - length];
 }
 
