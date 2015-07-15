@@ -36,7 +36,7 @@ typedef NS_ENUM (NSInteger, NASecureDataProtection) {
 /*!
  Truncate.
  */
-- (NASecureData *)truncate:(NSInteger)length;
+- (NASecureData *)truncate:(NSUInteger)length;
 
 @end
 
@@ -47,6 +47,6 @@ NSMutableData *NAData(BOOL secure, NSUInteger length, NADataCompletion completio
 
 @interface NSMutableData (NASecureData)
 
-- (NSData *)na_truncate:(unsigned long long)length;
+- (NSData *)na_truncate:(NSUInteger)length;
 
 @end

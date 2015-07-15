@@ -69,15 +69,14 @@
   self.protection = protection;
 }
 
-- (NASecureData *)truncate:(NSInteger)length {
+- (NASecureData *)truncate:(NSUInteger)length {
   if (length == 0) return self;
-  if (length < 0) return nil;
   return [NASecureData secureReadOnlyDataWithLength:(self.length - length) completion:^(void *bytes, NSUInteger length) {
     memcpy(bytes, self.bytes, length);
   }];
 }
 
-- (NSData *)na_truncate:(unsigned long long)length { return [self truncate:length]; }
+- (NSData *)na_truncate:(NSUInteger)length { return [self truncate:length]; }
 
 @end
 
@@ -93,7 +92,7 @@ NSMutableData *NAData(BOOL secure, NSUInteger length, NADataCompletion completio
 
 @implementation NSMutableData (NASecureData)
 
-- (NSData *)na_truncate:(unsigned long long)length {
+- (NSData *)na_truncate:(NSUInteger)length {
   if (length == 0) return self;
   return [NSData dataWithBytes:self.bytes length:self.length - length];
 }
