@@ -92,7 +92,7 @@
     return nil;
   }
 
-  return [outData na_truncate:outData.length - outLength];
+  return [outData na_truncate:outData.length - (NSUInteger)outLength];
 }
 
 @end
