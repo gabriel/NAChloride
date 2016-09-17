@@ -97,6 +97,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		003E12511D8E0C4A006E9B1D /* NAChloride.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NAChloride.podspec; sourceTree = "<group>"; };
+		003E12521D8E0C4A006E9B1D /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		006246001D8E0899009DDFA8 /* NAChloride.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NAChloride.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		006246031D8E0899009DDFA8 /* NAChloride.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NAChloride.h; sourceTree = "<group>"; };
 		006246041D8E0899009DDFA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -186,6 +188,8 @@
 		006245F61D8E0899009DDFA8 = {
 			isa = PBXGroup;
 			children = (
+				003E12511D8E0C4A006E9B1D /* NAChloride.podspec */,
+				003E12521D8E0C4A006E9B1D /* Podfile */,
 				006246021D8E0899009DDFA8 /* NAChloride */,
 				0062460D1D8E0899009DDFA8 /* NAChlorideTests */,
 				006246621D8E0962009DDFA8 /* NAChloride iOS */,
