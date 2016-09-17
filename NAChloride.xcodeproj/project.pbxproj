@@ -7,382 +7,346 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00390FA31B1E4827001ED3EA /* NAChloride.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00CCC6E91B1E4434007090AD /* NAChloride.framework */; };
-		00390FBB1B1E4897001ED3EA /* NAScryptTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 00390FAF1B1E4897001ED3EA /* NAScryptTest.m */; };
-		00390FBC1B1E4897001ED3EA /* NASecretBoxTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 00390FB01B1E4897001ED3EA /* NASecretBoxTest.m */; };
-		00390FC01B1E4897001ED3EA /* NAStreamTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 00390FB41B1E4897001ED3EA /* NAStreamTest.m */; };
-		0047C1021B30DFDC0055D184 /* NAOneTimeAuthTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0047C1011B30DFDC0055D184 /* NAOneTimeAuthTest.m */; };
-		0047C1051B30E4C40055D184 /* NAAuth.h in Headers */ = {isa = PBXBuildFile; fileRef = 0047C1031B30E4C40055D184 /* NAAuth.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0047C1061B30E4C40055D184 /* NAAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = 0047C1041B30E4C40055D184 /* NAAuth.m */; };
-		0047C1081B30E55C0055D184 /* NAAuthTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0047C1071B30E55C0055D184 /* NAAuthTest.m */; };
-		0047C1DE1B30F39F0055D184 /* NATestUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0047C1DD1B30F39F0055D184 /* NATestUtils.m */; };
-		0047C1E11B30F4F70055D184 /* NARandom.h in Headers */ = {isa = PBXBuildFile; fileRef = 0047C1DF1B30F4F70055D184 /* NARandom.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0047C1E21B30F4F70055D184 /* NARandom.h in Headers */ = {isa = PBXBuildFile; fileRef = 0047C1DF1B30F4F70055D184 /* NARandom.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0047C1E31B30F4F70055D184 /* NARandom.m in Sources */ = {isa = PBXBuildFile; fileRef = 0047C1E01B30F4F70055D184 /* NARandom.m */; };
-		0047C1EB1B30F63A0055D184 /* NAInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 003BB2F71888AAF80019D88F /* NAInterface.m */; };
-		0047C1EC1B30F63A0055D184 /* NASecretBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 003BB2E61888A1D50019D88F /* NASecretBox.m */; };
-		0047C1ED1B30F63A0055D184 /* NAAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = 0047C1041B30E4C40055D184 /* NAAuth.m */; };
-		0047C1EE1B30F63A0055D184 /* NAOneTimeAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = 0055133B19D3430F0021ABB0 /* NAOneTimeAuth.m */; };
-		0047C1EF1B30F63A0055D184 /* NAScrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 002CD7961953685D00767675 /* NAScrypt.m */; };
-		0047C1F11B30F63A0055D184 /* NARandom.m in Sources */ = {isa = PBXBuildFile; fileRef = 0047C1E01B30F4F70055D184 /* NARandom.m */; };
-		0047C1F21B30F6420055D184 /* NAChloride.h in Headers */ = {isa = PBXBuildFile; fileRef = 003BB2C41888A16E0019D88F /* NAChloride.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0047C1F31B30F6420055D184 /* NAInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = 007A1B93195B77DB00110C88 /* NAInterface.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0047C1F41B30F6420055D184 /* NASecretBox.h in Headers */ = {isa = PBXBuildFile; fileRef = 003BB2E51888A1D50019D88F /* NASecretBox.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0047C1F51B30F6420055D184 /* NAAuth.h in Headers */ = {isa = PBXBuildFile; fileRef = 0047C1031B30E4C40055D184 /* NAAuth.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0047C1F61B30F6420055D184 /* NAOneTimeAuth.h in Headers */ = {isa = PBXBuildFile; fileRef = 0055133A19D3430F0021ABB0 /* NAOneTimeAuth.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0047C1F71B30F6420055D184 /* NAScrypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 002CD7951953685D00767675 /* NAScrypt.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		004EF2BE1B328FDD007822CE /* NARandomTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 004EF2BD1B328FDD007822CE /* NARandomTest.m */; };
-		004EF2C11B333457007822CE /* NAAEAD.h in Headers */ = {isa = PBXBuildFile; fileRef = 004EF2BF1B333457007822CE /* NAAEAD.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		004EF2C21B333457007822CE /* NAAEAD.h in Headers */ = {isa = PBXBuildFile; fileRef = 004EF2BF1B333457007822CE /* NAAEAD.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		004EF2C31B333457007822CE /* NAAEAD.m in Sources */ = {isa = PBXBuildFile; fileRef = 004EF2C01B333457007822CE /* NAAEAD.m */; };
-		004EF2C41B333457007822CE /* NAAEAD.m in Sources */ = {isa = PBXBuildFile; fileRef = 004EF2C01B333457007822CE /* NAAEAD.m */; };
-		004EF2C61B333511007822CE /* NAAEADTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 004EF2C51B333511007822CE /* NAAEADTest.m */; };
-		004EF2D31B336FD8007822CE /* NAStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 004EF2D11B336FD8007822CE /* NAStream.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		004EF2D41B336FD8007822CE /* NAStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 004EF2D11B336FD8007822CE /* NAStream.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		004EF2D51B336FD8007822CE /* NAStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 004EF2D21B336FD8007822CE /* NAStream.m */; };
-		004EF2D61B336FD8007822CE /* NAStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 004EF2D21B336FD8007822CE /* NAStream.m */; };
-		004EF2D91B337314007822CE /* NABox.h in Headers */ = {isa = PBXBuildFile; fileRef = 004EF2D71B337314007822CE /* NABox.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		004EF2DA1B337314007822CE /* NABox.h in Headers */ = {isa = PBXBuildFile; fileRef = 004EF2D71B337314007822CE /* NABox.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		004EF2DB1B337314007822CE /* NABox.m in Sources */ = {isa = PBXBuildFile; fileRef = 004EF2D81B337314007822CE /* NABox.m */; };
-		004EF2DC1B337314007822CE /* NABox.m in Sources */ = {isa = PBXBuildFile; fileRef = 004EF2D81B337314007822CE /* NABox.m */; };
-		004EF2DE1B3374AE007822CE /* NABoxTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 004EF2DD1B3374AE007822CE /* NABoxTest.m */; };
-		004EF2E11B337558007822CE /* NABoxKeypair.h in Headers */ = {isa = PBXBuildFile; fileRef = 004EF2DF1B337558007822CE /* NABoxKeypair.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		004EF2E21B337558007822CE /* NABoxKeypair.h in Headers */ = {isa = PBXBuildFile; fileRef = 004EF2DF1B337558007822CE /* NABoxKeypair.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		004EF2E31B337558007822CE /* NABoxKeypair.m in Sources */ = {isa = PBXBuildFile; fileRef = 004EF2E01B337558007822CE /* NABoxKeypair.m */; };
-		004EF2E41B337558007822CE /* NABoxKeypair.m in Sources */ = {isa = PBXBuildFile; fileRef = 004EF2E01B337558007822CE /* NABoxKeypair.m */; };
-		005A3CD51B34D08000445B1C /* NASecureData.h in Headers */ = {isa = PBXBuildFile; fileRef = 005A3CD31B34D08000445B1C /* NASecureData.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		005A3CD61B34D08000445B1C /* NASecureData.h in Headers */ = {isa = PBXBuildFile; fileRef = 005A3CD31B34D08000445B1C /* NASecureData.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		005A3CD71B34D08000445B1C /* NASecureData.m in Sources */ = {isa = PBXBuildFile; fileRef = 005A3CD41B34D08000445B1C /* NASecureData.m */; };
-		005A3CD81B34D08000445B1C /* NASecureData.m in Sources */ = {isa = PBXBuildFile; fileRef = 005A3CD41B34D08000445B1C /* NASecureData.m */; };
-		005A3CDA1B34D9E000445B1C /* NASecureDataTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 005A3CD91B34D9E000445B1C /* NASecureDataTest.m */; };
-		00CCC70D1B1E446C007090AD /* NAChloride.h in Headers */ = {isa = PBXBuildFile; fileRef = 003BB2C41888A16E0019D88F /* NAChloride.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		00CCC70E1B1E446C007090AD /* NAInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = 007A1B93195B77DB00110C88 /* NAInterface.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		00CCC70F1B1E446C007090AD /* NAInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 003BB2F71888AAF80019D88F /* NAInterface.m */; };
-		00CCC7101B1E446C007090AD /* NASecretBox.h in Headers */ = {isa = PBXBuildFile; fileRef = 003BB2E51888A1D50019D88F /* NASecretBox.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		00CCC7111B1E446C007090AD /* NASecretBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 003BB2E61888A1D50019D88F /* NASecretBox.m */; };
-		00CCC7121B1E446C007090AD /* NAOneTimeAuth.h in Headers */ = {isa = PBXBuildFile; fileRef = 0055133A19D3430F0021ABB0 /* NAOneTimeAuth.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		00CCC7131B1E446C007090AD /* NAOneTimeAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = 0055133B19D3430F0021ABB0 /* NAOneTimeAuth.m */; };
-		00CCC7201B1E446C007090AD /* NAScrypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 002CD7951953685D00767675 /* NAScrypt.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		00CCC7211B1E446C007090AD /* NAScrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 002CD7961953685D00767675 /* NAScrypt.m */; };
-		69C52A997000D7F3E564B308 /* libPods-NAChloride-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8825A0F76354497357C0108E /* libPods-NAChloride-iOS.a */; };
-		7B55E12A857DA547A163B2B1 /* libPods-NAChloride.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 32AB1AC2D49DFDDBE801988A /* libPods-NAChloride.a */; };
+		0062460A1D8E0899009DDFA8 /* NAChloride.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 006246001D8E0899009DDFA8 /* NAChloride.framework */; };
+		006246111D8E0899009DDFA8 /* NAChloride.h in Headers */ = {isa = PBXBuildFile; fileRef = 006246031D8E0899009DDFA8 /* NAChloride.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		006246301D8E08F3009DDFA8 /* NAAEAD.h in Headers */ = {isa = PBXBuildFile; fileRef = 0062461A1D8E08F3009DDFA8 /* NAAEAD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		006246311D8E08F3009DDFA8 /* NAAEAD.m in Sources */ = {isa = PBXBuildFile; fileRef = 0062461B1D8E08F3009DDFA8 /* NAAEAD.m */; };
+		006246321D8E08F3009DDFA8 /* NAAuth.h in Headers */ = {isa = PBXBuildFile; fileRef = 0062461C1D8E08F3009DDFA8 /* NAAuth.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		006246331D8E08F3009DDFA8 /* NAAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = 0062461D1D8E08F3009DDFA8 /* NAAuth.m */; };
+		006246341D8E08F3009DDFA8 /* NABox.h in Headers */ = {isa = PBXBuildFile; fileRef = 0062461E1D8E08F3009DDFA8 /* NABox.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		006246351D8E08F3009DDFA8 /* NABox.m in Sources */ = {isa = PBXBuildFile; fileRef = 0062461F1D8E08F3009DDFA8 /* NABox.m */; };
+		006246361D8E08F3009DDFA8 /* NABoxKeypair.h in Headers */ = {isa = PBXBuildFile; fileRef = 006246201D8E08F3009DDFA8 /* NABoxKeypair.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		006246371D8E08F3009DDFA8 /* NABoxKeypair.m in Sources */ = {isa = PBXBuildFile; fileRef = 006246211D8E08F3009DDFA8 /* NABoxKeypair.m */; };
+		006246381D8E08F3009DDFA8 /* NAInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = 006246221D8E08F3009DDFA8 /* NAInterface.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		006246391D8E08F3009DDFA8 /* NAInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 006246231D8E08F3009DDFA8 /* NAInterface.m */; };
+		0062463A1D8E08F3009DDFA8 /* NAOneTimeAuth.h in Headers */ = {isa = PBXBuildFile; fileRef = 006246241D8E08F3009DDFA8 /* NAOneTimeAuth.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0062463B1D8E08F3009DDFA8 /* NAOneTimeAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = 006246251D8E08F3009DDFA8 /* NAOneTimeAuth.m */; };
+		0062463C1D8E08F3009DDFA8 /* NARandom.h in Headers */ = {isa = PBXBuildFile; fileRef = 006246261D8E08F3009DDFA8 /* NARandom.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0062463D1D8E08F3009DDFA8 /* NARandom.m in Sources */ = {isa = PBXBuildFile; fileRef = 006246271D8E08F3009DDFA8 /* NARandom.m */; };
+		0062463E1D8E08F3009DDFA8 /* NAScrypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 006246281D8E08F3009DDFA8 /* NAScrypt.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0062463F1D8E08F3009DDFA8 /* NAScrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 006246291D8E08F3009DDFA8 /* NAScrypt.m */; };
+		006246401D8E08F3009DDFA8 /* NASecretBox.h in Headers */ = {isa = PBXBuildFile; fileRef = 0062462A1D8E08F3009DDFA8 /* NASecretBox.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		006246411D8E08F3009DDFA8 /* NASecretBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 0062462B1D8E08F3009DDFA8 /* NASecretBox.m */; };
+		006246421D8E08F3009DDFA8 /* NASecureData.h in Headers */ = {isa = PBXBuildFile; fileRef = 0062462C1D8E08F3009DDFA8 /* NASecureData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		006246431D8E08F3009DDFA8 /* NASecureData.m in Sources */ = {isa = PBXBuildFile; fileRef = 0062462D1D8E08F3009DDFA8 /* NASecureData.m */; };
+		006246441D8E08F3009DDFA8 /* NAStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 0062462E1D8E08F3009DDFA8 /* NAStream.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		006246451D8E08F3009DDFA8 /* NAStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 0062462F1D8E08F3009DDFA8 /* NAStream.m */; };
+		0062466A1D8E0963009DDFA8 /* NAChloride.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 006246611D8E0962009DDFA8 /* NAChloride.framework */; };
+		006246781D8E097C009DDFA8 /* NAChloride.h in Headers */ = {isa = PBXBuildFile; fileRef = 006246031D8E0899009DDFA8 /* NAChloride.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		006246791D8E097C009DDFA8 /* NAAEAD.h in Headers */ = {isa = PBXBuildFile; fileRef = 0062461A1D8E08F3009DDFA8 /* NAAEAD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0062467A1D8E097C009DDFA8 /* NAAEAD.m in Sources */ = {isa = PBXBuildFile; fileRef = 0062461B1D8E08F3009DDFA8 /* NAAEAD.m */; };
+		0062467B1D8E097C009DDFA8 /* NAAuth.h in Headers */ = {isa = PBXBuildFile; fileRef = 0062461C1D8E08F3009DDFA8 /* NAAuth.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0062467C1D8E097C009DDFA8 /* NAAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = 0062461D1D8E08F3009DDFA8 /* NAAuth.m */; };
+		0062467D1D8E097C009DDFA8 /* NABox.h in Headers */ = {isa = PBXBuildFile; fileRef = 0062461E1D8E08F3009DDFA8 /* NABox.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0062467E1D8E097C009DDFA8 /* NABox.m in Sources */ = {isa = PBXBuildFile; fileRef = 0062461F1D8E08F3009DDFA8 /* NABox.m */; };
+		0062467F1D8E097C009DDFA8 /* NABoxKeypair.h in Headers */ = {isa = PBXBuildFile; fileRef = 006246201D8E08F3009DDFA8 /* NABoxKeypair.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		006246801D8E097C009DDFA8 /* NABoxKeypair.m in Sources */ = {isa = PBXBuildFile; fileRef = 006246211D8E08F3009DDFA8 /* NABoxKeypair.m */; };
+		006246811D8E097C009DDFA8 /* NAInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = 006246221D8E08F3009DDFA8 /* NAInterface.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		006246821D8E097C009DDFA8 /* NAInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 006246231D8E08F3009DDFA8 /* NAInterface.m */; };
+		006246831D8E097C009DDFA8 /* NAOneTimeAuth.h in Headers */ = {isa = PBXBuildFile; fileRef = 006246241D8E08F3009DDFA8 /* NAOneTimeAuth.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		006246841D8E097C009DDFA8 /* NAOneTimeAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = 006246251D8E08F3009DDFA8 /* NAOneTimeAuth.m */; };
+		006246851D8E097C009DDFA8 /* NARandom.h in Headers */ = {isa = PBXBuildFile; fileRef = 006246261D8E08F3009DDFA8 /* NARandom.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		006246861D8E097C009DDFA8 /* NARandom.m in Sources */ = {isa = PBXBuildFile; fileRef = 006246271D8E08F3009DDFA8 /* NARandom.m */; };
+		006246871D8E097C009DDFA8 /* NAScrypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 006246281D8E08F3009DDFA8 /* NAScrypt.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		006246881D8E097C009DDFA8 /* NAScrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 006246291D8E08F3009DDFA8 /* NAScrypt.m */; };
+		006246891D8E097C009DDFA8 /* NASecretBox.h in Headers */ = {isa = PBXBuildFile; fileRef = 0062462A1D8E08F3009DDFA8 /* NASecretBox.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0062468A1D8E097C009DDFA8 /* NASecretBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 0062462B1D8E08F3009DDFA8 /* NASecretBox.m */; };
+		0062468B1D8E097C009DDFA8 /* NASecureData.h in Headers */ = {isa = PBXBuildFile; fileRef = 0062462C1D8E08F3009DDFA8 /* NASecureData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0062468C1D8E097C009DDFA8 /* NASecureData.m in Sources */ = {isa = PBXBuildFile; fileRef = 0062462D1D8E08F3009DDFA8 /* NASecureData.m */; };
+		0062468D1D8E097C009DDFA8 /* NAStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 0062462E1D8E08F3009DDFA8 /* NAStream.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0062468E1D8E097C009DDFA8 /* NAStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 0062462F1D8E08F3009DDFA8 /* NAStream.m */; };
+		006246B91D8E0A91009DDFA8 /* NAAEADTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 006246AE1D8E0A91009DDFA8 /* NAAEADTest.m */; };
+		006246BA1D8E0A91009DDFA8 /* NAAuthTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 006246AF1D8E0A91009DDFA8 /* NAAuthTest.m */; };
+		006246BB1D8E0A91009DDFA8 /* NABoxTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 006246B01D8E0A91009DDFA8 /* NABoxTest.m */; };
+		006246BC1D8E0A91009DDFA8 /* NAOneTimeAuthTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 006246B11D8E0A91009DDFA8 /* NAOneTimeAuthTest.m */; };
+		006246BD1D8E0A91009DDFA8 /* NARandomTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 006246B21D8E0A91009DDFA8 /* NARandomTest.m */; };
+		006246BE1D8E0A91009DDFA8 /* NAScryptTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 006246B31D8E0A91009DDFA8 /* NAScryptTest.m */; };
+		006246BF1D8E0A91009DDFA8 /* NASecretBoxTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 006246B41D8E0A91009DDFA8 /* NASecretBoxTest.m */; };
+		006246C01D8E0A91009DDFA8 /* NASecureDataTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 006246B51D8E0A91009DDFA8 /* NASecureDataTest.m */; };
+		006246C11D8E0A91009DDFA8 /* NAStreamTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 006246B61D8E0A91009DDFA8 /* NAStreamTest.m */; };
+		006246C21D8E0A91009DDFA8 /* NATestUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 006246B81D8E0A91009DDFA8 /* NATestUtils.m */; };
+		006246C31D8E0A97009DDFA8 /* NAAEADTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 006246AE1D8E0A91009DDFA8 /* NAAEADTest.m */; };
+		006246C41D8E0A97009DDFA8 /* NAAuthTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 006246AF1D8E0A91009DDFA8 /* NAAuthTest.m */; };
+		006246C51D8E0A97009DDFA8 /* NABoxTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 006246B01D8E0A91009DDFA8 /* NABoxTest.m */; };
+		006246C61D8E0A97009DDFA8 /* NAOneTimeAuthTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 006246B11D8E0A91009DDFA8 /* NAOneTimeAuthTest.m */; };
+		006246C71D8E0A97009DDFA8 /* NARandomTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 006246B21D8E0A91009DDFA8 /* NARandomTest.m */; };
+		006246C81D8E0A97009DDFA8 /* NAScryptTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 006246B31D8E0A91009DDFA8 /* NAScryptTest.m */; };
+		006246C91D8E0A97009DDFA8 /* NASecretBoxTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 006246B41D8E0A91009DDFA8 /* NASecretBoxTest.m */; };
+		006246CA1D8E0A97009DDFA8 /* NASecureDataTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 006246B51D8E0A91009DDFA8 /* NASecureDataTest.m */; };
+		006246CB1D8E0A98009DDFA8 /* NAStreamTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 006246B61D8E0A91009DDFA8 /* NAStreamTest.m */; };
+		006246CC1D8E0A98009DDFA8 /* NATestUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 006246B81D8E0A91009DDFA8 /* NATestUtils.m */; };
+		3E73AB0CBC5FE61AEEC4D9F2 /* libPods-NAChloride.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D2F350BADF1D973F11EBF46 /* libPods-NAChloride.a */; };
+		6EC56443E1CDA78F04E9A7B2 /* libPods-NAChloride iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AA3D8A22CD5D78ABDDAE3D87 /* libPods-NAChloride iOS.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		00390FA41B1E4827001ED3EA /* PBXContainerItemProxy */ = {
+		0062460B1D8E0899009DDFA8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 003BB2B41888A16E0019D88F /* Project object */;
+			containerPortal = 006245F71D8E0899009DDFA8 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 00CCC6E81B1E4434007090AD;
+			remoteGlobalIDString = 006245FF1D8E0899009DDFA8;
 			remoteInfo = NAChloride;
+		};
+		0062466B1D8E0963009DDFA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 006245F71D8E0899009DDFA8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 006246601D8E0962009DDFA8;
+			remoteInfo = "NAChloride iOS";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		002CD7951953685D00767675 /* NAScrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NAScrypt.h; sourceTree = "<group>"; };
-		002CD7961953685D00767675 /* NAScrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAScrypt.m; sourceTree = "<group>"; };
-		002CD79E1953921500767675 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		002CD79F1953921500767675 /* NAChloride.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = NAChloride.podspec; sourceTree = "<group>"; };
-		00390F9D1B1E4827001ED3EA /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		00390FA01B1E4827001ED3EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00390FAF1B1E4897001ED3EA /* NAScryptTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAScryptTest.m; sourceTree = "<group>"; };
-		00390FB01B1E4897001ED3EA /* NASecretBoxTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NASecretBoxTest.m; sourceTree = "<group>"; };
-		00390FB41B1E4897001ED3EA /* NAStreamTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAStreamTest.m; sourceTree = "<group>"; };
-		003BB2BF1888A16E0019D88F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		003BB2C41888A16E0019D88F /* NAChloride.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NAChloride.h; sourceTree = "<group>"; };
-		003BB2CD1888A16E0019D88F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		003BB2D01888A16E0019D88F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		003BB2E51888A1D50019D88F /* NASecretBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NASecretBox.h; sourceTree = "<group>"; };
-		003BB2E61888A1D50019D88F /* NASecretBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NASecretBox.m; sourceTree = "<group>"; };
-		003BB2F71888AAF80019D88F /* NAInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAInterface.m; sourceTree = "<group>"; };
-		0047C1011B30DFDC0055D184 /* NAOneTimeAuthTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAOneTimeAuthTest.m; sourceTree = "<group>"; };
-		0047C1031B30E4C40055D184 /* NAAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NAAuth.h; sourceTree = "<group>"; };
-		0047C1041B30E4C40055D184 /* NAAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAAuth.m; sourceTree = "<group>"; };
-		0047C1071B30E55C0055D184 /* NAAuthTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAAuthTest.m; sourceTree = "<group>"; };
-		0047C10E1B30EE630055D184 /* NAChloride.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NAChloride.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0047C1DC1B30F39F0055D184 /* NATestUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NATestUtils.h; sourceTree = "<group>"; };
-		0047C1DD1B30F39F0055D184 /* NATestUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NATestUtils.m; sourceTree = "<group>"; };
-		0047C1DF1B30F4F70055D184 /* NARandom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NARandom.h; sourceTree = "<group>"; };
-		0047C1E01B30F4F70055D184 /* NARandom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NARandom.m; sourceTree = "<group>"; };
-		004CA04419CCDC8D00499844 /* libPods-Tests.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-Tests.a"; path = "Pods/build/Debug-iphoneos/libPods-Tests.a"; sourceTree = "<group>"; };
-		004CA05119CCE07B00499844 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		004EF2BD1B328FDD007822CE /* NARandomTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NARandomTest.m; sourceTree = "<group>"; };
-		004EF2BF1B333457007822CE /* NAAEAD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NAAEAD.h; sourceTree = "<group>"; };
-		004EF2C01B333457007822CE /* NAAEAD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAAEAD.m; sourceTree = "<group>"; };
-		004EF2C51B333511007822CE /* NAAEADTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAAEADTest.m; sourceTree = "<group>"; };
-		004EF2D11B336FD8007822CE /* NAStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NAStream.h; sourceTree = "<group>"; };
-		004EF2D21B336FD8007822CE /* NAStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAStream.m; sourceTree = "<group>"; };
-		004EF2D71B337314007822CE /* NABox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NABox.h; sourceTree = "<group>"; };
-		004EF2D81B337314007822CE /* NABox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NABox.m; sourceTree = "<group>"; };
-		004EF2DD1B3374AE007822CE /* NABoxTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NABoxTest.m; sourceTree = "<group>"; };
-		004EF2DF1B337558007822CE /* NABoxKeypair.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NABoxKeypair.h; sourceTree = "<group>"; };
-		004EF2E01B337558007822CE /* NABoxKeypair.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NABoxKeypair.m; sourceTree = "<group>"; };
-		004EF2EB1B34CDF4007822CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = NAChloride/Info.plist; sourceTree = "<group>"; };
-		0055133A19D3430F0021ABB0 /* NAOneTimeAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NAOneTimeAuth.h; sourceTree = "<group>"; };
-		0055133B19D3430F0021ABB0 /* NAOneTimeAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAOneTimeAuth.m; sourceTree = "<group>"; };
-		005A3CD31B34D08000445B1C /* NASecureData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NASecureData.h; sourceTree = "<group>"; };
-		005A3CD41B34D08000445B1C /* NASecureData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NASecureData.m; sourceTree = "<group>"; };
-		005A3CD91B34D9E000445B1C /* NASecureDataTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NASecureDataTest.m; sourceTree = "<group>"; };
-		007418211B34CF9A00E6E3C3 /* Pods-NAChloride-iOS.debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "Pods-NAChloride-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NAChloride-iOS/Pods-NAChloride-iOS.debug.xcconfig"; sourceTree = "<group>"; };
-		007418221B34CF9A00E6E3C3 /* Pods-NAChloride-iOS.release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "Pods-NAChloride-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-NAChloride-iOS/Pods-NAChloride-iOS.release.xcconfig"; sourceTree = "<group>"; };
-		007A1B93195B77DB00110C88 /* NAInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NAInterface.h; sourceTree = "<group>"; };
-		00A4209A1AE71C0E0040CCDC /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
-		00AFEFAA18A5B2D30072632C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
-		00CCC6E91B1E4434007090AD /* NAChloride.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NAChloride.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		13CD629B7BBB41C19D39E5BE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		2946C6D94CF54A388BBC5FDB /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		32AB1AC2D49DFDDBE801988A /* libPods-NAChloride.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NAChloride.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7F57C423DDD86BC4E0A6464A /* Pods-NAChloride.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NAChloride.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NAChloride/Pods-NAChloride.debug.xcconfig"; sourceTree = "<group>"; };
-		8825A0F76354497357C0108E /* libPods-NAChloride-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NAChloride-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C8BF2A33F8D559E7B15222EA /* libPods-NAChloride (iOS).a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NAChloride (iOS).a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CD1A239FD8FAFC0FDB3BF5C0 /* Pods-NAChloride.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NAChloride.release.xcconfig"; path = "Pods/Target Support Files/Pods-NAChloride/Pods-NAChloride.release.xcconfig"; sourceTree = "<group>"; };
-		D6A5C6C1D40C411BB7BEAFA8 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		E4406630108E63BE9F671EE6 /* libPods-NAChloride-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NAChloride-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EBCE1A3DCE99B8453A300BE0 /* libPods-NAChlorideOSX.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NAChlorideOSX.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		006246001D8E0899009DDFA8 /* NAChloride.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NAChloride.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		006246031D8E0899009DDFA8 /* NAChloride.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NAChloride.h; sourceTree = "<group>"; };
+		006246041D8E0899009DDFA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		006246091D8E0899009DDFA8 /* NAChlorideTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NAChlorideTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		006246101D8E0899009DDFA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0062461A1D8E08F3009DDFA8 /* NAAEAD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NAAEAD.h; sourceTree = "<group>"; };
+		0062461B1D8E08F3009DDFA8 /* NAAEAD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAAEAD.m; sourceTree = "<group>"; };
+		0062461C1D8E08F3009DDFA8 /* NAAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NAAuth.h; sourceTree = "<group>"; };
+		0062461D1D8E08F3009DDFA8 /* NAAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAAuth.m; sourceTree = "<group>"; };
+		0062461E1D8E08F3009DDFA8 /* NABox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NABox.h; sourceTree = "<group>"; };
+		0062461F1D8E08F3009DDFA8 /* NABox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NABox.m; sourceTree = "<group>"; };
+		006246201D8E08F3009DDFA8 /* NABoxKeypair.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NABoxKeypair.h; sourceTree = "<group>"; };
+		006246211D8E08F3009DDFA8 /* NABoxKeypair.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NABoxKeypair.m; sourceTree = "<group>"; };
+		006246221D8E08F3009DDFA8 /* NAInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NAInterface.h; sourceTree = "<group>"; };
+		006246231D8E08F3009DDFA8 /* NAInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAInterface.m; sourceTree = "<group>"; };
+		006246241D8E08F3009DDFA8 /* NAOneTimeAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NAOneTimeAuth.h; sourceTree = "<group>"; };
+		006246251D8E08F3009DDFA8 /* NAOneTimeAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAOneTimeAuth.m; sourceTree = "<group>"; };
+		006246261D8E08F3009DDFA8 /* NARandom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NARandom.h; sourceTree = "<group>"; };
+		006246271D8E08F3009DDFA8 /* NARandom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NARandom.m; sourceTree = "<group>"; };
+		006246281D8E08F3009DDFA8 /* NAScrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NAScrypt.h; sourceTree = "<group>"; };
+		006246291D8E08F3009DDFA8 /* NAScrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAScrypt.m; sourceTree = "<group>"; };
+		0062462A1D8E08F3009DDFA8 /* NASecretBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NASecretBox.h; sourceTree = "<group>"; };
+		0062462B1D8E08F3009DDFA8 /* NASecretBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NASecretBox.m; sourceTree = "<group>"; };
+		0062462C1D8E08F3009DDFA8 /* NASecureData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NASecureData.h; sourceTree = "<group>"; };
+		0062462D1D8E08F3009DDFA8 /* NASecureData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NASecureData.m; sourceTree = "<group>"; };
+		0062462E1D8E08F3009DDFA8 /* NAStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NAStream.h; sourceTree = "<group>"; };
+		0062462F1D8E08F3009DDFA8 /* NAStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAStream.m; sourceTree = "<group>"; };
+		006246611D8E0962009DDFA8 /* NAChloride.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NAChloride.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		006246641D8E0962009DDFA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		006246691D8E0963009DDFA8 /* NAChloride iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NAChloride iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		006246701D8E0963009DDFA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		006246AE1D8E0A91009DDFA8 /* NAAEADTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAAEADTest.m; sourceTree = "<group>"; };
+		006246AF1D8E0A91009DDFA8 /* NAAuthTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAAuthTest.m; sourceTree = "<group>"; };
+		006246B01D8E0A91009DDFA8 /* NABoxTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NABoxTest.m; sourceTree = "<group>"; };
+		006246B11D8E0A91009DDFA8 /* NAOneTimeAuthTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAOneTimeAuthTest.m; sourceTree = "<group>"; };
+		006246B21D8E0A91009DDFA8 /* NARandomTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NARandomTest.m; sourceTree = "<group>"; };
+		006246B31D8E0A91009DDFA8 /* NAScryptTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAScryptTest.m; sourceTree = "<group>"; };
+		006246B41D8E0A91009DDFA8 /* NASecretBoxTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NASecretBoxTest.m; sourceTree = "<group>"; };
+		006246B51D8E0A91009DDFA8 /* NASecureDataTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NASecureDataTest.m; sourceTree = "<group>"; };
+		006246B61D8E0A91009DDFA8 /* NAStreamTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAStreamTest.m; sourceTree = "<group>"; };
+		006246B71D8E0A91009DDFA8 /* NATestUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NATestUtils.h; sourceTree = "<group>"; };
+		006246B81D8E0A91009DDFA8 /* NATestUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NATestUtils.m; sourceTree = "<group>"; };
+		06B0E409BDC61490FC89DA13 /* Pods-NAChloride iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NAChloride iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-NAChloride iOS/Pods-NAChloride iOS.release.xcconfig"; sourceTree = "<group>"; };
+		47984DAD9F6F26F76E9F0F67 /* Pods-NAChloride iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NAChloride iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NAChloride iOS/Pods-NAChloride iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		64E65F8D0DB20C215F7EB6E3 /* Pods-NAChloride.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NAChloride.release.xcconfig"; path = "Pods/Target Support Files/Pods-NAChloride/Pods-NAChloride.release.xcconfig"; sourceTree = "<group>"; };
+		78FE82243B7B85CCE0EDEFA2 /* Pods-NAChloride.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NAChloride.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NAChloride/Pods-NAChloride.debug.xcconfig"; sourceTree = "<group>"; };
+		7D2F350BADF1D973F11EBF46 /* libPods-NAChloride.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NAChloride.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA3D8A22CD5D78ABDDAE3D87 /* libPods-NAChloride iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NAChloride iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		00390F9A1B1E4827001ED3EA /* Frameworks */ = {
+		006245FC1D8E0899009DDFA8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00390FA31B1E4827001ED3EA /* NAChloride.framework in Frameworks */,
+				3E73AB0CBC5FE61AEEC4D9F2 /* libPods-NAChloride.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0047C10A1B30EE630055D184 /* Frameworks */ = {
+		006246061D8E0899009DDFA8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				69C52A997000D7F3E564B308 /* libPods-NAChloride-iOS.a in Frameworks */,
+				0062460A1D8E0899009DDFA8 /* NAChloride.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		00CCC6E51B1E4434007090AD /* Frameworks */ = {
+		0062465D1D8E0962009DDFA8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B55E12A857DA547A163B2B1 /* libPods-NAChloride.a in Frameworks */,
+				6EC56443E1CDA78F04E9A7B2 /* libPods-NAChloride iOS.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		006246661D8E0963009DDFA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0062466A1D8E0963009DDFA8 /* NAChloride.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00390F9E1B1E4827001ED3EA /* Tests */ = {
+		006245F61D8E0899009DDFA8 = {
 			isa = PBXGroup;
 			children = (
-				00390FAF1B1E4897001ED3EA /* NAScryptTest.m */,
-				00390FB01B1E4897001ED3EA /* NASecretBoxTest.m */,
-				0047C1071B30E55C0055D184 /* NAAuthTest.m */,
-				0047C1011B30DFDC0055D184 /* NAOneTimeAuthTest.m */,
-				00390FB41B1E4897001ED3EA /* NAStreamTest.m */,
-				004EF2BD1B328FDD007822CE /* NARandomTest.m */,
-				004EF2C51B333511007822CE /* NAAEADTest.m */,
-				004EF2DD1B3374AE007822CE /* NABoxTest.m */,
-				005A3CD91B34D9E000445B1C /* NASecureDataTest.m */,
-				00390F9F1B1E4827001ED3EA /* Supporting Files */,
-				0047C1DC1B30F39F0055D184 /* NATestUtils.h */,
-				0047C1DD1B30F39F0055D184 /* NATestUtils.m */,
-			);
-			path = Tests;
-			sourceTree = "<group>";
-		};
-		00390F9F1B1E4827001ED3EA /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				00390FA01B1E4827001ED3EA /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		003BB2B31888A16E0019D88F = {
-			isa = PBXGroup;
-			children = (
-				002CD79E1953921500767675 /* Podfile */,
-				002CD79F1953921500767675 /* NAChloride.podspec */,
-				00AFEFAA18A5B2D30072632C /* README.md */,
-				004EF2EB1B34CDF4007822CE /* Info.plist */,
-				003BB2C11888A16E0019D88F /* NAChloride */,
-				00390F9E1B1E4827001ED3EA /* Tests */,
-				003BB2BE1888A16E0019D88F /* Frameworks */,
-				003BB2BD1888A16E0019D88F /* Products */,
-				45B1FB23BC1967B6D8B6A6BB /* Pods */,
+				006246021D8E0899009DDFA8 /* NAChloride */,
+				0062460D1D8E0899009DDFA8 /* NAChlorideTests */,
+				006246621D8E0962009DDFA8 /* NAChloride iOS */,
+				0062466D1D8E0963009DDFA8 /* NAChloride iOSTests */,
+				006246011D8E0899009DDFA8 /* Products */,
+				D23867EDDC5ADC5D4B4AE31A /* Pods */,
+				EEAF9E67497B8B5B9D09923C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		003BB2BD1888A16E0019D88F /* Products */ = {
+		006246011D8E0899009DDFA8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				00CCC6E91B1E4434007090AD /* NAChloride.framework */,
-				00390F9D1B1E4827001ED3EA /* Tests.xctest */,
-				0047C10E1B30EE630055D184 /* NAChloride.framework */,
+				006246001D8E0899009DDFA8 /* NAChloride.framework */,
+				006246091D8E0899009DDFA8 /* NAChlorideTests.xctest */,
+				006246611D8E0962009DDFA8 /* NAChloride.framework */,
+				006246691D8E0963009DDFA8 /* NAChloride iOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		003BB2BE1888A16E0019D88F /* Frameworks */ = {
+		006246021D8E0899009DDFA8 /* NAChloride */ = {
 			isa = PBXGroup;
 			children = (
-				00A4209A1AE71C0E0040CCDC /* Security.framework */,
-				004CA05119CCE07B00499844 /* Security.framework */,
-				004CA04419CCDC8D00499844 /* libPods-Tests.a */,
-				003BB2BF1888A16E0019D88F /* Foundation.framework */,
-				003BB2CD1888A16E0019D88F /* XCTest.framework */,
-				003BB2D01888A16E0019D88F /* UIKit.framework */,
-				D6A5C6C1D40C411BB7BEAFA8 /* libPods.a */,
-				99EDB06A9C9B4F3D9E482E13 /* iOS */,
-				2946C6D94CF54A388BBC5FDB /* libPods-Tests.a */,
-				32AB1AC2D49DFDDBE801988A /* libPods-NAChloride.a */,
-				E4406630108E63BE9F671EE6 /* libPods-NAChloride-Tests.a */,
-				EBCE1A3DCE99B8453A300BE0 /* libPods-NAChlorideOSX.a */,
-				C8BF2A33F8D559E7B15222EA /* libPods-NAChloride (iOS).a */,
-				8825A0F76354497357C0108E /* libPods-NAChloride-iOS.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		003BB2C11888A16E0019D88F /* NAChloride */ = {
-			isa = PBXGroup;
-			children = (
-				003BB2C41888A16E0019D88F /* NAChloride.h */,
-				007A1B93195B77DB00110C88 /* NAInterface.h */,
-				003BB2F71888AAF80019D88F /* NAInterface.m */,
-				003BB2E51888A1D50019D88F /* NASecretBox.h */,
-				003BB2E61888A1D50019D88F /* NASecretBox.m */,
-				0047C1031B30E4C40055D184 /* NAAuth.h */,
-				0047C1041B30E4C40055D184 /* NAAuth.m */,
-				0055133A19D3430F0021ABB0 /* NAOneTimeAuth.h */,
-				0055133B19D3430F0021ABB0 /* NAOneTimeAuth.m */,
-				002CD7951953685D00767675 /* NAScrypt.h */,
-				002CD7961953685D00767675 /* NAScrypt.m */,
-				0047C1DF1B30F4F70055D184 /* NARandom.h */,
-				0047C1E01B30F4F70055D184 /* NARandom.m */,
-				004EF2BF1B333457007822CE /* NAAEAD.h */,
-				004EF2C01B333457007822CE /* NAAEAD.m */,
-				004EF2D11B336FD8007822CE /* NAStream.h */,
-				004EF2D21B336FD8007822CE /* NAStream.m */,
-				004EF2D71B337314007822CE /* NABox.h */,
-				004EF2D81B337314007822CE /* NABox.m */,
-				004EF2DF1B337558007822CE /* NABoxKeypair.h */,
-				004EF2E01B337558007822CE /* NABoxKeypair.m */,
-				005A3CD31B34D08000445B1C /* NASecureData.h */,
-				005A3CD41B34D08000445B1C /* NASecureData.m */,
+				006246031D8E0899009DDFA8 /* NAChloride.h */,
+				0062461A1D8E08F3009DDFA8 /* NAAEAD.h */,
+				0062461B1D8E08F3009DDFA8 /* NAAEAD.m */,
+				0062461C1D8E08F3009DDFA8 /* NAAuth.h */,
+				0062461D1D8E08F3009DDFA8 /* NAAuth.m */,
+				0062461E1D8E08F3009DDFA8 /* NABox.h */,
+				0062461F1D8E08F3009DDFA8 /* NABox.m */,
+				006246201D8E08F3009DDFA8 /* NABoxKeypair.h */,
+				006246211D8E08F3009DDFA8 /* NABoxKeypair.m */,
+				006246221D8E08F3009DDFA8 /* NAInterface.h */,
+				006246231D8E08F3009DDFA8 /* NAInterface.m */,
+				006246241D8E08F3009DDFA8 /* NAOneTimeAuth.h */,
+				006246251D8E08F3009DDFA8 /* NAOneTimeAuth.m */,
+				006246261D8E08F3009DDFA8 /* NARandom.h */,
+				006246271D8E08F3009DDFA8 /* NARandom.m */,
+				006246281D8E08F3009DDFA8 /* NAScrypt.h */,
+				006246291D8E08F3009DDFA8 /* NAScrypt.m */,
+				0062462A1D8E08F3009DDFA8 /* NASecretBox.h */,
+				0062462B1D8E08F3009DDFA8 /* NASecretBox.m */,
+				0062462C1D8E08F3009DDFA8 /* NASecureData.h */,
+				0062462D1D8E08F3009DDFA8 /* NASecureData.m */,
+				0062462E1D8E08F3009DDFA8 /* NAStream.h */,
+				0062462F1D8E08F3009DDFA8 /* NAStream.m */,
+				006246041D8E0899009DDFA8 /* Info.plist */,
 			);
 			path = NAChloride;
 			sourceTree = "<group>";
 		};
-		45B1FB23BC1967B6D8B6A6BB /* Pods */ = {
+		0062460D1D8E0899009DDFA8 /* NAChlorideTests */ = {
 			isa = PBXGroup;
 			children = (
-				007418211B34CF9A00E6E3C3 /* Pods-NAChloride-iOS.debug.xcconfig */,
-				007418221B34CF9A00E6E3C3 /* Pods-NAChloride-iOS.release.xcconfig */,
-				7F57C423DDD86BC4E0A6464A /* Pods-NAChloride.debug.xcconfig */,
-				CD1A239FD8FAFC0FDB3BF5C0 /* Pods-NAChloride.release.xcconfig */,
+				006246AE1D8E0A91009DDFA8 /* NAAEADTest.m */,
+				006246AF1D8E0A91009DDFA8 /* NAAuthTest.m */,
+				006246B01D8E0A91009DDFA8 /* NABoxTest.m */,
+				006246B11D8E0A91009DDFA8 /* NAOneTimeAuthTest.m */,
+				006246B21D8E0A91009DDFA8 /* NARandomTest.m */,
+				006246B31D8E0A91009DDFA8 /* NAScryptTest.m */,
+				006246B41D8E0A91009DDFA8 /* NASecretBoxTest.m */,
+				006246B51D8E0A91009DDFA8 /* NASecureDataTest.m */,
+				006246B61D8E0A91009DDFA8 /* NAStreamTest.m */,
+				006246B71D8E0A91009DDFA8 /* NATestUtils.h */,
+				006246B81D8E0A91009DDFA8 /* NATestUtils.m */,
+				006246101D8E0899009DDFA8 /* Info.plist */,
+			);
+			path = NAChlorideTests;
+			sourceTree = "<group>";
+		};
+		006246621D8E0962009DDFA8 /* NAChloride iOS */ = {
+			isa = PBXGroup;
+			children = (
+				006246641D8E0962009DDFA8 /* Info.plist */,
+			);
+			path = "NAChloride iOS";
+			sourceTree = "<group>";
+		};
+		0062466D1D8E0963009DDFA8 /* NAChloride iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				006246701D8E0963009DDFA8 /* Info.plist */,
+			);
+			path = "NAChloride iOSTests";
+			sourceTree = "<group>";
+		};
+		D23867EDDC5ADC5D4B4AE31A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				78FE82243B7B85CCE0EDEFA2 /* Pods-NAChloride.debug.xcconfig */,
+				64E65F8D0DB20C215F7EB6E3 /* Pods-NAChloride.release.xcconfig */,
+				47984DAD9F6F26F76E9F0F67 /* Pods-NAChloride iOS.debug.xcconfig */,
+				06B0E409BDC61490FC89DA13 /* Pods-NAChloride iOS.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		99EDB06A9C9B4F3D9E482E13 /* iOS */ = {
+		EEAF9E67497B8B5B9D09923C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				13CD629B7BBB41C19D39E5BE /* Foundation.framework */,
+				7D2F350BADF1D973F11EBF46 /* libPods-NAChloride.a */,
+				AA3D8A22CD5D78ABDDAE3D87 /* libPods-NAChloride iOS.a */,
 			);
-			name = iOS;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		0047C10B1B30EE630055D184 /* Headers */ = {
+		006245FD1D8E0899009DDFA8 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0047C1E21B30F4F70055D184 /* NARandom.h in Headers */,
-				004EF2C21B333457007822CE /* NAAEAD.h in Headers */,
-				0047C1F61B30F6420055D184 /* NAOneTimeAuth.h in Headers */,
-				004EF2DA1B337314007822CE /* NABox.h in Headers */,
-				0047C1F41B30F6420055D184 /* NASecretBox.h in Headers */,
-				0047C1F71B30F6420055D184 /* NAScrypt.h in Headers */,
-				0047C1F31B30F6420055D184 /* NAInterface.h in Headers */,
-				0047C1F21B30F6420055D184 /* NAChloride.h in Headers */,
-				005A3CD61B34D08000445B1C /* NASecureData.h in Headers */,
-				004EF2E21B337558007822CE /* NABoxKeypair.h in Headers */,
-				0047C1F51B30F6420055D184 /* NAAuth.h in Headers */,
-				004EF2D41B336FD8007822CE /* NAStream.h in Headers */,
+				0062463C1D8E08F3009DDFA8 /* NARandom.h in Headers */,
+				006246301D8E08F3009DDFA8 /* NAAEAD.h in Headers */,
+				006246381D8E08F3009DDFA8 /* NAInterface.h in Headers */,
+				006246441D8E08F3009DDFA8 /* NAStream.h in Headers */,
+				006246421D8E08F3009DDFA8 /* NASecureData.h in Headers */,
+				006246401D8E08F3009DDFA8 /* NASecretBox.h in Headers */,
+				0062463E1D8E08F3009DDFA8 /* NAScrypt.h in Headers */,
+				006246341D8E08F3009DDFA8 /* NABox.h in Headers */,
+				006246361D8E08F3009DDFA8 /* NABoxKeypair.h in Headers */,
+				006246321D8E08F3009DDFA8 /* NAAuth.h in Headers */,
+				0062463A1D8E08F3009DDFA8 /* NAOneTimeAuth.h in Headers */,
+				006246111D8E0899009DDFA8 /* NAChloride.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		00CCC6E61B1E4434007090AD /* Headers */ = {
+		0062465E1D8E0962009DDFA8 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0047C1E11B30F4F70055D184 /* NARandom.h in Headers */,
-				004EF2C11B333457007822CE /* NAAEAD.h in Headers */,
-				00CCC7101B1E446C007090AD /* NASecretBox.h in Headers */,
-				004EF2D91B337314007822CE /* NABox.h in Headers */,
-				00CCC70D1B1E446C007090AD /* NAChloride.h in Headers */,
-				00CCC70E1B1E446C007090AD /* NAInterface.h in Headers */,
-				00CCC7201B1E446C007090AD /* NAScrypt.h in Headers */,
-				00CCC7121B1E446C007090AD /* NAOneTimeAuth.h in Headers */,
-				005A3CD51B34D08000445B1C /* NASecureData.h in Headers */,
-				004EF2E11B337558007822CE /* NABoxKeypair.h in Headers */,
-				0047C1051B30E4C40055D184 /* NAAuth.h in Headers */,
-				004EF2D31B336FD8007822CE /* NAStream.h in Headers */,
+				0062468B1D8E097C009DDFA8 /* NASecureData.h in Headers */,
+				0062467F1D8E097C009DDFA8 /* NABoxKeypair.h in Headers */,
+				006246791D8E097C009DDFA8 /* NAAEAD.h in Headers */,
+				006246811D8E097C009DDFA8 /* NAInterface.h in Headers */,
+				006246871D8E097C009DDFA8 /* NAScrypt.h in Headers */,
+				006246781D8E097C009DDFA8 /* NAChloride.h in Headers */,
+				0062467D1D8E097C009DDFA8 /* NABox.h in Headers */,
+				0062467B1D8E097C009DDFA8 /* NAAuth.h in Headers */,
+				006246831D8E097C009DDFA8 /* NAOneTimeAuth.h in Headers */,
+				0062468D1D8E097C009DDFA8 /* NAStream.h in Headers */,
+				006246851D8E097C009DDFA8 /* NARandom.h in Headers */,
+				006246891D8E097C009DDFA8 /* NASecretBox.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		00390F9C1B1E4827001ED3EA /* Tests */ = {
+		006245FF1D8E0899009DDFA8 /* NAChloride */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00390FA61B1E4827001ED3EA /* Build configuration list for PBXNativeTarget "Tests" */;
+			buildConfigurationList = 006246141D8E0899009DDFA8 /* Build configuration list for PBXNativeTarget "NAChloride" */;
 			buildPhases = (
-				00390F991B1E4827001ED3EA /* Sources */,
-				00390F9A1B1E4827001ED3EA /* Frameworks */,
-				00390F9B1B1E4827001ED3EA /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				00390FA51B1E4827001ED3EA /* PBXTargetDependency */,
-			);
-			name = Tests;
-			productName = Tests;
-			productReference = 00390F9D1B1E4827001ED3EA /* Tests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		0047C10D1B30EE630055D184 /* NAChloride-iOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0047C1211B30EE640055D184 /* Build configuration list for PBXNativeTarget "NAChloride-iOS" */;
-			buildPhases = (
-				9C19AB3E2717D3ADE3116F08 /* Check Pods Manifest.lock */,
-				0047C1091B30EE630055D184 /* Sources */,
-				0047C10A1B30EE630055D184 /* Frameworks */,
-				0047C10B1B30EE630055D184 /* Headers */,
-				0047C10C1B30EE630055D184 /* Resources */,
-				57BFFA7861463DCB2A338178 /* Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "NAChloride-iOS";
-			productName = NAClorideIOS;
-			productReference = 0047C10E1B30EE630055D184 /* NAChloride.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		00CCC6E81B1E4434007090AD /* NAChloride */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 00CCC6FC1B1E4435007090AD /* Build configuration list for PBXNativeTarget "NAChloride" */;
-			buildPhases = (
-				0A32100C87282A74B0D79A48 /* Check Pods Manifest.lock */,
-				00CCC6E41B1E4434007090AD /* Sources */,
-				00CCC6E51B1E4434007090AD /* Frameworks */,
-				00CCC6E61B1E4434007090AD /* Headers */,
-				00CCC6E71B1E4434007090AD /* Resources */,
-				AFC8A933DFCA7D2780DFD1A4 /* Copy Pods Resources */,
+				D1E0562743857DD4B2E3DA41 /* [CP] Check Pods Manifest.lock */,
+				006245FB1D8E0899009DDFA8 /* Sources */,
+				006245FC1D8E0899009DDFA8 /* Frameworks */,
+				006245FD1D8E0899009DDFA8 /* Headers */,
+				006245FE1D8E0899009DDFA8 /* Resources */,
+				135CE3A2E0FC540D313C4BA9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -390,65 +354,134 @@
 			);
 			name = NAChloride;
 			productName = NAChloride;
-			productReference = 00CCC6E91B1E4434007090AD /* NAChloride.framework */;
+			productReference = 006246001D8E0899009DDFA8 /* NAChloride.framework */;
 			productType = "com.apple.product-type.framework";
+		};
+		006246081D8E0899009DDFA8 /* NAChlorideTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 006246171D8E0899009DDFA8 /* Build configuration list for PBXNativeTarget "NAChlorideTests" */;
+			buildPhases = (
+				006246051D8E0899009DDFA8 /* Sources */,
+				006246061D8E0899009DDFA8 /* Frameworks */,
+				006246071D8E0899009DDFA8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0062460C1D8E0899009DDFA8 /* PBXTargetDependency */,
+			);
+			name = NAChlorideTests;
+			productName = NAChlorideTests;
+			productReference = 006246091D8E0899009DDFA8 /* NAChlorideTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		006246601D8E0962009DDFA8 /* NAChloride iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 006246761D8E0963009DDFA8 /* Build configuration list for PBXNativeTarget "NAChloride iOS" */;
+			buildPhases = (
+				41A11D5B238068B1E1018558 /* [CP] Check Pods Manifest.lock */,
+				0062465C1D8E0962009DDFA8 /* Sources */,
+				0062465D1D8E0962009DDFA8 /* Frameworks */,
+				0062465E1D8E0962009DDFA8 /* Headers */,
+				0062465F1D8E0962009DDFA8 /* Resources */,
+				8896D95897D8B6C1F903CE10 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NAChloride iOS";
+			productName = "NAChloride iOS";
+			productReference = 006246611D8E0962009DDFA8 /* NAChloride.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		006246681D8E0963009DDFA8 /* NAChloride iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 006246771D8E0963009DDFA8 /* Build configuration list for PBXNativeTarget "NAChloride iOSTests" */;
+			buildPhases = (
+				006246651D8E0963009DDFA8 /* Sources */,
+				006246661D8E0963009DDFA8 /* Frameworks */,
+				006246671D8E0963009DDFA8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0062466C1D8E0963009DDFA8 /* PBXTargetDependency */,
+			);
+			name = "NAChloride iOSTests";
+			productName = "NAChloride iOSTests";
+			productReference = 006246691D8E0963009DDFA8 /* NAChloride iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		003BB2B41888A16E0019D88F /* Project object */ = {
+		006245F71D8E0899009DDFA8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = NA;
-				LastUpgradeCheck = 0600;
-				ORGANIZATIONNAME = "Gabriel Handford";
+				LastUpgradeCheck = 0800;
 				TargetAttributes = {
-					00390F9C1B1E4827001ED3EA = {
-						CreatedOnToolsVersion = 6.3.2;
+					006245FF1D8E0899009DDFA8 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
 					};
-					0047C10D1B30EE630055D184 = {
-						CreatedOnToolsVersion = 6.3.2;
+					006246081D8E0899009DDFA8 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
 					};
-					00CCC6E81B1E4434007090AD = {
-						CreatedOnToolsVersion = 6.3.2;
+					006246601D8E0962009DDFA8 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					006246681D8E0963009DDFA8 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 003BB2B71888A16E0019D88F /* Build configuration list for PBXProject "NAChloride" */;
+			buildConfigurationList = 006245FA1D8E0899009DDFA8 /* Build configuration list for PBXProject "NAChloride" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 003BB2B31888A16E0019D88F;
-			productRefGroup = 003BB2BD1888A16E0019D88F /* Products */;
+			mainGroup = 006245F61D8E0899009DDFA8;
+			productRefGroup = 006246011D8E0899009DDFA8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				00CCC6E81B1E4434007090AD /* NAChloride */,
-				00390F9C1B1E4827001ED3EA /* Tests */,
-				0047C10D1B30EE630055D184 /* NAChloride-iOS */,
+				006245FF1D8E0899009DDFA8 /* NAChloride */,
+				006246081D8E0899009DDFA8 /* NAChlorideTests */,
+				006246601D8E0962009DDFA8 /* NAChloride iOS */,
+				006246681D8E0963009DDFA8 /* NAChloride iOSTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		00390F9B1B1E4827001ED3EA /* Resources */ = {
+		006245FE1D8E0899009DDFA8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0047C10C1B30EE630055D184 /* Resources */ = {
+		006246071D8E0899009DDFA8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		00CCC6E71B1E4434007090AD /* Resources */ = {
+		0062465F1D8E0962009DDFA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		006246671D8E0963009DDFA8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -458,59 +491,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0A32100C87282A74B0D79A48 /* Check Pods Manifest.lock */ = {
+		135CE3A2E0FC540D313C4BA9 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		57BFFA7861463DCB2A338178 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NAChloride-iOS/Pods-NAChloride-iOS-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9C19AB3E2717D3ADE3116F08 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		AFC8A933DFCA7D2780DFD1A4 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -518,126 +506,145 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NAChloride/Pods-NAChloride-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		41A11D5B238068B1E1018558 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8896D95897D8B6C1F903CE10 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NAChloride iOS/Pods-NAChloride iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1E0562743857DD4B2E3DA41 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		00390F991B1E4827001ED3EA /* Sources */ = {
+		006245FB1D8E0899009DDFA8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0047C1DE1B30F39F0055D184 /* NATestUtils.m in Sources */,
-				004EF2C61B333511007822CE /* NAAEADTest.m in Sources */,
-				00390FBC1B1E4897001ED3EA /* NASecretBoxTest.m in Sources */,
-				005A3CDA1B34D9E000445B1C /* NASecureDataTest.m in Sources */,
-				004EF2DE1B3374AE007822CE /* NABoxTest.m in Sources */,
-				0047C1021B30DFDC0055D184 /* NAOneTimeAuthTest.m in Sources */,
-				004EF2BE1B328FDD007822CE /* NARandomTest.m in Sources */,
-				0047C1081B30E55C0055D184 /* NAAuthTest.m in Sources */,
-				00390FC01B1E4897001ED3EA /* NAStreamTest.m in Sources */,
-				00390FBB1B1E4897001ED3EA /* NAScryptTest.m in Sources */,
+				006246351D8E08F3009DDFA8 /* NABox.m in Sources */,
+				006246431D8E08F3009DDFA8 /* NASecureData.m in Sources */,
+				006246451D8E08F3009DDFA8 /* NAStream.m in Sources */,
+				0062463F1D8E08F3009DDFA8 /* NAScrypt.m in Sources */,
+				006246391D8E08F3009DDFA8 /* NAInterface.m in Sources */,
+				006246411D8E08F3009DDFA8 /* NASecretBox.m in Sources */,
+				006246331D8E08F3009DDFA8 /* NAAuth.m in Sources */,
+				006246371D8E08F3009DDFA8 /* NABoxKeypair.m in Sources */,
+				0062463B1D8E08F3009DDFA8 /* NAOneTimeAuth.m in Sources */,
+				006246311D8E08F3009DDFA8 /* NAAEAD.m in Sources */,
+				0062463D1D8E08F3009DDFA8 /* NARandom.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0047C1091B30EE630055D184 /* Sources */ = {
+		006246051D8E0899009DDFA8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0047C1EE1B30F63A0055D184 /* NAOneTimeAuth.m in Sources */,
-				005A3CD81B34D08000445B1C /* NASecureData.m in Sources */,
-				0047C1EC1B30F63A0055D184 /* NASecretBox.m in Sources */,
-				004EF2E41B337558007822CE /* NABoxKeypair.m in Sources */,
-				0047C1EB1B30F63A0055D184 /* NAInterface.m in Sources */,
-				004EF2DC1B337314007822CE /* NABox.m in Sources */,
-				0047C1ED1B30F63A0055D184 /* NAAuth.m in Sources */,
-				004EF2D61B336FD8007822CE /* NAStream.m in Sources */,
-				004EF2C41B333457007822CE /* NAAEAD.m in Sources */,
-				0047C1EF1B30F63A0055D184 /* NAScrypt.m in Sources */,
-				0047C1F11B30F63A0055D184 /* NARandom.m in Sources */,
+				006246BD1D8E0A91009DDFA8 /* NARandomTest.m in Sources */,
+				006246BC1D8E0A91009DDFA8 /* NAOneTimeAuthTest.m in Sources */,
+				006246BB1D8E0A91009DDFA8 /* NABoxTest.m in Sources */,
+				006246BE1D8E0A91009DDFA8 /* NAScryptTest.m in Sources */,
+				006246BA1D8E0A91009DDFA8 /* NAAuthTest.m in Sources */,
+				006246C01D8E0A91009DDFA8 /* NASecureDataTest.m in Sources */,
+				006246BF1D8E0A91009DDFA8 /* NASecretBoxTest.m in Sources */,
+				006246C11D8E0A91009DDFA8 /* NAStreamTest.m in Sources */,
+				006246C21D8E0A91009DDFA8 /* NATestUtils.m in Sources */,
+				006246B91D8E0A91009DDFA8 /* NAAEADTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		00CCC6E41B1E4434007090AD /* Sources */ = {
+		0062465C1D8E0962009DDFA8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00CCC7111B1E446C007090AD /* NASecretBox.m in Sources */,
-				005A3CD71B34D08000445B1C /* NASecureData.m in Sources */,
-				0047C1061B30E4C40055D184 /* NAAuth.m in Sources */,
-				004EF2E31B337558007822CE /* NABoxKeypair.m in Sources */,
-				00CCC7131B1E446C007090AD /* NAOneTimeAuth.m in Sources */,
-				004EF2DB1B337314007822CE /* NABox.m in Sources */,
-				004EF2D51B336FD8007822CE /* NAStream.m in Sources */,
-				00CCC70F1B1E446C007090AD /* NAInterface.m in Sources */,
-				004EF2C31B333457007822CE /* NAAEAD.m in Sources */,
-				00CCC7211B1E446C007090AD /* NAScrypt.m in Sources */,
-				0047C1E31B30F4F70055D184 /* NARandom.m in Sources */,
+				0062467E1D8E097C009DDFA8 /* NABox.m in Sources */,
+				0062468C1D8E097C009DDFA8 /* NASecureData.m in Sources */,
+				0062468E1D8E097C009DDFA8 /* NAStream.m in Sources */,
+				006246881D8E097C009DDFA8 /* NAScrypt.m in Sources */,
+				006246821D8E097C009DDFA8 /* NAInterface.m in Sources */,
+				0062468A1D8E097C009DDFA8 /* NASecretBox.m in Sources */,
+				0062467C1D8E097C009DDFA8 /* NAAuth.m in Sources */,
+				006246801D8E097C009DDFA8 /* NABoxKeypair.m in Sources */,
+				006246841D8E097C009DDFA8 /* NAOneTimeAuth.m in Sources */,
+				0062467A1D8E097C009DDFA8 /* NAAEAD.m in Sources */,
+				006246861D8E097C009DDFA8 /* NARandom.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		006246651D8E0963009DDFA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				006246C71D8E0A97009DDFA8 /* NARandomTest.m in Sources */,
+				006246C61D8E0A97009DDFA8 /* NAOneTimeAuthTest.m in Sources */,
+				006246C51D8E0A97009DDFA8 /* NABoxTest.m in Sources */,
+				006246C81D8E0A97009DDFA8 /* NAScryptTest.m in Sources */,
+				006246C41D8E0A97009DDFA8 /* NAAuthTest.m in Sources */,
+				006246CA1D8E0A97009DDFA8 /* NASecureDataTest.m in Sources */,
+				006246C91D8E0A97009DDFA8 /* NASecretBoxTest.m in Sources */,
+				006246CB1D8E0A98009DDFA8 /* NAStreamTest.m in Sources */,
+				006246CC1D8E0A98009DDFA8 /* NATestUtils.m in Sources */,
+				006246C31D8E0A97009DDFA8 /* NAAEADTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		00390FA51B1E4827001ED3EA /* PBXTargetDependency */ = {
+		0062460C1D8E0899009DDFA8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 00CCC6E81B1E4434007090AD /* NAChloride */;
-			targetProxy = 00390FA41B1E4827001ED3EA /* PBXContainerItemProxy */;
+			target = 006245FF1D8E0899009DDFA8 /* NAChloride */;
+			targetProxy = 0062460B1D8E0899009DDFA8 /* PBXContainerItemProxy */;
+		};
+		0062466C1D8E0963009DDFA8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 006246601D8E0962009DDFA8 /* NAChloride iOS */;
+			targetProxy = 0062466B1D8E0963009DDFA8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		00390FA71B1E4827001ED3EA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-			};
-			name = Debug;
-		};
-		00390FA81B1E4827001ED3EA /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-			};
-			name = Release;
-		};
-		003BB2DD1888A16E0019D88F /* Debug */ = {
+		006246121D8E0899009DDFA8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -645,36 +652,49 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
+				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		003BB2DE1888A16E0019D88F /* Release */ = {
+		006246131D8E0899009DDFA8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -682,190 +702,220 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		006246151D8E0899009DDFA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78FE82243B7B85CCE0EDEFA2 /* Pods-NAChloride.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = NAChloride/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = rel.me.NAChloride;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		006246161D8E0899009DDFA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64E65F8D0DB20C215F7EB6E3 /* Pods-NAChloride.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = NAChloride/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = rel.me.NAChloride;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		006246181D8E0899009DDFA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = NAChlorideTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = rel.me.NAChlorideTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		006246191D8E0899009DDFA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = NAChlorideTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = rel.me.NAChlorideTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		006246721D8E0963009DDFA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47984DAD9F6F26F76E9F0F67 /* Pods-NAChloride iOS.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "NAChloride iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "rel.me.NAChloride-iOS";
+				PRODUCT_NAME = NAChloride;
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		006246731D8E0963009DDFA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06B0E409BDC61490FC89DA13 /* Pods-NAChloride iOS.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "NAChloride iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "rel.me.NAChloride-iOS";
+				PRODUCT_NAME = NAChloride;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		0047C1221B30EE640055D184 /* Debug */ = {
+		006246741D8E0963009DDFA8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 007418211B34CF9A00E6E3C3 /* Pods-NAChloride-iOS.debug.xcconfig */;
 			buildSettings = {
-				CLANG_WARN_UNREACHABLE_CODE = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				INFOPLIST_FILE = NAChloride/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				INFOPLIST_FILE = "NAChloride iOSTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = NAChloride;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "rel.me.NAChloride-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
-		0047C1231B30EE640055D184 /* Release */ = {
+		006246751D8E0963009DDFA8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 007418221B34CF9A00E6E3C3 /* Pods-NAChloride-iOS.release.xcconfig */;
 			buildSettings = {
-				CLANG_WARN_UNREACHABLE_CODE = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				INFOPLIST_FILE = NAChloride/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				INFOPLIST_FILE = "NAChloride iOSTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = NAChloride;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		00CCC6FD1B1E4435007090AD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7F57C423DDD86BC4E0A6464A /* Pods-NAChloride.debug.xcconfig */;
-			buildSettings = {
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_VERSION = A;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				INFOPLIST_FILE = NAChloride/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "rel.me.NAChloride-iOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		00CCC6FE1B1E4435007090AD /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CD1A239FD8FAFC0FDB3BF5C0 /* Pods-NAChloride.release.xcconfig */;
-			buildSettings = {
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_VERSION = A;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				INFOPLIST_FILE = NAChloride/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00390FA61B1E4827001ED3EA /* Build configuration list for PBXNativeTarget "Tests" */ = {
+		006245FA1D8E0899009DDFA8 /* Build configuration list for PBXProject "NAChloride" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				00390FA71B1E4827001ED3EA /* Debug */,
-				00390FA81B1E4827001ED3EA /* Release */,
+				006246121D8E0899009DDFA8 /* Debug */,
+				006246131D8E0899009DDFA8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		003BB2B71888A16E0019D88F /* Build configuration list for PBXProject "NAChloride" */ = {
+		006246141D8E0899009DDFA8 /* Build configuration list for PBXNativeTarget "NAChloride" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				003BB2DD1888A16E0019D88F /* Debug */,
-				003BB2DE1888A16E0019D88F /* Release */,
+				006246151D8E0899009DDFA8 /* Debug */,
+				006246161D8E0899009DDFA8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0047C1211B30EE640055D184 /* Build configuration list for PBXNativeTarget "NAChloride-iOS" */ = {
+		006246171D8E0899009DDFA8 /* Build configuration list for PBXNativeTarget "NAChlorideTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0047C1221B30EE640055D184 /* Debug */,
-				0047C1231B30EE640055D184 /* Release */,
+				006246181D8E0899009DDFA8 /* Debug */,
+				006246191D8E0899009DDFA8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		00CCC6FC1B1E4435007090AD /* Build configuration list for PBXNativeTarget "NAChloride" */ = {
+		006246761D8E0963009DDFA8 /* Build configuration list for PBXNativeTarget "NAChloride iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				00CCC6FD1B1E4435007090AD /* Debug */,
-				00CCC6FE1B1E4435007090AD /* Release */,
+				006246721D8E0963009DDFA8 /* Debug */,
+				006246731D8E0963009DDFA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		006246771D8E0963009DDFA8 /* Build configuration list for PBXNativeTarget "NAChloride iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				006246741D8E0963009DDFA8 /* Debug */,
+				006246751D8E0963009DDFA8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 003BB2B41888A16E0019D88F /* Project object */;
+	rootObject = 006245F71D8E0899009DDFA8 /* Project object */;
 }
