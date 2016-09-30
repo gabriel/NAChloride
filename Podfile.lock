@@ -1,11 +1,11 @@
 PODS:
-  - libsodium (1.0.3)
+  - libsodium (1.0.11)
 
 DEPENDENCIES:
   - libsodium
 
 SPEC CHECKSUMS:
-  libsodium: be547e31dc75725629acc5717dc0a40fc05ef243
+  libsodium: 9aba161d2ee096977ecbdcce1ada69ffe511970c
 
 PODFILE CHECKSUM: 2d8aeb4c10efd2cfc9bb0ae798fc7015c1cbedd2
 

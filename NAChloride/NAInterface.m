@@ -8,7 +8,7 @@
 
 #import "NAInterface.h"
 
-#import <libsodium/sodium.h>
+#import <sodium.h>
 
 const size_t NASecretBoxKeySize = crypto_secretbox_KEYBYTES;
 const size_t NASecretBoxNonceSize = crypto_secretbox_NONCEBYTES;
