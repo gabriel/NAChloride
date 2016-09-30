@@ -10,7 +10,7 @@
 
 #import "NAInterface.h"
 
-#import <sodium.h>
+#import "sodium.h"
 
 @implementation NAStream
 

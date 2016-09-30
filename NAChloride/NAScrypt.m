@@ -9,7 +9,7 @@
 #import "NAScrypt.h"
 #import "NAInterface.h"
 
-#import <sodium.h>
+#import "sodium.h"
 
 @implementation NAScrypt
 
