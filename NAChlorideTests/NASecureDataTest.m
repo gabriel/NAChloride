@@ -24,11 +24,10 @@
   NABoxKeypair *keypair = [NABoxKeypair generate:&error];
   XCTAssertNil(error);
   XCTAssertNotNil(keypair);
-
-  keypair.secretKey.protection = NASecureDataProtectionNoAccess;
+  XCTAssertTrue([keypair.secretKey setProtection:NASecureDataProtectionNoAccess error:nil]);
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wunused-value"
-  sizeof(keypair.secretKey.bytes);
+  keypair.secretKey.bytes[0];
 #pragma clang diagnostic pop
   XCTFail(@"Should not get here");
 }

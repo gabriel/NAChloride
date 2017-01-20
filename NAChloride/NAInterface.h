@@ -18,6 +18,8 @@ typedef NS_ENUM (NSInteger, NAErrorCode) {
   NAErrorCodeInvalidAdditionalData = 104, // For AEAD
 
   NAErrorCodeVerificationFailed = 205, // Verification failed
+
+  NAErrorSecureDataAccessFailed = 500,
 };
 
 extern const size_t NASecretBoxKeySize;

@@ -19,7 +19,12 @@
 
 @implementation NASecureData
 
-+ (void)initialize { NAChlorideInit(); }
++ (void)initialize {
+  NAChlorideInit();
+#ifndef HAVE_MPROTECT
+  assert(false);
+#endif
+}
 
 - (instancetype)initWithLength:(NSUInteger)length {
   if ((self = [super init])) {
@@ -33,7 +38,9 @@
 + (instancetype)secureReadOnlyDataWithLength:(NSUInteger)length completion:(NADataCompletion)completion {
   NASecureData *secureData = [[NASecureData alloc] initWithLength:length];
   completion(secureData.secureBytes, secureData.length);
-  secureData.protection = NASecureDataProtectionReadOnly;
+  if (![secureData setProtection:NASecureDataProtectionReadOnly error:nil]) {
+    return nil;
+  }
   return secureData;
 }
 
@@ -41,13 +48,26 @@
   sodium_free(_secureBytes);
 }
 
-- (void)setProtection:(NASecureDataProtection)protection {
+- (BOOL)setProtection:(NASecureDataProtection)protection error:(NSError **)error {
+  int result = INT_MIN;
   switch (protection) {
-    // Keep these case statements order from most secure to least secure in case some jerk removes a break;
-    case NASecureDataProtectionReadWrite: sodium_mprotect_readwrite(_secureBytes); break;
-    case NASecureDataProtectionReadOnly: sodium_mprotect_readonly(_secureBytes); break;
-    case NASecureDataProtectionNoAccess: sodium_mprotect_noaccess(_secureBytes); break;
+    case NASecureDataProtectionReadWrite:
+      result = sodium_mprotect_readwrite(_secureBytes);
+      break;
+    case NASecureDataProtectionReadOnly:
+      result = sodium_mprotect_readonly(_secureBytes);
+      break;
+    case NASecureDataProtectionNoAccess:
+      result = sodium_mprotect_noaccess(_secureBytes);
+      break;
+    default:
+      return NO;
   }
+  if (result != 0) {
+    if (error) *error = NAError(NAErrorSecureDataAccessFailed, ([NSString stringWithFormat:@"Unable to set protection (%@)", @(result)]));
+    return NO;
+  }
+  return YES;
 }
 
 - (NSUInteger)length {
@@ -62,11 +82,12 @@
   return _secureBytes;
 }
 
-- (void)readWrite:(void (^)(NASecureData *secureData))completion {
+- (BOOL)readWrite:(void (^)(NSError *error, NASecureData *secureData))completion {
   NASecureDataProtection protection = self.protection;
-  self.protection = NASecureDataProtectionReadWrite;
-  completion(self);
-  self.protection = protection;
+  NSError *error = nil;
+  [self setProtection:NASecureDataProtectionReadWrite error:&error];
+  completion(error, self);
+  return [self setProtection:protection error:&error];
 }
 
 - (NASecureData *)truncate:(NSUInteger)length {

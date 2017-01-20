@@ -30,8 +30,13 @@
       return nil;
     }
 
-    if (!secretKey || [secretKey length] != NABoxPublicKeySize) {
-      if (error) *error = NAError(NAErrorCodeInvalidKey, @"Invalid secret key");
+    if (!secretKey) {
+      if (error) *error = NAError(NAErrorCodeInvalidKey, @"No secret key");
+      return nil;
+    }
+
+    if ([secretKey length] != NABoxPublicKeySize) {
+      if (error) *error = NAError(NAErrorCodeInvalidKey, @"Invalid secret key length");
       return nil;
     }
 

@@ -98,7 +98,7 @@
 
 /* Begin PBXFileReference section */
 		003E12511D8E0C4A006E9B1D /* NAChloride.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NAChloride.podspec; sourceTree = "<group>"; };
-		003E12521D8E0C4A006E9B1D /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		003E12521D8E0C4A006E9B1D /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		006246001D8E0899009DDFA8 /* NAChloride.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NAChloride.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		006246031D8E0899009DDFA8 /* NAChloride.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NAChloride.h; sourceTree = "<group>"; };
 		006246041D8E0899009DDFA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -141,12 +141,12 @@
 		006246B61D8E0A91009DDFA8 /* NAStreamTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAStreamTest.m; sourceTree = "<group>"; };
 		006246B71D8E0A91009DDFA8 /* NATestUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NATestUtils.h; sourceTree = "<group>"; };
 		006246B81D8E0A91009DDFA8 /* NATestUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NATestUtils.m; sourceTree = "<group>"; };
-		144E566416D054B9B4DB1573 /* Pods-NAChloride iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NAChloride iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-NAChloride iOS/Pods-NAChloride iOS.release.xcconfig"; sourceTree = "<group>"; };
+		128CC132836A8F5E63B7BAB3 /* Pods-NAChloride iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NAChloride iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-NAChloride iOS/Pods-NAChloride iOS.release.xcconfig"; sourceTree = "<group>"; };
+		1B59426D6493C3077011679C /* Pods-NAChloride.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NAChloride.release.xcconfig"; path = "Pods/Target Support Files/Pods-NAChloride/Pods-NAChloride.release.xcconfig"; sourceTree = "<group>"; };
 		24AC631A38B26C437788F9CF /* libPods-NAChloride.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NAChloride.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D24503B0E2E579CF36D5AF7B /* Pods-NAChloride.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NAChloride.release.xcconfig"; path = "Pods/Target Support Files/Pods-NAChloride/Pods-NAChloride.release.xcconfig"; sourceTree = "<group>"; };
+		2E3435018D050FD3BF6BC015 /* Pods-NAChloride.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NAChloride.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NAChloride/Pods-NAChloride.debug.xcconfig"; sourceTree = "<group>"; };
+		D324E5DAA51F1E681F9BD03E /* Pods-NAChloride iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NAChloride iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NAChloride iOS/Pods-NAChloride iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		D76DBF3B3185FE97082520C3 /* libPods-NAChloride iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NAChloride iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E9A87073D0ACF5CA89E9CE2C /* Pods-NAChloride.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NAChloride.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NAChloride/Pods-NAChloride.debug.xcconfig"; sourceTree = "<group>"; };
-		EC04A8427313A7B2998D6D9C /* Pods-NAChloride iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NAChloride iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NAChloride iOS/Pods-NAChloride iOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -280,10 +280,10 @@
 		D38C3AC7D4EF8F2D83985986 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				E9A87073D0ACF5CA89E9CE2C /* Pods-NAChloride.debug.xcconfig */,
-				D24503B0E2E579CF36D5AF7B /* Pods-NAChloride.release.xcconfig */,
-				EC04A8427313A7B2998D6D9C /* Pods-NAChloride iOS.debug.xcconfig */,
-				144E566416D054B9B4DB1573 /* Pods-NAChloride iOS.release.xcconfig */,
+				2E3435018D050FD3BF6BC015 /* Pods-NAChloride.debug.xcconfig */,
+				1B59426D6493C3077011679C /* Pods-NAChloride.release.xcconfig */,
+				D324E5DAA51F1E681F9BD03E /* Pods-NAChloride iOS.debug.xcconfig */,
+				128CC132836A8F5E63B7BAB3 /* Pods-NAChloride iOS.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -739,7 +739,7 @@
 		};
 		006246151D8E0899009DDFA8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E9A87073D0ACF5CA89E9CE2C /* Pods-NAChloride.debug.xcconfig */;
+			baseConfigurationReference = 2E3435018D050FD3BF6BC015 /* Pods-NAChloride.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -759,7 +759,7 @@
 		};
 		006246161D8E0899009DDFA8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D24503B0E2E579CF36D5AF7B /* Pods-NAChloride.release.xcconfig */;
+			baseConfigurationReference = 1B59426D6493C3077011679C /* Pods-NAChloride.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -801,7 +801,7 @@
 		};
 		006246721D8E0963009DDFA8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EC04A8427313A7B2998D6D9C /* Pods-NAChloride iOS.debug.xcconfig */;
+			baseConfigurationReference = D324E5DAA51F1E681F9BD03E /* Pods-NAChloride iOS.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -823,7 +823,7 @@
 		};
 		006246731D8E0963009DDFA8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 144E566416D054B9B4DB1573 /* Pods-NAChloride iOS.release.xcconfig */;
+			baseConfigurationReference = 128CC132836A8F5E63B7BAB3 /* Pods-NAChloride iOS.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";

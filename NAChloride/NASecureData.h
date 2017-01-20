@@ -21,7 +21,7 @@ typedef NS_ENUM (NSInteger, NASecureDataProtection) {
  */
 @interface NASecureData : NSMutableData // Subclassing for convienience
 
-@property (nonatomic) NASecureDataProtection protection;
+@property (readonly, nonatomic) NASecureDataProtection protection;
 
 /*!
  Secure and read only data.
@@ -31,12 +31,18 @@ typedef NS_ENUM (NSInteger, NASecureDataProtection) {
 /*!
  Secure data is has read/write protection in this block.
  */
-- (void)readWrite:(void (^)(NASecureData *secureData))completion;
+- (BOOL)readWrite:(void (^)(NSError *error, NASecureData *secureData))completion;
 
 /*!
  Truncate.
  */
 - (NASecureData *)truncate:(NSUInteger)length;
+
+/*!
+ Set protection.
+ @return NO if unable to set protection
+ */
+- (BOOL)setProtection:(NASecureDataProtection)protection error:(NSError **)error;
 
 @end
 
