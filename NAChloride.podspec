@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "NAChloride"
-  s.version      = "2.3.0"
+  s.version      = "2.3.1"
   s.summary      = "Objective-C library for libsodium (NaCl)"
   s.homepage     = "https://github.com/gabriel/NAChloride"
   s.license      = { :type => "MIT" }
@@ -12,6 +12,9 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = "7.0"
   s.ios.source_files = 'NAChloride/**/*.{c,h,m}'
+  
+  s.tvos.deployment_target = "10.0"
+  s.tvos.source_files = 'NAChloride/**/*.{c,h,m}'
 
   s.osx.deployment_target = "10.8"
   s.osx.source_files = 'NAChloride/**/*.{c,h,m}'
